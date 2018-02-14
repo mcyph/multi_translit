@@ -1,0 +1,60 @@
+﻿'''
+Эмирова (Èmirova) Адиле — доктор филологических наук, профессор 
+Симферопольского университета. Image “tatarabc.gif”. 
+n.d. URL is unavailable.
+'''
+﻿{{
+FormatString: "Crimean Tatar %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["crh", "Cyrillic"],
+	["crh", "Latin Emirova"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Crimean Tatar %s Emirova", "Cyrillic", "Latin")
+#addISO("crh")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+ю = allforms(ü||yü||yu)
+е = allforms(e||ye)
+ё = allforms(ö||yo)
+нъ = allforms(ñ||)
+а = allforms(a||â)
+гъ = allforms(ğ)
+дж = allforms(c)
+къ = allforms(q)
+ц = allforms(ts)
+щ = allforms(şç)
+я = allforms(ya)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(j)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ч = allforms(ç)
+ш = allforms(ş)
+ъ = allforms(-)
+ы = allforms(ı)
+ь = allforms(-)
+э = allforms(e)

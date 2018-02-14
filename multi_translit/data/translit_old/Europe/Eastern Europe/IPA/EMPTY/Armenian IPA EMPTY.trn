@@ -1,0 +1,58 @@
+﻿provides("Armenian %s IPA", "Cyrillic", "IPA")
+addISO("hye")
+addType("IPA", "high")
+useIgnoreCase()
+
+եւ = ignore()
+ու = ignore()
+◌՟ = ignore()
+՚ = ignore()
+՛ = ignore()
+՜ = ignore()
+՝ = ignore()
+՞ = ignore()
+ա = a
+բ = b
+գ = g
+դ = d
+ե = jɛ||j||ɛ
+զ = z
+է = e
+ը = ə
+թ = tʰ
+ժ = ignore()
+ի = ignore()
+լ = ignore()
+խ = ignore()
+ծ = ignore()
+կ = ignore()
+հ = ignore()
+ձ = ignore()
+ղ = ignore()
+ճ = ignore()
+մ = ignore()
+յ = ignore()
+ն = ignore()
+շ = ignore()
+ո = ignore()
+չ = ignore()
+պ = ignore()
+ջ = ignore()
+ռ = ignore()
+ս = ignore()
+վ = ignore()
+տ = ignore()
+ր = ignore()
+ց = ignore()
+ւ = ignore()
+փ = ignore()
+ք = ignore()
+օ = ignore()
+ֆ = ignore()
+։ = ignore()
+֊ = ignore()
+ﬓ = ignore()
+ﬔ = ignore()
+ﬕ = ignore()
+ﬖ = ignore()
+ﬗ = ignore()

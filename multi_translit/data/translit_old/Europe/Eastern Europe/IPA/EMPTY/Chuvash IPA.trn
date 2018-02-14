@@ -1,0 +1,42 @@
+﻿provides("Chuvash %s IPA", "Cyrillic", "IPA")
+addISO("WHATEVER")
+addType("IPA", "high")
+useIgnoreCase()
+
+ӑ = ɒ~ɔ # TODO: Check me!
+ӗ = ə~ø
+ҫ = ɕ
+а = a
+б = b
+в = v
+г = g
+д = d
+е = ɛ
+ж = 
+з = z
+и = ɨ
+й = self(j), initial(j), medial(ĭ), final(ĭ) # j||-ĭ
+к = k||kʲ
+л = l
+м = m
+н = n||ɳ
+о = ignore()
+п = ignore()
+р = ignore()
+с = ignore()
+т = ignore()
+у = ignore()
+ф = ignore()
+х = ignore()
+ц = ignore()
+ч = ignore()
+ш = ignore()
+щ = ignore()
+ъ = ignore()
+ы = ignore()
+ь = ignore()
+э = ignore()
+ю = ignore()
+я = ignore()
+ё = ignore()
+ӳ = ignore()

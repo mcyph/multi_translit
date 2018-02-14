@@ -1,0 +1,60 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & 
+William Bright (eds.). New York, 1996.
+'''
+
+﻿{{
+FormatString: "Buryat %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["bua", "Cyrillic"],
+	["bua", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Buryat %s WWS", "Cyrillic", "Latin")
+#addISO("bua")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+н = self(n), initial(n), medial(n), final(ng)
+#н = allforms(n‐||‐ng)
+е = allforms(ye||yö)
+ы = allforms(ei||ii)
+ю = allforms(yu||yü)
+й = allforms(i̯)
+я = allforms(ya)
+ё = allforms(yo)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ǰ)
+з = allforms(z)
+и = allforms(i)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = ignore()
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+щ = ignore()
+ъ = ignore()
+ь = allforms(ʹ)
+э = allforms(e)
+ү = allforms(ü)
+һ = allforms(h)
+ө = allforms(ö)

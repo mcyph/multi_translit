@@ -1,0 +1,60 @@
+﻿'''
+ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman 
+Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+'''
+
+{{
+FormatString: "Even Yupik %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["eve", "Cyrillic"],
+	["eve", "Latin ALA-LC"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Even Yupik %s ALA-LC", "Cyrillic", "Latin")
+#addISO("eve")
+##addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+useMatchCase()
+щ = allforms(shch)
+ц = allforms(t͡s)
+ю = allforms(i͡u)
+я = allforms(i͡u)
+ӈ = allforms(n͡g)
+ж = allforms(zh)
+х = allforms(kh)
+ч = allforms(ch)
+ш = allforms(sh)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+з = allforms(z)
+и = allforms(i)
+й = allforms(ĭ)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms(ʺ)
+ы = allforms(y)
+ь = allforms(ʹ)
+э = allforms(ė)
+ё = allforms(ë)
+ө = allforms(ȯ)
+ӫ = allforms(ō)

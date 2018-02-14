@@ -1,0 +1,87 @@
+﻿# This file uses the transliteration system at 
+# http://www.languagegeek.com/algon/ojicree/ojc_syllabarium.html
+# for Oji-Cree, otherwise known as the
+# ᐊᓂᔑᓂᓂᒧᐏᐣ/Anishininimowin (Oji-Cree) Syllabarium
+
+# e
+e = allforms(ᐁ)
+pe = allforms(ᐯ)
+te = allforms(ᑌ)
+ke = allforms(ᑫ)
+če = allforms(ᒉ)
+me = allforms(ᒣ)
+ne = allforms(ᓀ)
+le = allforms(ᓬᐁ)
+re = allforms(ᕒᐁ)
+se = allforms(ᓭ)
+še = allforms(ᔐ)
+ye = allforms(ᔦ)
+we = allforms(ᐌ)
+he = allforms(ᐦᐁ)
+
+# i
+i = allforms(ᐃ)
+pi = allforms(ᐱ)
+ti = allforms(ᑎ)
+ki = allforms(ᑭ)
+či = allforms(ᒋ)
+mi = allforms(ᒥ)
+ni = allforms(ᓂ)
+li = allforms(ᓬᐃ)
+ri = allforms(ᕒᐃ)
+si = allforms(ᓯ)
+ši = allforms(ᔑ)
+yi = allforms(ᔨ)
+wi = allforms(ᐎ)
+hi = allforms(ᐦᐃ)
+
+# o
+o = allforms(ᐅ)
+po = allforms(ᐳ)
+to = allforms(ᑐ)
+ko = allforms(ᑯ)
+čo = allforms(ᒍ)
+mo = allforms(ᒧ)
+no = allforms(ᓄ)
+lo = allforms(ᓬᐅ)
+ro = allforms(ᕒᐅ)
+so = allforms(ᓱ)
+šo = allforms(ᔓ)
+yo = allforms(ᔪ)
+wo = allforms(ᐒ)
+ho = allforms(ᐦᐅ)
+
+# a
+a = allforms(ᐊ)
+pa = allforms(ᐸ)
+ta = allforms(ᑕ)
+ka = allforms(ᑲ)
+ča = allforms(ᒐ)
+ma = allforms(ᒪ)
+na = allforms(ᓇ)
+la = allforms(ᓬᐊ)
+ra = allforms(ᕒᐊ)
+sa = allforms(ᓴ)
+ša = allforms(ᔕ)
+ya = allforms(ᔭ)
+wa = allforms(ᐗ)
+ha = allforms(ᐦᐊ)
+
+# Finals
+p = final(ᐊᑊ)
+t = final(ᐊᐟ)
+k = final(ᐊᐠ)
+č = final(ᐊᐨ)
+m = final(ᐊᒼ)
+n = final(ᐊᐣ)
+l = final(ᐊᓬ)
+r = final(ᐊᕒ)
+s = final(ᐊᐢ)
+š = final(ᐊᐡ)
+y = final(ᐊᔾ)
+w = final(ᐊᐤ)
+h = final(ᐊᐦ)
+
+# These character(s) are general Syllabics punctuation characters
+# and weren't in the original transliteration system
+. = allforms(᙮)

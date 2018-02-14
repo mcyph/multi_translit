@@ -1,0 +1,54 @@
+[comment]
+Kohanimeandmebaas (Place Names Database) of Eesti Keele 
+Instituut (Institute of the Estonian Language) (http://www.eki.ee).
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ka",
+    "direction": "<=>", 
+    "to_iso": "ka_Latn|KNAB"
+}
+
+[conversions]
+ⴉ = k{{COMBINING CEDILLA}}
+ⴛ = dz
+ⴝ = ç{{COMBINING CARON}}
+ⴟ = dž
+ⴤ = x{{COMBINING DOT BELOW}}
+ჶ = f
+ჷ = ĕ
+ჸ = —
+ⴀ = a
+ⴁ = b
+ⴂ = g
+ⴃ = d
+ⴄ = e
+ⴅ = v
+ⴆ = z
+ⴇ = t
+ⴈ = i
+ⴊ = l
+ⴋ = m
+ⴌ = n
+ⴍ = o
+ⴎ = ṗ
+ⴏ = ž
+ⴐ = r
+ⴑ = s
+ⴒ = ţ
+ⴓ = u
+ⴔ = p
+ⴕ = k
+ⴖ = ǧ
+ⴗ = q
+ⴘ = š
+ⴙ = č
+ⴚ = c
+ⴜ = ç
+ⴞ = x
+ⴠ = h
+ⴡ = ē
+ⴢ = y
+ⴣ = w
+ⴥ = ō

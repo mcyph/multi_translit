@@ -1,0 +1,57 @@
+﻿'''
+Formerly planned Latin alphabet, now replaced by Official 1995.
+'''
+
+{{
+FormatString: "Uzbek %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["uzb", "Cyrillic"], 
+	["uzb", "Latin Former Official"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Uzbek %s Latin (Formerly) Official Alphabet", "Cyrillic", "Latin")
+#addISO("uzb")
+#addType("input", "low")
+#addType("romanization")
+#useMatchCase()
+
+ю = allforms(yu)
+я = allforms(ya)
+ё = allforms(yo)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(j) # (2.1)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n) # (2.2)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(ç)
+ш = allforms(ş)
+ъ = allforms()
+ь = allforms(—)
+э = allforms(e)
+ў = allforms(ö)
+ғ = allforms(ğ)
+қ = allforms(q)
+ҳ = allforms(h)

@@ -1,0 +1,48 @@
+﻿provides("Ossetian %s IPA", "Cyrillic", "IPA")
+addISO("oss")
+addType("IPA", "high")
+useIgnoreCase()
+
+цъ = tsʼ
+чъ = tʃʼ
+къ = kʼ
+пъ = pʼ
+тъ = tʼ
+гъ = ʁ
+дж = ignore()
+дз = ignore()
+хъ = ignore()
+з = z~ʒ
+с = s~ʃ
+х = χ
+а = ignore()
+б = ignore()
+в = ignore()
+г = ignore()
+д = ignore()
+е = ignore()
+ж = ignore()
+и = ignore()
+й = ignore()
+к = ignore()
+л = ignore()
+м = ignore()
+н = ignore()
+о = ignore()
+п = ignore()
+р = ignore()
+т = ignore()
+у = ignore()
+ф = ignore()
+ц = ignore()
+ч = ignore()
+ш = ignore()
+щ = ignore()
+ъ = ignore()
+ы = ignore()
+ь = ignore()
+э = ignore()
+ю = ignore()
+я = ignore()
+ё = ignore()
+ӕ = ignore()

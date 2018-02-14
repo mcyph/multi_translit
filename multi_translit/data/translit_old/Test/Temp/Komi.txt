@@ -1,0 +1,40 @@
+﻿ISO 9  KNAB  ALA-LC  WWS
+1995  1994  1997  1996
+А а a a a a [a]
+Б б b b b b [b]
+В в v v v v [v]
+Г г g g g g [ɡ]
+Д д d d d d [d, dʲ(4.1)]
+Дж дж dž dž dzh dž [d͡ʐ]
+Дз дз dz dź(2.1) [dʑ] dz dz [d͡z]
+Е е e e, je(2.2), é(2.3) e e [je, e(4.2)]
+Ё ё ë jo ë ë [jo, o(4.3)]
+Ж ж ž ž zh ž [ʒ]
+З з z z z z [z, zʲ(4.1)]
+И и i i i i [i]
+І і ì ï ī ï [i](4.4)
+Й й j j, j(2.4) ĭ j [j](4.5)
+К к k k k k [k]
+Л л l l l l [l, lʲ(4.1)]
+М м m m m m [m]
+Н н n n n n [n, nʲ(4.1)]
+О о o o o o [o]
+Ӧ ӧ ö ö [ə] ȯ ö [ə]
+П п p p p p [p]
+Р р r r r r [r]
+С с s s s s [s, sʲ(4.1)]
+Т т t t t t [t, tʲ(4.1)]
+Тш тш tš tš tsh tš [t͡ʂ]
+У у u u u u [u]
+Ф ф (0.1) f f f f [f]
+Х х (0.1) h h kh x [x]
+Ц ц (0.1) c c t͡s c [t͡s]
+Ч ч č ć [tɕ] ch č [t͡sʲ]
+Ш ш š š sh š [ʃ]
+Щ щ (0.1) ŝ šć shch šč [ʃ͡tʃ]
+Ъ ъ ʺ  ʺ ʺ [–](4.5)
+Ы ы y y y y [ɨ]
+Ь ь ʹ , j(2.4) ʹ ʹ [–](4.5)
+Э э è è, e(2.2) ė è [e](4.6)
+Ю ю û ju i͡u ju [ju, u(4.3)]
+Я я â ja i͡a ja [ja, a(4.3)]

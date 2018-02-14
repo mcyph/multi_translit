@@ -1,0 +1,34 @@
+﻿Roman  ISO 9  ALA-LC  Allworth
+1991(1.0)  1995(2.0)  1997(3.0)  1971(4.0)
+А а a a a a
+Б б b b b b
+В в v v v v
+Г г q g g g
+Ғ ғ ğ ġ gh gh
+Д д d d d d
+Е е e e e e
+Ә ә ǝ a̋ ă ä
+Ж ж j ž zh zh
+З з z z z z
+И и i i i i
+Ы ы ı y y ï
+Ј ј y ǰ ı̐ y
+К к k k k k
+Ҝ ҝ g k̂ ġ q
+Л л l l l l
+М м m m m m
+Н н n n n n
+О о o o o o
+Ө ө ö ô ȯ ö
+П п p p p p
+Р р r r r r
+С с s s s s
+Т т t t t t
+У у u u u u
+Ү ү ü ù u̇ ü
+Ф ф f f f f
+Х х x h kh kh
+Һ һ h ḥ ḣ h
+Ч ч ç č ch ch
+Ҹ ҹ c ĉ j j
+Ш ш ş š sh sh

@@ -1,0 +1,25 @@
+[settings]
+{
+    "from_iso": "ja_Hrkt", 
+    "modifiers": {
+        "from_direction": {
+            "before_conversions": [
+                [
+                    "# Convert from Katakana-Hiragana"
+                ], 
+                [
+                    "include", 
+                    "ja_Hira", 
+                    "ja_Cyrl"
+                ], 
+                [
+                    "include", 
+                    "ja_Kana", 
+                    "ja_Cyrl"
+                ]
+            ]
+        }
+    }, 
+    "direction": "=>", 
+    "to_iso": "ja_Cyrl"
+}

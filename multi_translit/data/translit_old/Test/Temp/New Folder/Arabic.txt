@@ -1,0 +1,91 @@
+﻿DIN 31635 ISO 233 ISO/R 233 UN ALA-LC EI
+1982 (1.0) 1984 (2.0) 1961 (3.0) 1972(4.0) 1997(5.0) 1960(6.0)
+iso ini med fin
+Consonants
+ا ا ā ʾ —(3.1)(3.2) — (4.1) — —
+ء ◌ٔ, ◌ٕ a ʾ ˈ, ˌ (2.1) —, ’(3.3) ʼ, — (4.2) —, ’ (5.1) ʾ
+ب ب ب ب b b b b b b
+ت ت ت ت t t t t t t
+ث ث ث ث ṯ ṯ ṯ th th th
+ج ج ج ج ǧ ǧ ǧ j j dj
+ح ح ح ح ḥ ḥ ḥ ḩ ḥ ḥ
+خ خ خ خ ḫ ẖ ẖ kh kh kh
+د د d d d d d d
+ذ ذ ḏ ḏ ḏ dh dh dh
+ر ر r r r r r r
+ز ز z z z z z z
+س س س س s s s s s s
+ش ش ش ش š š š sh sh sh
+ص ص ص ص ṣ ṣ ṣ ş ṣ ṣ
+ض ض ض ض ḍ ḍ ḍ  ḍ ḍ
+ط ط ط ط ṭ ṭ ṭ ţ ṭ ṭ
+ظ ظ ظ ظ ẓ ẓ ẓ  ẓ ẓ
+ع ع ع ع ʿ ʿ ʿ ʻ ʻ ʿ
+غ غ غ غ ġ ġ ḡ gh gh gh
+ف ف ف ف f f f f f f
+ق ق ق ق q q q q q ḳ
+ك ك ك ك k k k k k k
+ل ل ل ل l l l l l l
+م م م م m m m m m m
+ن ن ن ن n n n n n n
+ه ه ه ه h h h h h h
+ة ة b h, t (1.1) ẗ h, t (3.4) h, t(4.3) h, t(5.2) a, at (6.1)
+و و w w w w w w
+ي ي ي ي y y y y y y
+ى ى ā ỳ y y ā
+لا لا lā laʾ lā lā lā lā
+ال c al- (1.2) ʾˈal (2.2) al-(3.5) al- (4.4) al- (5.3) al-, ʼl- (6.2)
+DIN 31635 ISO 233 ISO/R 233 UN ALA-LC EI
+1982(1.0) 1984(2.0) 1961(3.0) 1972(4.0) 1997(5.0) 1960(6.0)
+iso ini med fin
+Vowels and diphthongs
+آ آ d ʾā ʾâ ā, ʼā(3.6) ā ā, ʼā(5.4) ā
+◌َ a a a a a a
+◌ُ u u u u u u
+◌ِ i i i i i i
+ا ◌ ا ◌ ā aʾ ā ā ā ā
+◌ٰ ā ā — ā ā ā
+ى ◌ ā aỳ à á á ā
+ىٰ ◌ ā āỳ à — — —
+و ◌ و ◌ ū uw ū ū ū ū
+ي ◌ ي ◌ ī iy ī ī ī ī
+اً ◌, ◌ e an áʾ, á an an an (5.5) —
+ى ◌ e an áỳ — — — —
+◌ٌ e un ú un un un (5.5) —
+◌ٍ e in í in in in (5.5) —
+وْ ◌ وْ ◌ aw aw° aw aw aw aw
+يْ ◌ يْ ◌ ay ay° ay ay ay ay
+و ◌ uww uw̄ uww, ū(3.7) uww ūw (5.6) uww, ū (6.3)
+يّ ◌ iyy iȳ iyy, ī (3.8) iyy īy, ī (5.7) iyy, ī (6.4)
+Other signs
+◌ْ e (1.3) ◌° — (3.9) (4.5) — —
+◌ّ f (1.4) ◌̄ (3.10) (4.6) (5.8) (5.5)
+ٱ g ◌ʼ ◌‐ʾ (3.11) — (5.9) ◌ʼ
+Additional characters h
+پ پ پ پ p — p — p p
+چ چ چ چ č — č — ch, zh č
+ژ ژ ž — ž — zh zh
+ڤ ڤ ڤ ڤ v — v — v —
+ڥ    v — v — v —
+ف ف ف ف q q q — f —
+ڢ    f f f — q —
+ک ک ک گ g — g — g g
+ڭ ڭ ڭ ڭ g — g — g g
+ۋ ۋ v — v — v —
+Punctuation
+، ,
+؛ ;
+؟ ?
+Arabic 3/6
+Thomas T. Pedersen, http://ee.www.ee/transliteration Rev. 1.3, 2004-06-10
+Numbers
+٠ 0
+١ 1
+٢ 2
+٣ 3
+٤ 4
+٥ 5
+٦ 6
+٧ 7
+٨ 8
+٩ 9

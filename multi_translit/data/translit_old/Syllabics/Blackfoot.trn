@@ -1,0 +1,145 @@
+﻿# This file uses the transliteration system at 
+# http://www.languagegeek.com/algon/siksika/blk_syllabarium.html
+# for Blackfoot, otherwise known as the
+# ᑯᖾᖹ / ᖿᐟᖻᐟ / ᓱᖽᐧᖿ (PIKUNI / KAINAI / SIKSIKA - BLACKFOOT) SYLLABARIUM
+# I may have introduced errors! If you see any, please e-mail me at david@flazzle.net
+
+# NOTE: These are only processed once for the source text
+# and only using the 'from' (Latin -> Syllabics) and not the converse
+BEGIN Modifiers(Source)
+    # Change to lowercase as Syllabics is case-insensitive
+    from lower()
+    # The syllabics system don't support long vowels, so replace them
+    from replace("aa", "a")
+    from replace("ee", "e")
+    from replace("ii", "i")
+    from replace("oo", "o")
+    from replace("uu", "u")
+END Modifiers
+
+{{
+FormatString: "Blackfoot %s"
+LFonts: ["Latin", "Canadian Syllabics"]
+LProvides: [
+	["bla", "Latin"], 
+	["bla", "Canadian Syllabics"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+IgnoreMe: 1
+}}
+
+#provides("Blackfoot %s", "Latin", "Canadian Syllabics", true)
+#addISO("bla")
+#addType("input", "high")
+#addType("romanization", "high")
+#useIgnoreCase()
+
+# General p*
+pai; pei; poi = allforms(ᑫᐟ; ᑭᐟ; ᑲᐟ)
+pau; peu = allforms(ᑫᐠ; ᑭᐠ)
+pao; peo = allforms(ᑫᐠ; ᑭᐠ)
+psa; pse; psi; pso = allforms(ᑫᐧ; ᑭᐧ; ᑯᐧ; ᑲᐧ)
+pya; pye; pyi; pyo = allforms(ᑫᑉ; ᑭᑉ; ᑯᑉ; ᑲᑉ)
+pwa; pwe; pwi; pwo = allforms(ᑫ=; ᑭ=; ᑯ=; ᑲ=)
+
+# General t*
+tai; tei; toi = allforms(ᒣᐟ; ᒥᐟ; ᒪᐟ)
+tau; teu; = allforms(ᒣᐠ; ᒥᐠ)
+tao; teo; = allforms(ᒣᐠ; ᒥᐠ)
+tsa; tse; tsi; tso = allforms(ᒣᐧ; ᒥᐧ; ᒧᐧ; ᒪᐧ)
+tya; tye; tyi; tyo = allforms(ᒣᑉ; ᒥᑉ; ᒧᑉ; ᒪᑉ)
+twa; twe; twi; two = allforms(ᒣ=; ᒥ=; ᒧ=; ᒪ=)
+
+# General k*
+kai; kei; koi = allforms(ᖿᐟ; ᖼᐟ; ᖾᐟ)
+kau; keu = allforms(ᖿᐠ; ᖼᐠ)
+kao; keo = allforms(ᖿᐠ; ᖼᐠ)
+ksa; kse; ksi; kso = allforms(ᖿᐧ; ᖼᐧ; ᖽᐧ; ᖾᐧ)
+kya; kye; kyi; kyo = allforms(ᖿᑉ; ᖼᑉ; ᖽᑉ; ᖾᑉ)
+
+kia; kie; kii; kio = allforms(ᖿᑉ; ᖼᑉ; ᖽᑉ; ᖾᑉ)
+kwa; kwe; kwi; kwo = allforms(ᖿ=; ᖼ=; ᖽ=; ᖾ=)
+
+# General m*
+mai; mei; moi = allforms(ᒉᐟ; ᒋᐟ; ᒐᐟ)
+mau; meu = allforms(ᒉᐠ; ᒋᐠ)
+mao; meo = allforms(ᒉᐠ; ᒋᐠ)
+msa; mse; msi; mso = allforms(ᒉᐧ; ᒋᐧ; ᒍᐧ; ᒐᐧ)
+mya; mye; myi; myo = allforms(ᒉᑉ; ᒋᑉ; ᒍᑉ; ᒐᑉ)
+mwa; mwe; mwi; mwo = allforms(ᒉ=; ᒋ=; ᒍ=; ᒐ=)
+
+# General n*
+nai; nei; noi = allforms(ᖻᐟ; ᖸᐟ; ᖺᐟ)
+nau; neu = allforms(ᖻᐠ; ᖸᐠ)
+nao; neo = allforms(ᖻᐠ; ᖸᐠ)
+nsa; nse; nsi; nso = allforms(ᖻᐧ; ᖸᐧ; ᖹᐧ; ᖺᐧ)
+nya; nye; nyi; nyo = allforms(ᖻᑉ; ᖸᑉ; ᖹᑉ; ᖺᑉ)
+nwa; nwe; nwi; nwo = allforms(ᖻ=; ᖸ=; ᖹ=; ᖺ=)
+
+# General s*
+nai; nei; noi = allforms(ᖻᐟ; ᖸᐟ; ᖺᐟ)
+nau; neu = allforms(ᖻᐠ; ᖸᐠ)
+nao; neo = allforms(ᖻᐠ; ᖸᐠ)
+ssa; sse; ssi; sso = allforms(ᖻᐧ; ᖸᐧ; ᖹᐧ; ᖺᐧ)
+sya; sye; syi; syo = allforms(ᖻᑉ; ᖸᑉ; ᖹᑉ; ᖺᑉ)
+swa; swe; swi; swo = allforms(ᖻ=; ᖸ=; ᖹ=; ᖺ=)
+
+# General y*
+yai; yei; yoi = allforms(ᔦᐟ; ᔨᐟ; ᔭᐟ)
+yau; yeu = allforms(ᔦᐠ; ᔨᐠ)
+yao; yeo = allforms(ᔦᐠ; ᔨᐠ)
+ysa; yse; ysi; yso = allforms(ᔦᐧ; ᔨᐧ; ᔪᐧ; ᔭᐧ)
+yya; yye; yyi; yyo = allforms(ᔦᑉ; ᔨᑉ; ᔪᑉ; ᔭᑉ)
+ywa; ywe; ywi; ywo = allforms(ᔦ=; ᔨ=; ᔪ=; ᔭ=)
+
+# General w*
+wai; wei; woi = allforms(ᖷᐟ; ᖴᐟ; ᖶᐟ)
+wau; weu = allforms(ᖷᐠ; ᖴᐠ)
+wao; weo = allforms(ᖷᐠ; ᖴᐠ)
+wsa; wse; wsi; wso = allforms(ᖷᐧ; ᖴᐧ; ᖵᐧ; ᖶᐧ)
+wya; wye; wyi; wyo = allforms(ᖷᑉ; ᖴᑉ; ᖵᑉ; ᖶᑉ)
+wwa; wwe; wwi; wwo = allforms(ᖷ=; ᖴ=; ᖵ=; ᖶ=)
+
+# various two-letter forms
+au; eu = allforms(ᖳᐠ; ᖰᐠ)
+ao; eo = allforms(ᖳᐠ; ᖰᐠ)
+as; es; is; os = allforms(ᖳᐧ; ᖰᐧ; ᖱᐧ; ᖲᐧ)
+ay; ey; iy; oy = allforms(ᖳᑉ; ᖰᑉ; ᖱᑉ; ᖲᑉ)
+aw; ew; iw; ow = allforms(ᖳ=; ᖰ=; ᖱ=; ᖲ=)
+ai; ei; oi = allforms(ᖳᐟ; ᖰᐟ; ᖲᐟ)
+pa; pe; pi; po = allforms(ᑫ; ᑭ; ᑯ; ᑲ)
+ta; te; ti; to = allforms(ᒣ; ᒥ; ᒧ; ᒪ)
+ka; ke; ki; ko = allforms(ᖿ; ᖼ; ᖽ; ᖾ)
+ma; me; mi; mo = allforms(ᒉ; ᒋ; ᒍ; ᒐ)
+na; ne; ni; no = allforms(ᖻ; ᖸ; ᖹ; ᖺ)
+sa; se; si; so = allforms(ᓭ; ᓯ; ᓱ; ᓴ)
+ya; ye; yi; yo = allforms(ᔦ; ᔨ; ᔪ; ᔭ)
+wa; we; wi; wo = allforms(ᖷ; ᖴ; ᖵ; ᖶ)
+
+# As this character has the same basic sound as final h (and seems to use 
+# the same symbols in the Latin script), it becomes difficult to figure out 
+# where it's used. Therefore I've added an apostrophe to disambiguate
+hk' = allforms(ᐦ) # Final hk
+
+#hk = final(ᐦ)
+#hks = final(ᐦᔈ)
+#kh = allforms(ᐦ) # Final kh??? This was probably a typo
+
+# General vowels/consonants etc
+a = allforms(ᖳ)
+e = allforms(ᖰ)
+i = allforms(ᖱ)
+o = allforms(ᖲ)
+p = allforms(ᐤ) # Final p
+p = allforms(ᐤ) # Final p
+t = allforms(ᐨ) # Final t
+k = allforms(ᘁ) # Final k
+m = allforms(ᐢ) # Final m
+#s = allforms(ᐧ)
+: = allforms(ᐧ) # HACK!
+s = allforms(ᔈ) # Final s
+h = allforms(ᑊ) # Final h
+n = allforms(ᐡ) # Final n
+. = allforms(᙮) # Full stop

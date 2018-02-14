@@ -1,0 +1,1177 @@
+[settings]
+{
+    "from_iso": "en|FONIPA",
+    "direction": "=>", 
+    "to_iso": "ja_Kana"
+}
+
+[conversions]
+ˑ = -
+ː = ー
+
+# exceptions
+# "corrupt"
+kɜʌ = クア
+
+# "angler"
+ŋɡ = ング×
+
+# "attraction"
+ʃʌn = シュン
+
+
+# cheese CH
+# odd AA
+tʃɑ = チャ
+
+# at AE
+tʃæ = チャェ
+
+# hut AH
+tʃʌ = チャ
+
+# ought AO
+tʃɔ = チョ
+
+# cow AW
+tʃaʊ = チャウ
+
+# hide AY
+tʃaɪ = チャイ
+
+# Ed EH
+tʃe = チェ
+
+# hurt ER - WARNING!
+tʃɜ = チャ
+
+# ate EY
+tʃeɪ = チェイ
+
+# it IH
+tʃɪ = チ
+
+# eat IY
+tʃi = チ
+
+# oat OW
+tʃəʊ = チョウ
+
+# toy OY
+tʃɔɪ = チョイ
+
+# hood UH
+tʃʊ = チュ
+
+# two UW
+tʃu = チュ
+
+tʃ = チ×
+
+# gee JH
+# odd AA
+dʒɑ = ジャ
+
+# at AE
+dʒæ = ジャェ
+
+# hut AH
+dʒʌ = ジャ
+
+# ought AO
+dʒɔ = ジョ
+
+# cow AW
+dʒaʊ = ジャウ
+
+# hide AY
+dʒaɪ = ジャイ
+
+# Ed EH
+dʒe = ジェ
+
+# hurt ER - WARNING!
+dʒɜ = ジャ
+
+# ate EY
+dʒeɪ = ジェイ
+
+# it IH
+dʒɪ = ジ
+
+# eat IY
+dʒi = ジ
+
+# oat OW
+dʒəʊ = ジョウ
+
+# toy OY
+dʒɔɪ = ジョイ
+
+# hood UH
+dʒʊ = ジゥ
+
+# two UW
+dʒu = ジゥ
+
+dʒ = ジ×
+
+# be B
+# odd AA
+bɑ = バ
+
+# at AE
+bæ = バェ
+
+# hut AH
+bʌ = バ
+
+# ought AO
+bɔ = ボ
+
+# cow AW
+baʊ = バウ
+
+# hide AY
+baɪ = バイ
+
+# Ed EH
+be = ベ
+
+# hurt ER
+bɜ = バ
+
+# ate EY
+beɪ = ベイ
+
+# it IH
+bɪ = ビ
+
+# eat IY
+bi = ビ
+
+# oat OW
+bəʊ = ボウ
+
+# toy OY
+bɔɪ = ボイ
+
+# hood UH
+bʊ = ブ
+
+# two UW
+bu = ブ
+
+b = ブ×
+
+# dee D
+# odd AA
+dɑ = ダ
+
+# at AE
+dæ = ダェ
+
+# hut AH
+dʌ = ダ
+
+# ought AO
+dɔ = ド
+
+# cow AW
+daʊ = ダウ
+
+# hide AY
+daɪ = ダイ
+
+# Ed EH
+de = デ
+
+# hurt ER - WARNING!
+dɜ = ダ
+
+# ate EY
+deɪ = デイ
+
+# it IH
+dɪ = ディ
+
+# eat IY
+di = ディ
+
+# oat OW
+dəʊ = ドウ
+
+# toy OY
+dɔɪ = ドイ
+
+# hood UH
+dʊ = ドゥ
+
+# two UW
+du = ドゥ
+
+d = ド×
+
+# thee DH
+# odd AA
+ðɑ = ザ
+
+# at AE
+ðæ = ザェ
+
+# hut AH
+ðʌ = ザ
+
+# ought AO
+ðɔ = ゾ
+
+# cow AW
+ðaʊ = ザウ
+
+# hide AY
+ðaɪ = ザイ
+
+# Ed EH
+ðe = ゼ
+
+# hurt ER - WARNING!
+ðɜ = ザ
+
+# ate EY
+ðeɪ = ゼイ
+
+# it IH
+ðɪ = ゼィ
+
+# eat IY
+ði = ゼィ
+
+# oat OW
+ðəʊ = ゾウ
+
+# toy OY
+ðɔɪ = ゾイ
+
+# hood UH
+ðʊ = ズ
+
+# two UW
+ðu = ズ
+
+ð = ズ×
+
+# fee F
+# odd AA
+fɑ = ファ
+
+# at AE
+fæ = フェ
+
+# hut AH
+fʌ = ファ
+
+# ought AO
+fɔ = フォ
+
+# cow AW
+faʊ = ファウ
+
+# hide AY
+faɪ = ファイ
+
+# Ed EH
+fe = フェ
+
+# hurt ER - WARNING!
+fɜ = ファ
+
+# ate EY
+feɪ = フェイ
+
+# it IH
+fɪ = フィ
+
+# eat IY
+fi = フィ
+
+# oat OW
+fəʊ = フォウ
+
+# toy OY
+fɔɪ = フォイ
+
+# hood UH
+fʊ = フ
+
+# two UW
+fu = フ
+
+f = フ×
+
+# green G
+# odd AA
+ɡɑ = ガ
+
+# at AE
+ɡæ = ガェ
+
+# hut AH
+ɡʌ = ガ
+
+# ought AO
+ɡɔ = ゴ
+
+# cow AW
+ɡaʊ = ガウ
+
+# hide AY
+ɡaɪ = ガイ
+
+# Ed EH
+ɡe = ゲ
+
+# hurt ER - WARNING!
+ɡɜ = ガ
+
+# ate EY
+ɡeɪ = ゲイ
+
+# it IH
+ɡɪ = ギ
+
+# eat IY
+ɡi = ギ
+
+# oat OW
+ɡəʊ = ゴウ
+
+# toy OY
+ɡɔɪ = ゴイ
+
+# hood UH
+ɡʊ = グ
+
+# two UW
+ɡu = グ
+
+ɡ = グ×
+
+# he HH
+# odd AA
+hɑ = ハ
+
+# at AE
+hæ = ハェ
+
+# hut AH
+hʌ = ハ
+
+# ought AO
+hɔ = ホ
+
+# cow AW
+haʊ = ハウ
+
+# hide AY
+haɪ = ハイ
+
+# Ed EH
+he = ヘ
+
+# hurt ER - WARNING!
+hɜ = ハ
+
+# ate EY
+heɪ = ヘイ
+
+# it IH
+hɪ = ヒ
+
+# eat IY
+hi = ヒ
+
+# oat OW
+həʊ = ホウ
+
+# toy OY
+hɔɪ = ホイ
+
+# hood UH
+hʊ = ホゥ
+
+# two UW
+hu = ホゥ
+
+h = ホ×
+
+# key K
+# odd AA
+kɑ = カ
+
+# at AE
+kæ = カェ
+
+# hut AH
+kʌ = カ
+
+# ought AO
+kɔ = コ
+
+# cow AW
+kaʊ = カウ
+
+# hide AY
+kaɪ = カイ
+
+# Ed EH
+ke = ケ
+
+# hurt ER - WARNING!
+kɜ = カ
+
+# ate EY
+keɪ = ケイ
+
+# it IH
+kɪ = キ
+
+# eat IY
+ki = キ
+
+# oat OW
+kəʊ = コウ
+
+# toy OY
+kɔɪ = コイ
+
+# hood UH
+kʊ = ク
+
+# two UW
+ku = ク
+
+k = ク×
+
+# lee L
+# odd AA
+lɑ = ラ
+
+# at AE
+læ = ラェ
+
+# hut AH
+lʌ = ラ
+
+# ought AO
+lɔ = ロ
+
+# cow AW
+laʊ = ラウ
+
+# hide AY
+laɪ = ライ
+
+# Ed EH
+le = レ
+
+# hurt ER - WARNING!
+lɜ = ラ
+
+# ate EY
+leɪ = レイ
+
+# it IH
+lɪ = リ
+
+# eat IY
+li = リ
+
+# oat OW
+ləʊ = ロウ
+
+# toy OY
+lɔɪ = ロイ
+
+# hood UH
+lʊ = ル
+
+# two UW
+lu = ル
+
+l = ル×
+
+# me M
+# odd AA
+mɑ = マ
+
+# at AE
+mæ = マェ
+
+# hut AH
+mʌ = マ
+
+# ought AO
+mɔ = モ
+
+# cow AW
+maʊ = マウ
+
+# hide AY
+maɪ = マイ
+
+# Ed EH
+me = メ
+
+# hurt ER
+mɜ = マ
+
+# ate EY
+meɪ = メイ
+
+# it IH
+mɪ = ミ
+
+# eat IY
+mi = ミ
+
+# oat OW
+məʊ = モウ
+
+# toy OY
+mɔɪ = モイ
+
+# hood UH
+mʊ = ム
+
+# two UW
+mu = ム
+
+m = ム×
+
+# knee N
+# odd AA
+nɑ = ナ
+
+# at AE
+næ = ナェ
+
+# hut AH
+nʌ = ナ
+
+# ought AO
+nɔ = ノ
+
+# cow AW
+naʊ = ナウ
+
+# hide AY
+naɪ = ナイ
+
+# Ed EH
+ne = ネ
+
+# hurt ER
+nɜ = ナ
+
+# ate EY
+neɪ = ネイ
+
+# it IH
+nɪ = ニ
+
+# eat IY
+ni = ニ
+
+# oat OW
+nəʊ = ノウ
+
+# toy OY
+nɔɪ = ノイ
+
+# hood UH
+nʊ = ヌ
+
+# two UW
+nu = ヌ
+
+n = ン
+
+# ping NG
+ŋku = ンク
+ŋgu = ング
+ŋ = ング×
+
+# pee P
+# odd AA
+pɑ = パ
+
+# at AE
+pæ = パェ
+
+# hut AH
+pʌ = パ
+
+# ought AO
+pɔ = ポ
+
+# cow AW
+paʊ = パウ
+
+# hide AY
+paɪ = パイ
+
+# Ed EH
+pe = ペ
+
+# hurt ER
+pɜ = パ
+
+# ate EY
+peɪ = ペイ
+
+# it IH
+pɪ = ピ
+
+# eat IY
+pi = ピ
+
+# oat OW
+pəʊ = ポウ
+
+# toy OY
+pɔɪ = ポイ
+
+# hood UH
+pʊ = プ
+
+# two UW
+pu = プ
+
+p = プ×
+
+# read R (the same as w :P)
+# odd AA
+rɑ = ワ
+
+# at AE
+ræ = ワェ
+
+# hut AH
+rʌ = ワ
+
+# ought AO
+rɔ = ヲ
+
+# cow AW
+raʊ = ワウ
+
+# hide AY
+raɪ = ワイ
+
+# Ed EH
+re = ウェ
+
+# hurt ER - WARNING!
+rɜ = ワ
+
+# ate EY
+reɪ = ウェイ
+
+# it IH
+rɪ = ウィ
+
+# eat IY
+ri = ウィ
+
+# oat OW
+rəʊ = ヲウ
+
+# toy OY
+rɔɪ = ヲイ
+
+# hood UH
+rʊ = ワゥ
+
+# two UW
+ru = ワゥ
+
+# NOTE ME! ==========================
+r = ウ
+
+
+# sea S
+# odd AA
+sɑ = サ
+
+# at AE
+sæ = サェ
+
+# hut AH
+sʌ = サ
+
+# ought AO
+sɔ = ソ
+
+# cow AW
+saʊ = サウ
+
+# hide AY
+saɪ = サイ
+
+# Ed EH
+se = セ
+
+# hurt ER
+sɜ = サ
+
+# ate EY
+seɪ = セイ
+
+# it IH
+sɪ = セィ
+
+# eat IY
+si = セィ
+
+# oat OW
+səʊ = ソウ
+
+# toy OY
+sɔɪ = ソイ
+
+# hood UH
+sʊ = ス
+
+# two UW
+su = ス
+
+s = ス×
+
+# she SH
+# odd AA
+ʃɑ = シャ
+
+# at AE
+ʃæ = シャェ
+
+# hut AH
+ʃʌ = シャ
+
+# ought AO
+ʃɔ = ショ
+
+# cow AW
+ʃaʊ = シャウ
+
+# hide AY
+ʃaɪ = シャイ
+
+# Ed EH
+ʃe = シェ
+
+# hurt ER - WARNING!
+ʃɜ = シャ
+
+# ate EY
+ʃeɪ = シェイ
+
+# it IH
+ʃɪ = シ
+
+# eat IY
+ʃi = シ
+
+# oat OW
+ʃəʊ = ショウ
+
+# toy OY
+ʃɔɪ = ショイ
+
+# hood UH
+ʃʊ = シュ
+
+# two UW
+ʃu = シュ
+
+ʃ = シュ×
+
+# tea T
+# odd AA
+tɑ = タ
+
+# at AE
+tæ = タェ
+
+# hut AH
+tʌ = タ
+
+# ought AO
+tɔ = ト
+
+# cow AW
+taʊ = タウ
+
+# hide AY
+taɪ = タイ
+
+# Ed EH
+te = テ
+
+# hurt ER
+tɜ = タ
+
+# ate EY
+teɪ = テイ
+
+# it IH
+tɪ = ティ
+
+# eat IY
+ti = ティ
+
+# oat OW
+təʊ = トウ
+
+# toy OY
+tɔɪ = トイ
+
+# hood UH
+tʊ = トゥ
+
+# two UW
+tu = トゥ
+
+t = ト×
+
+# theta TH
+# odd AA
+θɑ = ザ
+
+# at AE
+θæ = ザェ
+
+# hut AH
+θʌ = ザ
+
+# ought AO
+θɔ = ゾ
+
+# cow AW
+θaʊ = ザウ
+
+# hide AY
+θaɪ = ザイ
+
+# Ed EH
+θe = ゼ
+
+# hurt ER
+θɜ = ザ
+
+# ate EY
+θeɪ = ゼイ
+
+# it IH
+θɪ = ゼィ
+
+# eat IY
+θi = ゼィ
+
+# oat OW
+θəʊ = ゾウ
+
+# toy OY
+θɔɪ = ゾイ
+
+# hood UH
+θʊ = ズ
+
+# two UW
+θu = ズ
+
+θ = ズ×
+
+# vee V
+# odd AA
+vɑ = ヴァ
+
+# at AE
+væ = ヴァェ
+
+# hut AH
+vʌ = ヴァ
+
+# ought AO
+vɔ = ヴォ
+
+# cow AW
+vaʊ = ヴァウ
+
+# hide AY
+vaɪ = ヴァイ
+
+# Ed EH
+ve = ヴェ
+
+# hurt ER
+vɜ = ヴァ
+
+# ate EY
+veɪ = ヴェイ
+
+# it IH
+vɪ = ヴィ
+
+# eat IY
+vi = ヴィ
+
+# oat OW
+vəʊ = ヴォウ
+
+# toy OY
+vɔɪ = ヴォイ
+
+# hood UH
+vʊ = ヴ
+
+# two UW
+vu = ヴ
+
+v = ヴ×
+
+# we W
+# odd AA
+wɑ = ワ
+
+# at AE
+wæ = ワェ
+
+# hut AH
+wʌ = ワ
+
+# ought AO
+wɔ = ヲ
+
+# cow AW
+waʊ = ワウ
+
+# hide AY
+waɪ = ワイ
+
+# Ed EH
+we = ウェ
+
+# hurt ER - WARNING!
+wɜ = ワ
+
+# ate EY
+weɪ = ウェイ
+
+# it IH
+wɪ = ウィ
+
+# eat IY
+wi = ウィ
+
+# oat OW
+wəʊ = ヲウ
+
+# toy OY
+wɔɪ = ヲイ
+
+# hood UH
+wʊ = ワゥ
+
+# two UW
+wu = ワゥ
+
+w = ウィ×
+
+# yield Y
+# odd AA
+jɑ = ヤ
+
+# at AE
+jæ = ヤェ
+
+# hut AH
+jʌ = ヤ
+
+# ought AO
+jɔ = ヨ
+
+# cow AW
+jaʊ = ヤウ
+
+# hide AY
+jaɪ = ヤイ
+
+# Ed EH
+je = イェ
+
+# hurt ER
+jɜ = ヤ
+
+# ate EY
+jeɪ = イェイ
+
+# it IH
+jɪ = ヨィ
+
+# eat IY
+ji = ヨィ
+
+# oat OW
+jəʊ = ヨウ
+
+# toy OY
+jɔɪ = ヨイ
+
+# hood UH
+jʊ = ユ
+
+# two UW
+ju = ユ
+
+j = ヨ×
+
+# zee Z
+# odd AA
+zɑ = ザ
+
+# at AE
+zæ = ザェ
+
+# hut AH
+zʌ = ザ
+
+# ought AO
+zɔ = ゾ
+
+# cow AW
+zaʊ = ザウ
+
+# hide AY
+zaɪ = ザイ
+
+# Ed EH
+ze = ゼ
+
+# hurt ER
+zɜ = ザ
+
+# ate EY
+zeɪ = ゼイ
+
+# it IH
+zɪ = ゼィ
+
+# eat IY
+zi = ゼィ
+
+# oat OW
+zəʊ = ゾウ
+
+# toy OY
+zɔɪ = ゾイ
+
+# hood UH
+zʊ = ズ
+
+# two UW
+zu = ズ
+
+z = ズ×
+
+# seizure ZH (same as JH)
+# odd AA
+ʒɑ = ジャ
+
+# at AE
+ʒæ = ジャェ
+
+# hut AH
+ʒʌ = ジャ
+
+# ought AO
+ʒɔ = ジョ
+
+# cow AW
+ʒaʊ = ジャウ
+
+# hide AY
+ʒaɪ = ジャイ
+
+# Ed EH
+ʒe = ジェ
+
+# hurt ER - WARNING!
+ʒɜ = ジャ
+
+# ate EY
+ʒeɪ = ジェイ
+
+# it IH
+ʒɪ = ジ
+
+# eat IY
+ʒi = ジ
+
+# oat OW
+ʒəʊ = ジョウ
+
+# toy OY
+ʒɔɪ = ジョイ
+
+# hood UH
+ʒʊ = ジゥ
+
+# two UW
+ʒu = ジゥ
+
+ʒ = ジュ×
+
+# odd AA
+ɑ = ア
+
+# at AE
+æ = アェ
+
+# hut AH
+ʌ = ア
+
+# ought AO
+ɔ = オ
+
+# cow AW
+aʊ = アウ
+
+# hide AY
+aɪ = アイ
+
+# Ed EH
+e = エ
+
+# hurt ER
+ɜ = ア
+
+# ate EY
+eɪ = エイ
+
+# it IH
+ɪ = イ
+
+# eat IY
+i = イ
+
+# oat OW
+əʊ = オゥ
+
+# toy OY
+ɔɪ = オイ
+
+# hood UH
+ʊ = ウ
+
+# two UW
+u = ウ

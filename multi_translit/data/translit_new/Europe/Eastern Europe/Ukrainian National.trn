@@ -1,0 +1,58 @@
+[comment]
+The current national system of romanization.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "uk_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "uk_Latn|Official"
+}
+
+[conversions]
+# (2.2)
+ю = iu,yu
+
+# (2.2)
+я = ia,ya
+
+# (2.2)
+є = ie,ye
+
+# (2.1)
+г = h,gh
+
+# (2.2)
+ї = i,yi
+
+# (2.2)
+й = i,y
+
+щ = sch
+ж = zh
+х = kh
+ц = ts
+ч = ch
+ш = sh
+а = a
+б = b
+в = v
+д = d
+е = e
+з = z
+и = y
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+ь = ’
+і = i
+ґ = g
+’ = ”

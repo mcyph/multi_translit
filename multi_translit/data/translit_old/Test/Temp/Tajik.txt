@@ -1,0 +1,41 @@
+﻿ISO 9  KNAB  ALA-LC  WWS  Allworth  BGN/PCGN
+1995  1981  1997  1996  1971  1994
+А а a a a a [a] a a
+Б б b b b b [b] b b
+В в v v v v [v] v v
+Г г g g g g [ɡ] g g
+Ғ ғ ġ gh gh ḡ [ɣ] gh gh
+Д д d d d d [d] d d
+Е е e e, ye(2.1) e e [je, e](4.1) ye‐, ‐e‐ e
+Ё ё ë yo ë ë [jɒ] yo yo
+Ж ж ž zh zh ž [ʒ] zh zh
+З з z z z z [z] z z
+И и i i i i [i] i i
+Ӣ ӣ ī ī ī ī [i](4.2) ī í
+Й й j y ĭ j [j](4.3) y y
+К к k k k k [k] k k
+Қ қ ķ q q ķ [q] q q
+Л л l l l l [l] l l
+М м m m m m [m] m m
+Н н n n n n [n] n n
+О о o o o o [o] o o
+П п p p p p [p] p p
+Р р r r r r [r] r r
+С с s s s s [s] s s
+Т т t t t t [t] t t
+У у u u u u [u] u u
+Ӯ ӯ ū ū ū ū [o] ū ŭ
+Ф ф f f f f [f] f f
+Х х h kh kh x [χ] kh kh
+Ҳ ҳ h̦ h ḣ x̦ [h] h h
+Ч ч č ch ch č [t͡ʃ] ch ch
+Ҷ ҷ c̦ j j č̦ [d͡ʒ] j j
+Ш ш š sh sh š [ʃ] sh sh
+Ъ ъ ʺ ʻ ʺ ʺ [ʔ](4.4) ˮ ʼ
+Э э è è, e(2.1) ė è [e](4.5) ë ė
+Ю ю û yu i͡u ju [ju] yu yu
+Я я â ya i͡a ja [ja] ya ya
+Ц ц (0.1) c ts t͡s c [t͡s] ts ts
+Щ щ (0.1) ŝ shch shch šč [ʃt͡ʃ] shch shch
+Ь ь (0.1) ʹ  ʹ ʹ [–](4.3) ʼ ”
+Ы ы (0.1) y ȳ y y [ɨ] ï y

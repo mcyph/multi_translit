@@ -1,0 +1,50 @@
+[comment]
+This follows the BGN/PCGN system for romanization
+(transcription) of Geographic names. It isn't reversible!
+
+[settings]
+{
+    "from_iso": "he_Latn|UNGEGN",
+    "direction": "=>", 
+    "ignore_case": true, 
+    "to_iso": "he_Hebr"
+}
+
+[conversions]
+# 2,9
+’,- = א
+
+b = ב{{HEBREW POINT DAGESH OR MAPIQ}}
+v = ב
+# 4
+g = ג,ג{{HEBREW POINT DAGESH OR MAPIQ}}
+
+# 4
+d = ד,ד{{HEBREW POINT DAGESH OR MAPIQ}}
+
+# 7
+h = ה
+
+w = ו
+z = ז
+ẖ = ח
+t = ט
+y = י
+k = כ{{HEBREW POINT DAGESH OR MAPIQ}},ך{{HEBREW POINT DAGESH OR MAPIQ}}
+kh = כ,ך,ך{{HEBREW POINT SHEVA}}
+l = ל
+m = מ,ם
+n = נ,ן
+s = ס
+# 8,9
+‘ = ע
+
+p = פ{{HEBREW POINT DAGESH OR MAPIQ}}
+f = פ,ף
+ẕ = צ{{COMMA}}{{SPACE}}ץ
+q = ק
+r = ר
+sh = ש{{HEBREW POINT SHIN DOT}}
+s = ש{{HEBREW POINT SIN DOT}}
+# 4 	
+t = ת,ת{{HEBREW POINT DAGESH OR MAPIQ}}

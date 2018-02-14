@@ -1,0 +1,39 @@
+﻿ISO 9  ISO/R 9  GOST  ALA-LC  BGN/PCGN
+1995(1.0)  1968(2.0)  1983(3.0)  1997(4.0)  1947(5.0)
+А а А а а a a a a
+Б б Б б b b b b b
+В в В в v v v v v
+Г г Г г g g g g g
+Д д Д д d d d d d
+Е е Е е e e e e e, ye(5.1)
+Ё ё Ё ё A ë ë ë ë ë, yë(5.1)
+Ж ж Ж ж ž ž ž zh zh
+З з З з z z z z z
+И и И и i i i i i
+Й й Й й j j j ĭ y
+К к К к k k k k k
+Л л Л л l l l l l
+М м М м m m m m m
+Н н Н н n n n n n
+О о О о o o o o o
+П п П п p p p p p
+Р р Р р r r r r r
+С с С с s s s s s
+Т т Т т t t t t t
+У у У у u u u u u
+Ф ф Ф ф f f f f f
+Х х Х х h ch h kh kh
+Ц ц Ц ц c c c t͡s ts
+Ч ч Ч ч č č č ch ch
+Ш ш Ш ш š š š sh sh
+Щ щ Щ щ ŝ šč šč shch shch
+Ъ ъ Ъ ъ ʺ ʺ " ʺ (4.1) ”
+Ы ы Ы ы y y y y y
+Ь ь Ь ь ʹ ʹ ' ʹ ’
+Э э Э э è ė è ė e
+Ю ю Ю ю û ju ju iu͡ yu
+Я я Я я â ja ja ia͡ ya
+І і І і ì i ĭ ī —
+Ѣ ѣ Ѣ ѣ ě ě ě ie͡ —
+Ѳ ѳ Ѳ ѳ f ̀ ḟ ḟ ḟ —
+Ѵ ѵ Ѵ ѵ ỳ ẏ ẏ ẏ —

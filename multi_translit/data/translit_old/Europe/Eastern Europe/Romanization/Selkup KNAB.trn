@@ -1,0 +1,67 @@
+﻿'''
+Kohanimeandmebaas (Place Names Database) of Eesti Keele Instituut 
+(Institute of the Estonian Language). Modified version of KNAB 1993. 
+(http://www.eki.ee).
+
+Latiniseeritud nimede hääldusjuhiseid/Guide to the Pronounciation of 
+Romanized Names. KNAB: Kohanimeandmebaas. Eesti Keeli Instituut, 1998.
+'''
+
+{{
+FormatString: "Selkup %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["sel", "Cyrillic"], 
+	["sel", "Latin KNAB"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Selkup %s KNAB", "Cyrillic", "Latin")
+#addISO("sel")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+е = allforms(je||é||e) # (2.1)
+ь = allforms(||j) # (2.3)
+oe = allforms(ä)
+щ = allforms(sj)
+ю = allforms(ju)
+я = allforms(ja)
+ё = allforms(jo)
+å = allforms(å)
+а = allforms(a)
+б = allforms(b)
+в = allforms(w)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms()
+ы = allforms(y)
+э = allforms(e)
+ӈ = allforms(ŋ)
+ә = allforms(ê)
+ӧ = allforms(ö)
+ӱ = allforms(ü)
+ = allforms(q)

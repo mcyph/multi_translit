@@ -1,0 +1,50 @@
+{{
+FormatString: "Old Italic %s"
+LFonts: ["Old Italic", "Latin"]
+LProvides: [
+	["???", "Old Italic"], 
+	["???", "Latin"]]
+LCreate: [true, true]
+LTypes = [["disp", "high"], ["input", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("%s", "Old Italic", "Latin")
+#useMatchCase()
+
+﻿𐌈 = THE
+𐌎 = ESH
+𐌑 = SHE
+𐌗 = EKS
+𐌘 = PHE
+𐌙 = KHE
+𐌛 = ERS
+𐌜 = CHE
+𐌁 = BE
+𐌂 = KE
+𐌃 = DE
+𐌅 = VE
+𐌆 = ZE
+𐌇 = HE
+𐌊 = KA
+𐌋 = EL
+𐌌 = EM
+𐌍 = EN
+𐌐 = PE
+𐌒 = KU
+𐌓 = ER
+𐌔 = ES
+𐌕 = TE
+𐌚 = EF
+𐌝 = II
+𐌞 = UU
+𐌢 = 10
+𐌣 = 50
+𐌀 = A
+𐌄 = E
+𐌉 = I
+𐌏 = O
+𐌖 = U
+𐌠 = 1
+𐌡 = 5

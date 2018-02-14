@@ -1,0 +1,120 @@
+﻿'''
+This is just a basic conversion, it doesn't add pitch yet.
+This is derived from http://www.kanji.org/cjk/reference/japphon.htm,
+http://en.wikipedia.org/wiki/Japanese_phonology and
+http://ja.wiktionary.org/wiki/Wiktionary:%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E7%99%BA%E9%9F%B3%E8%A1%A8%E8%A8%98
+
+As pronunciation can differ from word-to-word and between regions/by 
+individual speaker it's intended as a rough guide only.
+'''
+
+{{
+FormatString: "Japanese %s"
+LFonts: ["Japanese", "IPA"]
+LProvides: [
+	["jpn", "Kana"],
+	["jpn", "IPA"]]
+LCreate: [true, false]
+LTypes = [["disp", "high"]]
+BothWays: false
+IgnoreCase: true
+}}
+
+# Add ː's to long vowels e.g. toukyou
+BEGIN Modifiers(Source)
+    # Convert from Katakana-Hiragana
+    from include("jpn:Katakana", "jpn:Hiragana")
+#    from format("[%s]")
+#    to format("[%s]")
+END Modifiers
+
+# Convert Katakana prolonged vowel signs to separate Hiragana vowels
+if after(ぁ||あ||か||が||さ||ざ||た||だ||な||は||ば||ぱ||ま||ゃ||や||ら||ゎ||わ): あ = ː
+if after(ぃ||い||き||ぎ||し||じ||ち||ぢ||に||ひ||び||ぴ||み||り||ゐ): い = ː
+if after(ぅ||う||く||ぐ||す||ず||っ||つ||づ||ぬ||ふ||ぶ||ぷ||む||ゅ||ゆ||る||ゔ): う = ː
+if after(ぇ||え||け||げ||せ||ぜ||て||で||ね||へ||べ||ぺ||め||れ||ゑ): え = ː
+if after(ぉ||お||こ||ご||そ||ぞ||と||ど||の||ほ||ぼ||ぽ||も||ょ||よ||ろ||を): お = ː
+# HACK: u after o prolongs the sound
+if after(ぉ||お||こ||ご||そ||ぞ||と||ど||の||ほ||ぼ||ぽ||も||ょ||よ||ろ||を): う = ː
+-; ー = ː; ː
+
+# bya etc combinations
+# Note that while I've opted for a more generic approach for now,
+# 'b' for example can change to 'β' for some speakers in fast speech 
+びゃ; びぃ; びゅ; びぇ; びょ = bʲa; bʲi; bʲɯ; bʲe; bʲo
+ぴゃ; ぴぃ; ぴゅ; ぴぇ; ぴょ = pʲa; pʲi; pʲɯ; pʲe; pʲo
+りゃ; りぃ; りゅ; りぇ; りょ = ɽʲa; ɽʲi; ɽʲɯ; ɽʲe; ɽʲo
+ぎゃ; ぎぃ; ぎゅ; ぎぇ; ぎょ = gʲa; gʲi; gʲɯ; gʲe; gʲo
+ゔぁ; ゔぃ; ゔ; ゔぇ; ゔぉ = va; vi; vɯ; ve; vo
+ばぁ; ばぃ; ばぅ; ばぇ; ばぉ = ba; bi; bɯ; be; bo
+しゃ; しぃ; しゅ; しぇ; しょ; しゎ = ɕa; ɕji; ɕɯ; ɕe; ɕo; ɕwa
+# z tends to be /ᵈz/ initial before /i/ and after /N/
+じゃ; じぃ; じゅ; じぇ; じょ = ʥa; ʥi; ʥɯ; ʥe; ʥo
+# TODO: Should these be ua etc? I'm guessing they are 
+# pronounced 'wa' because they mainly appear in loan words
+うぁ; うぃ; うぅ; うぇ; うぉ = wa; wi; wɯ; we; wo
+# va e.g. in ヴァン/バンクーバー etc
+# I'm not 100% certain about this one, but I'm guessing it differs from ば as 
+# it basically only occurs in foreign loan words which have a 'v' in them
+ゔぁ; ゔぃ; ゔぅ; ゔぇ; ゔぉ; ゔ = va; vi; vɯ; ve; vo; vɯ
+ばぁ; ばぃ; ばぅ; ばぇ; ばぉ = ba; bi; bɯ; be; bo
+ふぁ; ふぃ; ふぅ; ふぇ; ふぉ = ɸa; ɸi; ɸɯ; ɸe; ɸo
+ぶぁ; ぶぃ; ぶぅ; ぶぇ; ぶぉ = ba; bi; bɯ; be; bo
+# TODO: Should these be ɯa etc? I'm guessing they are 
+# pronounced 'wa' because they mainly appear in loan words
+うぁ; うぃ; うぅ; うぇ; うぉ = wa; wi; wɯ; we; wo 
+
+ぢ = ʥi # Is this correct?
+ば; び; ぶ; べ; ぼ = ba; bi; bɯ; be; bo
+ぱ; ぴ; ぷ; ぺ; ぽ = pa; pi; pɯ; pe; po
+でぃ; どぅ; だ; で; ど = di; dɯ; da; de; do
+きゃ; きぃ; きゅ; きぇ; きょ = kʲa; kʲi; kʲɯ; kʲe; kʲo
+# 滝 -> [takʲi] but it's light and not universal so I've omitted it
+か; き; く; け; こ = ka; ki; kɯ; ke; ko
+が; ぎ; ぐ; げ; ご = ga; gi; gɯ; ge; go
+
+ちゃ; ちゅ; ちょ; ちゎ; てぃ; とぅ = ʨa; ʨɯ; ʨo; ʨwa; ti; tɯ
+た; て; と; ち; つ  = ta; te; to; ʨi; ʦɯ
+# 民 -> [tamʲi] but it's light and not universal so I've omitted it
+ま; み; む; め; も = ma; mi; mɯ; me; mo
+# Note the nʲi - Japan is pronounced [nʲip̚poɴ] for example
+# But for now I've opted to leave it as ni
+な; に; ぬ; ね; の = na; ni; nɯ; ne; no
+
+if before(ぱ||ぴ||ぷ||ぺ||ぽ||ば||び||ぶ||べ||ぼ||ま||み||む||め||も): ん = m # p/b/m
+if before(た||ち||つ||て||と||だ||ぢ||づ||で||ど||ん): ん = n # t/d/tˢ/n
+if before(か||き||く||け||こ): ん = ŋ # k/g
+if before(ら||り||る||れ||ろ): ん = ṉ # ɽ/ɽ
+ん = ɴ
+
+ら; り; る; れ; ろ = ɽa; ɽi; ɽɯ; ɽe; ɽo # ɖ/ḻ/l̺,/ɺ/ɾ
+さ; し; す; せ; そ = sa; ɕi; sɯ; se; so
+ざ; じ; ず; ぜ; ぞ = za; ʥi; zɯ; ze; zo
+は; ひ; ふ; へ; ほ = ha; çi; ɸɯ; he; ho
+や; ゆ; よ; わ; ゐ; ゑ = ja; jɯ; jo; ɰa; ɰi; ɰe
+
+# Exception: sa by itself has an audible glottal stop
+#さっ = self(saʔ)
+
+っぴゃ; っぴぃ; っぴゅ; っぴぇ; っぴょ = p̚pʲa; p̚pʲi; p̚pʲɯ; p̚pʲe; p̚pʲo # before pj
+っぱ; っぴ; っぷ; っぺ; っぽ = p̚pa; p̚pi; p̚pɯ; p̚pe; p̚po # before p
+っちゃ; っちぃ; っちゅ; っちぇ; っちょ; っち = t̚ʨa; t̚ʨii; t̚ʨɯ; t̚ʨe; t̚ʨo; t̚ʨi # before tj FIXME!
+った; っつ; って; っと = t̚ta; t̚ʦɯ; t̚te; t̚to # before t
+っきゃ; っきぃ; っきゅ; っきぇ; っきょ = k̚kʲa; k̚kʲi; k̚kʲɯ; k̚kʲe; k̚kʲo # before kj
+っか; っき; っく; っけ; っこ = k̚ka; k̚ki; k̚kɯ; k̚ke; k̚ko # before k
+っさ; っす; っせ; っそ = sːa; sːɯ; sːe; sːo # before s
+っしゃ; っしぃ; っしゅ; っしぇ; っしょ = ɕːa; ɕːi; ɕːɯ; ɕːe; ɕːo # before ɕ
+っし = ɕːi # before ɕ
+っ = ʔ
+
+# Japanese vowels with small tsus after them are sometimes
+# preceded or followed by a full stop
+あっ; いっ; うっ; えっ; おっ = aʔ; iʔ; ɯʔ; eʔ; oʔ
+
+い; え; あ; お; う; を = i; e; a; o; ɯ; ɰo
+# Added for completeness
+ぃ; ぇ; ぁ; ぉ; ぅ = i; e; a; o; ɯ
+ゃ; ぃ; ゅ; ぇ; ょ = ʲa; ʲi; ʲɯ; ʲe; ʲo
+
+# TODO: Check this is correct!
+づ = zɯ

@@ -1,0 +1,51 @@
+[comment]
+ALA-LC Romanization Tables: Transliteration Schemes for 
+Non-Roman Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "bg_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "bg_Latn|ALA-LC"
+}
+
+[conversions]
+ц = t{{COMBINING DOUBLE INVERTED BREVE}}s
+щ = sht
+ю = i{{COMBINING DOUBLE INVERTED BREVE}}u
+я = i{{COMBINING DOUBLE INVERTED BREVE}}a
+ѣ = i{{COMBINING DOUBLE INVERTED BREVE}}e
+ж = zh
+х = kh
+ч = ch
+ш = sh
+ѫ = u{{COMBINING CANDRABINDU}}
+а = a
+б = b
+в = v
+г = g
+д = d
+е = e
+з = z
+и = i
+й = ĭ
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+
+# 3.1. ъ is romanized ŭ in the middle of a word. It is 
+# disregarded when it appears at the end of a word.
+# (3.1)
+ъ = self {{}} or initial ŭ or final {{}} or allforms {{RIGHT PARENTHESIS}}
+
+
+ь = {{}}

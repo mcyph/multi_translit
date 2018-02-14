@@ -1,0 +1,58 @@
+﻿# Translit auto-generated from E:\Dev\Flazzle\Flazzle\Romanization\BySound\Temp\Komi-Permyak.txt version/date 1994
+
+{{
+FormatString: "Komi-Permyak %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["koi", "Cyrillic"], 
+	["koi", "Latin KNAB"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Komi-Permyak %s KNAB", "Cyrillic", "Latin")
+#addISO("koi", "Cyrillic")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+е = allforms(e||je||é) # (2.1)
+й = allforms(j||j) # (2.3)
+ь = allforms(||j) # (2.3)
+э = allforms(è||e) # (2.1)
+дж = allforms(dž)
+дз = allforms(dź)
+тш = allforms(tš)
+щ = allforms(šć)
+ю = allforms(ju)
+я = allforms(ja)
+ё = allforms(jo)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(ć)
+ш = allforms(š)
+ъ = allforms()
+ы = allforms(y)
+і = allforms(ï)
+ӧ = allforms(ö)

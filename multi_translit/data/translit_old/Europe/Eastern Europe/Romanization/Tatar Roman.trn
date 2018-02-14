@@ -1,0 +1,64 @@
+﻿'''
+New Roman alphabet introduced in 2001:
+Aa, Əǝ, Bb, Cc, Çç, Dd, Ee, Ff, Gg, Ğğ, Hh, Iı, İi, Jj, Kk, Qq, Ll, 
+Mm, Nn, , Oo, Ɵɵ, Pp, Rr, Ss, Şş, Tt, Uu, Üü, Vv, Ww, Xx, Yy, Zz
+'''
+
+{{
+FormatString: "Tatar %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["tat", "Cyrillic"], 
+	["tat", "Latin Roman Official"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Tatar %s Roman Official", "Cyrillic", "Latin")
+#addISO("tat")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+# FIXME: WERE THESE GENERATED CORRECTLY??? 
+ю = allforms(yu||yü;) # (1.2)
+я = allforms(ya||yǝ;) # (1.2)
+г = allforms(ğ||g) # (1.2)
+к = allforms(q||k) # (1.2)
+э = allforms(e||’) # (1.7)
+в = allforms(w;)
+е = allforms(e;)
+и = allforms(iı)
+у = allforms(u;)
+ц = allforms(ts)
+щ = allforms(şç)
+ы = allforms(ı;)
+а = allforms(a)
+б = allforms(b)
+д = allforms(d)
+ж = allforms(j)
+з = allforms(z)
+й = allforms(y)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+ф = allforms(f)
+х = allforms(x)
+ч = allforms(ç)
+ш = allforms(ş)
+ъ = allforms(—)
+ь = allforms(’)
+ё = allforms(—)
+җ = allforms(c)
+ң = allforms()
+ү = allforms(ü)
+һ = allforms(h)
+ә = allforms(ǝ)
+ө = allforms(ɵ)

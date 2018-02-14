@@ -1,0 +1,85 @@
+{{
+FormatString: "Naskapi %s"
+LFonts: ["Latin", "Canadian Syllabics"]
+LProvides: [
+	["nsk", "Latin"], 
+	["nsk", "Canadian Syllabics"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+IgnoreMe: 1
+}}
+
+#provides("Naskapi %s", "Latin", "Canadian Syllabics", true)
+#addISO("nsk")
+#addType("input", "high")
+#addType("romanization", "high")
+#useIgnoreCase()
+
+﻿ch = ᐊᒡ
+h = ᐊᐦ
+ha = ᐦᐊ
+hi = ᐦᐃ
+ho = ᐦᐅ
+hwa = ᐦᐛ
+k = ᐊᒃ
+kw = ᐊᒄ
+l = ᐊᓪ
+m = ᐊᒻ
+n = ᐊᓐ
+p = ᐊᑉ
+r = ᐊᕐ
+s = ᐊᔅ
+t = ᐊᑦ
+w = ᐊᐤ
+y = ᐊᔾ
+cha = ᒐ
+chi = ᒋ
+cho = ᒍ
+chwa = ᒠ
+hka = ᑾ
+ka = ᑲ
+ki = ᑭ
+ko = ᑯ
+kwa = ᒂ
+la = ᓚ
+li = ᓕ
+lo = ᓗ
+ma = ᒪ
+mi = ᒥ
+mo = ᒧ
+mwa = ᒺ
+na = ᓇ
+ni = ᓂ
+no = ᓄ
+nwa = ᓏ
+pa = ᐸ
+pi = ᐱ
+po = ᐳ
+pwa = ᑈ
+ra = ᕋ
+ri = ᕆ
+ro = ᕈ
+sa = ᓴ
+schwa = ᔏ
+si = ᓯ
+skwa = ᔎ
+so = ᓱ
+spwa = ᔌ
+stwa = ᔍ
+swa = ᔄ
+ta = ᑕ
+ti = ᑎ
+to = ᑐ
+twa = ᑥ
+wa = ᐛ
+wi = ᐎ
+ya = ᔭ
+yi = ᔨ
+yo = ᔪ
+ywa = ᔽ
+Øa = ᐊ
+Øi = ᐃ
+Øo = ᐅ
+Øwa = ᐛ

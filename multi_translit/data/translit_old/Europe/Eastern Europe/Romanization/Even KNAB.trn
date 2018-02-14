@@ -1,0 +1,66 @@
+﻿'''
+Latiniseeritud nimede hääldusjuhiseid/Guide to the Pronounciation of 
+Romanized Names. KNAB: Kohanimeandmebaas. Eesti Keeli Instituut, 1998.
+'''
+
+{{
+FormatString: "Even Yupik %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["eve", "Cyrillic"],
+	["eve", "Latin KNAB"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Even Yupik %s KNAB", "Cyrillic", "Latin")
+#addISO("eve")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+# 2.1. In Russian or international loans.
+# This requires context for foreign words, so I've 
+# left this unimplemented for now
+е = allforms(je||é) # (2.1) 
+
+# 2.2. Aer д, н (palatalizing consonants); dj [dʑ].
+if after(д||н||дй): ь = allforms(||j) # (2.2)
+else: ь = allforms()
+
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+ё = allforms(jo)
+а = allforms(a)
+б = allforms(b)
+в = allforms(w)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms()
+ы = allforms(y)
+э = allforms(e)
+ӈ = allforms(ŋ)
+ө = allforms(ö)
+ӫ = allforms(ô)

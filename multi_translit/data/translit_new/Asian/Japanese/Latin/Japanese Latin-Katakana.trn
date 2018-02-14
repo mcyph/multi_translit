@@ -1,0 +1,321 @@
+[conversions]
+LTypes = {{LEFT SQUARE BRACKET}}{{LEFT SQUARE BRACKET}}"disp"{{COMMA}}{{SPACE}}"high"{{RIGHT SQUARE BRACKET}}{{RIGHT SQUARE BRACKET}}
+
+
+
+
+k when before k = ッ
+s when before s = ッ
+t when before t = ッ
+h when before h = ッ
+m when before m = ッ
+y when before y = ッ
+r when before r = ッ
+w when before w = ッ
+g when before g = ッ
+p when before p = ッ
+c when before c = ッ
+f when before f = ッ
+j when before j = ッ
+q when before q = ッ
+v when before v = ッ
+
+kya = キャ
+kyi = キィ
+kyu = キュ
+kye = キェ
+kyo = キョ
+gya = ギャ
+gyi = ギィ
+gyu = ギュ
+gye = ギェ
+gyo = ギョ
+sya = シャ
+syi = シィ
+syu = シュ
+sye = シェ
+syo = ショ
+zya = ジャ
+zyi = ジィ
+zyu = ジュ
+zye = ジェ
+zyo = ジョ
+
+jya = ジャ
+jyi = ジィ
+jyu = ジュ
+jye = ジェ
+jyo = ジョ
+
+tya = チャ
+tyi = チィ
+tyu = チュ
+tye = チェ
+tyo = チョ
+
+cya = チャ
+cyi = チィ
+cyu = チュ
+cye = チェ
+cyo = チョ
+
+dya = ヂャ
+dyi = ヂィ
+dyu = ヂュ
+dye = ヂェ
+dyo = ヂョ
+nya = ニャ
+nyi = ニィ
+nyu = ニュ
+nye = ニェ
+nyo = ニョ
+hya = ヒャ
+hyi = ヒィ
+hyu = ヒュ
+hye = ヒェ
+hyo = ヒョ
+
+bya = ビャ
+byi = ビィ
+byu = ビュ
+bye = ビェ
+byo = ビョ
+pya = ピャ
+pyi = ピィ
+pyu = ピュ
+pye = ピェ
+pyo = ピョ
+mya = ミャ
+myi = ミィ
+myu = ミュ
+mye = ミェ
+myo = ミョ
+rya = リャ
+ryi = リィ
+ryu = リュ
+rye = リェ
+ryo = リョ
+tsa = ツァ
+tsi = ツィ
+tsu = ツ
+tse = ツェ
+tso = ツォ
+
+lya = リャ
+lyi = リィ
+lyu = リュ
+lye = リェ
+lyo = リョ
+
+sha = シャ
+shi = シ
+shu = シュ
+she = シェ
+sho = ショ
+
+tha = テャ
+thi = ティ
+thu = テュ
+the = テェ
+tho = テョ
+
+dha = デャ
+dhi = ディ
+dhu = デュ
+dhe = デェ
+dho = デョ
+
+cha = チャ
+chi = チ
+chu = チュ
+che = チェ
+cho = チョ
+
+gwa = グァ
+gwi = グィ
+gwu = グゥ
+gwe = グェ
+gwo = グォ
+
+xwa = ヮ
+xtu = ッ
+xtsu = ッ
+xya = ャ
+xyu = ュ
+xyo = ョ
+
+ka = カ
+ki = キ
+ku = ク
+ke = ケ
+ko = コ
+sa = サ
+si = シ
+su = ス
+se = セ
+so = ソ
+ta = タ
+ti = チ
+tu = ツ
+
+te = テ
+to = ト
+na = ナ
+ni = ニ
+nu = ヌ
+ne = ネ
+no = ノ
+ha = ハ
+hi = ヒ
+hu = フ
+he = ヘ
+ho = ホ
+ma = マ
+mi = ミ
+mu = ム
+me = メ
+mo = モ
+ya = ヤ
+
+yi = イ
+
+yu = ユ
+ye = イェ
+yo = ヨ
+ra = ラ
+ri = リ
+ru = ル
+re = レ
+ro = ロ
+wa = ワ
+
+wi = ヰ
+
+wu = ウ
+
+we = ヱ
+
+wo = ヲ
+ga = ガ
+gi = ギ
+gu = グ
+ge = ゲ
+go = ゴ
+za = ザ
+zi = ジ
+zu = ズ
+ze = ゼ
+zo = ゾ
+da = ダ
+di = ヂ
+du = ヅ
+de = デ
+do = ド
+ba = バ
+bi = ビ
+bu = ブ
+be = ベ
+bo = ボ
+pa = パ
+pi = ピ
+pu = プ
+pe = ペ
+po = ポ
+fa = ファ
+fi = フィ
+fu = フ
+fe = フェ
+fo = フォ
+ja = ジャ
+ji = ジ
+ju = ジュ
+je = ジェ
+jo = ジョ
+
+ca = カ
+cu = ク
+co = コ
+
+la = ラ
+li = リ
+lu = ル
+le = レ
+lo = ロ
+
+va = ヴァ
+vi = ヴィ
+vu = ヴ
+ve = ヴェ
+vo = ヴォ
+
+xa = ァ
+xi = ィ
+xu = ゥ
+xe = ェ
+xo = ォ
+
+mn = ン
+nn = ン
+# n' -> ン
+n\x27 = ン
+
+n = ン
+
+1 = １
+2 = ２
+3 = ３
+4 = ４
+5 = ５
+6 = ６
+7 = ７
+8 = ８
+9 = ９
+0 = ０
+
+a = ア
+i = イ
+u = ウ
+e = エ
+o = オ
+
+@- = －
+@/ = ・
+@\\ = ＼
+
+{{COMMA}} = 、
+. = 。
+{{LEFT SQUARE BRACKET}} = {{LEFT CORNER BRACKET}}
+{{RIGHT SQUARE BRACKET}} = {{RIGHT CORNER BRACKET}}
+{{LEFT CURLY BRACKET}} = {{LEFT WHITE CORNER BRACKET}}
+{{RIGHT CURLY BRACKET}} = {{RIGHT WHITE CORNER BRACKET}}
+^ = ＾
+{{LESS-THAN SIGN}} = {{FULLWIDTH LESS-THAN SIGN}}
+{{GREATER-THAN SIGN}} = {{FULLWIDTH GREATER-THAN SIGN}}
+- = ー
+
+
+@ = ＠
+@{{COMMA}} = ，
+@. = ．
+@~ = ～
+@3 = …
+@2 = ‥
+@{{LEFT CURLY BRACKET}} = {{FULLWIDTH LEFT CURLY BRACKET}}
+@{{RIGHT CURLY BRACKET}} = {{FULLWIDTH RIGHT CURLY BRACKET}}
+
+~ = ￣
+? = ？
+! = ！
+{{LEFT CURLY BRACKET}}{{LEFT CURLY BRACKET}}DOLLAR{{SPACE}}SIGN{{RIGHT CURLY BRACKET}}{{RIGHT CURLY BRACKET}} = ＄
+\x22 = ”
+% = ％
+& = ＆
+\x27 = ’
+` = ｀
++ = ＋
+* = ＊
+| = ｜
+: = ：
+_ = ＿
+/ = ／
+\\ = ￥

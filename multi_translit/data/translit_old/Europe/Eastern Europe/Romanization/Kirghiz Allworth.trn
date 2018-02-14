@@ -1,0 +1,59 @@
+﻿'''
+Allworth, Edward: Nationalities of the Soviet East. 
+Publications and Writing Systems. New York, 1971.
+'''
+
+{{
+FormatString: "Kirghiz %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["kir", "Cyrillic"],
+	["kir", "Latin Allworth"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Kirghiz %s Allworth", "Cyrillic", "Latin")
+#addISO("kir")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+щ = allforms(shch)
+х = allforms(kh)
+ц = allforms(ts)
+ч = allforms(ch)
+ш = allforms(sh)
+ю = allforms(ya)
+я = allforms(yu)
+ё = allforms(yö)
+ң = allforms(ng)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(j)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms()
+ы = allforms(ï)
+ь = allforms(ʼ)
+э = allforms(ë)
+ү = allforms(ü)
+ө = allforms(ö)

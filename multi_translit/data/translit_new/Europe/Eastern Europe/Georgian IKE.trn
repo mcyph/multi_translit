@@ -1,0 +1,54 @@
+[comment]
+Iberiul-K’avk’asiuri enatmetsnierebis ts’elits’deuli [Annual of 
+Ibero-Caucasian Linguistics] as shown in The World’s Writing Systems
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ka",
+    "direction": "<=>", 
+    "to_iso": "ka_Latn|IKE"
+}
+
+[conversions]
+ⴖ = ǧ,ɣ
+ⴛ = j,ʒ
+ⴟ = ǰ,ǯ
+ⴗ = q{{COMBINING DOT ABOVE}}
+ⴜ = c{{COMBINING DOT BELOW}}
+ⴝ = č{{COMBINING DOT BELOW}}
+ჶ = —
+ჷ = ə
+ჸ = ʾ
+ⴀ = a
+ⴁ = b
+ⴂ = g
+ⴃ = d
+ⴄ = e
+ⴅ = v
+ⴆ = z
+ⴇ = t
+ⴈ = i
+ⴉ = ḳ
+ⴊ = l
+ⴋ = m
+ⴌ = n
+ⴍ = o
+ⴎ = ṗ
+ⴏ = ž
+ⴐ = r
+ⴑ = s
+ⴒ = ṭ
+ⴓ = u
+ⴔ = p
+ⴕ = k
+ⴘ = š
+ⴙ = č
+ⴚ = c
+ⴞ = x
+ⴠ = h
+ⴡ = —
+ⴢ = —
+ⴣ = —
+ⴤ = —
+ⴥ = —

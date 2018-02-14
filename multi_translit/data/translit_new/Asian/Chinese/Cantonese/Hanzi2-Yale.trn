@@ -1,0 +1,23 @@
+[settings]
+{
+    "from_iso": "yue_Hani", 
+    "modifiers": {
+        "from_direction": {
+            "before_conversions": [
+                [
+                    "include", 
+                    "yue_Hani", 
+                    "yue_Latn|Jyutping"
+                ], 
+                [
+                    "include", 
+                    "yue_Latn|Jyutping", 
+                    "yue_Latn|Yale"
+                ]
+            ]
+        }
+    }, 
+    "direction": "=>", 
+    "ignore_case": true, 
+    "to_iso": "yue_Latn|Yale"
+}

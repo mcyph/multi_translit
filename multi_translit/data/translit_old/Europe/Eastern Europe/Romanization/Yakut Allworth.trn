@@ -1,0 +1,63 @@
+﻿'''
+Allworth, Edward: Nationalities of the Soviet East. 
+Publications and Writing Systems. New York, 1971.
+'''
+
+{{
+FormatString: "Yakut %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["sah", "Cyrillic"], 
+	["sah", "Latin Allworth"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Yakut %s Allworth", "Cyrillic", "Latin")
+#addISO("sah")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+е = allforms(ye‐||‐e‐)
+щ = allforms(shch)
+нь = allforms(ny)
+дь = allforms(j)
+ж = allforms(zh)
+х = allforms(kh)
+ц = allforms(ts)
+ч = allforms(ch)
+ш = allforms(sh)
+ю = allforms(yu)
+я = allforms(ya)
+ҕ = allforms(gh)
+ҥ = allforms(ng)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms(ˮ)
+ы = allforms(ï)
+ь = allforms()
+э = allforms(ë)
+ё = allforms(—)
+ү = allforms(ü)
+һ = allforms(h)
+ө = allforms(ö)

@@ -1,0 +1,56 @@
+[comment]
+International Standards Organization. (http://www.iso.ch).
+
+ISO 9:1995. Information and documentation – Transliteration of Cyrillic 
+characters into Latin characters – Slavic and non-Slavic languages. 
+International Organization for Standardization, 1995.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "tk_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "tk_Latn|ISO 9"
+}
+
+[conversions]
+ә = a{{COMBINING DOUBLE ACUTE ACCENT}}
+а = a
+б = b
+в = v
+г = g
+д = d
+е = e
+ж = ž
+з = z
+и = i
+й = ÿ
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = h
+ц = c
+ч = č
+# (2.2)
+ш = ¢
+
+щ = ŝ
+ъ = ʺ
+ы = y
+ь = ʹ
+э = è
+ю = û
+я = â
+ё = ë
+җ = j
+ң = ņ
+ү = ù
+ө = ô

@@ -1,0 +1,42 @@
+[comment]
+This possibly only works from Arabic-Latin
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "az_Arab", 
+    "direction": "=>", 
+    "to_iso": "az_Latn"
+}
+
+[conversions]
+ﺍ = a
+ﺏ = b
+ﺝ = c
+چ = ç
+ﺩ = d
+ﻩ = e
+ə = f
+ﻍ = g
+ﺡ,ﻩ = ğ
+ﺥ = x
+ی = ı
+ی = i
+ژ = j
+ک = k
+ﻕ = q
+ﻝ = l
+ﻡ = m
+ﻥ = n
+ﻭ = o
+ﻭ = ö
+پ = p
+ﺭ = r
+ﺙ,ﺱ,ﺹ = s
+ﺵ = ş
+ﺕ,ﻁ = t
+ﻭ = u
+ﻭ = ü
+ﻭ = v
+ی = y
+ﺫ,ﺯ,ﺽ,ﻅ = z

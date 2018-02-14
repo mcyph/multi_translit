@@ -1,0 +1,58 @@
+# This script was used previously for Somali, but 
+# it's use was discontinued.
+# http://en.wikipedia.org/wiki/Osmanya_alphabet
+
+{{
+FormatString: "Osmanya %s"
+LFonts: ["Osmanya", "Latin"]
+LProvides: [
+	["???", "Osmanya"], 
+	["???", "Latin"]]
+LCreate: [true, true]
+LTypes = [["disp", "high"], ["input", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("%s", "Osmanya", "Latin")
+#useMatchCase()
+
+﻿𐒅 = ka # OSMANYA LETTER KHA
+𐒉 = sh # OSMANYA LETTER SHIIN
+𐒊 = dh # OSMANYA LETTER DHA
+𐒛 = aa # OSMANYA LETTER AA
+𐒜 = ee # OSMANYA LETTER EE
+𐒝 = oo # OSMANYA LETTER OO
+𐒀 = a # OSMANYA LETTER ALEF
+𐒁 = b # OSMANYA LETTER BA
+𐒂 = t # OSMANYA LETTER TA
+𐒃 = j # OSMANYA LETTER JA
+𐒄 = x # OSMANYA LETTER XA
+𐒆 = d # OSMANYA LETTER DEEL
+𐒇 = r # OSMANYA LETTER RA
+𐒈 = s # OSMANYA LETTER SA
+𐒋 = c # OSMANYA LETTER CAYN
+𐒌 = g # OSMANYA LETTER GA
+𐒍 = f # OSMANYA LETTER FA
+𐒎 = q # OSMANYA LETTER QAAF
+𐒏 = k # OSMANYA LETTER KAAF
+𐒐 = l # OSMANYA LETTER LAAN
+𐒑 = m # OSMANYA LETTER MIIN
+𐒒 = n # OSMANYA LETTER NUUN
+𐒓 = w # OSMANYA LETTER WAW
+𐒔 = h # OSMANYA LETTER HA
+𐒕 = y # OSMANYA LETTER YA
+𐒗 = e # OSMANYA LETTER E
+𐒘 = i # OSMANYA LETTER I
+𐒙 = o # OSMANYA LETTER O
+𐒚 = u # OSMANYA LETTER U
+𐒠 = 0 # OSMANYA DIGIT ZERO
+𐒡 = 1 # OSMANYA DIGIT ONE
+𐒢 = 2 # OSMANYA DIGIT TWO
+𐒣 = 3 # OSMANYA DIGIT THREE
+𐒤 = 4 # OSMANYA DIGIT FOUR
+𐒥 = 5 # OSMANYA DIGIT FIVE
+𐒦 = 6 # OSMANYA DIGIT SIX
+𐒧 = 7 # OSMANYA DIGIT SEVEN
+𐒨 = 8 # OSMANYA DIGIT EIGHT
+𐒩 = 9 # OSMANYA DIGIT NINE

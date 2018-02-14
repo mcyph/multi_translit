@@ -1,0 +1,60 @@
+[comment]
+Kohanimeandmebaas (Place Names Database) of Eesti Keele Instituut 
+(Institute of the Estonian Language). Modified version of KNAB 1993. 
+(http://www.eki.ee).
+
+Latiniseeritud nimede hääldusjuhiseid/Guide to the Pronounciation of 
+Romanized Names. KNAB: Kohanimeandmebaas. Eesti Keeli Instituut, 1998.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "tg_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "tg_Latn|KNAB"
+}
+
+[conversions]
+# (2.1)
+е = e,ye
+
+щ = shch
+# (2.1)
+э = è,e
+
+ж = zh
+х = kh
+ц = ts
+ч = ch
+ш = sh
+ю = yu
+я = ya
+ё = yo
+ғ = gh
+а = a
+б = b
+в = v
+г = g
+д = d
+з = z
+и = i
+й = y
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+ъ = ʻ
+ы = ȳ
+ь = 
+қ = q
+ҳ = h
+ҷ = j
+ӣ = ī
+ӯ = ū

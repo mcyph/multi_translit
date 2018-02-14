@@ -1,0 +1,37 @@
+[settings]
+{
+    "modifiers": {
+        "from_direction": {
+            "after_conversions": [
+                [
+                    "# Add in IPA format [whatever]"
+                ], 
+                [
+                    "#from format", 
+                    "/%s/"
+                ], 
+                [
+                    "#to format", 
+                    "/%s/"
+                ], 
+                [
+                    "format", 
+                    "[%s]"
+                ]
+            ]
+        }, 
+        "to_direction": {
+            "after_conversions": [
+                [
+                    "format", 
+                    "[%s]"
+                ]
+            ]
+        }
+    }
+}
+
+[conversions]
+Z when before B = before|
+Z when after A = |after
+s = self self or initial initial or medial medial or final final

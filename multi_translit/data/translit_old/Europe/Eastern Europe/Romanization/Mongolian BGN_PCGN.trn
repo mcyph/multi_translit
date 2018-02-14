@@ -1,0 +1,63 @@
+﻿'''
+United States Board on Geographic Names and the Permanent 
+Committee on Geographical Names for British Official Use.
+
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.2. January 2003. 
+(http://www.eki.ee/wgrs).
+'''
+
+{{
+FormatString: "Mongolian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["mon", "Cyrillic"], 
+	["mon", "Latin BGN/PCGN"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Mongolian %s BGN/PCGN", "Cyrillic", "Latin")
+#addISO("mon")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+ю = allforms(yu||yü) # (4.1)
+щ = allforms(shch)
+е = allforms(yö)
+з = allforms(dz)
+ц = allforms(ts)
+ч = allforms(ch)
+ш = allforms(sh)
+я = allforms(ya)
+ё = allforms(yo)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(j)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ъ = allforms(ʺ)
+ы = allforms(ï)
+ь = allforms(ĭ)
+э = allforms(e)
+ү = allforms(ü)
+ө = allforms(ö)

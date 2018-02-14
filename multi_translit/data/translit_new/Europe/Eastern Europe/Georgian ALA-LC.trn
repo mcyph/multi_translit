@@ -1,0 +1,57 @@
+[comment]
+American Library Association/Library of Congress.
+
+ALA-LC Romanization Tables: Transliteration Schemes for 
+Non-Roman Scripts. Randal K. Berry (ed.). Library of 
+Congress, 1997. (http://lcweb.loc.gov/catdir/cpso/roman.html).
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ka",
+    "direction": "<=>", 
+    "to_iso": "ka_Latn|ALA-LC"
+}
+
+[conversions]
+ⴡ = ē,ey
+ⴣ = wi,ü
+ⴥ = ō,ow
+ⴇ = tʻ
+ⴏ = z{{COMBINING BREVE}}
+ⴔ = pʻ
+ⴕ = kʻ
+ⴙ = čʻ
+ⴚ = cʻ
+ჶ = f
+ჷ = ǝ
+ჸ = ʻ
+ⴀ = a
+ⴁ = b
+ⴂ = g
+ⴃ = d
+ⴄ = e
+ⴅ = v
+ⴆ = z
+ⴈ = i
+ⴉ = k
+ⴊ = l
+ⴋ = m
+ⴌ = n
+ⴍ = o
+ⴎ = p
+ⴐ = r
+ⴑ = s
+ⴒ = t
+ⴓ = u
+ⴖ = ġ
+ⴗ = q
+ⴘ = š
+ⴛ = ż
+ⴜ = c
+ⴝ = č
+ⴞ = x
+ⴟ = j
+ⴠ = h
+ⴢ = y
+ⴤ = q

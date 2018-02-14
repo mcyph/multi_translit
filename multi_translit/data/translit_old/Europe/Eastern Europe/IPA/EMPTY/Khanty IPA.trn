@@ -1,0 +1,50 @@
+﻿provides("Khanty %s IPA", "Cyrillic", "IPA")
+addISO("kca")
+addType("IPA", "high")
+useMatchCase()
+
+чʼ = tʃ
+лʼ = ignore()
+у = u̟||uː
+а = a||ɑː
+о = o||oː
+ч = tʃʲ
+ә = ə̱
+ӛ = ə̟
+ө = ɵ̱
+ӫ = ɵ̟
+ы = ə
+ј = ‥
+б = ignore()
+в = ignore()
+г = ignore()
+д = ignore()
+е = ignore()
+ж = ignore()
+з = ignore()
+и = ignore()
+й = ignore()
+к = ignore()
+л = ignore()
+м = ignore()
+н = ignore()
+п = ignore()
+р = ignore()
+с = ignore()
+т = ignore()
+ф = ignore()
+х = ignore()
+ц = ignore()
+ш = ignore()
+щ = ignore()
+ъ = ignore()
+ь = ignore()
+э = ignore()
+ю = ignore()
+я = ignore()
+ё = ignore()
+ӈ = ignore()
+ӓ = ignore()
+ӧ = ignore()
+ӱ = ignore()
+ = ignore()

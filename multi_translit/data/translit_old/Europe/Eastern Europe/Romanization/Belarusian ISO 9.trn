@@ -1,0 +1,64 @@
+﻿'''
+International Standards Organisation. (http://www.iso.ch).
+
+ISO 9:1995. Information and documentation – Transliteration of 
+Cyrillic characters into Latin characters – Slavic and non-Slavic 
+languages. International Organization for Standardization, 1995.
+'''
+
+# The BGN/PCGN system uses fewer accents, 
+# which makes it more suitable for input
+
+﻿{{
+FormatString: "Belarusian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["bel", "Cyrillic"],
+	["bel", "Latin ALA-LC"]]
+LCreate: [true, true]
+LTypes = [["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Belarusian %s ISO 9", "Cyrillic", "Latin")
+#addISO("bel")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+дж = allforms(a)
+дз = allforms(a)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ы = allforms(y)
+ь = allforms(ʹ)
+э = allforms(è)
+ю = allforms(û)
+я = allforms(â)
+ё = allforms(ë)
+і = allforms(ì)
+ў = allforms(ǔ)
+’ = allforms(’)

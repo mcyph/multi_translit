@@ -1,0 +1,62 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & 
+William Bright (eds.). New York, 1996.
+'''
+
+{{
+FormatString: "Tajik %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["tgk", "Cyrillic"], 
+	["tgk", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Tajik %s WWS", "Cyrillic", "Latin")
+#addISO("tgk")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+ҳ = allforms(x̦)
+ҷ = allforms(č̦)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e) # (4.1)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j) # (4.3)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(ʺ) # (4.4)
+ы = allforms(y)
+ь = allforms(ʹ) # (4.3)
+э = allforms(è) # (4.5)
+ё = allforms(ë)
+ғ = allforms(ḡ)
+қ = allforms(ķ)
+ӣ = allforms(ī) # (4.2)
+ӯ = allforms(ū)

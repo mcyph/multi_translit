@@ -1,0 +1,224 @@
+[comment]
+The true indicates this can only work from Hiragana-Latin
+
+[settings]
+{
+    "from_iso": "ja_Hira", 
+    "direction": "=>", 
+    "ignore_case": true, 
+    "to_iso": "ja_Latn"
+}
+
+[conversions]
+でぁ = da
+でぃ = di
+でぅ = du
+でぇ = de
+でぉ = do
+
+きゃ = kya
+きゅ = kyu
+きょ = kyo
+
+しゃ = sha
+しゅ = shu
+しょ = sho
+
+ちゃ = cha
+ちゅ = chu
+ちょ = cho
+
+にゃ = nya
+にゅ = nyu
+にょ = nyo
+
+ひゃ = hya
+ひゅ = hyu
+ひょ = hyo
+
+みゃ = mya
+みゅ = myu
+みょ = myo
+
+りゃ = rya
+りゅ = ryu
+りょ = ryo
+
+ぎゃ = gya
+ぎゅ = gyu
+ぎょ = gyo
+
+じゃ = ja
+じゅ = ju
+じょ = jo
+
+# This is sometimes written as ja, ju and jo
+ぢゃ = dza
+ぢゅ = dzu
+ぢょ = dzo
+
+
+びゃ = bya
+びゅ = byu
+びょ = byo
+
+ぴゃ = pya
+ぴゅ = pyu
+ぴょ = pyo
+
+
+っ when before か,き,く,け,こ = k
+っ when before さ,し,す,せ,そ = s
+っ when before た,ち,つ,て,と = t
+っ when before ふ = f
+っ when before は,ひ,へ,ほ = h
+っ when before ま,み,む,め,も = m
+っ when before や,ゆ,い,ぇ,よ = y
+っ when before ら,り,る,れ,ろ = r
+っ when before わ,う,を = w
+っ when before が,ぎ,ぐ,げ,ご = g
+っ when before ぱ,ぴ,ぷ,ぺ,ぽ = p
+っ when before じ = j
+っ when before ゔ = v
+っ when before だ,ぢ,づ,で,ど = d
+っ when before ば,び,ぶ,べ,ぼ = b
+# Fallback if no double syllable found
+っ = xtsu
+
+ゔぁ = va
+ゔぃ = vi
+ゔ = vu
+ゔぇ = ve
+ゔぉ = vo
+
+ばぁ = ba
+ばぃ = bi
+ばぅ = bu
+ばぇ = be
+ばぉ = bo
+
+ふぁ = fa
+ふぃ = fi
+ふぅ = fu
+ふぇ = fe
+ふぉ = fo
+
+ぶぁ = ba
+ぶぃ = bi
+ぶぅ = bu
+ぶぇ = be
+ぶぉ = bo
+
+# TODO: Should these be ua etc? I'm guessing they are 
+# pronounced 'wa' because they mainly appear in loan words
+うぁ = wa
+うぃ = wi
+うぅ = wu
+うぇ = we
+うぉ = wo
+
+
+ぁ = xa
+ぃ = xi
+ぅ = xu
+ぇ = xe
+ぉ = xo
+
+あ = a
+い = i
+う = u
+え = e
+お = o
+
+か = ka
+き = ki
+く = ku
+け = ke
+こ = ko
+
+さ = sa
+し = shi
+す = su
+せ = se
+そ = so
+
+が = ga
+ぎ = gi
+ぐ = gu
+げ = ge
+ご = go
+
+た = ta
+ち = chi
+つ = tsu
+て = te
+と = to
+
+ざ = za
+じ = ji
+ず = zu
+ぜ = ze
+ぞ = zo
+
+# ぢ is also transliterated as ji
+# づ is also transliterated as zu
+だ = da
+ぢ = dzi
+づ = dzu
+で = de
+ど = do
+
+な = na
+に = ni
+ぬ = nu
+ね = ne
+の = no
+
+は = ha
+ひ = hi
+ふ = fu
+へ = he
+ほ = ho
+
+ば = ba
+び = bi
+ぶ = bu
+べ = be
+ぼ = bo
+
+ぱ = pa
+ぴ = pi
+ぷ = pu
+ぺ = pe
+ぽ = po
+
+ま = ma
+み = mi
+む = mu
+め = me
+も = mo
+
+ゃ = xya
+ゅ = xyu
+ょ = xyo
+
+や = ya
+ゆ = yu
+よ = yo
+
+ら = ra
+り = ri
+る = ru
+れ = re
+ろ = ro
+
+
+ゎ = xwa
+わ = wa
+ゐ = wi
+ゑ = we
+を = wo
+
+ん when before な,に,ぬ,ね,の = n'
+ん = n
+ー = -

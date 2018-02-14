@@ -1,0 +1,70 @@
+﻿'''
+United States Board on Geographic Names and the Permanent 
+Committee on Geographical Names for British Official Use.
+
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.2. January 2003. 
+(http://www.eki.ee/wgrs).
+'''
+
+{{
+FormatString: "Kazakh %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["kaz", "Cyrillic"],
+	["kaz", "Latin BGN/PCGN"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Kazakh %s BGN/PCGN", "Cyrillic", "Latin")
+#addISO("kaz", "Cyrillic")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+щ = allforms(shch)
+ж = allforms(zh)
+х = allforms(kh)
+ц = allforms(ts)
+ч = allforms(ch)
+ш = allforms(sh)
+ю = allforms(yu)
+я = allforms(ya)
+ё = allforms(yo)
+ғ = allforms(gh)
+ң = allforms(ng)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+з = allforms(z)
+и = allforms(ī)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(ū)
+ф = allforms(f)
+ъ = allforms(ˮ)
+ы = allforms(y)
+ь = allforms(ʼ)
+э = allforms(ė)
+і = allforms(i)
+қ = allforms(q)
+ү = allforms(ü)
+ұ = allforms(u)
+һ = allforms(h)
+ә = allforms(ä)
+ө = allforms(ö)

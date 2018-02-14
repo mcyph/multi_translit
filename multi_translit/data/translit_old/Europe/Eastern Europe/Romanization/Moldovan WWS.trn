@@ -1,0 +1,66 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & 
+William Bright (eds.). New York, 1996.
+'''
+
+# 4.1 /$_
+# 4.2 /C_
+# 4.3 Non-vocalic [j] and [e̯] aer a consonant are indicated 
+# by the devices that normally indicate palatalization 
+# in Cyrillic orthographies, e.g. бунь bunʹ [bunj] ‘good 
+# (plural)’, пятрэ pjatrè [ˈpjatrə] ‘stone’, нямц njamc 
+# [ne̯amt͡s] ‘German’, уд-льоаркэ ud-lʹoarkè [ˈud ˈlʲo̯arkə] 
+# ‘dripping wet’. Otherwise, sequences of [j] plus vowel are 
+# indicated as follows: [ja] as я, [je] as е (but ье aer a consonant), 
+# [jo] as йо, [ju] as ю. Elsewhere, [j] is written й.
+
+{{
+FormatString: "Moldovan %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["mol", "Cyrillic"], # TODO: Add for ron?
+	["mol", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Moldovan %s WWS", "Cyrillic", "Latin")
+#addISO("mol") # Moldovan
+#addISO("ron") # Romanian
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+ю = allforms(ju)
+я = allforms(ja)
+ӂ = allforms(ž̦)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ы = allforms(y)
+ь = allforms(ʹ) # (4.3)
+э = allforms(è)

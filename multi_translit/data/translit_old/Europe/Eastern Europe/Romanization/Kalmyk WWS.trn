@@ -1,0 +1,61 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & William Bright (eds.). New York, 1996.
+'''
+
+{{
+FormatString: "Kalmyk %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["xal", "Cyrillic"],
+	["xal", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Kalmyk %s WWS", "Cyrillic", "Latin")
+#addISO("xal")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+е = allforms(e||ye‐)
+ю = allforms(yu) # (4.1)
+я = allforms(ya) # (4.1)
+ң = allforms(ng)
+а = allforms(a)
+б = allforms(b)
+в = allforms(w)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž||zh) # (zh)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(–)
+х = allforms(x||kh) # (kh)
+ц = allforms(c||ts) # (ts)
+ч = allforms(č||ch) # (ch)
+ш = allforms(š||sh) # (sh)
+щ = allforms(–)
+ъ = allforms(–)
+ы = allforms(–)
+ь = allforms(ʹ)
+э = allforms(e) # (4.1)
+ё = allforms(–)
+җ = allforms(ǰ)
+ү = allforms(ü)
+һ = allforms(ɣ||gh) # (gh)
+ә = allforms(ä)
+ө = allforms(ö)

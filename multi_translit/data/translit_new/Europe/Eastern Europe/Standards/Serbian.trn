@@ -1,0 +1,44 @@
+[comment]
+The 'standard' transliteration system
+Also used for Serbo-Croatian
+TODO: Get the exceptions sorted out!
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "sr",
+    "direction": "<=>", 
+    "to_iso": "sr_Latn"
+}
+
+[conversions]
+Љ = Lj
+Џ = Dž
+Њ = Nj
+А = A
+Н = N
+Б = B
+В = V
+О = O
+Г = G
+П = P
+Д = D
+Р = R
+Ђ = Đ
+С = S
+Е = E
+Т = T
+Ж = Ž
+Ћ = Ć
+З = Z
+У = U
+И = I
+Ф = F
+Ј = J
+Х = H
+К = K
+Ц = C
+Л = L
+Ч = Č
+М = M
+Ш = Š

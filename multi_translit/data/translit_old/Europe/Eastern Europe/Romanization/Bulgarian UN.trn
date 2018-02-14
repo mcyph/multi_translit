@@ -1,0 +1,56 @@
+﻿'''
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.1. June 2002.
+'''
+
+﻿{{
+FormatString: "Bulgarian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["bul", "Cyrillic"],
+	["bul", "Latin UNGEGN"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Bulgarian %s UN", "Cyrillic", "Latin")
+#addISO("bul")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+щ = allforms(št)
+ю = allforms(ju)
+я = allforms(ja)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(ǎ)
+ь = allforms(j)
+ѣ = ignore()
+ѫ = ignore()

@@ -1,0 +1,62 @@
+﻿'''
+IDS G.4: Transliteration der slavischen kyrillischen Alphabete. 
+IDS (Informationsverbund Deutschschweiz): Katalogisierungsregeln 
+IDS (KIDS), Anhänge. Universität Zürich, 15.10.2001. 
+(http://www.zb3.unizh.ch/ids/KIDS/KapG4.pdf).
+'''
+
+{{
+FormatString: "Rusyn Lemko %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["rue", "Cyrillic"], 
+	["rue", "Latin IDS"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+provides("Rusyn Lemko %s IDS", "Cyrillic", "Latin")
+addISO("rue", "Lemko")
+addType("input", "high")
+addType("romanization", "high")
+useMatchCase()
+
+х = allforms(ch)
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+ё = allforms(jo)
+є = allforms(je)
+ї = allforms(ji)
+ѣ = allforms(je)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(h)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(ˮ)
+ы = allforms(ŷ) # (ȳ)
+ь = allforms(ʼ)
+і = allforms(y)
+ґ = allforms(g)

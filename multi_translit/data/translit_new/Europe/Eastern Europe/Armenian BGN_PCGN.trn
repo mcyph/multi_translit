@@ -1,0 +1,92 @@
+[comment]
+United States Board on Geographic Names/The Permanent Committee on 
+Geographical Names for British Official Use.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "hy|Western",
+    "direction": "<=>", 
+    "to_iso": "hy_Latn|BGN/PCGN"
+}
+
+[conversions]
+# 4.3 yev is used initially, in isolated form, and after ա a, ե e, է e, ը y, ի i, ո o, ու u, and օ o.
+# (4.3)
+եւ = self yev or allforms initial{{LEFT PARENTHESIS}}yev{{RIGHT PARENTHESIS}}
+
+# (4.3)
+եւ when after ա,ե,է,ը,ի,ո,ու,օ = final yev
+
+# (4.3)
+եւ = final ev
+
+
+# 4.1 ye is used initially and after ա a, ե e, է e, ը y, ի i, ո o, ու u, and օ o.
+ե = initial ye
+ե when after ա,ե,է,ը,ի,ո,ու,օ = self ye
+# (4.1)
+ե = self e
+
+
+# HACK!
+ու = u
+
+
+# 4.2 vo is used initially except in ով ov.
+# (4.2)
+ով = self ov or final ov
+
+# (4.2)
+ո = self vo or final o
+
+
+չ = ch’
+ց = ts’
+ﬗ = mkh
+թ = t’
+ժ = zh
+խ = kh
+ծ = ts
+ձ = dz
+ղ = gh
+ճ = ch
+շ = sh
+ռ = rr
+փ = p’
+ք = k’
+◌՟ = {{}}
+ﬓ = mn
+ﬔ = me
+ﬕ = mi
+ﬖ = vn
+՚ = ’
+՛ = {{}}
+՜ = !
+՝ = {{COMMA}}
+՞ = ?
+ա = a
+բ = b
+գ = g
+դ = d
+զ = z
+է = e
+ը = ě
+ի = i
+լ = l
+կ = k
+հ = h
+մ = m
+յ = y
+ն = n
+պ = p
+ջ = j
+ս = s
+վ = v
+տ = t
+ր = r
+ւ = {{}}
+օ = o
+ֆ = f
+։ = .
+֊ = -

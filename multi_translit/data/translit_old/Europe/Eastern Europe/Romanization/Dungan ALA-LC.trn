@@ -1,0 +1,61 @@
+﻿'''
+ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman 
+Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+'''
+
+﻿{{
+FormatString: "Dungan %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["dng", "Cyrillic"],
+	["dng", "Latin ALA-LC"]]
+LCreate: [true, true]
+LTypes = [["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Dungan %s ALA-LC", "Cyrillic", "Latin")
+#addISO("dng")
+##addType("input", "low")
+#addType("romanization", "high")
+#useMatchCase()
+
+щ = allforms(shch)
+ц = allforms(t͡s)
+ю = allforms(i͡u)
+я = allforms(i͡a)
+ң = allforms(n͡g)
+ж = allforms(zh)
+х = allforms(kh)
+ч = allforms(ch)
+ш = allforms(sh)
+ү = allforms(u̇)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+з = allforms(z)
+и = allforms(i)
+й = allforms(ĭ)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms(ʺ)
+ы = allforms(y)
+ь = allforms(ʹ)
+э = allforms(ė)
+ё = allforms(ë)
+ў = allforms(ŭ)
+җ = allforms(j)
+ә = allforms(ă)

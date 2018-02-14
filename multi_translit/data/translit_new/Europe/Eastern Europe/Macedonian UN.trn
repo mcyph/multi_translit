@@ -1,0 +1,56 @@
+[comment]
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.2. January 2003. 
+(http://www.eki.ee/wgrs).
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "mk_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "mk_Latn|UN"
+}
+
+[conversions]
+# 1.1 Used before е and и.
+# (1.1)
+ѓ when before е,и = g
+
+ѓ = đ
+
+# (1.1)
+ќ when before е,и = k
+
+ќ = ć
+
+ѕ = dz
+љ = lj
+њ = nj
+џ = dž
+а = a
+б = b
+в = v
+г = g
+д = d
+е = e
+ж = ž
+з = z
+и = i
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = h
+ц = c
+ч = č
+ш = š
+ј = j
+’ = ’

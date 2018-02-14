@@ -1,0 +1,57 @@
+﻿'''
+United States Board on Geographic Names/The Permanent Committee on 
+Geographical Names for British Official Use.
+'''
+
+﻿{{
+FormatString: "Bulgarian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["bul", "Cyrillic"],
+	["bul", "Latin BGN/PCGN"]]
+LCreate: [true, true]
+# This system has fewer accents than the ISO 9 
+# one so I'm using it for inputs by default
+LTypes = [["input", "high"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Bulgarian %s BGN/PGCN", "Cyrillic", "Latin")
+#addISO("bul")
+#addType("input", "high")
+#addType("romanization", "low")
+#useMatchCase()
+
+ѣ = allforms(e||ya)
+щ = allforms(sht)
+ж = allforms(zh)
+х = allforms(kh)
+ц = allforms(ts)
+ч = allforms(ch)
+ш = allforms(sh)
+ю = allforms(yu)
+я = allforms(ya)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms(ŭ)
+ь = allforms(’)
+ѫ = allforms(ŭ)

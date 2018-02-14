@@ -1,0 +1,52 @@
+# The script to write the Tai Nüa language
+# see http://en.wikipedia.org/wiki/Tai_N%C3%BCa_language
+# and http://en.wikipedia.org/wiki/Tai_Le_script for more info
+
+{{
+FormatString: "Tai Le %s"
+LFonts: ["Tai Le", "Latin"]
+LProvides: [
+	["tdd", "Tai Le"], 
+	["tdd", "Latin"]]
+LCreate: [true, true]
+LTypes = [["disp", "high"], ["input", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("%s", "Tai Le", "Latin")
+#addISO("tdd")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+﻿ᥡ = TSHA # TAI LE LETTER
+ᥒ = NGA # TAI LE LETTER
+ᥓ = TSA # TAI LE LETTER
+ᥗ = THA # TAI LE LETTER
+ᥚ = PHA # TAI LE LETTER
+ᥠ = KHA # TAI LE LETTER
+ᥬ = AUE # TAI LE LETTER
+ᥐ = KA # TAI LE LETTER
+ᥑ = XA # TAI LE LETTER
+ᥔ = SA # TAI LE LETTER
+ᥕ = YA # TAI LE LETTER
+ᥖ = TA # TAI LE LETTER
+ᥘ = LA # TAI LE LETTER
+ᥙ = PA # TAI LE LETTER
+ᥛ = MA # TAI LE LETTER
+ᥜ = FA # TAI LE LETTER
+ᥝ = VA # TAI LE LETTER
+ᥞ = HA # TAI LE LETTER
+ᥟ = QA # TAI LE LETTER
+ᥢ = NA # TAI LE LETTER
+ᥥ = EE # TAI LE LETTER
+ᥦ = EH # TAI LE LETTER
+ᥨ = OO # TAI LE LETTER
+ᥪ = UE # TAI LE LETTER
+ᥭ = AI # TAI LE LETTER
+ᥣ = A # TAI LE LETTER
+ᥤ = I # TAI LE LETTER
+ᥧ = U # TAI LE LETTER
+ᥩ = O # TAI LE LETTER
+ᥫ = E # TAI LE LETTER

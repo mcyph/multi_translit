@@ -1,0 +1,93 @@
+﻿'''
+Thesaurus Indogermanischer Text- und Sprachmaterialien. 
+(http:||||titus.uni-frankfurt.de).
+
+Gippert, J.: Caucasian Alphabet Systems Based Upon the Cyrillic Script. 
+(TITUS), no date. (http:||||titus.unifrankfurt.de||didact||caucasus||kaukschr.pdf).
+'''
+
+{{
+FormatString: "Tabasaran %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["tab", "Cyrillic"], 
+	["tab", "Latin TITUS"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Tabasaran %s TITUS", "Cyrillic", "Latin")
+#addISO("tab")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+жв = allforms(ž°||ǯ°)
+г = allforms(g||γ)
+ж = allforms(ž||ǯ)
+з = allforms(z||ʒ)
+ккв = allforms(k̄°)
+къв = allforms(q̄°)
+чӀь = allforms(n||a)
+гъв = allforms(ġ°)
+жъ = allforms(č̄°)
+кьв = allforms(°)
+кӀв = allforms(ḳ°)
+хъв = allforms(q°)
+шь = allforms(n||a)
+о = allforms(n||a)
+щ = allforms(n||a)
+ы = allforms(n||a)
+ь = allforms(n||a)
+ю = allforms(n||a)
+я = allforms(n||a)
+ё = allforms(n||a)
+xв = allforms(χ°)
+аь = allforms(a̱)
+гв = allforms(g°)
+кв = allforms(k°)
+кк = allforms(k̄)
+къ = allforms(q̄)
+пп = allforms(p̄)
+тт = allforms(t̄)
+уь = allforms(u̱) # (ü)
+цц = allforms(c̄)
+чв = allforms(č°)
+чч = allforms(č̄)
+чъ = allforms(°)
+шв = allforms(š°)
+гъ = allforms(ġ)
+гь = allforms(h)
+кь = allforms()
+кӀ = allforms(ḳ)
+пӀ = allforms(ṗ)
+тӀ = allforms(ṭ)
+хъ = allforms(q)
+хь = allforms(x)
+цӀ = allforms()
+чӀ = allforms()
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+д = allforms(d)
+е = allforms(e)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(χ)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(ʼ)
+э = allforms(e)

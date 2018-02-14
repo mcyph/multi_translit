@@ -1,0 +1,69 @@
+﻿'''
+United States Board on Geographic Names and the Permanent 
+Committee on Geographical Names for British Official Use.
+
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.2. January 2003. 
+(http://www.eki.ee/wgrs).
+'''
+
+{{
+FormatString: "Georgian %s"
+LFonts: ["Georgian", "Latin"]
+LProvides: [
+	["kat", "Georgian"],
+	["kat", "Latin ISO 9984"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Georgian %s BGN/PGCN", "Cyrillic", "Latin")
+#addISO("kat")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+ⴙ = allforms(chʼ)
+ⴚ = allforms(tsʼ)
+ⴇ = allforms(tʼ)
+ⴏ = allforms(zh)
+ⴔ = allforms(pʼ)
+ⴕ = allforms(kʼ)
+ⴖ = allforms(gh)
+ⴘ = allforms(sh)
+ⴛ = allforms(dz)
+ⴜ = allforms(ts)
+ⴝ = allforms(ch)
+ⴞ = allforms(kh)
+ჶ = allforms(—)
+ჷ = allforms(—)
+ჸ = allforms(—)
+ⴀ = allforms(a)
+ⴁ = allforms(b)
+ⴂ = allforms(g)
+ⴃ = allforms(d)
+ⴄ = allforms(e)
+ⴅ = allforms(v)
+ⴆ = allforms(z)
+ⴈ = allforms(i)
+ⴉ = allforms(k)
+ⴊ = allforms(l)
+ⴋ = allforms(m)
+ⴌ = allforms(n)
+ⴍ = allforms(o)
+ⴎ = allforms(p)
+ⴐ = allforms(r)
+ⴑ = allforms(s)
+ⴒ = allforms(t)
+ⴓ = allforms(u)
+ⴗ = allforms(q)
+ⴟ = allforms(j)
+ⴠ = allforms(h)
+ⴡ = ignore()
+ⴢ = ignore() # (j)
+ⴣ = ignore()
+ⴤ = ignore() # (qʼ)
+ⴥ = ignore()

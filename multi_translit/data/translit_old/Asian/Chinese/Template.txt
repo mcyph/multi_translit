@@ -1,0 +1,8 @@
+fonts("Latin", "Latin")
+provides("Chinese %s", "FILLMEIN", "FILLMEIN")
+addISO("cmn", "Simp")
+addISO("cmn", "Trad")
+addISO("yue", "Simp")
+addISO("yue", "Trad")
+addType("Romanization", "high")
+useIgnoreCase()

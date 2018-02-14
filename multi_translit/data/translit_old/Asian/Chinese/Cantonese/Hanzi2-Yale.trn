@@ -1,0 +1,16 @@
+{{
+FormatString: "Cantonese %s"
+LFonts: ["Chinese (Unified)", "Latin"]
+LProvides: [
+    ["yue", "Chinese (Unified)"],
+    ["yue", "Yale"]]
+LCreate: [true, false]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 0
+IgnoreCase: 1
+}}
+
+BEGIN Modifiers(Source)
+    from include("yue:Chinese (Unified)", "yue:Jyutping")
+    from include("yue:Jyutping", "yue:Yale")
+END Modifiers

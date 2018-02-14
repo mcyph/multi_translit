@@ -1,0 +1,94 @@
+﻿DIN 31635  ISO 233  ISO/R 233  UN  ALA-LC  EI
+1982 (1.0)  1984 (2.0)  1961 (3.0)  1972(4.0)  1997(5.0)  1960(6.0)
+
+# Consonants
+self;final ا ا ā ʾ —(3.1)(3.2) —(4.1) — —
+self;medial ء ◌ٔ, ◌ٕ a ʾ ˈ, ˌ (2.1) —, ’(3.3) ʼ, — (4.2) —, ’ (5.1) ʾ
+allforms ب ب ب ب b b b b b b
+allforms ت ت ت ت t t t t t t
+allforms ث ث ث ث ṯ ṯ ṯ th th th
+allforms ج ج ج ج ǧ ǧ ǧ j j dj
+allforms ح ح ح ح ḥ ḥ ḥ ḩ ḥ ḥ
+allforms خ خ خ خ ḫ ẖ ẖ kh kh kh
+self;final د د d d d d d d
+self;final ذ ذ ḏ ḏ ḏ dh dh dh
+self;final ر ر r r r r r r
+self;final ز ز z z z z z z
+allforms س س س س s s s s s s
+allforms ش ش ش ش š š š sh sh sh
+allforms ص ص ص ص ṣ ṣ ṣ ş ṣ ṣ
+allforms ض ض ض ض ḍ ḍ ḍ  ḍ ḍ
+allforms ط ط ط ط ṭ ṭ ṭ ţ ṭ ṭ
+allforms ظ ظ ظ ظ ẓ ẓ ẓ  ẓ ẓ
+allforms ع ع ع ع ʿ ʿ ʿ ʻ ʻ ʿ
+allforms غ غ غ غ ġ ġ ḡ gh gh gh
+allforms ف ف ف ف f f f f f f
+allforms ق ق ق ق q q q q q ḳ
+allforms ك ك ك ك k k k k k k
+allforms ل ل ل ل l l l l l l
+allforms م م م م m m m m m m
+allforms ن ن ن ن n n n n n n
+allforms ه ه ه ه h h h h h h
+self;final ة ة b h, t(1.1) ẗ h, t(3.4) h, t(4.3) h, t(5.2) a, at(6.1)
+self;final و و w w w w w w
+allforms ي ي ي ي y y y y y y
+self;final ى ى ā ỳ y y ā
+self;final لا لا lā laʾ lā lā lā lā
+self ال c al-(1.2) ʾˈal(2.2) al-(3.5)al- (4.4)al- (5.3)al-,ʼl-(6.2)
+
+# Vowels and diphthongs
+# آ آ d ʾā ʾâ ā, ʼā(3.6) ā ā, ʼā(5.4) ā
+◌َ a a a a a a
+◌ُ u u u u u u
+◌ِ i i i i i i
+
+# Starts getting fuzzy here :-(
+# Some of these need to be changed to make them reversable
+ا ◌ ا ◌ ā aʾ ā ā ā ā
+◌ٰ ā ā — ā ā ā
+ى ◌ ā aỳ à á á ā
+ىٰ ◌ ā āỳ à — — —
+و ◌ و ◌ ū uw ū ū ū ū
+ي ◌ ي ◌ ī iy ī ī ī ī
+اً ◌, ◌ e an áʾ, á an an an (5.5) —
+ى ◌ e an áỳ — — — —
+◌ٌ e un ú un un un (5.5) —
+◌ٍ e in í in in in (5.5) —
+وْ ◌ وْ ◌ aw aw° aw aw aw aw
+يْ ◌ يْ ◌ ay ay° ay ay ay ay
+و ◌ uww uw̄ uww, ū(3.7) uww ūw (5.6) uww, ū (6.3)
+يّ ◌ iyy iȳ iyy, ī(3.8) iyy īy, ī(5.7) iyy, ī(6.4)
+
+# Other signs
+◌ْ e (1.3) ◌° — (3.9) (4.5) — —
+◌ّ f (1.4) ◌̄ (3.10) (4.6) (5.8) (5.5)
+ٱ g ◌ʼ ◌‐ʾ (3.11) — (5.9) ◌ʼ
+
+# Additional characters h
+allforms پ پ پ پ p — p — p p
+allforms چ چ چ چ č — č — ch, zh č
+self;final ژ ژ ž — ž — zh zh
+allforms ڤ ڤ ڤ ڤ v — v — v —
+allforms ڥ    v — v — v —
+allforms ف ف ف ف q q q — f —
+allforms ڢ    f f f — q —
+allforms ک ک ک گ g — g — g g
+allforms ڭ ڭ ڭ ڭ g — g — g g
+allforms ۋ ۋ v — v — v —
+
+# Punctuation
+allsystems ، ,
+allsystems ؛ ;
+allsystems ؟ ?
+
+# Numbers
+allsystems ٠ 0
+allsystems ١ 1
+allsystems ٢ 2
+allsystems ٣ 3
+allsystems ٤ 4
+allsystems ٥ 5
+allsystems ٦ 6
+allsystems ٧ 7
+allsystems ٨ 8
+allsystems ٩ 9

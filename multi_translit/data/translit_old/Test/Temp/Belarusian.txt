@@ -1,0 +1,37 @@
+﻿ISO 9  NSR  Łacinka  ALA-LC  BGN/PCGN
+1995(1.0)  2000(2.0)  (3.0)  1997(4.0)  1979(5.0)
+А а a a a a a
+Б б b b b b b
+В в v v v v v
+Г г g h h h h
+Д д d d d d d
+Дж дж a dž dž dž dz͡h dzh
+Дз дз a dz dz dz dz dz
+Е е e je(2.1), ie(2.2) ie, je(3.1), e(3.2) e ye
+Ё ё ë jo(2.1), io(2.2) io, jo(3.1), o(3.2) io͡ yo
+Ж ж ž ž ž z͡h zh
+З з z z z z z
+І і ì i i i i
+Й й j j j, ji(3.1) ĭ y
+К к k k k k k
+Л л l l ł, l(3.3) l l
+М м m m m m m
+Н н n n n n n
+О о o o o o o
+П п p p p p p
+Р р r r r r r
+С с s s s s s
+Т т t t t t t
+У у u u u u u
+Ў ў ǔ ú ŭ ŭ w
+Ф ф f f f f f
+Х х h ch ch kh kh
+Ц ц c c c ts ts
+Ч ч č č č ch ch
+Ш ш š š š sh sh
+’ ’ ’ — FIXME(3.4) — —
+Ы ы y y y y y
+Ь ь ʹ ʼ —(3.5) ʹ 
+Э э è e e ė e
+Ю ю û ju(2.1), iu(2.2) iu, ju(3.1), u(3.2) iu͡ yu
+Я я â ja(2.1), ia(2.2) ia, ja(3.1), a(3.2) ia͡ ya

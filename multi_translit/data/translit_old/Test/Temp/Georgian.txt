@@ -1,0 +1,43 @@
+﻿ISO 9984  National  IKE  ALA-LC  KNAB  BGN/PCGN  TITUS
+1996(1.0)  2002(2.0)  1974(3.0)  1997(4.0)  1993(5.0)  1981(6.0)  2000(7.0)
+01 Ⴀ ა a a a a a a a
+02 Ⴁ ბ b b b b b b b
+03 Ⴂ გ g g g g g g g
+04 Ⴃ დ d d d d d d d
+05 Ⴄ ე e e e e e e e
+06 Ⴅ ვ v v v v v v v
+07 Ⴆ ზ z z z z z z z
+08 Ⴡ ჱ a ē — ē/ey ē — FIXME(ey) FIXME(ē)
+09 Ⴇ თ t’ t t tʻ t tʼ t
+10 Ⴈ ი i i i i i i i
+11 Ⴉ კ k k’ ḳ k ķ k ḳ
+12 Ⴊ ლ l l l l l l l
+13 Ⴋ მ m m m m m m m
+14 Ⴌ ნ n n n n n n n
+15 Ⴢ ჲ a y — y y — (j) —
+16 Ⴍ ო o o o o o o o
+17 Ⴎ პ p p’ ṗ p ṗ p ṗ
+18 Ⴏ ჟ ž zh ž z̆ ž zh ž
+19 Ⴐ რ r r r r r r r
+20 Ⴑ ს s s s s s s s
+21 Ⴒ ტ t t’ ṭ t ţ t ṭ
+22 Ⴣ ჳ a w — wi/ü w — — —
+23 Ⴓ უ u u u u u u u
+24 Ⴔ ფ pʼ p p pʻ p pʼ p
+25 Ⴕ ქ kʼ k k kʻ k kʼ k
+26 Ⴖ ღ ḡ gh ǧ/ɣ ġ ǧ gh ġ
+27 Ⴗ ყ q q’ q̇ q q q q̇
+28 Ⴘ შ š sh š š š sh š
+29 Ⴙ ჩ čʼ ch č čʻ č chʼ č
+30 Ⴚ ც cʼ ts c cʻ c tsʼ c
+31 Ⴛ ძ j dz j/ʒ ż dz dz ʒ
+32 Ⴜ წ c ts’ c̣ c ç ts c̣
+33 Ⴝ ჭ č ch’ č̣ č ç̌ ch č̣
+34 Ⴞ ხ x kh x x x kh χ
+35 Ⴤ ჴ a ẖ — q x̣ — (qʼ) q
+36 Ⴟ ჯ ǰ j ǰ/ǯ j dž j ǯ
+37 Ⴠ ჰ h h h h h h h
+38 Ⴥ ჵ a ō — ō/ow ō — — (ō)
+39 ჶ ჶ a f — f f — — —
+40 ჷ b — — Ə ǝ ĕ — — (ǝ)
+41 ჸ b — — ʾ ʻ — — —

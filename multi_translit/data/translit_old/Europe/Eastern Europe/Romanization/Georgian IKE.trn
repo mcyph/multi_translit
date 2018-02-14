@@ -1,0 +1,64 @@
+﻿'''
+Iberiul-K’avk’asiuri enatmetsnierebis ts’elits’deuli [Annual of 
+Ibero-Caucasian Linguistics] as shown in The World’s Writing Systems
+'''
+
+{{
+FormatString: "Georgian %s"
+LFonts: ["Georgian", "Latin"]
+LProvides: [
+	["kat", "Georgian"],
+	["kat", "Latin IKE"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Georgian %s IKE", "Cyrillic", "Latin")
+#addISO("kat")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+ⴖ = allforms(ǧ||ɣ)
+ⴛ = allforms(j||ʒ)
+ⴟ = allforms(ǰ||ǯ)
+ⴗ = allforms(q̇)
+ⴜ = allforms(c̣)
+ⴝ = allforms(č̣)
+ჶ = allforms(—)
+ჷ = allforms(ə)
+ჸ = allforms(ʾ)
+ⴀ = allforms(a)
+ⴁ = allforms(b)
+ⴂ = allforms(g)
+ⴃ = allforms(d)
+ⴄ = allforms(e)
+ⴅ = allforms(v)
+ⴆ = allforms(z)
+ⴇ = allforms(t)
+ⴈ = allforms(i)
+ⴉ = allforms(ḳ)
+ⴊ = allforms(l)
+ⴋ = allforms(m)
+ⴌ = allforms(n)
+ⴍ = allforms(o)
+ⴎ = allforms(ṗ)
+ⴏ = allforms(ž)
+ⴐ = allforms(r)
+ⴑ = allforms(s)
+ⴒ = allforms(ṭ)
+ⴓ = allforms(u)
+ⴔ = allforms(p)
+ⴕ = allforms(k)
+ⴘ = allforms(š)
+ⴙ = allforms(č)
+ⴚ = allforms(c)
+ⴞ = allforms(x)
+ⴠ = allforms(h)
+ⴡ = allforms(—)
+ⴢ = allforms(—)
+ⴣ = allforms(—)
+ⴤ = allforms(—)
+ⴥ = allforms(—)

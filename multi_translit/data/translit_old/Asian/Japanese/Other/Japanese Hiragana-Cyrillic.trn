@@ -1,0 +1,123 @@
+﻿# TODO: Add support for long vowels!
+{{
+FormatString: "Japanese %s"
+LFonts: ["Japanese", "Cyrillic"]
+LProvides: [
+	["jpn", "Hiragana"],
+	["jpn", "Cyrillic"]]
+LCreate: [true, true]
+LTypes = [["disp", "low"]]
+BothWays: 1
+IgnoreCase: 1
+}}
+
+きゃ = кя # kya
+きゅ = кю # kyu
+きょ = кё # kyo
+しゃ = ся # sha
+しゅ = сю # shu
+しょ = сё # sho
+ちゃ = тя # cha
+ちゅ = тю # chu
+ちょ = тё # cho
+ひゃ = хя # hya
+ひゅ = хю # hyu
+ひょ = хё # hyo
+にゃ = ня # nya
+にゅ = ню # nyu
+にょ = нё # nyo
+みゃ = мя # mya
+みゅ = мю # myu
+みょ = мё # myo
+りゃ = ря # rya
+りゅ = рю # ryu
+りょ = рё # ryo
+ぎゃ = гя # gya
+ぎゅ = гю # gyu
+ぎょ = гё # gyo
+じゃ = дзя # ja
+じゅ = дзю # ju
+じょ = дзё # jo
+ぢゃ = дзя # ja
+ぢゅ = дзю # ju
+ぢょ = дзё # jo
+びゃ = бя # bya
+びゅ = бю # byu
+びょ = бё # byo
+ぴゃ = пя # pya
+ぴゅ = пю # pyu
+ぴょ = пё # pyo
+
+ざ = дза # zа
+じ = дзи # ji
+ず = дзу # zu
+ぜ = дзэ # ze
+ぞ = дзо # zo
+ぢ = дзи # ji
+づ = дзу # zu
+
+ち = ти # chi
+つ = цу # tsu
+な = на # nа
+に = ни # ni
+ぬ = ну # nu
+ね = нэ # ne
+の = но # no
+は = ха # ha
+ひ = хи # hi
+ふ = фу # fu
+へ = хэ # he
+ほ = хо # ho
+ま = ма # mа
+み = ми # mi
+む = му # mu
+め = мэ # me
+も = мо # mo
+か = ка # kа
+き = ки # ki
+く = ку # ku
+け = кэ # ke
+こ = ко # ko
+さ = са # sа
+し = си # shi
+す = су # su
+せ = сэ # se
+そ = со # so
+た = та # tа
+て = тэ # te
+と = то # to
+ら = ра # rа
+り = ри # ri
+る = ру # ru
+れ = рэ # re
+ろ = ро # ro
+わ = ва # wа
+が = га # gа
+ぎ = ги # gi
+ぐ = гу # gu
+げ = гэ # ge
+ご = го # go
+だ = да # dа
+で = дэ # de
+ど = до # do
+ば = ба # bа
+び = би # bi
+ぶ = бу # bu
+べ = бэ # be
+ぼ = бо # bo
+ぱ = па # pа
+ぴ = пи # pi
+ぷ = пу # pu
+ぺ = пэ # pe
+ぽ = по # po
+
+あ = а # а
+い = и # i
+う = у # u
+え = э # e
+お =  о # o
+や = я # yа
+ゆ = ю # yu
+よ = ё # yo
+を = о # wo
+ん = н # n

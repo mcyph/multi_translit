@@ -1,0 +1,62 @@
+﻿'''
+American Library Association/Library of Congress.
+
+ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman 
+Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+'''
+
+{{
+FormatString: "Russian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["rus", "Cyrillic"], 
+	["rus", "Latin ALA-LC"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Russian %s ALA-LC", "Cyrillic", "Latin")
+#addISO("rus")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+щ = allforms(shch)
+ц = allforms(t͡s)
+ю = allforms(iu͡)
+я = allforms(ia͡)
+ѣ = allforms(ie͡)
+ж = allforms(zh)
+х = allforms(kh)
+ч = allforms(ch)
+ш = allforms(sh)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+з = allforms(z)
+и = allforms(i)
+й = allforms(ĭ)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms(ʺ) # (4.1)
+ы = allforms(y)
+ь = allforms(ʹ)
+э = allforms(ė)
+ё = allforms(ë)
+і = allforms(ī)
+ѳ = allforms(ḟ)
+ѵ = allforms(ẏ)

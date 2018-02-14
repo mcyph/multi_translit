@@ -1,0 +1,58 @@
+﻿'''
+American Library Association/Library of Congress.
+
+ALA-LC Romanization Tables: Transliteration Schemes for 
+Non-Roman Scripts. Randal K. Barry (ed.). Library of Congress, 
+1997. (http://lcweb.loc.gov/catdir/cpso/roman.html).
+
+This is the same as the UNGEGN version at http://www.eki.ee/wgrs/
+'''
+
+{{
+FormatString: "Serbian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["srp", "Cyrillic"], 
+	["srp", "Latin ALA-LC"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Serbian %s ALA-LC", "Cyrillic", "Latin")
+#addISO("srp")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+љ = allforms(lj)
+њ = allforms(nj)
+џ = allforms(dž)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ђ = allforms(đ)
+ј = allforms(j)
+ћ = allforms(ć)

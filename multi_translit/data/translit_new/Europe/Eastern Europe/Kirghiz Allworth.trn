@@ -1,0 +1,49 @@
+[comment]
+Allworth, Edward: Nationalities of the Soviet East. 
+Publications and Writing Systems. New York, 1971.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ky_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "ky_Latn|Allworth"
+}
+
+[conversions]
+щ = shch
+х = kh
+ц = ts
+ч = ch
+ш = sh
+ю = ya
+я = yu
+ё = yö
+ң = ng
+а = a
+б = b
+в = v
+г = g
+д = d
+е = e
+ж = j
+з = z
+и = i
+й = y
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+ъ = 
+ы = ï
+ь = ʼ
+э = ë
+ү = ü
+ө = ö

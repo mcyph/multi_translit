@@ -1,0 +1,81 @@
+﻿'''
+Kohanimeandmebaas (Place Names Database) of Eesti Keele Instituut 
+(Institute of the Estonian Language). Modifi ed version of KNAB 
+1993. (http://www.eki.ee).
+
+Abhaasi / Abkhaz / Апсуа Apsua. Eesti Keele Instituut / Institute of the 
+Estonian Language. KNAB: Kohanimeandmebaas / Place Names Database, 
+2003-03-28. (http://www.eki.ee/knab/lat/kblab.pdf).
+
+Latiniseeritud nimede hääldusjuhiseid/Guide to the Pronounciation of 
+Romanized Names. KNAB: Kohanimeandmebaas. Eesti Keeli Instituut, 1998.
+'''
+
+{{
+FormatString: "Ingush %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["inh", "Cyrillic"],
+	["inh", "Latin KNAB"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Ingush %s KNAB", "Cyrillic", "Latin")
+#addISO("inh")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+е = allforms(e||je) # (2.1)
+ъ = allforms(||) # (2.2)
+э = allforms(è||e) # (2.1)
+рхӀ = allforms(rh)
+ий = allforms(ij)
+оа = allforms(oa)
+ув = allforms(uw)
+яь = allforms(jä)
+аь = allforms(ä)
+гӀ = allforms(ǧ)
+кх = allforms(q)
+къ = allforms()
+кӀ = allforms()
+пӀ = allforms(ṗ)
+тӀ = allforms(ţ)
+хь = allforms(ḩ)
+хӀ = allforms(h)
+цӀ = allforms(ç)
+чӀ = allforms()
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+ё = allforms(jo)
+а = allforms(a)
+б = allforms(b)
+в = allforms(w)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ы = allforms(y)
+ь = allforms()
+Ӏ = allforms(ġ)

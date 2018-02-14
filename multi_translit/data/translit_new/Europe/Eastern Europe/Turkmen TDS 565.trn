@@ -1,0 +1,54 @@
+[comment]
+Turkmen Standard TDS 565, 1999. e Latin alphabet is as follows:
+Aa Bb Çç Dd Ee Ää Ff Gg Hh Ii Jj Žž Kk Ll Mm Nn Ňň Oo Öö Pp Rr Ss Şş Tt Uu Üü Ww Yy Ýý Zz
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "tk_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "tk_Latn|Official TDS 565"
+}
+
+[conversions]
+ё = ýo
+щ = şç
+ю = ýu
+я = ýa
+ц = s,ts
+
+# The letter sequence ýe is used initially, after vowel characters (а, е, ё, и, о, ө, у, ү, ы, э, ю, я) and й.
+е = initial ýe
+е when after а,е,ё,и,о,ө,у,ү,ы,э,ю,я,й = ýe
+е = e
+
+а = a
+б = b
+в = w
+г = g
+д = d
+ж = ž
+җ = j
+з = z
+и = i
+й = ý
+к = k
+л = l
+м = m
+н = n
+ң = ň
+о = o
+ө = ö
+п = p
+р = r
+с = s
+т = t
+у = u
+ү = ü
+ф = f
+х = h
+ч = ç
+ш = ş
+ы = y
+э = e
+ә = ä

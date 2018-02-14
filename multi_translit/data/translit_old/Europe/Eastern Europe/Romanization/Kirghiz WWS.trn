@@ -1,0 +1,59 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & 
+William Bright (eds.). New York, 1996.
+'''
+
+{{
+FormatString: "Kirghiz %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["kir", "Cyrillic"],
+	["kir", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Kirghiz %s WWS", "Cyrillic", "Latin")
+#addISO("kir")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e) # (3.1)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(ʺ)
+ы = allforms(y)
+ь = allforms(ʹ)
+э = allforms(è) # (3.2)
+ё = allforms(ë)
+ң = allforms(ņ)
+ү = allforms(ü)
+ө = allforms(ö)

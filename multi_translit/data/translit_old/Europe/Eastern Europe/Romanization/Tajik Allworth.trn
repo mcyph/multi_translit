@@ -1,0 +1,62 @@
+﻿'''
+Allworth, Edward: Nationalities of the Soviet East. 
+Publications and Writing Systems. New York, 1971.
+'''
+
+{{
+FormatString: "Tajik %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["tgk", "Cyrillic"], 
+	["tgk", "Latin Allworth"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Tajik %s Allworth", "Cyrillic", "Latin")
+#addISO("tgk")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+е = allforms(ye‐||‐e‐)
+щ = allforms(shch)
+ж = allforms(zh)
+х = allforms(kh)
+ц = allforms(ts)
+ч = allforms(ch)
+ш = allforms(sh)
+ю = allforms(yu)
+я = allforms(ya)
+ё = allforms(yo)
+ғ = allforms(gh)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms(ˮ)
+ы = allforms(ï)
+ь = allforms(ʼ)
+э = allforms(ë)
+қ = allforms(q)
+ҳ = allforms(h)
+ҷ = allforms(j)
+ӣ = allforms(ī)
+ӯ = allforms(ū)

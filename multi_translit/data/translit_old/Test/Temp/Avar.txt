@@ -1,0 +1,48 @@
+﻿ISO 9  KNAB  ALA-LC  TITUS
+1995(1.0)  2003(2.0)  1997(3.0)  2000(4.0)
+А а a a a a
+Б б b b b b
+В в v w v w
+Г г g g g g
+Гъ гъ gʺ ǧ gʺ ġ
+Гь гь gʹ h gʹ h
+ГӀ гӀ g‡ ġ gḣ ʿ
+Д д d d d d
+Е е e e, je(2.1) e e
+Ё ё a ë ë ë —
+Ж ж ž ž zh ǯ, ž
+З з z z z ʒ, z
+И и i i i i
+Й й j j ĭ j
+К к k k k k(4.1)
+Къ къ kʺ  kʺ q̄̇
+Кь кь kʹ  kʹ kḷ
+КӀ кӀ k‡  kḣ ḳ(4.1)
+Л л l l l l
+Лъ лъ lʺ ł lʺ ł(4.1)
+М м m m m m
+Н н n n n n
+О о o o o o
+П п p p p p
+Р р r r r r
+С с s s s s(4.1)
+Т т t t t t
+ТӀ тӀ t‡ ţ tḣ ṭ
+У у u u u u
+Ф ф a f f f f
+Х х h x kh χ
+Хъ хъ hʺ q khʺ q̄
+Хь хь hʹ  khʹ x
+ХӀ хӀ h‡ ḩ khḣ ḥ
+Ц ц c c t͡s c(4.1)
+ЦӀ цӀ c‡ ç t͡sḣ (4.1)
+Ч ч č č ch č(4.1)
+ЧӀ чӀ č‡  chḣ (4.1)
+Ш ш š š sh š
+Щ щ ŝ šš shch š̄
+Ъ ъ ʺ , (2.2) ʺ ʾ
+Ы ы a y y y ǝ
+Ь ь a ʹ  ʹ —
+Э э è è, e(2.3) ė —
+Ю ю û ju iu͡ —
+Я я â ja ia͡ —

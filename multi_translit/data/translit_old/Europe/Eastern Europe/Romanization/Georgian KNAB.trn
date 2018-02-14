@@ -1,0 +1,64 @@
+﻿'''
+Kohanimeandmebaas (Place Names Database) of Eesti Keele 
+Instituut (Institute of the Estonian Language) (http://www.eki.ee).
+'''
+
+{{
+FormatString: "Georgian %s"
+LFonts: ["Georgian", "Latin"]
+LProvides: [
+	["kat", "Georgian"],
+	["kat", "Latin KNAB"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Georgian %s KNAB", "Cyrillic", "Latin")
+#addISO("kat")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+ⴉ = allforms(ķ)
+ⴛ = allforms(dz)
+ⴝ = allforms(ç̌)
+ⴟ = allforms(dž)
+ⴤ = allforms(x̣)
+ჶ = allforms(f)
+ჷ = allforms(ĕ)
+ჸ = allforms(—)
+ⴀ = allforms(a)
+ⴁ = allforms(b)
+ⴂ = allforms(g)
+ⴃ = allforms(d)
+ⴄ = allforms(e)
+ⴅ = allforms(v)
+ⴆ = allforms(z)
+ⴇ = allforms(t)
+ⴈ = allforms(i)
+ⴊ = allforms(l)
+ⴋ = allforms(m)
+ⴌ = allforms(n)
+ⴍ = allforms(o)
+ⴎ = allforms(ṗ)
+ⴏ = allforms(ž)
+ⴐ = allforms(r)
+ⴑ = allforms(s)
+ⴒ = allforms(ţ)
+ⴓ = allforms(u)
+ⴔ = allforms(p)
+ⴕ = allforms(k)
+ⴖ = allforms(ǧ)
+ⴗ = allforms(q)
+ⴘ = allforms(š)
+ⴙ = allforms(č)
+ⴚ = allforms(c)
+ⴜ = allforms(ç)
+ⴞ = allforms(x)
+ⴠ = allforms(h)
+ⴡ = allforms(ē)
+ⴢ = allforms(y)
+ⴣ = allforms(w)
+ⴥ = allforms(ō)

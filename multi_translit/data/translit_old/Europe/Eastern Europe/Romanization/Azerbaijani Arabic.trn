@@ -1,0 +1,49 @@
+﻿# This possibly only works from Arabic-Latin
+
+﻿{{
+FormatString: "Azerbaijani %s"
+LFonts: ["Arabic", "Latin"]
+LProvides: [
+	["aze", "Arabic"],
+	["aze", "Latin"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 0
+MatchCase: 1
+}}
+
+#provides("Azerbaijani %s Arabic", "Arabic", "Latin")
+#addISO("aze", "Arabic")
+#addType("input", "high")
+#addType("romanization", "low")
+
+ﺍ = allforms(a)
+ﺏ = allforms(b)
+ﺝ = allforms(c)
+چ = allforms(ç)
+ﺩ = allforms(d)
+ﻩ = allforms(e)
+ə = allforms(f)
+ﻍ = allforms(g)
+ﺡ||ﻩ = allforms(ğ)
+ﺥ = allforms(x)
+ی = allforms(ı)
+ی = allforms(i)
+ژ = allforms(j)
+ک = allforms(k)
+ﻕ = allforms(q)
+ﻝ = allforms(l)
+ﻡ = allforms(m)
+ﻥ = allforms(n)
+ﻭ = allforms(o)
+ﻭ = allforms(ö)
+پ = allforms(p)
+ﺭ = allforms(r)
+ﺙ||ﺱ||ﺹ = allforms(s)
+ﺵ = allforms(ş)
+ﺕ||ﻁ = allforms(t)
+ﻭ = allforms(u)
+ﻭ = allforms(ü)
+ﻭ = allforms(v)
+ی = allforms(y)
+ﺫ||ﺯ||ﺽ||ﻅ = allforms(z)

@@ -1,0 +1,56 @@
+﻿provides("Chechen %s IPA", "Cyrillic", "Latin")
+addISO("che")
+addType("IPA", "high")
+useMatchCase()
+
+аь = æ||æː
+оь = ø||øː
+уь = y||yː
+цӀ = tsʼ
+чӀ = tʃʼ
+дж = dʒ
+дз = dz
+кх = qʻ
+къ = qʼ
+кӀ = kʼ
+пӀ = pʼ
+тӀ = tʼ
+гӀ = ʁ
+хь = ħ
+хӀ = h
+юь = ignore()
+яь = ignore()
+е = e||eː||i͡e
+о = o||oː||u͡o
+а = a||aː
+у = u||uː
+э = e||eː
+ц = tsʻ
+ч = tʃʻ
+к = kʻ
+п = pʻ
+т = tʻ
+б = b
+в = w
+г = ɡ
+д = d
+ж = ʒ
+з = z
+и = i
+й = j
+л = ɮ
+м = m
+н = n
+р = r
+с = s
+ф = f
+х = χ
+ш = ʃ
+ъ = ʔ
+Ӏ = ʕ
+щ = ignore()
+ы = ignore()
+ь = ignore()
+ю = ignore()
+я = ignore()
+ё = ignore()

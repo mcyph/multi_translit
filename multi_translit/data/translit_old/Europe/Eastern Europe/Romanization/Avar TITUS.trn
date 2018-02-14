@@ -1,0 +1,77 @@
+﻿# Translit auto-generated from E:\Dev\Flazzle\Flazzle\Romanization\BySound\Temp\Avar.txt version/date 2000(4.0)
+# 4.0 Thesaurus Indogermanischer Text- und Sprachmaterialien. (http://titus.uni-frankfurt.de).
+
+addISO("ava")
+provides("Avar %s TITUS", "Cyrillic", "Latin")
+#addType("input", "low")
+addType("romanization", "low")
+useMatchCase()
+﻿{{
+FormatString: "Avar %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["ava", "Cyrillic"],
+	["ava", "Latin TITUS"]]
+LCreate: [true, true]
+LTypes = [["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+# 4.1 The following combinations of characters are treated separately:
+кк = k̄
+кӀкӀ = ḳ̄
+лълъ = ł̄
+сс = s̄
+хх = χ̄
+цц = c̄
+цӀцӀ = ̄
+чч = č̄
+чӀчӀ = ̄
+
+ж = allforms(ǯ||ž)
+з = allforms(ʒ||z)
+къ = allforms(q̄̇)
+кь = allforms(kḷ)
+хъ = allforms(q̄)
+гъ = allforms(ġ)
+гь = allforms(h)
+гӀ = allforms(ʿ)
+кӀ = allforms(ḳ) # (4.1)
+лъ = allforms(ł) # (4.1)
+тӀ = allforms(ṭ)
+хь = allforms(x)
+хӀ = allforms(ḥ)
+цӀ = allforms() # (4.1)
+чӀ = allforms() # (4.1)
+щ = allforms(š̄)
+а = allforms(a)
+б = allforms(b)
+в = allforms(w)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k) # (4.1)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s) # (4.1)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(χ)
+ц = allforms(c) # (4.1)
+ч = allforms(č) # (4.1)
+ш = allforms(š)
+ъ = allforms(ʾ)
+ы = allforms(y)
+ь = allforms(ʹ)
+э = allforms(—)
+ю = allforms(—)
+я = allforms(—)
+ё = allforms(ë)

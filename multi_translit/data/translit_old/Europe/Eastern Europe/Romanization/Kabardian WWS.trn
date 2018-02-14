@@ -1,0 +1,83 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & William Bright (eds.). New York, 1996.
+'''
+
+{{
+FormatString: "Kabardian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["kbd", "Cyrillic"],
+	["kbd", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Kabardian %s WWS", "Cyrillic", "Latin")
+#addISO("kbd")
+##addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+кхъу = allforms(kxʺu)
+гъу = allforms(gʺu)
+кхъ = allforms(kxʺ)
+къу = allforms(kʺu)
+кӀу = allforms(k1u)
+хъу = allforms(xʺu)
+щӀ = allforms(šč) # 1
+гу = allforms(gu)
+гъ = allforms(gʺ)
+дж = allforms(dž)
+жь = allforms(žʹ)
+ку = allforms(ku)
+къ = allforms(kʺ)
+кӀ = allforms(k1)
+лъ = allforms(lʺ)
+лӀ = allforms(l1)
+пӀ = allforms(p1)
+тӀ = allforms(t1)
+фӀ = allforms(f1)
+ху = allforms(xu)
+хъ = allforms(xʺ)
+хь = allforms(xʹ)
+цӀ = allforms(c1)
+Ӏу = allforms(1u)
+дз = allforms(–)
+ей = allforms(–)
+ль = allforms(–)
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j) # (4.1)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x) # (4.2)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(ʺ) # (4.3)
+ы = allforms(y)
+ь = allforms(ʹ) # (4.3)
+э = allforms(è)
+ё = allforms(ë)
+Ӏ = allforms(1)

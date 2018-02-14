@@ -1,0 +1,61 @@
+﻿'''
+Also known as GOST 16876-71, ГОСТ (государственный 
+стандарт). Originally a Soviet, now Russian, state standard. 
+This standard corresponds to UN 1987.
+'''
+
+{{
+FormatString: "Russian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["rus", "Cyrillic"], 
+	["rus", "Latin Official"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Russian %s GOST", "Cyrillic", "Latin")
+#addISO("rus")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(")
+ы = allforms(y)
+ь = allforms(')
+э = allforms(è)
+ё = allforms(ë)
+і = allforms(ĭ)
+ѣ = allforms(ě)
+ѳ = allforms(ḟ)
+ѵ = allforms(ẏ)

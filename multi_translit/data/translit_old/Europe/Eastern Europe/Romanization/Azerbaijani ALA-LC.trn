@@ -1,0 +1,62 @@
+﻿'''
+American Library Association/Library of Congress.
+
+ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman 
+Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+'''
+
+provides("Azerbaijani %s ALA-LC", "Cyrillic", "Latin")
+addISO("aze", "Cyrillic")
+addType("input", "low")
+addType("romanization", "low")
+useMatchCase()
+﻿{{
+FormatString: "Azerbaijani %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["aze", "Cyrillic"],
+	["aze", "Latin ALA-LC"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Azerbaijani %s ALA-LC", "Cyrillic", "Latin")
+#addISO("aze", "Cyrillic")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+ж = allforms(zh)
+х = allforms(kh)
+ч = allforms(ch)
+ш = allforms(sh)
+ј = allforms(ı̐)
+ғ = allforms(gh)
+ү = allforms(u̇)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+з = allforms(z)
+и = allforms(i)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ы = allforms(y)
+ҝ = allforms(ġ)
+ҹ = allforms(j)
+һ = allforms(ḣ)
+ә = allforms(ă)
+ө = allforms(ȯ)

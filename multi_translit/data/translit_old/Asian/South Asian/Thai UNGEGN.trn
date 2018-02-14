@@ -1,0 +1,79 @@
+﻿# This transliteration system is UNFINISHED
+# I stopped working on it because it doesn't represent tones
+# which makes it fairly useless except possibly for the BySound 
+# inputs by auto-probing them :-(
+# It's based on the UNGEGN systems at http://www.eki.ee/wgrs/
+
+{{
+FormatString: "Thai %s"
+LFonts: ["Thai", "Latin"]
+LProvides: [
+	["tha", "Thai"],
+	["tha", "Latin (UNGEGN)"]]
+LCreate: [true, true]
+LTypes = [["disp", "low"]]
+BothWays: 1
+IgnoreCase: 1
+IgnoreMe: 1
+}}
+
+ก  = initial(k), final(k)
+ข  = initial(kh), final(k)
+ฃ  = initial(kh), final(k)
+ค  = initial(kh), final(k)
+ฅ  = initial(kh), final(k)
+ฆ  = initial(kh), final(k)
+ง  = initial(ng), final(ng)
+จ  = initial(ch), final(t)
+ฉ  = initial(ch), final(t)
+ช  = initial(ch), final(t)
+ซ  = initial(s), final(t)
+ฌ  = initial(ch), final(t)
+ญ  = initial(y), final(n)
+ฎ  = initial(d), final(t)
+ฏ  = initial(t), final(t)
+ฐ  = initial(th), final(t)
+ฑ  = initial(th||d), final(t)
+ฒ  = initial(th), final(t)
+ณ  = initial(n), final(n)
+ด  = initial(d), final(t)
+ต  = initial(t), final(t)
+ถ  = initial(th), final(t)
+
+# Combination ทร is romanized s if so pronounced.
+ท  = initial(th), final(t)
+
+ธ  = initial(th), final(t)
+น  = initial(n), final(n)
+บ  = initial(b), final(p)
+ป  = initial(p), final(p)
+ผ  = initial(ph), final(p)
+ฝ  = initial(f), final(p)
+พ  = initial(ph), final(p)
+ฟ  = initial(f), final(p)
+ภ  = initial(ph), final(p)
+ม  = initial(m), final(m)
+ย  = initial(y)
+ร  = initial(r), final(n)
+ล  = initial(l), final(n)
+ว  = initial(w)
+ศ  = initial(s), final(t)
+ษ  = initial(s), final(t)
+ส  = initial(s), final(t)
+ห  = initial(h)
+ฬ  = initial(l), final(n)
+
+# One must bear in mind that the romanization of Thai in this case employs the 
+# transcription method. Thus, tone marks (·่, ·้, ·๊ and ·๋) and diacritical marks 
+# including the silencing mark (·์) and the vowel shortening mark (·็), are 
+# completely ignored. In order to transcribe Thai words correctly one must 
+# know how to read and pronounce them. There are many words that carry a character 
+# or characters that are not pronounced, such as สามารถ samat (ร is silent), พรหม Phrom 
+# (ห is silent), ลักษณม์ lak (ษณม์ are silent), ธาตุ that (·ุ is silent), อินทรธนู inthanu (ทร are silent), 
+# and there are also a number of words in Thai where a syllable with an intruding vowel 
+# [a] must be inserted such as ปรารถนา pratthana (ร is silent and [tha] is inserted), 
+# and รัตนา rattana ([ta] is inserted) when pronouncing them. 
+อ  = initial(o)
+
+ฮ  = initial(h)
+

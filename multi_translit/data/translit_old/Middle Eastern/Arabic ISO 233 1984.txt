@@ -1,0 +1,2 @@
+ا = self(ā), final(ā)
+ء = self(ʾ), medial(ʾ)

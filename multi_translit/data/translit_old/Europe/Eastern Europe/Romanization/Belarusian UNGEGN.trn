@@ -1,0 +1,67 @@
+﻿# This is based on the UNGEGN systems for Byelorussian 
+# Romanization at http://www.eki.ee/wgrs/
+
+﻿{{
+FormatString: "Belarusian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["bel", "Cyrillic"],
+	["bel", "Latin UNGEGN"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Belarusian %s UNGEGN", "Cyrillic", "Latin")
+#addISO("bel")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+$VOWELS = А||Е||Ё||І||О||У||Ў||Э
+# TODO: How can I find out whether Ы is a vowel or consonant?
+$TEMP = Ь||ь||Ў||ў||Э||Ю||Ы||'
+$NONCONSONANTS = $VOWELS||$VOWELS||$TEMP
+$CONSONANTS = Б||В||Г||Д||Ж||З||Й||К||Л||М||Н||О||П||Р||С||Т||Ф||Х||Ц||Ч||Ш||Ы
+
+# After consonants.
+if after($CONSONANTS): Е; е = allforms(IE||Ie||iE; ie)
+# Initially, after vowels, apostrophe, ь and ў.
+else: Е; е = allforms(JE||Je||jE; je)
+if after($CONSONANTS): Ё; ё = allforms(io; io)
+else: Ё; ё = allforms(jo; jo)
+if after($CONSONANTS): Ю; ю = allforms(iu; iu)
+else: Ю; ю = allforms(ju; ju)
+if after($CONSONANTS): Я; я = allforms(ia; ia)
+else: Я; я = allforms(ja; ja)
+
+Х; х = CH|Ch|cH; ch
+А; а = A; a
+Б; б = B; b
+В; в = V; v
+Г; г = H; h
+Д; д = D; d
+Ж; ж = ž; ž
+З; з = Z; z
+І; і = I; i
+Й; й = J; j
+К; к = K; k
+Л; л = L; l
+М; м = M; m
+Н; н = N; n
+О; о = O; o
+П; п = P; p
+Р; р = R; r
+С; с = S; s
+Т; т = T; t
+У; у = U; u
+Ў; ў = ú; ú
+Ф; ф = F; f
+Ц; ц = C; c
+Ч; ч = č; č
+Ш; ш = š; š
+’ = ignore()
+Ы; ы = Y; y
+Ь; ь = ’; '
+Э; э = E; e

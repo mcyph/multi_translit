@@ -1,0 +1,54 @@
+﻿provides("Nivikh %s IPA", "Cyrillic", "IPA")
+addISO("kir")
+addType("IPA", "high")
+useIgnoreCase()
+
+чʼ = tʃʰ
+кʼ = kʰ
+пʼ = pʰ
+тʼ = tʰ
+ʼ = qʰ
+йи = ignore()
+йы = ignore()
+ʼ = ʰ
+х = x
+ы = ɤ
+ = 
+ = ħ
+ = χ
+а = ignore()
+б = ignore()
+в = ignore()
+г = ignore()
+д = ignore()
+е = ignore()
+ж = ignore()
+з = ignore()
+и = ignore()
+й = ignore()
+к = ignore()
+л = ignore()
+м = ignore()
+н = ignore()
+о = ignore()
+п = ignore()
+р = ignore()
+с = ignore()
+т = ignore()
+у = ignore()
+ф = ignore()
+ц = ignore()
+ч = ignore()
+ш = ignore()
+щ = ignore()
+ъ = ignore()
+ь = ignore()
+э = ignore()
+ю = ignore()
+я = ignore()
+ё = ignore()
+ғ = ignore()
+ӈ = ignore()
+ = ignore()
+ = ignore()
+ = ignore()

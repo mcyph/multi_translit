@@ -1,0 +1,53 @@
+[comment]
+United States Board on Geographic Names and the Permanent 
+Committee on Geographical Names for British Official Use.
+
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.2. January 2003. 
+(http://www.eki.ee/wgrs).
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "uz_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "uz_Latn|BGN/PCGN"
+}
+
+[conversions]
+е = e,ye
+ж = zh
+х = kh
+ц = ts
+ч = ch
+ш = sh
+ю = yu
+я = ya
+ё = yo
+ғ = gh
+а = a
+б = b
+в = w
+г = g
+д = d
+з = z
+и = i
+й = y
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+ъ = ʼ
+ь = ʼ
+э = e
+ў = ŭ
+қ = q
+ҳ = h

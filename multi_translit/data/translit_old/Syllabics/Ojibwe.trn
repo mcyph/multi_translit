@@ -1,0 +1,103 @@
+# This file uses the transliteration system at 
+# http://www.languagegeek.com/algon/ojibway/anb_syllabarium.html
+# for Northern Ojibway, otherwise known as the
+# ᐊᓂᔑᓇᐯᒧᐎᐣ / Anishinaabemowin  (Ojibwe, Saulteaux) Syllabarium
+# I may have introduced errors! If you see any, please e-mail me at david@flazzle.net
+
+﻿provides("Ojibwe %s", "Latin", "Canadian Syllabics", true)
+addISO("alq") # Algonquin
+addISO("oji") # Ojibwa (generic)
+addISO("ojs") # Severn Ojibwe
+addISO("ojg") # Eastern Ojibwe
+addISO("ojc") # Central Ojibwe
+addISO("ojb") # Northwestern Ojibwe
+addISO("ojw") # Western Ojibwe
+addISO("ciw") # Chippewa
+addISO("otw") # Ottawa 
+addType("input", "high")
+addType("romanization", "high")
+useIgnoreCase()
+
+# e
+e = allforms(ᐁ)
+pe = allforms(ᐯ)
+te = allforms(ᑌ)
+ke = allforms(ᑫ)
+ce = allforms(ᒉ)
+me = allforms(ᒣ)
+ne = allforms(ᓀ)
+le = allforms(ᓀ)
+re = allforms(ᓀ)
+se = allforms(ᓭ)
+še = allforms(ᔐ)
+ye = allforms(ᔦ)
+we = allforms(ᐌ)
+he = allforms(ᐦᐁ)
+
+# o
+o = allforms(ᐅ)
+po = allforms(ᐳ)
+to = allforms(ᑐ)
+ko = allforms(ᑯ)
+co = allforms(ᒍ)
+mo = allforms(ᒧ)
+no = allforms(ᓄ)
+lo = allforms(ᓄ)
+ro = allforms(ᓄ)
+so = allforms(ᓱ)
+šo = allforms(ᔓ)
+yo = allforms(ᔪ)
+wo = allforms(ᐒ)
+ho = allforms(ᐦᐅ)
+oo = allforms(ᐆ)
+
+# i
+i = allforms(ᐃ)
+ti = allforms(ᑎ)
+li = allforms(ᓂ)
+ri = allforms(ᓂ)
+pi = final(ᐊ), others(ᐱ)
+ti = final(ᐊ), others(ᑎ)
+ki = final(ᐊ), others(ᑭ)
+ci = final(ᐊ), others(ᒋ)
+mi = final(ᐊ), others(ᒥ)
+ni = final(ᐊ), others(ᓂ)
+si = final(ᐊ), others(ᓯ)
+ši = final(ᐊ), others(ᔑ)
+yi = final(ᐊ), others(ᔨ)
+wi = final(ᐊᐤ), others(ᐎ)
+hi = final(ᐊᐦ), others(ᐦᐃ)
+ii = allforms(ᐄ)
+
+# a
+a = allforms(ᐊ)
+la = allforms(ᓇ)
+ra = allforms(ᓇ)
+ha = allforms(ᐦᐊ)
+pa = final(ᐊᑉ), others(ᐸ)
+ta = final(ᐊᑦ), others(ᑕ)
+ka = final(ᐊᒃ), others(ᑲ)
+ca = final(ᐊᒡ), others(ᒐ)
+ma = final(ᐊᒻ), others(ᒪ)
+na = final(ᐊᓐ), others(ᓇ)
+sa = final(ᐊᔅ), others(ᓴ)
+ša = final(ᐊᔥ), others(ᔕ)
+ya = final(ᐊᔾ), others(ᔭ)
+wa = final(ᐊᐤ), others(ᐗ)
+aa = allforms(ᐋ)
+
+# other Finals. I'm not certain what these 
+# map to, so I've just used the first letter
+# PLEASE CORRECT THIS if you know anything about this ;-)
+l = final(ᐊᓬ)
+r = final(ᐊᕒ)
+y = final(ᐊᐞ||ᐊ)
+w = final(ᐊ)
+
+# This character seems to be a duplicate for other finals 'y'
+# I've added a "'" to it to disambiguate
+y' = allforms(ᐊ)
+
+# These character(s) are general Syllabics punctuation characters
+# and weren't in the original transliteration system
+. = allforms(᙮)

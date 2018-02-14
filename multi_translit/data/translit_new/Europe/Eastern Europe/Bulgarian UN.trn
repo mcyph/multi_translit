@@ -1,0 +1,46 @@
+[comment]
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.1. June 2002.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "bg_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "bg_Latn|UNGEGN"
+}
+
+[conversions]
+щ = št
+ю = ju
+я = ja
+а = a
+б = b
+в = v
+г = g
+д = d
+е = e
+ж = ž
+з = z
+и = i
+й = j
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = h
+ц = c
+ч = č
+ш = š
+ъ = ǎ
+ь = j
+ѣ = {{}}
+ѫ = {{}}

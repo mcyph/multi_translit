@@ -1,0 +1,49 @@
+{{
+FormatString: "Ugaritic %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["uga", "Ugaritic"], 
+	["uga", "Latin"]]
+LCreate: [true, true]
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("%s Cyrillic TDS 565", "Cyrillic", "Latin")
+#addISO("uga")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+﻿𐎀 = ʾa # Alpa ��
+𐎛 = ʾi # I ��
+𐎜 = ʾu # U ��
+𐎝 = s₂ # Su ��
+𐎁 = b # Beta ��
+𐎂 = g # Gamla ��
+𐎃 = ẖ # Kha ��
+𐎄 = d # Delta ��
+𐎅 = h # Ho ��
+𐎆 = w # Wo ��
+𐎇 = z # Zeta ��
+𐎈 = ḥ # Hota ��
+𐎉 = ṭ # Tet ��
+𐎊 = y # Yod ��
+𐎋 = k # Kaf ��
+𐎌 = š # Shin ��
+𐎍 = l # Lamda ��
+𐎎 = m # Mem ��
+𐎏 = ḏ # Dhal ��
+𐎐 = n # Nun ��
+𐎑 = ẓ # Zu ��
+𐎒 = s # Samka ��
+𐎓 = ʿ # Ain ��
+𐎔 = p # Pu ��
+𐎕 = ṣ # Sade ��
+𐎖 = q # Qopa ��
+𐎗 = r # Rasha ��
+𐎘 = ṯ # Thanna ��
+𐎙 = ġ # Ghain ��
+𐎚 = t # To ��
+𐎟 =   # Word Divider ��

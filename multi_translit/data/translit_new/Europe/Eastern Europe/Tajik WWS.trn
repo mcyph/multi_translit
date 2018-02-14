@@ -1,0 +1,64 @@
+[comment]
+The World’s Writing Systems. Peter T. Daniels & 
+William Bright (eds.). New York, 1996.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "tg_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "tg_Latn|WWS"
+}
+
+[conversions]
+щ = šč
+ю = ju
+я = ja
+ҳ = x{{COMBINING COMMA BELOW}}
+ҷ = č{{COMBINING COMMA BELOW}}
+а = a
+б = b
+в = v
+г = g
+д = d
+# (4.1)
+е = e
+
+ж = ž
+з = z
+и = i
+# (4.3)
+й = j
+
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = x
+ц = c
+ч = č
+ш = š
+# (4.4)
+ъ = ʺ
+
+ы = y
+# (4.3)
+ь = ʹ
+
+# (4.5)
+э = è
+
+ё = ë
+ғ = ḡ
+қ = ķ
+# (4.2)
+ӣ = ī
+
+ӯ = ū

@@ -1,0 +1,54 @@
+[comment]
+This is based on the UNGEGN systems for Macedonian Cyrillic
+Romanization at http://www.eki.ee/wgrs/
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "mk_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "mk_Latn|UNGEGN"
+}
+
+[conversions]
+# Although not in the United Nations system, it's common to use 'zh' or 'z' for ж 
+# according to http://en.wikipedia.org/wiki/Romanisation_of_Macedonian
+# TODO: Should 'ĺ' be represented???
+ж = ž,zh,z
+
+ѓе = ge
+ѓи = gi
+ќе = ke
+ќи = ki
+ѓ = đ,gj
+ќ = ć,kj
+џ = dž
+ѕ = dz
+љ = lj
+њ = nj
+
+е = e
+а = a
+б = b
+в = v
+г = g
+д = d
+з = z
+и = i
+ј = j
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = h
+ц = c
+ч = č
+ш = š
+’ = ’

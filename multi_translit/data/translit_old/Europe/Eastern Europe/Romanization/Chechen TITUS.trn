@@ -1,0 +1,78 @@
+﻿'''
+Gippert, J.: Caucasian Alphabet Systems Based Upon the 
+Cyrillic Script. (TITUS), no date. 
+(http://titus.uni-frankfurt.de/didact/caucasus/kaukschr.pdf).
+'''
+
+﻿{{
+FormatString: "Chechen %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["che", "Cyrillic"],
+	["che", "Latin ALA-LC"]]
+LCreate: [true, true]
+# I'm divided whether to use the ISO 9 system because of the high accent count
+# However, the "double cross" bar is confusing in itself, so I've selected this for now
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Chechen %s TITUS", "Cyrillic", "Latin")
+#addISO("che")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+ий = self(ī) # (5.1)
+е = allforms(e||ē||ie)
+о = allforms(o||ō||uo)
+аь = allforms(ä||ǟ)
+оь = allforms(ö||ȫ)
+уь = allforms(ü||ǖ)
+а = allforms(a||ā)
+у = allforms(u||ū)
+э = allforms(e||ē)
+гӀ = allforms(ġ)
+дж = allforms(ǯ)
+дз = allforms(ʒ)
+кх = allforms(q)
+къ = allforms()
+кӀ = allforms(ḳ)
+пӀ = allforms(ṗ)
+тӀ = allforms(ṭ)
+хь = allforms(ḥ)
+хӀ = allforms(h)
+цӀ = allforms()
+чӀ = allforms()
+юь = allforms(–)
+яь = allforms(–)
+б = allforms(b)
+в = allforms(w)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i) # (5.1)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+ф = allforms(f)
+х = allforms(χ)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+щ = allforms(–)
+ъ = allforms(ʾ)
+ы = allforms(–)
+ь = allforms(–)
+ю = allforms(–)
+я = allforms(–)
+ё = allforms(–)
+Ӏ = allforms(ʿ)

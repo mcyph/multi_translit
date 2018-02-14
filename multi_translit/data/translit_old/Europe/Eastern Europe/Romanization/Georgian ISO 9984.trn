@@ -1,0 +1,64 @@
+﻿'''
+International Standards Organization (http://www.iso.ch) 
+as shown in Apridonidze et al. and UNGEGN.
+'''
+
+{{
+FormatString: "Georgian %s"
+LFonts: ["Georgian", "Latin"]
+LProvides: [
+	["kat", "Georgian"],
+	["kat", "Latin BGN/PCGN"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Georgian %s ISO 9984", "Cyrillic", "Latin")
+#addISO("kat")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+ⴇ = allforms(t’)
+ⴔ = allforms(pʼ)
+ⴕ = allforms(kʼ)
+ⴙ = allforms(čʼ)
+ⴚ = allforms(cʼ)
+ჶ = allforms(a)
+ჷ = allforms(—)
+ჸ = allforms(—)
+ⴀ = allforms(a)
+ⴁ = allforms(b)
+ⴂ = allforms(g)
+ⴃ = allforms(d)
+ⴄ = allforms(e)
+ⴅ = allforms(v)
+ⴆ = allforms(z)
+ⴈ = allforms(i)
+ⴉ = allforms(k)
+ⴊ = allforms(l)
+ⴋ = allforms(m)
+ⴌ = allforms(n)
+ⴍ = allforms(o)
+ⴎ = allforms(p)
+ⴏ = allforms(ž)
+ⴐ = allforms(r)
+ⴑ = allforms(s)
+ⴒ = allforms(t)
+ⴓ = allforms(u)
+ⴖ = allforms(ḡ)
+ⴗ = allforms(q)
+ⴘ = allforms(š)
+ⴛ = allforms(j)
+ⴜ = allforms(c)
+ⴝ = allforms(č)
+ⴞ = allforms(x)
+ⴟ = allforms(ǰ)
+ⴠ = allforms(h)
+ⴡ = allforms(a)
+ⴢ = allforms(a)
+ⴣ = allforms(a)
+ⴤ = allforms(a)
+ⴥ = allforms(a)

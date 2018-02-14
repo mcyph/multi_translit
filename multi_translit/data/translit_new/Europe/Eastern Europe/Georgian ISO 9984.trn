@@ -1,0 +1,54 @@
+[comment]
+International Standards Organization (http://www.iso.ch) 
+as shown in Apridonidze et al. and UNGEGN.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ka",
+    "direction": "<=>", 
+    "to_iso": "ka_Latn|BGN/PCGN"
+}
+
+[conversions]
+ⴇ = t’
+ⴔ = pʼ
+ⴕ = kʼ
+ⴙ = čʼ
+ⴚ = cʼ
+ჶ = a
+ჷ = —
+ჸ = —
+ⴀ = a
+ⴁ = b
+ⴂ = g
+ⴃ = d
+ⴄ = e
+ⴅ = v
+ⴆ = z
+ⴈ = i
+ⴉ = k
+ⴊ = l
+ⴋ = m
+ⴌ = n
+ⴍ = o
+ⴎ = p
+ⴏ = ž
+ⴐ = r
+ⴑ = s
+ⴒ = t
+ⴓ = u
+ⴖ = ḡ
+ⴗ = q
+ⴘ = š
+ⴛ = j
+ⴜ = c
+ⴝ = č
+ⴞ = x
+ⴟ = ǰ
+ⴠ = h
+ⴡ = a
+ⴢ = a
+ⴣ = a
+ⴤ = a
+ⴥ = a

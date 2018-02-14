@@ -1,0 +1,65 @@
+﻿'''
+International Standards Organization. (http://www.iso.ch).
+
+ISO 9:1995. Information and documentation – Transliteration of Cyrillic 
+characters into Latin characters – Slavic and non-Slavic languages. 
+International Organization for Standardization, 1995.
+'''
+
+{{
+FormatString: "Tatar %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["tat", "Cyrillic"], 
+	["tat", "Latin ISO 9"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Tatar %s ISO 9", "Cyrillic", "Latin")
+#addISO("tat")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+е = allforms(yı||ye) # (1.2,1.3)
+ы = allforms(ıy||i) # (1.5)
+җ = allforms(ž̦)
+ә = allforms(a̋)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v) # (1.1)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(w) # (1.4)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+щ = allforms(ŝ)
+ъ = allforms(ʺ)
+ь = allforms(ʹ)
+э = allforms(è)
+ю = allforms(û)
+я = allforms(â)
+ё = allforms(ë)
+ң = allforms(ņ)
+ү = allforms(ù)
+һ = allforms(ḥ)
+ө = allforms(ô)

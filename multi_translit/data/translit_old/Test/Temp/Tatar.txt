@@ -1,0 +1,41 @@
+﻿Roman  ISO 9  KNAB  ALA-LC  WWS  Allworth
+2001(1.0)  1995  1995(3.0)  1997  1996  1971
+А а a a a a a [a] a
+Ә ә ǝ a̋ ä ă ä [æ] ä
+Б б b b b b b [b] b
+В в w; v(1.1) v v v v [w](5.1) v
+Г г ğ, g(1.2) g g g g [ɡ, ʁ(5.2)] g
+Д д d d d d d [d] d
+Е е e; yı, ye(1.2,1.3) e e, je(3.1) e e [je, jɤ(5.1), e(5.3)] ye‐, ‐e‐
+Ж ж j ž ž zh ž [ʒ] zh
+Җ җ c ž̦ dž j ž̦ [d͡ʒ] j
+З з z z z z z [z] z
+И и İı i i i i [i] i
+Й й y j j ĭ j [j](5.4) y
+К к q, k(1.2) k k k k [k, q(5.2)] k
+Л л l l l l l [l] l
+М м m m m m m [m] m
+Н н n n n n n [n] n
+Ң ң  ņ ŋ n͡g ņ [ŋ] ng
+О о o o o o o [o] o
+Ө ө ɵ ô ö ȯ ö [ø] ö
+П п p p p p p [p] p
+Р р r r r r r [r] r
+С с s s s s s [s] s
+Т т t t t t t [t] t
+У у u; w(1.4) u u u u [u, w(5.5)] u
+Ү ү ü ù ü u̇ ü [y, w(5.6)] ü
+Ф ф f f f f f [ϕ] f
+Х х x h h kh x [x] kh
+Һ һ h ḥ ḩ ḣ ḥ [h] h
+Ц ц (0.1) ts c c t͡s c [t͡s] ts
+Ч ч ç č č ch č [t͡ʃ] ch
+Ш ш ş š š sh š [ʃ] sh
+Щ щ (0.1) şç ŝ šč shch šč [ʃt͡ʃ] shch
+Ъ ъ — ʺ  ʺ ʺ [ʔ](5.2)(5.4)(5.7) ˮ
+Ы ы ı; ıy(1.5);i(1.6) y y y y [ɤ] ï
+Ь ь ’ ʹ  (3.2) ʹ ʹ [ʔ](5.2)(5.4)(5.8) 
+Э э e, ’(1.7) è è, e(3.1), ʻ (3.3) ė è [e(5.1), ʔ(5.6)] ë
+Ю ю yu, yü(1.2); û ju i͡u ju [ju, jy] yu, yü ü(1.8)
+Я я ya, yǝ(1.2); â ja i͡u ja [ja, jæ] yä a, ǝ(1.2)(1.9)
+Ё ё (0.2) — ë ë ë ë [jo] ya

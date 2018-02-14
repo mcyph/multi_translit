@@ -1,0 +1,52 @@
+[comment]
+This alphabet has been replaced by TDS 565.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "tk_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "tk_Latn|Old Official"
+}
+
+[conversions]
+# (2.1)
+е = e,ÿe
+
+ц = ts
+щ = ¢ç
+ю = ÿu
+я = ÿa
+ё = ÿo
+а = a
+б = b
+в = w
+г = g
+д = d
+ж = £
+з = z
+и = i
+й = ұ
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = h
+ч = ç
+ш = $
+ъ = —
+ы = y
+ь = —
+э = e
+җ = j
+ң = ñ
+ү = ü
+ә = ä
+ө = ö

@@ -1,0 +1,57 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & 
+William Bright (eds.). New York, 1996.
+'''
+
+{{
+FormatString: "Ukrainian %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["ukr", "Cyrillic"], 
+	["ukr", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [['input', 'low'], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Ukrainian %s WWS", "Cyrillic", "Latin")
+#addISO("ukr")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+є = allforms(je)
+ї = allforms(ji)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(h)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(y)
+й = allforms(j) # (5.3)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ь = allforms(ʹ) # (5.3)
+і = allforms(i)
+ґ = allforms(g)
+’ = allforms(–) # (5.3)

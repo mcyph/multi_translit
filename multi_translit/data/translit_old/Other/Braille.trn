@@ -1,0 +1,51 @@
+{{
+FormatString: "Braille %s"
+LFonts: ["Braille", "Latin"]
+LProvides: [
+	["???", "Braille"], # TODO: What ISOCode should braille use?
+	["???", "Latin"]]
+LCreate: [true, false]
+LTypes = [["disp", "low"], ["input", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("%s", "Braille", "Latin")
+#useMatchCase()
+
+﻿⠁ = 1
+⠁ = A
+⠃ = 2
+⠃ = B
+⠅ = K
+⠇ = L
+⠉ = 3
+⠉ = C
+⠊ = 9
+⠊ = I
+⠋ = 6
+⠋ = F
+⠍ = M
+⠎ = S
+⠏ = P
+⠑ = 5
+⠑ = E
+⠓ = 8
+⠓ = H
+⠕ = O
+⠗ = R
+⠙ = 4
+⠙ = D
+⠚ = 0
+⠚ = J
+⠛ = 7
+⠛ = G
+⠝ = N
+⠞ = T
+⠟ = Q
+⠥ = U
+⠧ = V
+⠭ = X
+⠵ = Z
+⠺ = W
+⠽ = Y

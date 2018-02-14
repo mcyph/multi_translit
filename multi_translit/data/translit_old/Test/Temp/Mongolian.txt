@@ -1,0 +1,37 @@
+﻿ISO 9  KNAB  ALA-LC  BGN/PCGN
+1995(1.0)  1993(2.0)  1997(3.0)  1967(4.0)
+А а a a a a
+Б б b b b b
+В в v v v v
+Г г g g g g
+Д д d d d d
+Е е e je, é, jö (2.1) e yö
+Ё ё ë jo ë yo
+Ж ж ž ž zh j
+З з z z z dz
+И и i i i i
+Й й j j ǐ y
+К к k k k k
+Л л l l l l
+М м m m m m
+Н н n n n n
+О о o o o o
+Ө ө ô ö ȯ ö
+П п p p p p
+Р р r r r r
+С с s s s s
+Т т t t t t
+У у u u u u
+Ү ү ù ü u̇ ü
+Ф ф f f f f
+Х х h h kh h
+Ц ц c c t͡s ts
+Ч ч č č ch ch
+Ш ш š š sh sh
+Щ щ ŝ šč shch shch
+Ъ ъ A ʺ  ʺ ’
+Ы ы y y y ï
+Ь ь ʹ ĭ ʹ ĭ
+Э э è e ė e
+Ю ю û ju, jü (2.2) iu͡ yu, yü (4.1)
+Я я â ja ia͡ ya

@@ -1,0 +1,132 @@
+[comment]
+This is based on the UNGEGN systems for Byelorussian
+Romanization at http://www.eki.ee/wgrs/
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "be_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "be_Latn|UNGEGN"
+}
+
+[variables]
+VOWELS = А,Е,Ё,І,О,У,Ў,Э
+TEMP = Ь,ь,Ў,ў,Э,Ю,Ы,'
+NONCONSONANTS = $VOWELS,$VOWELS,$TEMP
+CONSONANTS = Б,В,Г,Д,Ж,З,Й,К,Л,М,Н,О,П,Р,С,Т,Ф,Х,Ц,Ч,Ш,Ы
+
+[conversions]
+# TODO: How can I find out whether Ы is a vowel or consonant?
+
+# After consonants.
+Е when after $CONSONANTS = IE,Ie,iE
+е when after $CONSONANTS = ie
+
+# Initially, after vowels, apostrophe, ь and ў.
+Е = JE,Je,jE
+е = je
+
+Ё when after $CONSONANTS = io
+ё when after $CONSONANTS = io
+
+Ё = jo
+ё = jo
+
+Ю when after $CONSONANTS = iu
+ю when after $CONSONANTS = iu
+
+Ю = ju
+ю = ju
+
+Я when after $CONSONANTS = ia
+я when after $CONSONANTS = ia
+
+Я = ja
+я = ja
+
+
+Х = CH|Ch|cH
+х = ch
+
+А = A
+а = a
+
+Б = B
+б = b
+
+В = V
+в = v
+
+Г = H
+г = h
+
+Д = D
+д = d
+
+Ж = ž
+ж = ž
+
+З = Z
+з = z
+
+І = I
+і = i
+
+Й = J
+й = j
+
+К = K
+к = k
+
+Л = L
+л = l
+
+М = M
+м = m
+
+Н = N
+н = n
+
+О = O
+о = o
+
+П = P
+п = p
+
+Р = R
+р = r
+
+С = S
+с = s
+
+Т = T
+т = t
+
+У = U
+у = u
+
+Ў = ú
+ў = ú
+
+Ф = F
+ф = f
+
+Ц = C
+ц = c
+
+Ч = č
+ч = č
+
+Ш = š
+ш = š
+
+’ = {{}}
+Ы = Y
+ы = y
+
+Ь = ’
+ь = '
+
+Э = E
+э = e

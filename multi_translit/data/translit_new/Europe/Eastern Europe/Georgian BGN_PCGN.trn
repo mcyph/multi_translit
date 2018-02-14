@@ -1,0 +1,63 @@
+[comment]
+United States Board on Geographic Names and the Permanent 
+Committee on Geographical Names for British Official Use.
+
+United Nations Romanization Systems for Geographical Names. 
+Report on Their Current Status. Compiled by the UNGEGN Working 
+Group on Romanization Systems. Version 2.2. January 2003. 
+(http://www.eki.ee/wgrs).
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ka",
+    "direction": "<=>", 
+    "to_iso": "ka_Latn|ISO 9984"
+}
+
+[conversions]
+ⴙ = chʼ
+ⴚ = tsʼ
+ⴇ = tʼ
+ⴏ = zh
+ⴔ = pʼ
+ⴕ = kʼ
+ⴖ = gh
+ⴘ = sh
+ⴛ = dz
+ⴜ = ts
+ⴝ = ch
+ⴞ = kh
+ჶ = —
+ჷ = —
+ჸ = —
+ⴀ = a
+ⴁ = b
+ⴂ = g
+ⴃ = d
+ⴄ = e
+ⴅ = v
+ⴆ = z
+ⴈ = i
+ⴉ = k
+ⴊ = l
+ⴋ = m
+ⴌ = n
+ⴍ = o
+ⴎ = p
+ⴐ = r
+ⴑ = s
+ⴒ = t
+ⴓ = u
+ⴗ = q
+ⴟ = j
+ⴠ = h
+ⴡ = {{}}
+# (j)
+ⴢ = {{}}
+
+ⴣ = {{}}
+# (qʼ)
+ⴤ = {{}}
+
+ⴥ = {{}}

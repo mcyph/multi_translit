@@ -1,0 +1,71 @@
+# zh_Latn|French
+["zh_Latn|French", "zh_Latn|Numeric Pinyin", "zh_Latn|GuoinII"]
+["zh_Latn|French", "zh_Latn|Numeric Pinyin", "zh_Latn|Gwoyeu Romatzyh"]
+["zh_Latn|French", "zh_Latn|Numeric Pinyin", "zh_Latn|x-Pinyin"]
+["zh_Latn|French", "zh_Latn|Numeric Pinyin", "zh_Latn|Tongyong"]
+["zh_Latn|French", "zh_Latn|Numeric Pinyin", "zh_Latn|Wade-Giles"]
+["zh_Latn|French", "zh_Latn|Numeric Pinyin", "zh_Latn|Yale"]
+["zh_Latn|French", "zh_Latn|Numeric Pinyin", "zh_Bopo"]
+
+# zh_Latn|GuoinII
+["zh_Latn|GuoinII", "zh_Latn|Numeric Pinyin", "zh_Latn|French"]
+["zh_Latn|GuoinII", "zh_Latn|Numeric Pinyin", "zh_Latn|Gwoyeu Romatzyh"]
+["zh_Latn|GuoinII", "zh_Latn|Numeric Pinyin", "zh_Latn|x-Pinyin"]
+["zh_Latn|GuoinII", "zh_Latn|Numeric Pinyin", "zh_Latn|Tongyong"]
+["zh_Latn|GuoinII", "zh_Latn|Numeric Pinyin", "zh_Latn|Wade-Giles"]
+["zh_Latn|GuoinII", "zh_Latn|Numeric Pinyin", "zh_Latn|Yale"]
+["zh_Latn|GuoinII", "zh_Latn|Numeric Pinyin", "zh_Bopo"]
+
+# zh_Latn|Gwoyeu Romatzyh
+["zh_Latn|Gwoyeu Romatzyh", "zh_Latn|Numeric Pinyin", "zh_Latn|French"]
+["zh_Latn|Gwoyeu Romatzyh", "zh_Latn|Numeric Pinyin", "zh_Latn|GuoinII"]
+["zh_Latn|Gwoyeu Romatzyh", "zh_Latn|Numeric Pinyin", "zh_Latn|x-Pinyin"]
+["zh_Latn|Gwoyeu Romatzyh", "zh_Latn|Numeric Pinyin", "zh_Latn|Tongyong"]
+["zh_Latn|Gwoyeu Romatzyh", "zh_Latn|Numeric Pinyin", "zh_Latn|Wade-Giles"]
+["zh_Latn|Gwoyeu Romatzyh", "zh_Latn|Numeric Pinyin", "zh_Latn|Yale"]
+["zh_Latn|Gwoyeu Romatzyh", "zh_Latn|Numeric Pinyin", "zh_Bopo"]
+
+# zh_Latn|x-Pinyin
+["zh_Latn|x-Pinyin", "zh_Latn|Numeric Pinyin", "zh_Latn|French"]
+["zh_Latn|x-Pinyin", "zh_Latn|Numeric Pinyin", "zh_Latn|GuoinII"]
+["zh_Latn|x-Pinyin", "zh_Latn|Numeric Pinyin", "zh_Latn|Gwoyeu Romatzyh"]
+["zh_Latn|x-Pinyin", "zh_Latn|Numeric Pinyin", "zh_Latn|Tongyong"]
+["zh_Latn|x-Pinyin", "zh_Latn|Numeric Pinyin", "zh_Latn|Wade-Giles"]
+["zh_Latn|x-Pinyin", "zh_Latn|Numeric Pinyin", "zh_Latn|Yale"]
+#["zh_Latn|x-Pinyin", "zh_Latn|Numeric Pinyin", "zh_Bopo"]
+
+# zh_Latn|Tongyong
+["zh_Latn|Tongyong", "zh_Latn|Numeric Pinyin", "zh_Latn|French"]
+["zh_Latn|Tongyong", "zh_Latn|Numeric Pinyin", "zh_Latn|GuoinII"]
+["zh_Latn|Tongyong", "zh_Latn|Numeric Pinyin", "zh_Latn|Gwoyeu Romatzyh"]
+["zh_Latn|Tongyong", "zh_Latn|Numeric Pinyin", "zh_Latn|x-Pinyin"]
+["zh_Latn|Tongyong", "zh_Latn|Numeric Pinyin", "zh_Latn|Wade-Giles"]
+["zh_Latn|Tongyong", "zh_Latn|Numeric Pinyin", "zh_Latn|Yale"]
+["zh_Latn|Tongyong", "zh_Latn|Numeric Pinyin", "zh_Bopo"]
+
+# zh_Latn|Wade-Giles
+["zh_Latn|Wade-Giles", "zh_Latn|Numeric Pinyin", "zh_Latn|French"]
+["zh_Latn|Wade-Giles", "zh_Latn|Numeric Pinyin", "zh_Latn|GuoinII"]
+["zh_Latn|Wade-Giles", "zh_Latn|Numeric Pinyin", "zh_Latn|Gwoyeu Romatzyh"]
+["zh_Latn|Wade-Giles", "zh_Latn|Numeric Pinyin", "zh_Latn|x-Pinyin"]
+["zh_Latn|Wade-Giles", "zh_Latn|Numeric Pinyin", "zh_Latn|Tongyong"]
+["zh_Latn|Wade-Giles", "zh_Latn|Numeric Pinyin", "zh_Latn|Yale"]
+["zh_Latn|Wade-Giles", "zh_Latn|Numeric Pinyin", "zh_Bopo"]
+
+# zh_Latn|Yale
+["zh_Latn|Yale", "zh_Latn|Numeric Pinyin", "zh_Latn|French"]
+["zh_Latn|Yale", "zh_Latn|Numeric Pinyin", "zh_Latn|GuoinII"]
+["zh_Latn|Yale", "zh_Latn|Numeric Pinyin", "zh_Latn|Gwoyeu Romatzyh"]
+["zh_Latn|Yale", "zh_Latn|Numeric Pinyin", "zh_Latn|x-Pinyin"]
+["zh_Latn|Yale", "zh_Latn|Numeric Pinyin", "zh_Latn|Tongyong"]
+["zh_Latn|Yale", "zh_Latn|Numeric Pinyin", "zh_Latn|Wade-Giles"]
+["zh_Latn|Yale", "zh_Latn|Numeric Pinyin", "zh_Bopo"]
+
+# zh_Bopo
+["zh_Bopo", "zh_Latn|Numeric Pinyin", "zh_Latn|French"]
+["zh_Bopo", "zh_Latn|Numeric Pinyin", "zh_Latn|GuoinII"]
+["zh_Bopo", "zh_Latn|Numeric Pinyin", "zh_Latn|Gwoyeu Romatzyh"]
+#["zh_Bopo", "zh_Latn|Numeric Pinyin", "zh_Latn|x-Pinyin"]
+["zh_Bopo", "zh_Latn|Numeric Pinyin", "zh_Latn|Tongyong"]
+["zh_Bopo", "zh_Latn|Numeric Pinyin", "zh_Latn|Wade-Giles"]
+["zh_Bopo", "zh_Latn|Numeric Pinyin", "zh_Latn|Yale"]

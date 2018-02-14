@@ -1,0 +1,54 @@
+# TODO: Add changes from http://homepage.ntlworld.com/stone-catend/Tha02.pdf!
+
+{{
+FormatString: "Thaana %s"
+LFonts: ["Thaana", "Latin"]
+LProvides: [
+	["div", "Thaana"], 
+	["div", "Latin"]]
+LCreate: [true, true]
+LTypes = [["disp", "high"], ["input", "high"]]
+BothWays: 1
+MatchCase: 1
+#IgnoreMe: 1 # This appears to not have exceptions for initials/finals etc!
+}}
+
+#provides("%s", "Thaana", "Latin")
+#addISO("div")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+﻿ށ = sh # SHAVIYANI
+ޅ = lh # LHAVIYANI
+އާ = aa # AABAAFILI
+އީ = ee # EEBEEFILI
+އޫ = oo # OOBOOFILI
+އޭ = ey # EYBEYFILI
+އޯ = oa # OABOAFILI
+ދ = dh # DHAALU
+ތ = th # THAA
+ޏ = gn # GNAVIYANI
+ޗ = ch # CHAVIYANI
+ހ = h # HAA
+ނ = n # NOONU
+ރ = r # RAA
+ބ = b # BAA
+ކ = k # KAAFU
+އަ = a # ABAFILI
+އި = i # IBIFILI
+އު = u # UBUFILI
+އެ = e # EBEFILI
+އޮ = o # OBOFILI
+ވ = v # VAAVU
+މ = m # MEEMU
+ފ = f # FAAFU
+ލ = l # LAAMU
+ގ = g # GAAFU
+ސ = s # SEENU
+ޑ = d # DAVIYANI
+ޒ = z # ZAVIYANI
+ޓ = t # TAVIYANI
+ޔ = y # YAA
+ޕ = p # PAVIYANI
+ޖ = j # JAVIYANI

@@ -1,0 +1,26 @@
+[comment]
+Convert from Kana (Hiragana/Katakana) to the Hepburn system
+
+[settings]
+{
+    "from_iso": "ja_Hrkt", 
+    "modifiers": {
+        "from_direction": {
+            "before_conversions": [
+                [
+                    "include", 
+                    "ja_Hira", 
+                    "ja_Latn"
+                ], 
+                [
+                    "include", 
+                    "ja_Kana", 
+                    "ja_Latn"
+                ]
+            ]
+        }
+    }, 
+    "direction": "=>", 
+    "ignore_case": true, 
+    "to_iso": "ja_Latn|Romaji (Hepburn)"
+}

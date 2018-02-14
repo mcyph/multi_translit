@@ -1,0 +1,74 @@
+﻿'''
+ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman 
+Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+'''
+
+﻿{{
+FormatString: "Chechen %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["che", "Cyrillic"],
+	["che", "Latin ALA-LC"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Chechen %s ALA-LC", "Cyrillic", "Latin")
+#addISO("che")
+#addType("input", "low")
+##addType("romanization", "low")
+#useMatchCase()
+
+цӀ = allforms(t͡sḣ)
+юь = allforms(i͡uʹ)
+яь = allforms(i͡aʹ)
+щ = allforms(shch)
+дж = allforms(dzh)
+кх = allforms(kkh)
+хь = allforms(khʹ)
+хӀ = allforms(khḣ)
+чӀ = allforms(chḣ)
+ц = allforms(t͡s)
+ю = allforms(i͡u)
+я = allforms(i͡a)
+аь = allforms(aʹ)
+гӀ = allforms(gḣ)
+дз = allforms(dz)
+къ = allforms(kʺ)
+кӀ = allforms(kḣ)
+оь = allforms(oʹ)
+пӀ = allforms(pḣ)
+тӀ = allforms(tḣ)
+уь = allforms(uʹ)
+ж = allforms(zh)
+х = allforms(kh)
+ч = allforms(ch)
+ш = allforms(sh)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+з = allforms(z)
+и = allforms(i)
+й = allforms(ĭ)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms(ʺ)
+ы = allforms(y)
+ь = allforms(ʹ)
+э = allforms(ė)
+ё = allforms(ë)
+Ӏ = allforms(ḣ)

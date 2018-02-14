@@ -1,0 +1,71 @@
+{{
+FormatString: "Cypriot %s"
+LFonts: ["Cypriot", "Latin"]
+LProvides: [
+	["ell", "Cypriot"], # TODO: Should this be ANCIENT greek?
+	["ell", "Latin"]]
+LCreate: [true, true]
+LTypes = [["disp", "high"], ["input", "high"]]
+BothWays: 1
+MatchCase: 1
+IgnoreMe: 1
+}}
+
+#provides("%s", "Cypriot", "Latin")
+#useMatchCase()
+
+﻿𐠅 = JA # CYPRIOT SYLLABLE
+𐠈 = JO # CYPRIOT SYLLABLE
+𐠊 = KA # CYPRIOT SYLLABLE
+𐠋 = KE # CYPRIOT SYLLABLE
+𐠌 = KI # CYPRIOT SYLLABLE
+𐠍 = KO # CYPRIOT SYLLABLE
+𐠎 = KU # CYPRIOT SYLLABLE
+𐠏 = LA # CYPRIOT SYLLABLE
+𐠐 = LE # CYPRIOT SYLLABLE
+𐠑 = LI # CYPRIOT SYLLABLE
+𐠒 = LO # CYPRIOT SYLLABLE
+𐠓 = LU # CYPRIOT SYLLABLE
+𐠔 = MA # CYPRIOT SYLLABLE
+𐠕 = ME # CYPRIOT SYLLABLE
+𐠖 = MI # CYPRIOT SYLLABLE
+𐠗 = MO # CYPRIOT SYLLABLE
+𐠘 = MU # CYPRIOT SYLLABLE
+𐠙 = NA # CYPRIOT SYLLABLE
+𐠚 = NE # CYPRIOT SYLLABLE
+𐠛 = NI # CYPRIOT SYLLABLE
+𐠜 = NO # CYPRIOT SYLLABLE
+𐠝 = NU # CYPRIOT SYLLABLE
+𐠞 = PA # CYPRIOT SYLLABLE
+𐠟 = PE # CYPRIOT SYLLABLE
+𐠠 = PI # CYPRIOT SYLLABLE
+𐠡 = PO # CYPRIOT SYLLABLE
+𐠢 = PU # CYPRIOT SYLLABLE
+𐠣 = RA # CYPRIOT SYLLABLE
+𐠤 = RE # CYPRIOT SYLLABLE
+𐠥 = RI # CYPRIOT SYLLABLE
+𐠦 = RO # CYPRIOT SYLLABLE
+𐠧 = RU # CYPRIOT SYLLABLE
+𐠨 = SA # CYPRIOT SYLLABLE
+𐠩 = SE # CYPRIOT SYLLABLE
+𐠪 = SI # CYPRIOT SYLLABLE
+𐠫 = SO # CYPRIOT SYLLABLE
+𐠬 = SU # CYPRIOT SYLLABLE
+𐠭 = TA # CYPRIOT SYLLABLE
+𐠮 = TE # CYPRIOT SYLLABLE
+𐠯 = TI # CYPRIOT SYLLABLE
+𐠰 = TO # CYPRIOT SYLLABLE
+𐠱 = TU # CYPRIOT SYLLABLE
+𐠲 = WA # CYPRIOT SYLLABLE
+𐠳 = WE # CYPRIOT SYLLABLE
+𐠴 = WI # CYPRIOT SYLLABLE
+𐠵 = WO # CYPRIOT SYLLABLE
+𐠷 = XA # CYPRIOT SYLLABLE
+𐠸 = XE # CYPRIOT SYLLABLE
+𐠼 = ZA # CYPRIOT SYLLABLE
+𐠿 = ZO # CYPRIOT SYLLABLE
+𐠀 = A # CYPRIOT SYLLABLE
+𐠁 = E # CYPRIOT SYLLABLE
+𐠂 = I # CYPRIOT SYLLABLE
+𐠃 = O # CYPRIOT SYLLABLE
+𐠄 = U # CYPRIOT SYLLABLE

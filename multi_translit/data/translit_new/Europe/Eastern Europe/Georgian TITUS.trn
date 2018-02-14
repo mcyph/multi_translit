@@ -1,0 +1,63 @@
+[comment]
+Thesaurus Indogermanischer Text- und Sprachmaterialien 
+(http://titus.uni-frankfurt.de).
+
+Gippert, J.: Caucasian Alphabet Systems Based Upon the Cyrillic 
+Script. (TITUS), no date. 
+(http://titus.unifrankfurt.de/didact/caucasus/kaukschr.pdf).
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ka",
+    "direction": "<=>", 
+    "to_iso": "ka_Latn|TITUS"
+}
+
+[conversions]
+# (ey)
+ⴡ = fixme
+
+ⴗ = q{{COMBINING DOT ABOVE}}
+ⴜ = c{{COMBINING DOT BELOW}}
+ⴝ = č{{COMBINING DOT BELOW}}
+ჶ = {{}}
+# (ǝ)
+ჷ = {{}}
+
+ჸ = {{}}
+ⴀ = a
+ⴁ = b
+ⴂ = g
+ⴃ = d
+ⴄ = e
+ⴅ = v
+ⴆ = z
+ⴇ = t
+ⴈ = i
+ⴉ = ḳ
+ⴊ = l
+ⴋ = m
+ⴌ = n
+ⴍ = o
+ⴎ = ṗ
+ⴏ = ž
+ⴐ = r
+ⴑ = s
+ⴒ = ṭ
+ⴓ = u
+ⴔ = p
+ⴕ = k
+ⴖ = ġ
+ⴘ = š
+ⴙ = č
+ⴚ = c
+ⴛ = ʒ
+ⴞ = χ
+ⴟ = ǯ
+ⴠ = h
+ⴢ = {{}}
+ⴣ = {{}}
+ⴤ = q
+# (ō)
+ⴥ = {{}}

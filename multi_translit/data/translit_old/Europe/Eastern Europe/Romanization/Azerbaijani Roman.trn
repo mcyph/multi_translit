@@ -1,0 +1,58 @@
+﻿'''
+The Roman alphabet was officially decreed in 1991. This 
+column shows the Roman equivalents for the formerly used 
+Cyrillic alphabet.
+'''
+
+﻿{{
+FormatString: "Azerbaijani %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["aze", "Cyrillic"],
+	["aze", "Latin ISO 9"]]
+LCreate: [true, true]
+# Azerbaijani has a national and reversible system, so I don't 
+# see a reason to give ISO 9 a high priority
+LTypes = [["input", "high"], ["disp", "high"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Azerbaijani %s Roman", "Cyrillic", "Latin")
+#addISO("aze")
+#addType("input", "high")
+#addType("romanization", "high")
+#useMatchCase()
+
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(q)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(j)
+з = allforms(z)
+и = allforms(i)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ч = allforms(ç)
+ш = allforms(ş)
+ы = allforms(ı)
+ј = allforms(y)
+ғ = allforms(ğ)
+ҝ = allforms(g)
+ү = allforms(ü)
+ҹ = allforms(c)
+һ = allforms(h)
+ә = allforms(ǝ)
+ө = allforms(ö)

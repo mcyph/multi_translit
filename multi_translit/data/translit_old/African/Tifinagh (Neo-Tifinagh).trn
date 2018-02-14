@@ -1,0 +1,43 @@
+{{
+LScripts: ["Tifinagh", "", "Latin", ""]
+LTypes: [["input", "high"], ["disp", "low"]]
+LISOCodes = [
+	"tmh", # Tamashaq (generic)
+	"thv", # Tahaggart Tamahaq
+	"taq", # Tamasheq
+	"ttq", # Tawallammat Tamajaq	
+	"thz"] # Tayart Tamajeq
+IgnoreCase: true
+}}
+
+﻿ⵖ = gh
+ⴰ = a
+ⴱ = b
+ⴳ = g
+ⴷ = d
+ⴹ = ḍ
+ⴻ = e
+ⴼ = f
+ⴽ = k
+ⵀ = h
+ⵃ = ḥ
+ⵄ = ɛ
+ⵅ = x
+ⵇ = q
+ⵉ = i
+ⵊ = j
+ⵍ = l
+ⵎ = m
+ⵏ = n
+ⵓ = u
+ⵔ = r
+ⵕ = ṛ
+ⵙ = s
+ⵚ = ṣ
+ⵛ = c
+ⵜ = t
+ⵟ = ṭ
+ⵡ = w
+ⵢ = y
+ⵣ = z
+ⵤ = ẓ

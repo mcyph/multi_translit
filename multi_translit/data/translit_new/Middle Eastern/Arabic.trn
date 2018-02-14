@@ -1,0 +1,126 @@
+[comment]
+The system used here is from http://www.eki.ee/wgrs/rom1_ar.htm
+using the arabic UNGEGN system
+
+[settings]
+{
+    "from_iso": "ar_Latn|UNGEGN", 
+    "modifiers": {
+        "to_direction": {
+            "before_conversions": [
+                [
+                    "include", 
+                    "ar|Compatibility",
+                    "ar"
+                ]
+            ]
+        }
+    }, 
+    "direction": "<=>", 
+    "ignore_case": true, 
+    "to_iso": "ar"
+}
+
+[conversions]
+#==========================================================#
+#                    General Consonants                    #
+#==========================================================#
+
+# A Not romanized word-initially.
+’ = self ء or initial {{}} or allforms {{RIGHT PARENTHESIS}}
+
+# Not romanized, but see romanizations accompanying 
+# alif (ا) in the table for vowels.
+ignore{{LEFT PARENTHESIS}}{{RIGHT PARENTHESIS}} = self ا or final ﺎ
+
+t = ت
+th = ث
+kh = خ
+dh = ذ
+sh = ش
+z{{COMBINING CEDILLA}} = ظ
+gh = غ
+
+# TODO: Add assimilation for 'al'!
+al = ال
+
+# In certain endings, an original tā’ (ت) is written (ة), 
+# i.e., like hā’ (ه) with two dots, and is known as tā’ 
+# marbūţah. It is romanized h, except in the construct form 
+# of feminine nouns, where it is romanized t, instead.
+# As that requires context, I've decided to use ISO 233 for now
+# which romanizes both as ẗ
+#h = allforms(ة) # ???
+ẗ = ة
+
+# ب stands for any consonant
+aw = ب{{ARABIC FATHA}}و{{ARABIC SUKUN}}
+ay = ب{{ARABIC FATHA}}ي{{ARABIC SUKUN}}
+an = ب{{ARABIC FATHATAN}}
+in = ب{{ARABIC KASRATAN}}
+un = ب{{ARABIC DAMMATAN}}
+
+b = ب
+j = ج
+ḩ = ح
+d = د
+r = ر
+z = ز
+s = س
+ş = ص
+ḑ = ض
+ţ = ط
+‘ = ع
+f = ف
+q = ق
+k = ك
+l = ل
+m = م
+n = ن
+w = و
+y = ي
+
+#==========================================================#
+#                    Vowel Romanization                    #
+#==========================================================#
+
+# ب stands for any consonant
+# arabic fatha
+a = ب{{ARABIC FATHA}}
+
+# arabic kasra
+i = ب{{ARABIC KASRA}}
+
+# arabic damma
+u = ب{{ARABIC DAMMA}}
+
+
+# Marks absence of the vowel.
+# arabic sukun
+ignore{{LEFT PARENTHESIS}}{{RIGHT PARENTHESIS}} = ب{{ARABIC SUKUN}}
+
+
+# arabic fatha; arabic letter alef
+ā = ب{{ARABIC FATHA}}ا
+
+# arabic letter alef with madda above
+ā = آ
+
+# HACK - I'm not sure this is correct!!! # arabic letter alef with hamza above
+ā = أ
+
+# arabic kasra; arabic letter yeh
+ī = ب{{ARABIC KASRA}}ي
+
+# arabic damma; arabic letter waw
+ū = ب{{ARABIC DAMMA}}و
+
+# arabic fatha; arabic letter alef maksura
+á = ب{{ARABIC FATHA}}ى
+
+
+# Marks doubling of the consonant.
+# TODO: Elaboration about what this does would be nice.
+# E.g. should it double 'th' to 'thth' etc???
+# arabic shadda
+$CONSONANT when after $LATINCONSONANTS = ب{{ARABIC SHADDA}}

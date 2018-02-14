@@ -1,0 +1,48 @@
+﻿{{
+FormatString: "Kirghiz %s"
+LFonts: ["Cyrillic", "IPA"]
+LProvides: [
+	["kir", "Cyrillic"],
+	["kir", "Kirghiz IPA (ALPHA)"]]
+LCreate: [true, false]
+LTypes = [["disp", "high"]]
+BothWays: 0
+IgnoreCase: 1
+}}
+
+е = je||e
+щ = ʃ͡tʃ
+ж = d͡ʒ
+к = k||q
+ц = t͡s
+ч = t͡ʃ
+ю = ju
+я = ja
+ё = jo
+а = a
+б = b
+в = v
+г = ɡ
+д = d
+з = z
+и = i
+й = j
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = χ
+ш = ʃ
+ъ = ignore()
+ы = ɯ
+ь = ignore()
+э = e
+ң = ŋ
+ү = y
+ө = ø

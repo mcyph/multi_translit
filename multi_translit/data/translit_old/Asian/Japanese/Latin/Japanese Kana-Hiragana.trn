@@ -1,0 +1,15 @@
+{{
+FormatString: "Japanese %s"
+LFonts: ["Japanese", "Japanese"]
+LProvides: [
+	["jpn", "Kana"],
+	["jpn", "Hiragana"]]
+LCreate: [true, false]
+LTypes = [["disp", "high"]]
+BothWays: false
+IgnoreCase: true
+}}
+
+BEGIN Modifiers(Source)
+    from include("jpn:Katakana", "jpn:Hiragana")
+END Modifiers

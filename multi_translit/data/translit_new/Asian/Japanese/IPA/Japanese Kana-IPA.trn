@@ -1,0 +1,351 @@
+[comment]
+This is just a basic conversion, it doesn't add pitch yet.
+This is derived from http://www.kanji.org/cjk/reference/japphon.htm,
+http://en.wikipedia.org/wiki/Japanese_phonology and
+http://ja.wiktionary.org/wiki/Wiktionary:%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E7%99%BA%E9%9F%B3%E8%A1%A8%E8%A8%98
+
+As pronunciation can differ from word-to-word and between regions/by 
+individual speaker it's intended as a rough guide only.
+
+[settings]
+{
+    "from_iso": "ja_Hira",
+    "direction": "=>", 
+    "ignore_case": true, 
+    "to_iso": "ja_Latn|FONIPA"
+}
+
+[conversions]
+# Add ː's to long vowels e.g. toukyou
+
+# Convert Katakana prolonged vowel signs to separate Hiragana vowels
+あ when after ぁ,あ,か,が,さ,ざ,た,だ,な,は,ば,ぱ,ま,ゃ,や,ら,ゎ,わ = ː
+い when after ぃ,い,き,ぎ,し,じ,ち,ぢ,に,ひ,び,ぴ,み,り,ゐ = ː
+う when after ぅ,う,く,ぐ,す,ず,っ,つ,づ,ぬ,ふ,ぶ,ぷ,む,ゅ,ゆ,る,ゔ = ː
+え when after ぇ,え,け,げ,せ,ぜ,て,で,ね,へ,べ,ぺ,め,れ,ゑ = ː
+お when after ぉ,お,こ,ご,そ,ぞ,と,ど,の,ほ,ぼ,ぽ,も,ょ,よ,ろ,を = ː
+# HACK: u after o prolongs the sound
+う when after ぉ,お,こ,ご,そ,ぞ,と,ど,の,ほ,ぼ,ぽ,も,ょ,よ,ろ,を = ː
+- = ː
+ー = ː
+
+
+# bya etc combinations
+# Note that while I've opted for a more generic approach for now,
+# 'b' for example can change to 'β' for some speakers in fast speech 
+びゃ = bʲa
+びぃ = bʲi
+びゅ = bʲɯ
+びぇ = bʲe
+びょ = bʲo
+
+ぴゃ = pʲa
+ぴぃ = pʲi
+ぴゅ = pʲɯ
+ぴぇ = pʲe
+ぴょ = pʲo
+
+りゃ = ɽʲa
+りぃ = ɽʲi
+りゅ = ɽʲɯ
+りぇ = ɽʲe
+りょ = ɽʲo
+
+ぎゃ = gʲa
+ぎぃ = gʲi
+ぎゅ = gʲɯ
+ぎぇ = gʲe
+ぎょ = gʲo
+
+ゔぁ = va
+ゔぃ = vi
+ゔ = vɯ
+ゔぇ = ve
+ゔぉ = vo
+
+ばぁ = ba
+ばぃ = bi
+ばぅ = bɯ
+ばぇ = be
+ばぉ = bo
+
+しゃ = ɕa
+しぃ = ɕji
+しゅ = ɕɯ
+しぇ = ɕe
+しょ = ɕo
+しゎ = ɕwa
+
+# z tends to be /ᵈz/ initial before /i/ and after /N/
+じゃ = ʥa
+じぃ = ʥi
+じゅ = ʥɯ
+じぇ = ʥe
+じょ = ʥo
+
+# TODO: Should these be ua etc? I'm guessing they are 
+# pronounced 'wa' because they mainly appear in loan words
+うぁ = wa
+うぃ = wi
+うぅ = wɯ
+うぇ = we
+うぉ = wo
+
+# va e.g. in ヴァン/バンクーバー etc
+# I'm not 100% certain about this one, but I'm guessing it differs from ば as 
+# it basically only occurs in foreign loan words which have a 'v' in them
+ゔぁ = va
+ゔぃ = vi
+ゔぅ = vɯ
+ゔぇ = ve
+ゔぉ = vo
+ゔ = vɯ
+
+ばぁ = ba
+ばぃ = bi
+ばぅ = bɯ
+ばぇ = be
+ばぉ = bo
+
+ふぁ = ɸa
+ふぃ = ɸi
+ふぅ = ɸɯ
+ふぇ = ɸe
+ふぉ = ɸo
+
+ぶぁ = ba
+ぶぃ = bi
+ぶぅ = bɯ
+ぶぇ = be
+ぶぉ = bo
+
+# TODO: Should these be ɯa etc? I'm guessing they are 
+# pronounced 'wa' because they mainly appear in loan words
+うぁ = wa
+うぃ = wi
+うぅ = wɯ
+うぇ = we
+うぉ = wo
+
+
+# Is this correct?
+ぢ = ʥi
+
+ば = ba
+び = bi
+ぶ = bɯ
+べ = be
+ぼ = bo
+
+ぱ = pa
+ぴ = pi
+ぷ = pɯ
+ぺ = pe
+ぽ = po
+
+でぃ = di
+どぅ = dɯ
+だ = da
+で = de
+ど = do
+
+きゃ = kʲa
+きぃ = kʲi
+きゅ = kʲɯ
+きぇ = kʲe
+きょ = kʲo
+
+# 滝 -> [takʲi] but it's light and not universal so I've omitted it
+か = ka
+き = ki
+く = kɯ
+け = ke
+こ = ko
+
+が = ga
+ぎ = gi
+ぐ = gɯ
+げ = ge
+ご = go
+
+
+ちゃ = ʨa
+ちゅ = ʨɯ
+ちょ = ʨo
+ちゎ = ʨwa
+てぃ = ti
+とぅ = tɯ
+
+た = ta
+て = te
+と = to
+ち = ʨi
+つ = ʦɯ
+
+# 民 -> [tamʲi] but it's light and not universal so I've omitted it
+ま = ma
+み = mi
+む = mɯ
+め = me
+も = mo
+
+# Note the nʲi - Japan is pronounced [nʲip̚poɴ] for example
+# But for now I've opted to leave it as ni
+な = na
+に = ni
+ぬ = nɯ
+ね = ne
+の = no
+
+
+# p/b/m
+ん when before ぱ,ぴ,ぷ,ぺ,ぽ,ば,び,ぶ,べ,ぼ,ま,み,む,め,も = m
+
+# t/d/tˢ/n
+ん when before た,ち,つ,て,と,だ,ぢ,づ,で,ど,ん = n
+
+# k/g
+ん when before か,き,く,け,こ = ŋ
+
+# ɽ/ɽ
+ん when before ら,り,る,れ,ろ = ṉ
+
+ん = ɴ
+
+# ɖ/ḻ/l̺,/ɺ/ɾ
+ら = ɽa
+り = ɽi
+る = ɽɯ
+れ = ɽe
+ろ = ɽo
+
+
+さ = sa
+し = ɕi
+す = sɯ
+せ = se
+そ = so
+
+ざ = za
+じ = ʥi
+ず = zɯ
+ぜ = ze
+ぞ = zo
+
+は = ha
+ひ = çi
+ふ = ɸɯ
+へ = he
+ほ = ho
+
+や = ja
+ゆ = jɯ
+よ = jo
+わ = ɰa
+ゐ = ɰi
+ゑ = ɰe
+
+
+# Exception: sa by itself has an audible glottal stop
+#さっ = self(saʔ)
+
+# before pj
+っぴゃ = p{{COMBINING LEFT ANGLE ABOVE}}pʲa
+っぴぃ = p{{COMBINING LEFT ANGLE ABOVE}}pʲi
+っぴゅ = p{{COMBINING LEFT ANGLE ABOVE}}pʲɯ
+っぴぇ = p{{COMBINING LEFT ANGLE ABOVE}}pʲe
+っぴょ = p{{COMBINING LEFT ANGLE ABOVE}}pʲo
+
+
+# before p
+っぱ = p{{COMBINING LEFT ANGLE ABOVE}}pa
+っぴ = p{{COMBINING LEFT ANGLE ABOVE}}pi
+っぷ = p{{COMBINING LEFT ANGLE ABOVE}}pɯ
+っぺ = p{{COMBINING LEFT ANGLE ABOVE}}pe
+っぽ = p{{COMBINING LEFT ANGLE ABOVE}}po
+
+
+# before tj FIXME!
+っちゃ = t{{COMBINING LEFT ANGLE ABOVE}}ʨa
+っちぃ = t{{COMBINING LEFT ANGLE ABOVE}}ʨii
+っちゅ = t{{COMBINING LEFT ANGLE ABOVE}}ʨɯ
+っちぇ = t{{COMBINING LEFT ANGLE ABOVE}}ʨe
+っちょ = t{{COMBINING LEFT ANGLE ABOVE}}ʨo
+っち = t{{COMBINING LEFT ANGLE ABOVE}}ʨi
+
+
+# before t
+った = t{{COMBINING LEFT ANGLE ABOVE}}ta
+っつ = t{{COMBINING LEFT ANGLE ABOVE}}ʦɯ
+って = t{{COMBINING LEFT ANGLE ABOVE}}te
+っと = t{{COMBINING LEFT ANGLE ABOVE}}to
+
+
+# before kj
+っきゃ = k{{COMBINING LEFT ANGLE ABOVE}}kʲa
+っきぃ = k{{COMBINING LEFT ANGLE ABOVE}}kʲi
+っきゅ = k{{COMBINING LEFT ANGLE ABOVE}}kʲɯ
+っきぇ = k{{COMBINING LEFT ANGLE ABOVE}}kʲe
+っきょ = k{{COMBINING LEFT ANGLE ABOVE}}kʲo
+
+
+# before k
+っか = k{{COMBINING LEFT ANGLE ABOVE}}ka
+っき = k{{COMBINING LEFT ANGLE ABOVE}}ki
+っく = k{{COMBINING LEFT ANGLE ABOVE}}kɯ
+っけ = k{{COMBINING LEFT ANGLE ABOVE}}ke
+っこ = k{{COMBINING LEFT ANGLE ABOVE}}ko
+
+
+# before s
+っさ = sːa
+っす = sːɯ
+っせ = sːe
+っそ = sːo
+
+
+# before ɕ
+っしゃ = ɕːa
+っしぃ = ɕːi
+っしゅ = ɕːɯ
+っしぇ = ɕːe
+っしょ = ɕːo
+
+
+# before ɕ
+っし = ɕːi
+
+っ = ʔ
+
+# Japanese vowels with small tsus after them are sometimes
+# preceded or followed by a full stop
+あっ = aʔ
+いっ = iʔ
+うっ = ɯʔ
+えっ = eʔ
+おっ = oʔ
+
+
+い = i
+え = e
+あ = a
+お = o
+う = ɯ
+を = ɰo
+
+# Added for completeness
+ぃ = i
+ぇ = e
+ぁ = a
+ぉ = o
+ぅ = ɯ
+
+ゃ = ʲa
+ぃ = ʲi
+ゅ = ʲɯ
+ぇ = ʲe
+ょ = ʲo
+
+
+# TODO: Check this is correct!
+づ = zɯ

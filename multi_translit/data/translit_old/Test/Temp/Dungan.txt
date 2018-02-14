@@ -1,0 +1,40 @@
+﻿ISO 9  KNAB  ALA-LC
+1995  1994(2.0)  1997
+А а a a a
+Б б b b [b̥] b
+В в v w [v] v
+Г г g g [ɡ̊] g
+Д д d d [d̥] d
+Е е e ie, ye(2.1) [jɛ], é(2.2) e
+Ё ё ë io, yo(2.1) ë
+Ж ж ž r̂ [ʒ] zh
+Җ җ ž̦ zh [d̥ʒ̊], j(2.3) [d̥ʑ̥] j
+З з z z [d̥z̥] z
+И и i i i
+Й й j y [j], i(2.4) ĭ
+К к k k [kʰ] k
+Л л l l l
+М м m m m
+Н н n n n
+Ң ң ņ ng(2.5) [ŋ] n͡g
+Ә ә a̋ e [ə] ă
+О о o uo, o(2.6) o
+П п p p [pʰ] p
+Р р r r r
+С с s s s
+Т т t t [tʰ] t
+У у u ou [u], u(2.7) u
+Ў ў ǔ u ŭ
+Ү ү ù ü [y], u(2.8) [w] u̇
+Ф ф f f f
+Х х h h [x] kh
+Ц ц c c [tsʰ] t͡s
+Ч ч č ch [tʃʰ], q(2.3) [tɕʰ] ch
+Ш ш š sh [ʃ] sh
+Щ щ ŝ x [ɕ] shch
+Ъ ъ ʺ  ʺ
+Ы ы y î [ɨ], i(2.9), e(2.10) y
+Ь ь ʹ  ʹ
+Э э è ai [ɛ], è(2.2) ė
+Ю ю û iu, you(2.1) i͡u
+Я я â ia, ya(2.1) i͡a

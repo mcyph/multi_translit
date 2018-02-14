@@ -1,0 +1,224 @@
+[comment]
+The true indicates this can only work from Katakana-Latin
+
+[settings]
+{
+    "from_iso": "ja_Kana", 
+    "direction": "=>", 
+    "ignore_case": true, 
+    "to_iso": "ja_Latn"
+}
+
+[conversions]
+デァ = da
+ディ = di
+デゥ = du
+デェ = de
+デォ = do
+
+キャ = kya
+キュ = kyu
+キョ = kyo
+
+シャ = sha
+シュ = shu
+ショ = sho
+
+チャ = cha
+チュ = chu
+チョ = cho
+
+ニャ = nya
+ニュ = nyu
+ニョ = nyo
+
+ヒャ = hya
+ヒュ = hyu
+ヒョ = hyo
+
+ミャ = mya
+ミュ = myu
+ミョ = myo
+
+リャ = rya
+リュ = ryu
+リョ = ryo
+
+ギャ = gya
+ギュ = gyu
+ギョ = gyo
+
+ジャ = ja
+ジュ = ju
+ジョ = jo
+
+# This is sometimes written as ja, ju and jo
+ヂャ = dza
+ヂュ = dzu
+ヂョ = dzo
+
+
+ビャ = bya
+ビュ = byu
+ビョ = byo
+
+ピャ = pya
+ピュ = pyu
+ピョ = pyo
+
+
+ッ when before カ,キ,ク,ケ,コ = k
+ッ when before サ,シ,ス,セ,ソ = s
+ッ when before タ,チ,ツ,テ,ト = t
+ッ when before フ = f
+ッ when before ハ,ヒ,ヘ,ホ = h
+ッ when before マ,ミ,ム,メ,モ = m
+ッ when before ヤ,ユ,イ,ェ,ヨ = y
+ッ when before ラ,リ,ル,レ,ロ = r
+ッ when before ワ,ウ,ヲ = w
+ッ when before ガ,ギ,グ,ゲ,ゴ = g
+ッ when before パ,ピ,プ,ペ,ポ = p
+ッ when before ジ = j
+ッ when before ヴ = v
+ッ when before ダ,ヂ,ヅ,デ,ド = d
+ッ when before バ,ビ,ブ,ベ,ボ = b
+# Fallback if no double syllable found
+ッ = xtsu
+
+ヴぁ = va
+ヴぃ = vi
+ヴ = vu
+ヴぇ = ve
+ヴぉ = vo
+
+バァ = ba
+バィ = bi
+バゥ = bu
+バェ = be
+バォ = bo
+
+ファ = fa
+フィ = fi
+フゥ = fu
+フェ = fe
+フォ = fo
+
+ブァ = ba
+ブィ = bi
+ブゥ = bu
+ブェ = be
+ブォ = bo
+
+# TODO: Should these be ua etc? I'm guessing they are 
+# pronounced 'wa' because they mainly appear in loan words
+ウァ = wa
+ウィ = wi
+ウゥ = wu
+ウェ = we
+ウォ = wo
+
+
+ァ = xa
+ィ = xi
+ゥ = xu
+ェ = xe
+ォ = xo
+
+ア = a
+イ = i
+ウ = u
+エ = e
+オ = o
+
+カ = ka
+キ = ki
+ク = ku
+ケ = ke
+コ = ko
+
+サ = sa
+シ = shi
+ス = su
+セ = se
+ソ = so
+
+ガ = ga
+ギ = gi
+グ = gu
+ゲ = ge
+ゴ = go
+
+タ = ta
+チ = chi
+ツ = tsu
+テ = te
+ト = to
+
+ザ = za
+ジ = ji
+ズ = zu
+ゼ = ze
+ゾ = zo
+
+# ヂ is also transliterated as ji
+# ヅ is also transliterated as zu
+ダ = da
+ヂ = dzi
+ヅ = dzu
+デ = de
+ド = do
+
+ナ = na
+ニ = ni
+ヌ = nu
+ネ = ne
+ノ = no
+
+ハ = ha
+ヒ = hi
+フ = fu
+ヘ = he
+ホ = ho
+
+バ = ba
+ビ = bi
+ブ = bu
+ベ = be
+ボ = bo
+
+パ = pa
+ピ = pi
+プ = pu
+ペ = pe
+ポ = po
+
+マ = ma
+ミ = mi
+ム = mu
+メ = me
+モ = mo
+
+ャ = xya
+ュ = xyu
+ョ = xyo
+
+ヤ = ya
+ユ = yu
+ヨ = yo
+
+ラ = ra
+リ = ri
+ル = ru
+レ = re
+ロ = ro
+
+
+ヮ = xwa
+ワ = wa
+ヰ = wi
+ヱ = we
+ヲ = wo
+
+ン when before ナ,ニ,ヌ,ネ,ノ = n'
+ン = n
+ー = -

@@ -1,0 +1,47 @@
+﻿# Translit auto-generated from E:\Dev\Flazzle\Flazzle\Romanization\BySound\Temp\Chuvash.txt version/date 1995
+# 2.1. Aer a vowel, й, ъ and ь, also word-initially.
+# 2.2. Aer л, н, р, т (palatalizing consonants).
+'''
+Latiniseeritud nimede hääldusjuhiseid/Guide to the 
+Pronounciation of Romanized Names. KNAB: Kohanimeandmebaas. 
+Eesti Keeli Instituut, 1998.
+'''
+
+useMatchCase()
+е = allforms(e||je) # (2.1)
+ь = allforms(||j) # (2.2)
+э = allforms(è||e) # (2.1)
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(h)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms()
+ы = allforms(y)
+ё = allforms(ë)
+ҫ = allforms(ś)
+ӑ = allforms(ă)
+ӗ = allforms(ö)
+ӳ = allforms(ü)

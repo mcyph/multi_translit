@@ -1,0 +1,64 @@
+[comment]
+New Roman alphabet introduced in 2001:
+Aa, Əǝ, Bb, Cc, Çç, Dd, Ee, Ff, Gg, Ğğ, Hh, Iı, İi, Jj, Kk, Qq, Ll, 
+Mm, Nn, , Oo, Ɵɵ, Pp, Rr, Ss, Şş, Tt, Uu, Üü, Vv, Ww, Xx, Yy, Zz
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "tt_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "tt_Latn|Roman Official"
+}
+
+[conversions]
+# FIXME: WERE THESE GENERATED CORRECTLY??? 
+# (1.2)
+ю = yu,yü
+
+# (1.2)
+я = ya,yǝ
+
+# (1.2)
+г = ğ,g
+
+# (1.2)
+к = q,k
+
+# (1.7)
+э = e,’
+
+в = w
+е = e
+и = iı
+у = u
+ц = ts
+щ = şç
+ы = ı
+а = a
+б = b
+д = d
+ж = j
+з = z
+й = y
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+ф = f
+х = x
+ч = ç
+ш = ş
+ъ = —
+ь = ’
+ё = —
+җ = c
+ң = 
+ү = ü
+һ = h
+ә = ǝ
+ө = ɵ

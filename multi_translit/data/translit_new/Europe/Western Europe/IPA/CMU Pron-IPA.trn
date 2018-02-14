@@ -1,0 +1,128 @@
+[settings]
+{
+    "from_iso": "en|CMU Pron",
+    "direction": "<=>", 
+    "to_iso": "en|FONIPA"
+}
+
+[conversions]
+0 = {{}}
+1 = ˑ
+2 = ː
+
+# odd     AA D
+AA = ɑ
+
+# at	AE T
+AE = æ
+
+# hut	HH AH T
+AH = ʌ
+
+# ought	AO T
+AO = ɔ
+
+# cow	K AW
+AW = aʊ
+
+# hide	HH AY D
+AY = aɪ
+
+# be	B IY
+B = b
+
+# cheese	CH IY Z
+CH = tʃ
+
+# thee	DH IY
+DH = ð
+
+# dee	D IY
+D = d
+
+# Ed	EH D - CHECK ME!
+EH = e
+
+# hurt	HH ER T
+ER = ɜ
+
+# ate	EY T
+EY = eɪ
+
+# fee	F IY
+F = f
+
+# green	G R IY N
+G = ɡ
+
+# he	HH IY
+HH = h
+
+# it	IH T
+IH = ɪ
+
+# eat	IY T
+IY = i
+
+# gee	JH IY
+JH = dʒ
+
+# key	K IY
+K = k
+
+# lee	L IY
+L = l
+
+# me	M IY
+M = m
+
+# ping	P IH NG
+NG = ŋ
+
+# knee	N IY
+N = n
+
+# oat	OW T
+OW = əʊ
+
+# toy	T OY
+OY = ɔɪ
+
+# pee	P IY
+P = p
+
+# read	R IY D
+R = r
+
+# she	SH IY
+SH = ʃ
+
+# sea	S IY
+S = s
+
+# theta	TH EY T AH
+TH = θ
+
+# tea	T IY
+T = t
+
+# hood	HH UH D
+UH = ʊ
+
+# two	T UW
+UW = u
+
+# vee	V IY
+V = v
+
+# we	W IY
+W = w
+
+# yield	Y IY L D
+Y = j
+
+# seizure	S IY ZH ER
+ZH = ʒ
+
+# zee	Z IY
+Z = z

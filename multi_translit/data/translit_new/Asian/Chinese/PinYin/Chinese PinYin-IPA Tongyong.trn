@@ -1,0 +1,77 @@
+[settings]
+{
+    "from_iso": "zh_Latn|Numeric Pinyin",
+    "direction": "=>", 
+    "ignore_me": true, 
+    "ignore_case": true, 
+    "to_iso": "zh_Latn|FONIPA"
+}
+
+[conversions]
+# TODO: DOES THIS PROFILE WORK?
+
+zuo = tsuɔ
+zi = tsɨ
+zhi = ʈʂɚ
+zhe = ʈʂə
+ze = tsə
+yun = yn
+yue = yɛ
+yuan = yɛn
+yu = y
+you = iɤʊ
+yong = yʊŋ
+ying = jiŋ
+yin = iɪn
+yi = i
+ye = iɛ
+yan = iɛn
+xuan = ɕyɛn
+wu = u
+wo = uɔ
+weng = uʊŋ
+wen = uʊn
+wei = ueɪ
+wan = uan
+t = tʰ
+si = sɨ
+shi = ʂɚ
+she = ʂə
+se = sə
+ri = ʐɚ
+re = ʐə
+qin = tɕʰɪn
+p = pʰ
+ou = ɤʊ
+ong = ʊŋ
+o = ɔ
+nü = ny
+m = m
+lü = ly
+k = kʰ
+jiong = tɕyʊŋ
+jian = tɕiɛn
+he = xə
+ger = kəɻ
+feng = fʊŋ
+er = ɑɻ
+eng = ɤŋ
+en = ən
+ei = eɪ
+e = ɤ
+dui = tuei
+diu = tiou
+ci = tsʰɨ
+chi = ʈʂʰɚ
+che = ʈʂʰə
+ce = tsʰə
+b = p
+ao = ɑʊ
+ang = ɑŋ
+an = an
+ai = aɪ
+a = ɑ
+4 = ˥˩
+3 = ˨˩˦
+2 = ˧˥
+1 = ˥˥

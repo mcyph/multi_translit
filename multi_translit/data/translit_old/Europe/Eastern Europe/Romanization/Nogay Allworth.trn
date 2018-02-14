@@ -1,0 +1,60 @@
+﻿'''
+Allworth, Edward: Nationalities of the Soviet East. 
+Publications and Writing Systems. New York, 1971.
+'''
+
+{{
+FormatString: "Nogay %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["nog", "Cyrillic"], 
+	["nog", "Latin Allworth"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Nogay %s Allworth", "Cyrillic", "Latin")
+#addISO("nog")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+е = allforms(ye‐||‐e‐)
+щ = allforms(shch)
+нъ = allforms(ng)
+#аь = ignore()
+ж = allforms(zh)
+оь = allforms(ö)
+уь = allforms(ü)
+х = allforms(kh)
+ц = allforms(ts)
+ч = allforms(ch)
+ш = allforms(sh)
+ю = allforms(yu)
+я = allforms(ya)
+ё = allforms(yo)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+з = allforms(z)
+и = allforms(i)
+й = allforms(y)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+ъ = allforms()
+ы = allforms(ï)
+ь = allforms(ʼ)
+э = allforms(ë)

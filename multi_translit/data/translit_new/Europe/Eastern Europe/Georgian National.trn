@@ -1,0 +1,59 @@
+[comment]
+The national system of romanization adopted in February 2002 by 
+the State Department of Geodesy and Cartography of Georgia and 
+the Institute of Linguistics, Georgian Academy of Sciences.
+
+Apridonidze, Shukia & Chkhaidze, Levan: From Georgian and into Georgian: 
+Transliteration of Georgian Alphabet. Linguistics Institute of Academy of 
+Science of Georgia, no date. (http://laag.iatp.org.ge/article/008.htm).
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "ka",
+    "direction": "<=>", 
+    "to_iso": "ka_Latn|National"
+}
+
+[conversions]
+ⴜ = ts’
+ⴝ = ch’
+ⴉ = k’
+ⴎ = p’
+ⴏ = zh
+ⴒ = t’
+ⴖ = gh
+ⴗ = q’
+ⴘ = sh
+ⴙ = ch
+ⴚ = ts
+ⴛ = dz
+ⴞ = kh
+ჶ = f
+ჷ = {{}}
+ჸ = {{}}
+ⴀ = a
+ⴁ = b
+ⴂ = g
+ⴃ = d
+ⴄ = e
+ⴅ = v
+ⴆ = z
+ⴇ = t
+ⴈ = i
+ⴊ = l
+ⴋ = m
+ⴌ = n
+ⴍ = o
+ⴐ = r
+ⴑ = s
+ⴓ = u
+ⴔ = p
+ⴕ = k
+ⴟ = j
+ⴠ = h
+ⴡ = ē
+ⴢ = y
+ⴣ = w
+ⴤ = ẖ
+ⴥ = ō

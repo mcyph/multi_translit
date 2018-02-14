@@ -1,0 +1,56 @@
+[comment]
+American Library Association/Library of Congress.
+
+ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman 
+Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "tt_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "tt_Latn|ALA-LC"
+}
+
+[conversions]
+# (3.1)
+е = e,je
+
+щ = shch
+ц = t{{COMBINING DOUBLE INVERTED BREVE}}s
+ю = i{{COMBINING DOUBLE INVERTED BREVE}}u
+я = i{{COMBINING DOUBLE INVERTED BREVE}}u
+ң = n{{COMBINING DOUBLE INVERTED BREVE}}g
+ж = zh
+х = kh
+ч = ch
+ш = sh
+ү = u{{COMBINING DOT ABOVE}}
+а = a
+б = b
+в = v
+г = g
+д = d
+з = z
+и = i
+й = ĭ
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+ъ = ʺ
+ы = y
+ь = ʹ
+э = ė
+ё = ë
+җ = j
+һ = ḣ
+ә = ă
+ө = ȯ

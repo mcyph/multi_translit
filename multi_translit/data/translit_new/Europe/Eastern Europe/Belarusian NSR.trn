@@ -1,0 +1,55 @@
+[comment]
+Translit auto-generated from E:\Dev\Flazzle\Flazzle\Romanization\BySound\Temp\Belarusian.txt version/date 2000(2.0)
+2.0 The official National System of Romanization, approved by the Government Committee on Land
+Resources, Geodesy and Cartography in 2000.
+
+[settings]
+{
+    "match_case": true, 
+    "from_iso": "be_Cyrl", 
+    "direction": "<=>", 
+    "to_iso": "be_Latn|Official"
+}
+
+[conversions]
+# 2.1 Initially, after vowels, apostrophe (’), ь and ў.
+е when after $CYRILLICVOWELS = ie
+е = self ie or initial ie or final je
+ю when after $CYRILLICVOWELS = iu
+ю = self iu or initial iu or final ju
+я when after $CYRILLICVOWELS = ia
+я = self ia or initial ia or final ja
+ё when after $CYRILLICVOWELS = io
+ё = self io or initial io or final jo
+
+дж = dž
+дз = dz
+х = ch
+а = a
+б = b
+в = v
+г = h
+д = d
+ж = ž
+з = z
+й = j
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+ц = c
+ч = č
+ш = š
+ы = y
+ь = ʼ
+э = e
+і = i
+ў = ú
+’ = —

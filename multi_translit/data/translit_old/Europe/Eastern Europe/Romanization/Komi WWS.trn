@@ -1,0 +1,62 @@
+﻿'''
+The World’s Writing Systems. Peter T. Daniels & 
+William Bright (eds.). New York, 1996.
+'''
+
+{{
+FormatString: "Komi %s"
+LFonts: ["Cyrillic", "Latin"]
+LProvides: [
+	["kpv", "Cyrillic"], # TODO: Add koi?
+	["kpv", "Latin WWS"]]
+LCreate: [true, true]
+LTypes = [["input", "low"], ["disp", "low"]]
+BothWays: 1
+MatchCase: 1
+}}
+
+#provides("Komi %s WWS", "Cyrillic", "Latin")
+#addISO("koi")
+#addISO("kpv")
+#addType("input", "low")
+#addType("romanization", "low")
+#useMatchCase()
+
+дж = allforms(dž)
+дз = allforms(dz)
+тш = allforms(tš)
+щ = allforms(šč)
+ю = allforms(ju)
+я = allforms(ja)
+а = allforms(a)
+б = allforms(b)
+в = allforms(v)
+г = allforms(g)
+д = allforms(d)
+е = allforms(e)
+ж = allforms(ž)
+з = allforms(z)
+и = allforms(i)
+й = allforms(j) # (4.5)
+к = allforms(k)
+л = allforms(l)
+м = allforms(m)
+н = allforms(n)
+о = allforms(o)
+п = allforms(p)
+р = allforms(r)
+с = allforms(s)
+т = allforms(t)
+у = allforms(u)
+ф = allforms(f)
+х = allforms(x)
+ц = allforms(c)
+ч = allforms(č)
+ш = allforms(š)
+ъ = allforms(ʺ) # (4.5)
+ы = allforms(y)
+ь = allforms(ʹ) # (4.5)
+э = allforms(è) # (4.6)
+ё = allforms(ë)
+і = allforms(ï) # (4.4)
+ӧ = allforms(ö)
