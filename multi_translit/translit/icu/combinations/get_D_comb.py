@@ -3,7 +3,7 @@ from json import loads
 from codecs import open
 
 from multi_translit.data_paths import data_path
-from lang_data import ISOTools
+from iso_tools import ISOTools
 
 
 def get_D_comb():

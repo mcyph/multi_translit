@@ -3,7 +3,7 @@ import codecs
 os.chdir('../../')
 import File # Surrogate pair HACK!
 from char_data.CharData import CharData, DISO2Lang, DISO2LFullText
-from toolkit.surrogates import w_unichr
+from toolkit.encodings.surrogates import w_unichr
 
 DFreq = {'cmn': ('Chinese Frequency', 
                  'Hong Kong Grade', 

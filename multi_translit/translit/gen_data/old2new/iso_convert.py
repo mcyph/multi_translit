@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from lang_data import ISOTools
+from iso_tools import ISOTools
 
 
 DScriptsVariants = {

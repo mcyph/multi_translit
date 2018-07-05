@@ -5,7 +5,7 @@ from os.path import exists, dirname
 
 from multi_translit.translit.gen_data.old2new.OldParser import get_D_old, LOrder
 from multi_translit.translit.iter_translit_files import iter_translit_files
-from toolkit.file_tools import file_write
+from toolkit.io.file_tools import file_write
 from multi_translit.data_paths import data_path
 
 from iso_convert import iso_convert

@@ -4,7 +4,7 @@ import codecs
 import keyword
 import wx, wx.aui
 import wx.stc as stc
-from toolkit.DIPA import DIPA
+from toolkit.encodings.DIPA import DIPA
 
 class SplSplitter(wx.SplitterWindow):
     def __init__(self, parent):

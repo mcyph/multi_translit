@@ -1,6 +1,6 @@
 import json
 from toolkit.py_ini import read_D_html_ini
-from lang_data import ISOTools
+from iso_tools import ISOTools
 
 from get_rule import get_rule, process_val
 

@@ -6,7 +6,7 @@ from multi_translit.data_paths import data_path
 from toolkit.json_tools import load
 
 from multi_translit.translit.korean import enmode, demode, SKoTypes
-from lang_data import ISOTools, NONE, LANG, TERRITORY, VARIANT
+from iso_tools import ISOTools, NONE, LANG, TERRITORY, VARIANT
 from multi_translit.translit.get_D_translit_mappings import get_D_translit_mappings
 from combinations import get_D_comb
 

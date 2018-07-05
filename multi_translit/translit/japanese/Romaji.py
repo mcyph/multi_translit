@@ -403,7 +403,7 @@ if __name__ == '__main__':
     print hira_to_romaji(u'ひらがな').encode('utf-8')
     print kata_to_romaji(u'カタカナ').encode('utf-8')
     
-    from toolkit.Timer import Timer
+    from toolkit.misc.Timer import Timer
     t = Timer()
     for i in xrange(1000000):
         kana_to_latin(u'gfgㄴひらがなカタカナ')
