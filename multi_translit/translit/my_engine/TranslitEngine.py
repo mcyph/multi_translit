@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from multi_translit.translit.ProcessWord import process_word
-from multi_translit.translit.SplitSentence import split_sentence
+from multi_translit.translit.my_engine.ProcessWord import process_word
+from multi_translit.translit.my_engine.SplitSentence import split_sentence
 
 from TranslitParse import TranslitParse
 
