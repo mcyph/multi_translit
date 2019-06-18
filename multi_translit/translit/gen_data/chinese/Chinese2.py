@@ -116,5 +116,5 @@ def generate():
     for PinYin, IPA in L:
         File.write("%s = %s\n" % (PinYin, IPA))
     File.close()
-    print 'PINYIN-IPA OUTPUT OK!'
+    print('PINYIN-IPA OUTPUT OK!')
 generate()

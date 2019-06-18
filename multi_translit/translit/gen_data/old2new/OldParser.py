@@ -69,7 +69,7 @@ class OldParser:
             D['DSettings'] = self.pop_D_settings()
         except:
             from traceback import print_exc
-            print 'settings not found for:', path
+            print('settings not found for:', path)
             print_exc()
         
         # Now go through and process the file one line at a time
@@ -224,7 +224,7 @@ class OldParser:
                          .replace('true', 'True')
                          .replace('false', 'False'))
                 
-                print line
+                print(line)
                 if len(L) == 2:
                     from_script = L[0]
                     to_script = L[1]

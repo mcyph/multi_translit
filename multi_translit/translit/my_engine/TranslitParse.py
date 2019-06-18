@@ -6,6 +6,7 @@ from get_rule import get_rule, process_val
 
 next_fn = next
 
+
 class TranslitParse:
     def __init__(self, path, direction='=>'):
         self.direction = direction
@@ -29,7 +30,6 @@ class TranslitParse:
             DConfig['to_iso']
         )
 
-
         # Get case-related properties
         self.ignore_case = DConfig.get('ignore_case', False)
         self.match_case = DConfig.get('match_case', False)
@@ -43,8 +43,6 @@ class TranslitParse:
             else DConfig['from_iso']
         )
 
-
-
         self.LRules = [
             get_rule(
                 self.replace_variables(rule.strip()),
@@ -53,8 +51,6 @@ class TranslitParse:
             )
             for rule in self.remove_comments(D['conversions']).split('\n')
         ]
-
-
 
         # Do various checks
         assert direction in ('=>', '<=')
@@ -67,7 +63,6 @@ class TranslitParse:
             direction == '=>'
         )
         assert not DConfig.get('ignore_me'), "I've been ignored!"
-
 
         # Get the modifiers to use
         DModifiers = (
@@ -86,12 +81,9 @@ class TranslitParse:
 
         self.DRules = self.get_D_rules()
 
-
         # Clean up
         del self.LRules
         del self.DVariables
-
-
 
     def get_D_rules(self):
         D = {}
@@ -103,7 +95,6 @@ class TranslitParse:
                 L = getattr(from_side.conversions, k)
                 if not L:
                     continue
-
 
                 for s in L:
                     if not s:
@@ -125,7 +116,6 @@ class TranslitParse:
 
         return D
 
-
     def match(self, converted, before, next):
         if self.ignore_case or self.match_case:
             # TODO: Don't do this every time to increase performance(!)
@@ -133,10 +123,8 @@ class TranslitParse:
             before = before.lower()
             next = next.lower()
 
-
         next_D = self.DRules
         len_next = len(next)
-
 
         LTry = []
         for x, c in enumerate(next):
@@ -146,7 +134,6 @@ class TranslitParse:
             next_D, i_L = next_D[c]
             if i_L:
                 LTry.append((x, i_L))
-
 
         for x, i_L in reversed(LTry):
             for k, from_side, to_side in i_L:
@@ -159,7 +146,6 @@ class TranslitParse:
                 elif k == 'LFinal' and (not before or len_next-1 != x):
                     continue
 
-
                 cond = from_side.conditions
                 if cond.LBefore:
                     found = False
@@ -171,7 +157,6 @@ class TranslitParse:
                     if not found:
                         continue
 
-
                 if cond.LAfter:
                     found = False
                     for t2 in cond.LAfter:
@@ -181,7 +166,6 @@ class TranslitParse:
 
                     if not found:
                         continue
-
 
                 if to_side.conditions.LAfter:
                     found = False
@@ -193,7 +177,6 @@ class TranslitParse:
                     if not found:
                         continue
 
-
                 conv_to = (
                     getattr(to_side.conversions, k) or
                     next_fn(i for i in to_side.conversions if i)
@@ -202,7 +185,6 @@ class TranslitParse:
                 return x+1, conv_to
 
         return None
-
 
     def get_D_variables(self, s):
         D = {}
@@ -218,7 +200,6 @@ class TranslitParse:
             D[k.strip()] = process_val(v.strip())
         return D
 
-
     def replace_variables(self, s):
         for i_k, i_v in sorted(
             self.DVariables.items(),
@@ -226,7 +207,6 @@ class TranslitParse:
         ):
             s = s.replace('$%s' % i_k, i_v)
         return s
-
 
     def remove_comments(self, s):
         return '\n'.join([

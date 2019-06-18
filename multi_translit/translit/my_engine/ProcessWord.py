@@ -60,7 +60,7 @@ def process_word(s, dir_, L):
                 translit
             except:
                 global translit
-                from multi_translit.translit.icu import translit
+                from multi_translit import translit
 
             s = translit(*i[1:]+[s])
 

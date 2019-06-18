@@ -35,7 +35,7 @@ def parse_map(DTranslitPaths, D, Path):
     
     def write(LTranslit):
         # Reset any existing maps and output to file
-        print LTranslit
+        print(LTranslit)
         LTranslit = json_tools.loads(''.join(LTranslit).replace("'", '"'))
         DFrom = D[LTranslit[0]]
         DTo = D[LTranslit[-1]]
@@ -74,7 +74,7 @@ def parse_map(DTranslitPaths, D, Path):
         Line = Line.split('#')[0].rstrip()
         if not Line.strip():
             continue
-        print Line.encode('utf-8')
+        print(Line.encode('utf-8'))
         
         if Line[0] not in '\t ':
             if LTranslit: write(LTranslit)
@@ -126,12 +126,12 @@ def write_maps(DTranslitPaths):
                 D[k] = DSettings
             
         except Exception, exc: 
-            print 'MAP ERROR:', DTranslitPaths[k]
+            print('MAP ERROR:', DTranslitPaths[k])
             import traceback
             traceback.print_exc()
     
     for Dir, LDirs, LFiles in os.walk('Translit/BySound'):
         for File in LFiles:
             if File.endswith('.map'):
-                print 'PARSING MAP:', File.encode('utf-8')
+                print('PARSING MAP:', File.encode('utf-8'))
                 parse_map(DTranslitPaths, D, '%s/%s' % (Dir, File))

@@ -55,7 +55,7 @@ def get_dipa():
             continue
         
         Line = [i.strip() for i in Line.split('\t')]
-        print Line
+        print(Line)
         DItem[Line[0]] = Line[1:]
         #print Line[0].encode('utf-8'), DItem[Line[0]]
     
@@ -69,7 +69,7 @@ def get_dipa():
                 for k in D:
                     nD[k] = D[k][i]
                 nL.append(nD)
-                print unicode(nD).encode('utf-8')
+                print(unicode(nD).encode('utf-8'))
                 i += 1
             except IndexError: 
                 break

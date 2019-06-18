@@ -12,7 +12,7 @@ def assign(L):
     Started = False
     for Line in L:
         Line = Line.strip()
-        print Line.encode('utf-8')
+        print(Line.encode('utf-8'))
         if Line == 'BEGINCHARACTER':
             Started = True
             continue
@@ -79,7 +79,7 @@ def Write2(Path, D1, D2, Format):
         D = DSort[Reading1]
         LSort = [(D[Reading2], Reading2) for Reading2 in D]
         LSort.sort(reverse=True)
-        print LSort
+        print(LSort)
         LOut.append((Reading1, LSort[0][1]))
     
     f = codecs.open(Path, 'wb', 'utf-8')

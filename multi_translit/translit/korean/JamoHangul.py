@@ -76,5 +76,5 @@ if __name__ == '__main__':
     Test1 = hangul_to_jamo(u'g민fdsaf')
     Test2 = hangul_to_jamo(u'gfgㄴ')
     
-    print Test1.encode('utf-8'), ';', Test2.encode('utf-8')
-    print jamo_to_hangul(Test1).encode('utf-8'), jamo_to_hangul(Test2).encode('utf-8')
+    print(Test1.encode('utf-8'), ';', Test2.encode('utf-8'))
+    print(jamo_to_hangul(Test1).encode('utf-8'), jamo_to_hangul(Test2).encode('utf-8'))

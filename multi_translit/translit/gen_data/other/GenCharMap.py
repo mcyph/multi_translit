@@ -23,7 +23,7 @@ for x in xrange(300000):
         for k in DISO2LFullText[ISO][0]: # DUPE WARNING!
             Prop = CharData.raw_data(k, x)
             if Prop:
-                print x, ISO, k, Prop
+                print(x, ISO, k, Prop)
 
                 # Create the keys if they don't exist yet
                 Prop = Prop[0].split()[0].strip(';,')

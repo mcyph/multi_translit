@@ -14,7 +14,7 @@ def TranslitEngine(path, direction='=>', sep=''):
 
 
 class _TranslitEngine(TranslitParse):
-    def __init__(self, path, direction='=>', sep=''):
+    def __init__(self, path, direction='=>', sep=' '):
         #print 'TRANSLIT PARSE!'
         TranslitParse.__init__(self, path, direction)
         #print 'PARSE OK!'

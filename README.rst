@@ -23,14 +23,14 @@ Usage
 .. code-block:: python
 
     # TODO: PLEASE MOVE ME!!!
-    from multi_translit.translit.ICUTranslit import Translit
+    from multi_translit import MultiTranslit, translit, get_D_scripts
 
-    Translit.mapping_to_iso
-    Translit.get_D_engines
-    Translit.get_D_scripts
-    Translit.get_L_possible_conversions
-    Translit.get_best_conversion
-    Translit.get_L_best_conversions
-    Translit.get_L_all_conversions
-    Translit.translit
+    MultiTranslit.mapping_to_iso
+    MultiTranslit.get_D_engines
+    MultiTranslit.get_D_scripts
+    MultiTranslit.get_L_possible_conversions
+    MultiTranslit.get_best_conversion
+    MultiTranslit.get_L_best_conversions
+    MultiTranslit.get_L_all_conversions
+    MultiTranslit.translit
 

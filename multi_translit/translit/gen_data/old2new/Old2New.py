@@ -174,7 +174,7 @@ def old_2_new(path):
                       .setdefault(key.split(':')[0], [])
         )
         for i in DOld[key]:
-            print 'CONVERSION:', i
+            print('CONVERSION:', i)
 
             # Comment or blank
             cmd, _, blah = i.rstrip(')').partition('(')
@@ -293,12 +293,12 @@ def old_2_new(path):
 if __name__ == '__main__':
     # ['Translit/BySound/Syllabics/Oji-Cree.trn']
     for path in iter_translit_files(old_ver=True):
-        print path
+        print(path)
         path = path.replace('\\', '/')
         new_path = path.replace('/data/', '/data-new/')
         try: txt = old_2_new(path)
         except:
-            print 'ERROR ON:', path
+            print('ERROR ON:', path)
             from traceback import print_exc
             print_exc()
             #raise
