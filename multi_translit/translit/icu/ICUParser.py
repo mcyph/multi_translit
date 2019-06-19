@@ -2,7 +2,7 @@
 # See "Appendix N: Transform Rules" of 
 # http://unicode.org/reports/tr35/ for more information
 import codecs
-from multi_translit.translit.TranslitFunctions import DCodepoints2Hex
+from multi_translit.translit.my_engine.TranslitFunctions import DCodepoints2Hex
 
 # Basic define types
 from char_data.unicodeset import ProcessRangeBase
