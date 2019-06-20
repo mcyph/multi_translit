@@ -2,7 +2,7 @@ import json
 from toolkit.py_ini import read_D_html_ini
 from iso_tools import ISOTools
 
-from get_rule import get_rule, process_val
+from .get_rule import get_rule, process_val
 
 next_fn = next
 
@@ -194,7 +194,7 @@ class TranslitParse:
                 continue
             k, v = line.split(' = ')
 
-            for i_k, i_v in D.items():
+            for i_k, i_v in list(D.items()):
                 v = v.replace('$%s' % i_k, i_v)
 
             D[k.strip()] = process_val(v.strip())
@@ -202,7 +202,7 @@ class TranslitParse:
 
     def replace_variables(self, s):
         for i_k, i_v in sorted(
-            self.DVariables.items(),
+            list(self.DVariables.items()),
             key=lambda x: -len(x[0])
         ):
             s = s.replace('$%s' % i_k, i_v)

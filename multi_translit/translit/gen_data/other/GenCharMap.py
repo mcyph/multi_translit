@@ -1,5 +1,4 @@
 import os
-import codecs
 os.chdir('../../')
 import File # Surrogate pair HACK!
 from char_data.CharData import CharData, DISO2Lang, DISO2LFullText
@@ -18,12 +17,12 @@ for ISO in DISO2LFullText:
     for k in DISO2LFullText[ISO][0]:
         DISOs[k] = ISO
 
-for x in xrange(300000):
+for x in range(300000):
     for ISO in DISO2LFullText:
         for k in DISO2LFullText[ISO][0]: # DUPE WARNING!
             Prop = CharData.raw_data(k, x)
             if Prop:
-                print(x, ISO, k, Prop)
+                print((x, ISO, k, Prop))
 
                 # Create the keys if they don't exist yet
                 Prop = Prop[0].split()[0].strip(';,')
@@ -95,7 +94,7 @@ DMaps['Vietnamese'] = {'Format': 'Vietnamese %s', 'FromFont': 'Latin', 'ToFont':
 
 DFiles = {}
 for k in DISOs:
-    DFiles[k] = codecs.open('Translit/BySound/Chars/%s.trn' % k, 'wb', 'utf-8')
+    DFiles[k] = open('Translit/BySound/Chars/%s.trn' % k, 'w', encoding='utf-8')
     D = DMaps[k] 
     D['ISO'] = DISOs[k]
     t = Template % D

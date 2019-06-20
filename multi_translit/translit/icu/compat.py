@@ -3,13 +3,13 @@ from iso_tools import ISOTools
 
 DOut = {}
 
-for heading, L in load(open('script_headings.json', 'rb')).items():
+for heading, L in list(load(open('script_headings.json', 'rb')).items()):
     for key in L:
         while key.count('|') != 2:
             key += '|'
 
         script, lang, variant = key.split('|')
-        print script, lang, variant
+        print(script, lang, variant)
 
         DOut.setdefault(heading, []).append(ISOTools.join(part3=lang, script=script, variant=variant))
 

@@ -3,7 +3,6 @@
 
 import os
 import glob
-import codecs
 import random
 
 from toolkit import json_tools
@@ -64,17 +63,18 @@ def parse_map(DTranslitPaths, D, Path):
         
         Path = 'Translit/BySound/AutoGen/AutoGen%s.trn'\
                 % (random.randint(1, 1000000))
-        nFile = codecs.open(Path, 'wb', 'utf-8')
+        nFile = open(Path, 'w', encoding='utf-8')
         nFile.write(Format % DFormat)
         DTranslitPaths[os.path.split(Path)[-1]] = Path # HACK!
         nFile.close()
     
-    File = codecs.open(Path, 'rb', 'utf-8')
+    File = open(Path, 'r', encoding='utf-8')
+
     for Line in File:
         Line = Line.split('#')[0].rstrip()
         if not Line.strip():
             continue
-        print(Line.encode('utf-8'))
+        print((Line.encode('utf-8')))
         
         if Line[0] not in '\t ':
             if LTranslit: write(LTranslit)
@@ -109,7 +109,7 @@ def write_maps(DTranslitPaths):
     D = {}
     for k in DTranslitPaths:
         Key = os.path.split(k)[-1].split('.')[0]
-        print 'ADDING MAP FOR:', Key
+        print('ADDING MAP FOR:', Key)
         try: 
             File = open(DTranslitPaths[k], 'rb')
             Text = File.read().decode('utf-8', 'replace')
@@ -125,13 +125,13 @@ def write_maps(DTranslitPaths):
                                                            DSettings['LProvides'][0][1])
                 D[k] = DSettings
             
-        except Exception, exc: 
-            print('MAP ERROR:', DTranslitPaths[k])
+        except Exception as exc: 
+            print(('MAP ERROR:', DTranslitPaths[k]))
             import traceback
             traceback.print_exc()
     
     for Dir, LDirs, LFiles in os.walk('Translit/BySound'):
         for File in LFiles:
             if File.endswith('.map'):
-                print('PARSING MAP:', File.encode('utf-8'))
+                print(('PARSING MAP:', File.encode('utf-8')))
                 parse_map(DTranslitPaths, D, '%s/%s' % (Dir, File))

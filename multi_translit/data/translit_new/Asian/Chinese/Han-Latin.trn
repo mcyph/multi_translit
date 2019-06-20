@@ -4,7 +4,7 @@ Convert CJK characters
 
 [settings]
 {
-    "from_iso": "zh_Hani",
+    "from_iso": "zh",
     "to_sep": " ", 
     "direction": "<=>", 
     "ignore_case": true, 

@@ -1,4 +1,4 @@
-SyllabicsTest1 = u'''ᖽᔦᔭ ᖽ ᖽᐧᔈᒧᐧᖾᒉᖽ
+SyllabicsTest1 = '''ᖽᔦᔭ ᖽ ᖽᐧᔈᒧᐧᖾᒉᖽ
 
 ᖳᒐᑊᖿ ᖹᒣᔦᖽᒧᐧᖹᖿᒣᖷᑊᖿ ᖿᑉᔦᐠᖷᑊᖿ ᖽ ᖲᒉᑊᖿ ᖽᑯᒣᖽᖷᑊᖿ ᖳᖹᔈᒣᖷ ᖽᐧᔈᒧᐧᖾᒉᖽ᙮ ᖱᒪᐟᓱᔪᐦ᙮ ᖱᖽᐧᑯᑊᒧᐧ ᖲᒍ ᖲᒧᐧᒪᒪᐟᔈᑯᒉ ᒍᖹ᙮
 
@@ -8,7 +8,7 @@ SyllabicsTest1 = u'''ᖽᔦᔭ ᖽ ᖽᐧᔈᒧᐧᖾᒉᖽ
 
 ᖽ ᖳᐡᖻᒐᘁ ᔈᒣᒍᒥᑊᒧᐧ, ᖽ ᖲᒥᓭᖷᐠᒪᑊᓱ ᖽ ᖲᒍᖽᐧ ᖱᒧᐧᒣᑲᒉᑊᖿᔪᑊᖽ᙮ ᖲᒧᐧᒪᒣᑫᐧᐢᒐᖽᑊᖿ᙮ ᒣᒐᐧᖽᒥᑊᒧᐧᔪᑊᖿ᙮ ᒍ ᖲᒪᒪᖹᓱᔈᒣᑊᐤ ᖳᐡᖹᒐᖽᐦ ᖱᒥᑲᔪ᙮ ᖽ ᔈᒣᒍᒧᐧᔈᖽᐧᐢᒉᒣ ᖲᒍ ᖲᒧᐧᒪᑊᖽᒪᑯᑊᑯ᙮ ᒍᐦ ᔈᒣᒉᑊᖿᑯᔦᖷ᙮ ᔈᒣᒐᒣᑊᖿᑫᑉᖷ ᖲᒍ ᖲᖾᖷᔪ᙮ ᖽ ᖱᒣᐠᒪᐟᒧᐧᖿᒧᐧᔦᖴ, ᖲᑯᖺᒐᔪᔦᖴ᙮ ᔈᒣᒐᑊᖿᖸᔈᒪᖻᐨᔈᑯᖽᑊᒧᐧᔪᐦ ᖲᒍ ᖳᑫᖹ, ᖳᖽᐧᖾᔪ᙮'''
 
-SyllabicsTest2 = u'''KIYAAYO KI KSISTSIKOMAAKI
+SyllabicsTest2 = '''KIYAAYO KI KSISTSIKOMAAKI
 
 Aamohka nitaayakitsinikatawahka kiaayaowahka ki omahka kipitakiwahka anistawa Ksistsikomaaki. Iitoisiyihk. Iiksipihtsi omii otsitotoispima miini.
 
@@ -20,22 +20,22 @@ Ki annamok stamitaihtsi, ki otaisawaotohsi ki omiiksi itsitapomahkayihki. Otsito
 
 def Test(Engine, Text):
     Conv = Engine.Convert(Text)
-    print Conv.encode('utf-8')
+    print(Conv.encode('utf-8'))
 
 if __name__ == '__main__':
     Engine = FromToEngine('Macedonian Cyrillic UNGEGN')
-    Test(Engine, u'чцчШч')
+    Test(Engine, 'чцчШч')
     Engine = ToFromEngine('Macedonian Cyrillic UNGEGN')
     Test(Engine, 'Testing Testing 123')
-    print
+    print()
     
     Engine = ToFromEngine('Blackfoot')
     Test(Engine, SyllabicsTest1)
-    print
+    print()
     
     Engine = FromToEngine('Blackfoot')
     Test(Engine, SyllabicsTest2)
-    print
+    print()
     
     Engine = FromToEngine('Test')
     Test(Engine, 'AAZ')
@@ -44,57 +44,57 @@ if __name__ == '__main__':
     Test(Engine, 'sZ') # initial
     Test(Engine, 'Zs') # final
     Test(Engine, 'ZsZ') # medial
-    print
+    print()
     
     # From is Latin, To is Arabic
     Engine = ToFromEngine('Arabic')
     #import time
     #tFrom = time.time()
     #for i in xrange(100):
-    Test(Engine, u'سعيد جليلي.') # sʿyd jlylyẗ in ICU
-    Test(Engine, u'مقتل جنديين أميركيين بتحطم مروحية') # mqtl jndyyn ạ̉myrkyyn btḥṭm mrwḥyẗ in ICU
-    Test(Engine, u'ال')
+    Test(Engine, 'سعيد جليلي.') # sʿyd jlylyẗ in ICU
+    Test(Engine, 'مقتل جنديين أميركيين بتحطم مروحية') # mqtl jndyyn ạ̉myrkyyn btḥṭm mrwḥyẗ in ICU
+    Test(Engine, 'ال')
     #print time.time()-tFrom
     
     Engine = FromToEngine('Arabic')
-    Test(Engine, u'şḑḑţn')
-    Test(Engine, u's‘yd jlyly.')
-    print
+    Test(Engine, 'şḑḑţn')
+    Test(Engine, 's‘yd jlyly.')
+    print()
     
     Engine = FromToEngine('Japanese Latin-Hiragana')
-    Test(Engine, u'itttttta')
-    Test(Engine, u'aaa')
+    Test(Engine, 'itttttta')
+    Test(Engine, 'aaa')
     Engine = ToFromEngine('Japanese Kana-Manyogana')
-    Test(Engine, u'てすと')
-    Test(Engine, u'テスト')
+    Test(Engine, 'てすと')
+    Test(Engine, 'テスト')
     Engine = GetEngine('Japanese Kana-Latin')
-    Test(Engine, u'らんぼう')
-    Test(Engine, u'ランニング')
+    Test(Engine, 'らんぼう')
+    Test(Engine, 'ランニング')
     
     # Test case matching
     Engine = ToFromEngine('Dargwa TITUS')
-    Test(Engine, u'TRas')
-    Test(Engine, u'Tras')
-    Test(Engine, u'TRAS')
-    print
+    Test(Engine, 'TRas')
+    Test(Engine, 'Tras')
+    Test(Engine, 'TRAS')
+    print()
     
     Engine = GetEngine('Japanese Kana-IPA')
-    Test(Engine, u'ヴァンクーバー')
-    Test(Engine, u'いったんだ')
-    Test(Engine, u'こうふん')
-    Test(Engine, u'にっぽん')
-    Test(Engine, u'たき')
-    Test(Engine, u'たみ')
-    Test(Engine, u'きゃく')
-    Test(Engine, u'はっしゃ')
-    Test(Engine, u'あそんだ')
-    Test(Engine, u'ランク')
-    Test(Engine, u'さっ')
-    Test(Engine, u'しんぶん')
-    print
+    Test(Engine, 'ヴァンクーバー')
+    Test(Engine, 'いったんだ')
+    Test(Engine, 'こうふん')
+    Test(Engine, 'にっぽん')
+    Test(Engine, 'たき')
+    Test(Engine, 'たみ')
+    Test(Engine, 'きゃく')
+    Test(Engine, 'はっしゃ')
+    Test(Engine, 'あそんだ')
+    Test(Engine, 'ランク')
+    Test(Engine, 'さっ')
+    Test(Engine, 'しんぶん')
+    print()
     
     Engine = GetEngine('Chinese PinYin-PinYin Accents')
     Test(Engine, 'pin1yin3')
     Engine = GetEngine('Chinese PinYin-IPA')
     Test(Engine, 'yongsi')
-    print 'DONE!'
+    print('DONE!')

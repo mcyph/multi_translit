@@ -1,5 +1,4 @@
 import re
-import codecs
 import glob
 import sys, os
 from BOMFile import EncFile
@@ -12,9 +11,9 @@ def Min(x, y):
     if x < y: return x
     else: return y
 
-for FileName in glob.glob('%s/*.txt' % os.getcwdu()):
-    print FileName
-    iFile = codecs.open(FileName, 'rb', 'utf-8')
+for FileName in glob.glob('%s/*.txt' % os.getcwd()):
+    print(FileName)
+    iFile = open(FileName, 'r', encoding='utf-8')
     DOFiles = {}
     DWPending = {}
     DIPAPending = {}
@@ -29,7 +28,7 @@ for FileName in glob.glob('%s/*.txt' % os.getcwdu()):
             # Open all the different translit output files
             x = 0
             for LTransName in LTransNames+['IPA']:
-                Path = 'Output\\%s %s.txt' % (FileName.split('\\')[-1].split('.')[0], LTransName.strip().strip(u'\ufeff').replace('/', '_').replace('\\', '_'))
+                Path = 'Output\\%s %s.txt' % (FileName.split('\\')[-1].split('.')[0], LTransName.strip().strip('\ufeff').replace('/', '_').replace('\\', '_'))
                 DOFiles[LTransName] = EncFile(Path)
                 DWPending[LTransName] = []
                 #DOFiles[LTransName] = codecs.open(Path, 'wb', 'utf-8', 'replace')
@@ -49,7 +48,7 @@ for FileName in glob.glob('%s/*.txt' % os.getcwdu()):
                 #Line = Line.replace(', ', ',')
                 Line = Line.replace(' ~ ', '~')
                 LTrans = Line.split(' ')
-                LTrans = [xx.strip(' ') for xx in LTrans if xx.strip() and xx != u'\ue000']
+                LTrans = [xx.strip(' ') for xx in LTrans if xx.strip() and xx != '\ue000']
                 try: int(LTrans[0])
                 except: LTrans = ['-1']+LTrans
                 
@@ -119,8 +118,8 @@ for FileName in glob.glob('%s/*.txt' % os.getcwdu()):
                                                     Write))
                     x += 1
                 if len(LLine)>x+1:
-                    print 'LINE WARNING:', Line.encode('utf-8'), '\n\t', LLine
-            except IndexError: print 'INDEXERROR:', Line.encode('utf-8'), LLine
+                    print('LINE WARNING:', Line.encode('utf-8'), '\n\t', LLine)
+            except IndexError: print('INDEXERROR:', Line.encode('utf-8'), LLine)
         i += 1
     
     for k in DOFiles: 

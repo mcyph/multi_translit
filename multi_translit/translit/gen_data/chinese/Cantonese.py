@@ -1,8 +1,7 @@
 # http://rescomp.stanford.edu/~domingo2/Chinese.html
-import codecs
 
 def read(s):
-    f = codecs.open(s, 'rb', 'utf-16')
+    f = open(s, 'r', encoding='utf-16')
     t = f.readlines()
     f.close()
     return t
@@ -12,7 +11,7 @@ def assign(L):
     Started = False
     for Line in L:
         Line = Line.strip()
-        print(Line.encode('utf-8'))
+        print((Line.encode('utf-8')))
         if Line == 'BEGINCHARACTER':
             Started = True
             continue
@@ -30,7 +29,7 @@ def assign(L):
 def write(Path, D):
     # write a Hanzi-Yale/Jyutping translit file
     # MAY HAVE ISSUES FOR CHARS WITH MULTIPLE READINGS!
-    f = codecs.open(Path, 'wb', 'utf-8')
+    f = open(Path, 'w', encoding='utf-8')
     LKeys = list(D.keys())
     LKeys.sort()
     for k in LKeys:
@@ -48,7 +47,7 @@ def Write2(Path, D1, D2, Format):
     def rev(D):
         # Returns {Char: [Reading1, Reading2], ...}
         DRtn = {}
-        for k, v in D.items():
+        for k, v in list(D.items()):
             for i in v:
                 if not has_nums(k): continue # TONES HACK!
                 L = DRtn.setdefault(i, [])
@@ -61,7 +60,7 @@ def Write2(Path, D1, D2, Format):
     # Look for the most common readings for the various readings,
     # taking into account there might be multiple readings per Hanzi
     DSort = {} # {Reading1: {Reading2: Num, ...}, ...}
-    LChars = D1.keys()
+    LChars = list(D1.keys())
     LChars.sort()
     for c in LChars:
         for Reading1 in D1[c]:

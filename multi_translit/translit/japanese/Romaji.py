@@ -282,21 +282,21 @@ def get_rom_hira():
                 [",", "、"],
                 [".", "。"],
                 ["!", "！"],
-                ["\"", "\u201d"],
+                ["\"", "\\u201d"],
                 ["#", "＃"],
                 ["$", "＄"],
                 ["%", "％"],
                 ["&", "＆"],
-                ["'", "\u2019"],
+                ["'", "\\u2019"],
                 ["(", "（"],
                 [")", "）"],
-                ["~", "\uff5e"],
+                ["~", "\\uff5e"],
                 ["-", "ー"],
                 ["=", "＝"],
                 ["^", "＾"],
                 ["\\", "＼"],
                 ["|", "｜"],
-                ["`", "\u2018"],
+                ["`", "\\u2018"],
                 ["@", "＠"],
                 ["{", "｛"],
                 ["[", "「"],
@@ -400,11 +400,11 @@ inst = RomajiConv()
 romaji_to_hira = inst.romaji_to_hiragana
 
 if __name__ == '__main__':
-    print(hira_to_romaji(u'ひらがな').encode('utf-8'))
-    print(kata_to_romaji(u'カタカナ').encode('utf-8'))
+    print((hira_to_romaji('ひらがな').encode('utf-8')))
+    print((kata_to_romaji('カタカナ').encode('utf-8')))
     
     from toolkit.misc.Timer import Timer
     t = Timer()
-    for i in xrange(1000000):
-        kana_to_latin(u'gfgㄴひらがなカタカナ')
-    print("Time:", t)
+    for i in range(1000000):
+        kana_to_latin('gfgㄴひらがなカタカナ')
+    print(("Time:", t))

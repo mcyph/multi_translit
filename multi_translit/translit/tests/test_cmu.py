@@ -1,12 +1,12 @@
 import os
-import codecs
 os.chdir('../../')
 from multi_translit.translit.TranslitLoad import convert_script
 
 CMU_PATH = r'E:\Dev\Dictionaries\Thesaurus, Pronunciation and  Frequencies\CMU Pronunciation\fgdata\SF\cmudict.0.7a'
 
 f = open(CMU_PATH, 'rb')
-fout = codecs.open('Translit/Tests/out.txt', 'wb', 'utf-8')
+fout = open('Translit/Tests/out.txt', 'w', encoding='utf-8')
+
 for line in f:
     line = line.strip()
     if not line or line.startswith(';;;'):
@@ -24,5 +24,6 @@ for line in f:
     _, _, kata = convert_script(ipa, 'eng', 'IPA', 'jpn', 'Katakana')
     
     fout.write('%s %s %s\n' % (word, ipa.encode('utf-8'), kata.encode('utf-8')))
+
 f.close()
 fout.close()

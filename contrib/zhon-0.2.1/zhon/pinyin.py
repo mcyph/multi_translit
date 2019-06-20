@@ -1,6 +1,6 @@
 """RE pattern objects for detecting and splitting Pinyin."""
 
-from __future__ import unicode_literals
+
 
 
 RE_NUMBER = """

@@ -19,7 +19,6 @@ def iter_translit_files(old_ver=False):
 
 if __name__ == '__main__':
     import json
-    import codecs
     from traceback import print_exc
     from TranslitEngine import TranslitEngine
 
@@ -30,7 +29,7 @@ if __name__ == '__main__':
         for direction in ('=>', '<='):
             try:
                 t = TranslitEngine(path, direction)
-                print 'OK:', t.from_iso, t.to_iso, t.direction
+                print('OK:', t.from_iso, t.to_iso, t.direction)
                 DTranslit.setdefault(t.from_iso, []).append((
                     path.replace(
                         data_path('translit_new').strip('/\\'),
@@ -41,17 +40,17 @@ if __name__ == '__main__':
                     t.direction
                 ))
             except:
-                print 'ERROR:', direction, path
+                print('ERROR:', direction, path)
                 print_exc()
 
 
-    with codecs.open(
+    with open(
         data_path('translit_new', 'translit-mappings.json'),
-        'wb', 'utf-8'
+        'w', encoding='utf-8'
     ) as f:
         d = json.dumps(
             DTranslit, indent=4, ensure_ascii=False
         )
 
-        print d
+        print(d)
         f.write(d)

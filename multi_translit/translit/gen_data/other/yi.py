@@ -1172,4 +1172,4 @@ for Line in lYI:
     CP, NM = Line.split('\t')
     Char = eval('u"\\u%s"' % CP)
     Snd = NM.split(' ')[-1]
-    print(('%s\t%s\t%s' % (Char, Snd, NM)).encode('utf-8'))
+    print((('%s\t%s\t%s' % (Char, Snd, NM)).encode('utf-8')))

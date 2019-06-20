@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Identifies input as simplified, traditional, Pinyin, Zhuyin, or ASCII."""
-from __future__ import unicode_literals
+
 import argparse
 import os
 import re
@@ -20,17 +20,17 @@ def main():
     args = parse_args()
 
     # compile RE pattern objects
-    chinese = re.compile('[^%s%s]' % (zhon.unicode.HAN_IDEOGRAPHS,
-                                      zhon.unicode.PUNCTUATION))
+    chinese = re.compile('[^%s%s]' % (zhon.str.HAN_IDEOGRAPHS,
+                                      zhon.str.PUNCTUATION))
     simplified = re.compile('[^%s%s]' % (zhon.cedict.SIMPLIFIED,
-                                         zhon.unicode.PUNCTUATION))
+                                         zhon.str.PUNCTUATION))
     traditional = re.compile('[^%s%s]' % (zhon.cedict.TRADITIONAL,
-                                          zhon.unicode.PUNCTUATION))
+                                          zhon.str.PUNCTUATION))
     pinyin_n = re.compile(zhon.pinyin.RE_NUMBER, re.I | re.X)
     pinyin_a = re.compile(zhon.pinyin.RE_ACCENT, re.I | re.X)
-    zhuyin = re.compile('[^%s%s]' % (zhon.unicode.ZHUYIN,
-                                     zhon.unicode.PUNCTUATION))
-    ascii = re.compile('[^%s]' % zhon.unicode.ASCII)
+    zhuyin = re.compile('[^%s%s]' % (zhon.str.ZHUYIN,
+                                     zhon.str.PUNCTUATION))
+    ascii = re.compile('[^%s]' % zhon.str.ASCII)
 
     # check which pattern object the input matches
     if chinese.search(args.text) is None:

@@ -80,6 +80,6 @@ if __name__ == '__main__':
         else:
             s = 'jiang5'
 
-        print from_iso, to_iso, s
-        print DConv[from_iso, to_iso](s)
-        print
+        print(from_iso, to_iso, s)
+        print(DConv[from_iso, to_iso](s))
+        print()

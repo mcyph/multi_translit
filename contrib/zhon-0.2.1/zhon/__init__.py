@@ -4,7 +4,7 @@ __version__ = '0.2.1'
 
 import logging
 
-from . import unicode
+from . import str
 from . import cedict
 from . import pinyin
 

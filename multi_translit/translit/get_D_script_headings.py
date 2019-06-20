@@ -9,8 +9,8 @@ def get_D_script_headings():
     ))
 
     D = {}
-    for region, DHeadings in DScriptHeadings.items():
-        for heading, L in DHeadings.items():
+    for region, DHeadings in list(DScriptHeadings.items()):
+        for heading, L in list(DHeadings.items()):
             for iso in L:
                 D[iso] = (region, heading)
     return DScriptHeadings, D

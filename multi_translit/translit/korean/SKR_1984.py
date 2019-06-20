@@ -11,9 +11,9 @@ def init(skr):
         "ae",
         "ya",
         "yae",
-        u"\u014F", # \x{014F} latin small letter o with breve (ŏ)
+        "\u014F", # \x{014F} latin small letter o with breve (ŏ)
         "e",
-        u"y\u014F",
+        "y\u014F",
         "ye",
         "o",
         "wa",
@@ -25,8 +25,8 @@ def init(skr):
         "we",
         "wi",
         "yu",
-        u"\u016D", # \x{016D} latin small letter u with breve (ŭ)
-        u"\u016Dy",
+        "\u016D", # \x{016D} latin small letter u with breve (ŭ)
+        "\u016Dy",
         "i"
         ]);
     skr.el('l');

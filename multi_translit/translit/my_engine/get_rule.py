@@ -7,10 +7,10 @@ def strip_re(s):
     return r % {'string_re': string_re}
 
 string_re = (
-    ur'''(([^ ]|\{\{.*?\}\})+)(,([^ ]|\{\{.*?\}\})+)*'''
+    r'''(([^ ]|\{\{.*?\}\})+)(,([^ ]|\{\{.*?\}\})+)*'''
 )
 
-conv = strip_re(ur'''
+conv = strip_re(r'''
   ^(
     (
       (?P<a>%(string_re)s)|
@@ -25,7 +25,7 @@ conv = strip_re(ur'''
   )+?$
 ''')
 
-before_after = strip_re(ur'''
+before_after = strip_re(r'''
   ^(
     (
       after (?P<after>%(string_re)s)|
@@ -173,5 +173,5 @@ def get_D(s, ci_conditions):
 
 
 if __name__ == '__main__':
-    print get_D('''blah or initial k,l or medial blah"blah{{SPACE}} when after s,u and before y,z''')
-    print get_D('initial k final k')
+    print(get_D('''blah or initial k,l or medial blah"blah{{SPACE}} when after s,u and before y,z'''))
+    print(get_D('initial k final k'))

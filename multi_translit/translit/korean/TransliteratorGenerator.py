@@ -140,7 +140,7 @@ class Class:
 
 
     def make(self):
-        for i in xrange(len(self.head())):
+        for i in range(len(self.head())):
             if (self.head()[i] == "" and i != 11):
                 pass
                 #printf "error: empty slot. fill the transliteration for /%s/!<br />", 
@@ -151,7 +151,7 @@ class Class:
             else:
                 self.HEADMAP[self.head()[i]] = i # CHECK ME!
 
-        for i in xrange(len(self.body())):
+        for i in range(len(self.body())):
             if (self.body()[i] == ""):
                 #printf "error: empty slot. fill the transliteration for /%s/!<br />", 
                 #          Encode::encode("utf8", HAN_VOWEL[i]) 
@@ -162,7 +162,7 @@ class Class:
             else: self.BODYMAP[self.body()[i]] = i
             self.BODYMAP[self.body()[i]] = i
          
-        for i in xrange(len(self.foot())):
+        for i in range(len(self.foot())):
             self.FOOTMAP[self.foot()[i]] = i
         return self
 
@@ -204,18 +204,18 @@ class Class:
     # decomposes an unicode hangul chr into a hancode (head, body, foot)
     # for example, decompose('한') returns (18, 0, 4)
     def decompose(self, chr):
-        unicode = ord(chr)
-        head = int((unicode - 0xAC00) / (28*21))
-        body = int((unicode - 0xAC00 - head*28*21) /28)
-        foot = unicode - 0xAC00 - head*28*21 - body*28
+        str = ord(chr)
+        head = int((str - 0xAC00) / (28*21))
+        body = int((str - 0xAC00 - head*28*21) /28)
+        foot = str - 0xAC00 - head*28*21 - body*28
         return (head, body, foot)
 
     # === compose ===
     # composes an unicode hangul chr from a hancode (head, body, foot)
     # for example, compose((18,0,4)) returns '한'
     def compose(self, head, body, foot):
-        unicode = 0xAC00 + head*28*21 + body*28 + foot
-        return unichr(unicode)
+        str = 0xAC00 + head*28*21 + body*28 + foot
+        return chr(str)
 
     # == ROMANIZE (TRANSLITERATE) ==
 
@@ -242,7 +242,7 @@ class Class:
     def transliterate_hangul_word(self, word):
         char = list(word) # FIXME! ---------------------------------------------
         tr = self.transliterate_first_chr_of_word(char[0])
-        for i in xrange(1, len(char)): # CHECK ME! ---------------------------------
+        for i in range(1, len(char)): # CHECK ME! ---------------------------------
             if MODE[self.enmode()] == GREEDY_SEP:
                 tr = tr + self.sep() + self.transliterate_chr(char[i])
             else:
@@ -267,9 +267,9 @@ class Class:
     # Transliterates word by word
     def transliterate(self, str):
         tr = ''
-        word = re.split(u'([^\uAC00-\uD7A3]+)', str) # CHECK ME! ----------------------------
+        word = re.split('([^\uAC00-\uD7A3]+)', str) # CHECK ME! ----------------------------
         for w in word:
-            if re.match(u'^[\uAC00-\uD7A3]+$', w): # m?
+            if re.match('^[\uAC00-\uD7A3]+$', w): # m?
                 tr = tr + self.transliterate_hangul_word(w)
             else:
                 tr = tr + w
@@ -465,7 +465,7 @@ class Class:
 #, = "\t" # FIXME1
 def show_process(id, desc, h, head, body, foot, look_ahead_token, right):
     if False:
-      print id , desc, h, head, body, foot, look_ahead_token, right, "\n"
+      print(id , desc, h, head, body, foot, look_ahead_token, right, "\n")
 
 '''
 =encoding utf8

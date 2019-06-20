@@ -7,8 +7,8 @@ from BySound import C
 tBS = {}
 cBS = {}
 
-cBS['Canadian Syllabics (Ojibwe)'] = u'šØ'
-tBS['Canadian Syllabics (Ojibwe)'] = C(u'''Øe	ᐁ			
+cBS['Canadian Syllabics (Ojibwe)'] = 'šØ'
+tBS['Canadian Syllabics (Ojibwe)'] = C('''Øe	ᐁ			
 pe	ᐯ			
 te	ᑌ			
 ke	ᑫ			
@@ -99,8 +99,8 @@ r	ᐊᕒ
 y	ᐊᐞ ᐊ
 w	ᐊ''')
 
-cBS['Canadian Syllabics (Oji-Cree)'] = u'čšØ'
-tBS['Canadian Syllabics (Oji-Cree)'] = C(u'''Øe	ᐁ
+cBS['Canadian Syllabics (Oji-Cree)'] = 'čšØ'
+tBS['Canadian Syllabics (Oji-Cree)'] = C('''Øe	ᐁ
 pe	ᐯ
 te	ᑌ
 ke	ᑫ
@@ -174,8 +174,8 @@ y	ᐊᔾ
 w	ᐊᐤ
 h	ᐊᐦ''')
 
-cBS['Canadian Syllabics (Blackfoot)'] = u'Øᐟᐠᐧᑉ=᙮'
-tBS['Canadian Syllabics (Blackfoot)'] = C(u'''Øa	ᖳ
+cBS['Canadian Syllabics (Blackfoot)'] = 'Øᐟᐠᐧᑉ=᙮'
+tBS['Canadian Syllabics (Blackfoot)'] = C('''Øa	ᖳ
 pa	ᑫ
 ta	ᒣ
 ka	ᖿ
@@ -226,8 +226,8 @@ hk	ᖳᐦ''')
 
 cBS['Canadian Syllabics (Cree West)'] = [i.decode('utf-8') for i in
                                         ['ᕃ', 'ᕆ', 'ᕊ', 'ᕍ', 'ᐊᔆ', 'ᐊᐪ', 'ᖊ', 'ᖋ', 'ᖌ', 'ᖍ', 'ᐊᙆ', 'ᐝ']] \
-                                        + [i for i in u'ēøšðīōā']
-tBS['Canadian Syllabics (Cree West)'] = C(u'''øē	ᐁ
+                                        + [i for i in 'ēøšðīōā']
+tBS['Canadian Syllabics (Cree West)'] = C('''øē	ᐁ
 pē	ᐯ
 tē	ᑌ
 kē	ᑫ
@@ -332,8 +332,8 @@ mw	ᐊᒽ
 sk	ᐊᔉ
 hk	ᐊᕁ''')
 
-cBS['Canadian Syllabics (Cree West, Ontario Swampy)'] = u'ēšøðīōāᐝ'
-tBS['Canadian Syllabics (Cree West, Ontario Swampy)'] = C(u'''øē	ᐁ
+cBS['Canadian Syllabics (Cree West, Ontario Swampy)'] = 'ēšøðīōāᐝ'
+tBS['Canadian Syllabics (Cree West, Ontario Swampy)'] = C('''øē	ᐁ
 pē	ᐯ
 tē	ᑌ
 kē	ᑫ
@@ -438,8 +438,8 @@ mw	ᐊᒽ
 sk	ᐊᔉ
 hk	ᐊᕁ''')
 
-cBS['Canadian Syllabics (Cree East)'] = u'øēšðīōā'
-tBS['Canadian Syllabics (Cree East)'] = C(u'''øē	ᐁ
+cBS['Canadian Syllabics (Cree East)'] = 'øēšðīōā'
+tBS['Canadian Syllabics (Cree East)'] = C('''øē	ᐁ
 pē	ᐯ
 tē	ᑌ
 kē	ᑫ
@@ -542,8 +542,8 @@ mw	ᐊᒽ
 sk	ᐊᔉ
 hk	ᐊᕁ''')
 
-cBS['Canadian Syllabics (Cree East, Moose)'] = u'øēšðīōā'
-tBS['Canadian Syllabics (Cree East, Moose)'] = C(u'''øē	ᐁ
+cBS['Canadian Syllabics (Cree East, Moose)'] = 'øēšðīōā'
+tBS['Canadian Syllabics (Cree East, Moose)'] = C('''øē	ᐁ
 pē	ᐯ
 tē	ᑌ
 kē	ᑫ
@@ -646,8 +646,8 @@ mw	ᐊᒽ
 sk	ᐊᔉ
 hk	ᐊᕁ''')
 
-cBS['Canadian Syllabics (Carrier)'] = [u'Ø', u'z̲', u's̲']
-tBS['Canadian Syllabics (Carrier)'] = C(u'''Øa	ᐊ
+cBS['Canadian Syllabics (Carrier)'] = ['Ø', 'z̲', 's̲']
+tBS['Canadian Syllabics (Carrier)'] = C('''Øa	ᐊ
 ha	ᐸ
 ba	ᗭ
 kha	ᗉ
@@ -1101,8 +1101,8 @@ th	ᐊᑋ
 dh	ᐊᑋ''')
 """
 
-cBS['Canadian Syllabics (Chipewyan, E-C Modern)'] = u'V̨ʔᕁ'
-tBS['Canadian Syllabics (Chipewyan, E-C Modern)'] = C(u'''Va	ᐊ
+cBS['Canadian Syllabics (Chipewyan, E-C Modern)'] = 'V̨ʔᕁ'
+tBS['Canadian Syllabics (Chipewyan, E-C Modern)'] = C('''Va	ᐊ
 ha	ᐊ
 V̨a	ᐊ
 ʔa	ᐊ
@@ -1305,10 +1305,10 @@ dh	ᐊᒢ
 t	ᐊᒡ
 t’	ᐊᒡ''')
 # y	ᐊᕁ
-cBS['Canadian Syllabics (South Slavey)'] = [i for i in u'Øłʔ́'] \
+cBS['Canadian Syllabics (South Slavey)'] = [i for i in 'Øłʔ́'] \
                                            + [i.decode('utf-8') for i in
                                            ['ᒡᕥ', 'ᒡᕤ', 'ᒡᕠ', 'ᒡᕞ', 'ᒡᕦ', 'ᒡᕦ','ᒡᕍ','ᒡᕃ','ᒡᕄ','ᒡᕊ','ᐊᐡ','ᒡᕊ']]
-tBS['Canadian Syllabics (South Slavey)'] = C(u'''Øa	ᐊ
+tBS['Canadian Syllabics (South Slavey)'] = C('''Øa	ᐊ
 ha	ᐊ
 ʔa	ᐊ
 ba	ᐸ
@@ -1532,10 +1532,10 @@ th	ᐊᒢ
 dh	ᐊᒢ
 y	ᐊᕀ''')
 
-cBS['Canadian Syllabics (North Slavey)'] = [i for i in u'V̨ʔʀł']\
+cBS['Canadian Syllabics (North Slavey)'] = [i for i in 'V̨ʔʀł']\
                                            + [i.decode('utf-8') for i in
                                            ['ᑋᐊ', 'ᑋᐁ', 'ᑋᐃ', 'ᑋᐅ', 'ᐊᑋ', 'ᒼᐊ', 'ᒼᐁ', 'ᒼᐃ', 'ᒼᐅ']]
-tBS['Canadian Syllabics (North Slavey)'] = C(u'''Va	ᐊ
+tBS['Canadian Syllabics (North Slavey)'] = C('''Va	ᐊ
 V̨a	ᐮ
 ha	ᐊᑊ
 ʔa	ᐥᐊ
@@ -1695,10 +1695,10 @@ y	ᐊᕀ
 fw	ᐊF
 v	ᐊV''')
 
-cBS['Canadian Syllabics (Dogrib)'] = [i for i in u'V̨ʔʀł'] \
+cBS['Canadian Syllabics (Dogrib)'] = [i for i in 'V̨ʔʀł'] \
                                      + [i.decode('utf-8') for i in
                                      ['ᑋᐊ', 'ᑋᐁ', 'ᑋᐃ', 'ᑋᐅ', 'ᐊᑋ', 'ᒼᐊ', 'ᒼᐁ', 'ᒼᐃ', 'ᒼᐅ', 'ᐊᒼ']]
-tBS['Canadian Syllabics (Dogrib)'] = C(u'''Va	ᐊ
+tBS['Canadian Syllabics (Dogrib)'] = C('''Va	ᐊ
 V̨a	ᐮ
 ha	ᐊᑊ
 ʔa	ᐥᐊ
@@ -1878,8 +1878,8 @@ y	ᐊᕀ
 f	ᐊF
 v	ᐊV''')
 
-cBS['Canadian Syllabics (Sekani)'] = u'Ø'
-tBS['Canadian Syllabics (Sekani)'] = C(u'''Øa	ᐊ
+cBS['Canadian Syllabics (Sekani)'] = 'Ø'
+tBS['Canadian Syllabics (Sekani)'] = C('''Øa	ᐊ
 ha	ᐸ
 ba	ᗭ
 pa	ᐤᗭ
@@ -2133,8 +2133,8 @@ sh	ᐊᙚ
 f	ᐊ
 r	ᐊᐩ''')
 
-cBS['Canadian Syllabics (Inuktitut)'] = u'øɫ'
-tBS['Canadian Syllabics (Inuktitut)'] = C(u'''øai	ᐁ
+cBS['Canadian Syllabics (Inuktitut)'] = 'øɫ'
+tBS['Canadian Syllabics (Inuktitut)'] = C('''øai	ᐁ
 pai	ᐯ
 tai	ᑌ
 kai	ᑫ
@@ -2217,8 +2217,8 @@ ng	ᐊᖕ
 nng	ᐊᖖ
 ɫ	ᐊᖦ''')
 
-tBS['Canadian Syllabics (Naskapi)'] = u'Ø'
-tBS['Canadian Syllabics (Naskapi)'] = C(u'''Øi	ᐃ
+tBS['Canadian Syllabics (Naskapi)'] = 'Ø'
+tBS['Canadian Syllabics (Naskapi)'] = C('''Øi	ᐃ
 pi	ᐱ
 ti	ᑎ
 ki	ᑭ
@@ -2291,7 +2291,6 @@ y	ᐊᔾ
 w	ᐊᐤ
 h	ᐊᐦ''')
 
-import codecs
 import sys, os
 MtBS, McBS = BySound.GetBySound()
 def register(c, t):
@@ -2300,20 +2299,20 @@ def register(c, t):
     McBS = c
 
 for k in tBS:
-    MtBS[k] = [(i[1], i[0].replace(u'’', "'").lower()) for i in tBS[k] if len(i) > 1]
+    MtBS[k] = [(i[1], i[0].replace('’', "'").lower()) for i in tBS[k] if len(i) > 1]
     
     i = len(MtBS[k])-1
     # Remove final consonants
     while i > 0:
         #print MtBS[k][i]
-        if u'ᐊ' in MtBS[k][i][0]:
+        if 'ᐊ' in MtBS[k][i][0]:
             MtBS[k][i] = list(MtBS[k][i])
-            MtBS[k][i][0] = MtBS[k][i][0].strip(u'ᐊ')
+            MtBS[k][i][0] = MtBS[k][i][0].strip('ᐊ')
             #print 'STRIP!'
         else: break
         i -= 1
         
-    MtBS[k].append([u'᙮', '.'])
+    MtBS[k].append(['᙮', '.'])
     
 for k in cBS:
     McBS[k] = cBS[k]

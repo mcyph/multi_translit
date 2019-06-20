@@ -4,14 +4,14 @@ Any constants that have characters with values above 0xFFFF need to be fed
 through build_string so as to avoid problems on narrow Python builds.
 """
 
-from __future__ import unicode_literals
+
 import logging
 import string
 import sys
 
 logger = logging.getLogger(__name__)
 
-chr_func = chr if sys.version_info >= (3, ) else unichr
+chr_func = chr if sys.version_info >= (3, ) else chr
 
 
 def build_string(*args):

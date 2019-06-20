@@ -29,15 +29,15 @@ def demode(enc, S):
     return obj.decode(S)
 
 if __name__ == '__main__':
-    for S in [u'김정일', u"한글", u'치파오', u'양용은']:
+    for S in ['김정일', "한글", '치파오', '양용은']:
         for k in D:
-            print k
+            print(k)
             Enc = enmode(k, S)
             Dec = demode(k, Enc.replace('-', '').replace('.', '').replace('\'', '').replace(' ', ''))
-            print 'Enc:', Enc.encode('utf-8')
-            print 'Dec:', Dec.encode('utf-8')
+            print('Enc:', Enc.encode('utf-8'))
+            print('Dec:', Dec.encode('utf-8'))
             #print
-        print
+        print()
         
 r'''
 =head1 NAME

@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 # See "Appendix N: Transform Rules" of 
 # http://unicode.org/reports/tr35/ for more information
-import codecs
 from multi_translit.translit.my_engine.TranslitFunctions import DCodepoints2Hex
 
 # Basic define types
 from char_data.unicodeset import ProcessRangeBase
 from multi_translit.data_paths import data_path
 
-from post_process import post_process
+from .post_process import post_process
 
 ASSIGN_VARIABLE = 0
 CONVERSION = 1
@@ -73,9 +72,9 @@ def get_L_icu_transform(path):
 
 class ParseICUTransform(ProcessRangeBase):
     DDirectionChars = {
-        u'→': '=>',
-        u'↔': '<=>',
-        u'←': '<='
+        '→': '=>',
+        '↔': '<=>',
+        '←': '<='
     }
     
     DTokens = {
@@ -91,7 +90,7 @@ class ParseICUTransform(ProcessRangeBase):
     }
     
     def __init__(self, path):
-        with codecs.open(path, 'rb', 'utf-8') as f:
+        with open(path, 'r', encoding='utf-8') as f:
             s = f.read()
         
         self.DVars = {}
@@ -137,7 +136,7 @@ class ParseICUTransform(ProcessRangeBase):
                 x += 1
                 continue
             
-            print 'MAIN:', x, c, ord(c), start_of_statement, backslash_mode, LCurrent, LConv
+            print('MAIN:', x, c, ord(c), start_of_statement, backslash_mode, LCurrent, LConv)
             
             #========================================================#
             #                   Variable Handling                    #
@@ -296,8 +295,8 @@ class ParseICUTransform(ProcessRangeBase):
                 from char_data.unicodeset.UnicodeSetParse\
                 import get_unicode_set_ranges
                 
-                print 'RANGE TOKENS:', get_unicode_set_ranges(range_, 
-                                                              self.DVars)
+                print('RANGE TOKENS:', get_unicode_set_ranges(range_, 
+                                                              self.DVars))
             L.append((UNICODE_SET, range_))
         
         elif c == '&':
@@ -310,7 +309,7 @@ class ParseICUTransform(ProcessRangeBase):
             # CHECK ME! ==========================================================
             if c == 'u':
                 # Unicode backslash
-                L.append((CHARS, unichr(int(s[x+1:x+5], 16))))
+                L.append((CHARS, chr(int(s[x+1:x+5], 16))))
                 x += 4
             else:
                 L.append((CHARS, c))
@@ -322,13 +321,13 @@ class ParseICUTransform(ProcessRangeBase):
         
         elif c == "'":
             # Quotes mode
-            print "QUOTES!"
+            print("QUOTES!")
             x, LExtend = self.process_quotes(x, s)
             L.extend(LExtend)
         
         elif c in self.DTokens:
             # Before/after/cursor tokens
-            print 'TOKEN:', self.DTokens[c]
+            print('TOKEN:', self.DTokens[c])
             L.append(self.DTokens[c])
         
         elif c.strip():
@@ -368,7 +367,7 @@ class ParseICUTransform(ProcessRangeBase):
             # Get the next character
             try: c = s[x]
             except IndexError: break
-            print 'VARIABLE:', x, c
+            print('VARIABLE:', x, c)
             
             # Search for the "=" character
             if not found_equals and c=='=':
@@ -445,14 +444,14 @@ class ParseICUTransform(ProcessRangeBase):
             # Get the next character
             try: c = s[x]
             except IndexError: break
-            print "QUOTES:", x, c
+            print("QUOTES:", x, c)
             
             if backslash_mode:
                 # Backslash mode
                 # CHECK ME! ==========================================================
                 if c == 'u':
                     # Unicode backslash
-                    L.append((CHARS, unichr(int(s[x+1:x+5], 16))))
+                    L.append((CHARS, chr(int(s[x+1:x+5], 16))))
                     x += 4
                 elif c == "'":
                     # '\' -> an actual backslash!
@@ -525,7 +524,7 @@ class ParseICUTransform(ProcessRangeBase):
             # Get the next character
             try: c = s[x]
             except IndexError: break
-            print 'TRANSFORM RULE:', x, c
+            print('TRANSFORM RULE:', x, c)
             
             if brackets_mode:
                 # Brackets ("inverse") mode processing
@@ -641,10 +640,10 @@ if __name__ == '__main__':
         if not path.endswith('.txt'):
             continue
         elif not '_' in path:
-            print 'IGNORING:', path
+            print('IGNORING:', path)
             continue
         
-        print 'PROCESSING:', path
+        print('PROCESSING:', path)
         # 'Arabic_Latin.txt'
         L = get_L_icu_transform('%s/%s' % (root, path))
         pprint(L)

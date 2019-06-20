@@ -1,1 +1,1 @@
-from translit.MultiTranslit import translit, get_D_scripts, MultiTranslit
+from .translit.MultiTranslit import translit, get_D_scripts, MultiTranslit

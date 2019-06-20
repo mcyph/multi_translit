@@ -65,7 +65,7 @@ DFonts = {
     "Pinyin U Accented": "Latin",
     "Canadian Syllabics": "Canadian Syllabics",
     "Cyrillic": "Cyrillic",
-    u"Latin Łacinka": "Latin",
+    "Latin Łacinka": "Latin",
     "French": "Latin",
     "Zhuyin": "Bopomofo",
     "Thaana": "Thaana",
@@ -146,7 +146,7 @@ def iso_convert(iso, variant):
 
 
     if not item:
-        print('** SCRIPT WARNING:', iso, variant)
+        print(('** SCRIPT WARNING:', iso, variant))
         script = variant = None # WARNING!
     else:
         if '|' in item:
@@ -171,5 +171,5 @@ def iso_convert(iso, variant):
             variant=variant or None
         )
     except:
-        print('** SCRIPT WARNING 2:', iso, script, variant)
+        print(('** SCRIPT WARNING 2:', iso, script, variant))
         return 'FIXME: %s,%s' % (iso, variant)

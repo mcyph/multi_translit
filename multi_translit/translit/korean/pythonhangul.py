@@ -31,7 +31,7 @@ class UnicodeHangulError(Exception):
     
     __str__ = __repr__
 
-Null = u''
+Null = ''
 try:
     True
 except:
@@ -40,15 +40,15 @@ except:
 
 class Jaeum:
 
-    Codes = (u'\u3131', u'\u3132', u'\u3133', u'\u3134', u'\u3135', u'\u3136',
+    Codes = ('\u3131', '\u3132', '\u3133', '\u3134', '\u3135', '\u3136',
             #    G         GG          GS         N          NJ         NH
-             u'\u3137', u'\u3138', u'\u3139', u'\u313a', u'\u313b', u'\u313c',
+             '\u3137', '\u3138', '\u3139', '\u313a', '\u313b', '\u313c',
             #    D         DD          L          LG         LM         LB
-             u'\u313d', u'\u313e', u'\u313f', u'\u3140', u'\u3141', u'\u3142',
+             '\u313d', '\u313e', '\u313f', '\u3140', '\u3141', '\u3142',
             #    LS        LT          LP         LH         M          B
-             u'\u3143', u'\u3144', u'\u3145', u'\u3146', u'\u3147', u'\u3148',
+             '\u3143', '\u3144', '\u3145', '\u3146', '\u3147', '\u3148',
             #    BB        BS          S          SS         NG         J
-             u'\u3149', u'\u314a', u'\u314b', u'\u314c', u'\u314d', u'\u314e')
+             '\u3149', '\u314a', '\u314b', '\u314c', '\u314d', '\u314e')
             #    JJ        C           K          T          P          H
     Width = len(Codes)
     G, GG, GS, N, NJ, NH, D, DD, L, LG, LM, LB, LS, LT, LP, LH, M, B, \
@@ -66,13 +66,13 @@ class Jaeum:
 
 class Moeum:
 
-    Codes = (u'\u314f', u'\u3150', u'\u3151', u'\u3152', u'\u3153', u'\u3154',
+    Codes = ('\u314f', '\u3150', '\u3151', '\u3152', '\u3153', '\u3154',
             #    A          AE        YA         YAE         EO         E
-             u'\u3155', u'\u3156', u'\u3157', u'\u3158', u'\u3159', u'\u315a',
+             '\u3155', '\u3156', '\u3157', '\u3158', '\u3159', '\u315a',
             #    YEO        YE        O          WA          WAE        OE
-             u'\u315b', u'\u315c', u'\u315d', u'\u315e', u'\u315f', u'\u3160',
+             '\u315b', '\u315c', '\u315d', '\u315e', '\u315f', '\u3160',
             #    YO         U         WEO        WE          WI         YU
-             u'\u3161', u'\u3162', u'\u3163')
+             '\u3161', '\u3162', '\u3163')
             #    EU         YI        I
     Width = len(Codes)
     A, AE, YA, YAE, EO, E, YEO, YE, O, WA, WAE, OE, YO, \
@@ -88,21 +88,21 @@ Chosung = Jaeum.Chosung
 Jungsung = Moeum.Jungsung
 Jongsung = Jaeum.Jongsung
 
-for name, code in Jaeum.__dict__.items() + Moeum.__dict__.items():
+for name, code in list(Jaeum.__dict__.items()) + list(Moeum.__dict__.items()):
     if name.isupper() and len(name) <= 3:
-        exec "%s = %s" % (name, repr(code))
+        exec("%s = %s" % (name, repr(code)))
 del name, code
 
 # Unicode Hangul Syllables Characteristics
-ZONE = (u'\uAC00', u'\uD7A3')
+ZONE = ('\uAC00', '\uD7A3')
 NCHOSUNG  = len(Chosung)
 NJUNGSUNG = len(Jungsung)
 NJONGSUNG = len(Jongsung)
-JBASE_CHOSUNG  = u'\u1100'
-JBASE_JUNGSUNG = u'\u1161'
-JBASE_JONGSUNG = u'\u11A8'
-CHOSUNG_FILLER = u'\u115F'
-JUNGSUNG_FILLER = u'\u1160'
+JBASE_CHOSUNG  = '\u1100'
+JBASE_JUNGSUNG = '\u1161'
+JBASE_JONGSUNG = '\u11A8'
+CHOSUNG_FILLER = '\u115F'
+JUNGSUNG_FILLER = '\u1160'
 
 _ishangul = (
     lambda code:
@@ -113,21 +113,21 @@ _ishangul = (
 
 # Alternative Suffixes : do not use outside
 ALT_SUFFIXES = {
-    u'\uc744': (u'\ub97c', u'\uc744'), # reul, eul
-    u'\ub97c': (u'\ub97c', u'\uc744'), # reul, eul
-    u'\uc740': (u'\ub294', u'\uc740'), # neun, eun
-    u'\ub294': (u'\ub294', u'\uc740'), # neun, eun
-    u'\uc774': (u'\uac00', u'\uc774'), # yi, ga
-    u'\uac00': (u'\uac00', u'\uc774'), # yi, ga
-    u'\uc640': (u'\uc640', u'\uacfc'), # wa, gwa
-    u'\uacfc': (u'\uc640', u'\uacfc'), # wa, gwa
+    '\uc744': ('\ub97c', '\uc744'), # reul, eul
+    '\ub97c': ('\ub97c', '\uc744'), # reul, eul
+    '\uc740': ('\ub294', '\uc740'), # neun, eun
+    '\ub294': ('\ub294', '\uc740'), # neun, eun
+    '\uc774': ('\uac00', '\uc774'), # yi, ga
+    '\uac00': ('\uac00', '\uc774'), # yi, ga
+    '\uc640': ('\uc640', '\uacfc'), # wa, gwa
+    '\uacfc': ('\uc640', '\uacfc'), # wa, gwa
 }
 
 # Ida-Varitaion Suffixes : do not use outside
 IDA_SUFFIXES = {
-    u'(\uc774)': (u'', u'\uc774'),     # (yi)da
-    u'(\uc785)': (17, u'\uc785'),      # (ip)nida
-    u'(\uc778)': (4, u'\uc778'),       # (in)-
+    '(\uc774)': ('', '\uc774'),     # (yi)da
+    '(\uc785)': (17, '\uc785'),      # (ip)nida
+    '(\uc778)': (4, '\uc778'),       # (in)-
 }
 
 def is_jaeum(u):
@@ -164,7 +164,7 @@ def join(codes):
     if not codes[0] or not codes[1]: # single jamo
         return codes[0] or codes[1]
 
-    return unichr(
+    return chr(
         0xac00 + (
             Chosung.index(codes[0])*NJUNGSUNG +
             Jungsung.index(codes[1])
@@ -193,11 +193,11 @@ def conjoin(s):
 
     while ncur < len(s):
         c = s[ncur]
-        if JBASE_CHOSUNG <= c <= u'\u1112' or c == CHOSUNG_FILLER: # starts with chosung
-            if len(s) > ncur+1 and JUNGSUNG_FILLER <= s[ncur+1] <= u'\u1175':
+        if JBASE_CHOSUNG <= c <= '\u1112' or c == CHOSUNG_FILLER: # starts with chosung
+            if len(s) > ncur+1 and JUNGSUNG_FILLER <= s[ncur+1] <= '\u1175':
                 cho = Chosung[ord(c) - ord(JBASE_CHOSUNG)]
                 jung = Jungsung[ord(s[ncur+1]) - ord(JBASE_JUNGSUNG)]
-                if len(s) > ncur+2 and JBASE_JONGSUNG <= s[ncur+2] <= u'\u11C2':
+                if len(s) > ncur+2 and JBASE_JONGSUNG <= s[ncur+2] <= '\u11C2':
                     jong = Jongsung[ord(s[ncur+2]) - ord(JBASE_JONGSUNG) + 1]
                     ncur += 2
                 else:
@@ -206,13 +206,13 @@ def conjoin(s):
                 obuff.append(join([cho, jung, jong]))
             else:
                 obuff.append(join([Chosung[ord(c) - ord(JBASE_CHOSUNG)], Null, Null]))
-        elif JBASE_JUNGSUNG <= c <= u'\u1175':
+        elif JBASE_JUNGSUNG <= c <= '\u1175':
             obuff.append(join([Null, Jungsung[ord(c) - ord(JBASE_JUNGSUNG)], Null]))
         else:
             obuff.append(c)
         ncur += 1
     
-    return u''.join(obuff)
+    return ''.join(obuff)
 
 def disjoint(s):
     obuff = []
@@ -220,27 +220,27 @@ def disjoint(s):
         if _ishangul(c):
             cho, jung, jong = split(c)
             if cho:
-                obuff.append( unichr(ord(JBASE_CHOSUNG) + Chosung.index(cho)) )
+                obuff.append( chr(ord(JBASE_CHOSUNG) + Chosung.index(cho)) )
             else:
                 obuff.append( CHOSUNG_FILLER )
 
             if jung:
-                obuff.append( unichr(ord(JBASE_JUNGSUNG) + Jungsung.index(jung)) )
+                obuff.append( chr(ord(JBASE_JUNGSUNG) + Jungsung.index(jung)) )
             else:
                 obuff.append( JUNGSUNG_FILLER )
 
             if jong:
-                obuff.append( unichr(ord(JBASE_JONGSUNG) + Jongsung.index(jong) - 1) )
+                obuff.append( chr(ord(JBASE_JONGSUNG) + Jongsung.index(jong) - 1) )
         else:
             obuff.append(c)
-    return u''.join(obuff)
+    return ''.join(obuff)
 
 def _has_final(c):
     # for internal use only
-    if u'\uac00' <= c <= u'\ud7a3': # hangul
+    if '\uac00' <= c <= '\ud7a3': # hangul
         return 1, (ord(c) - 0xac00) % 28 > 0
     else:
-        return 0, c in u'013678.bklmnptLMNRZ'
+        return 0, c in '013678.bklmnptLMNRZ'
 
 # Iterator Emulator for ancient versions before 2.1
 try:
@@ -250,7 +250,7 @@ except:
         def __init__(self, obj):
             self.obj = obj
             self.ptr = 0
-        def next(self):
+        def __next__(self):
             try:
                 return self.obj[self.ptr]
             finally:
@@ -274,11 +274,11 @@ def format(fmtstr, *args, **kwargs):
         if plambda:
             argget = plambda(kwargs)
     else:
-        argget = iter(args).next
+        argget = iter(args).__next__
 
     obuff = []
     ncur = escape = fmtinpth = 0
-    ofmt = fmt = u''
+    ofmt = fmt = ''
 
     while ncur < len(fmtstr):
         c = fmtstr[ncur]
@@ -286,30 +286,30 @@ def format(fmtstr, *args, **kwargs):
         if escape:
             obuff.append(c)
             escape = 0
-            ofmt   = u''
-        elif c == u'\\':
+            ofmt   = ''
+        elif c == '\\':
             escape = 1
         elif fmt:
             fmt += c
             if not fmtinpth and c.isalpha():
                 ofmt = fmt % argget()
                 obuff.append(ofmt)
-                fmt = u''
-            elif fmtinpth and c == u')':
+                fmt = ''
+            elif fmtinpth and c == ')':
                 fmtinpth = 0
-            elif c == u'(':
+            elif c == '(':
                 fmtinpth = 1
-            elif c == u'%':
-                obuff.append(u'%')
-        elif c == u'%':
+            elif c == '%':
+                obuff.append('%')
+        elif c == '%':
             fmt  += c
-            ofmt = u''
+            ofmt = ''
         else:
-            if ofmt and ALT_SUFFIXES.has_key(c):
+            if ofmt and c in ALT_SUFFIXES:
                 obuff.append(ALT_SUFFIXES[c][
                     _has_final(ofmt[-1])[1] and 1 or 0
                 ])
-            elif ofmt and IDA_SUFFIXES.has_key(fmtstr[ncur:ncur+3]):
+            elif ofmt and fmtstr[ncur:ncur+3] in IDA_SUFFIXES:
                 sel = IDA_SUFFIXES[fmtstr[ncur:ncur+3]]
                 ishan, hasfinal = _has_final(ofmt[-1])
 
@@ -317,16 +317,16 @@ def format(fmtstr, *args, **kwargs):
                     obuff.append(sel[1])
                 elif ishan:
                     if sel[0]:
-                        obuff[-1] = obuff[-1][:-1] + unichr(ord(ofmt[-1]) + sel[0])
+                        obuff[-1] = obuff[-1][:-1] + chr(ord(ofmt[-1]) + sel[0])
                 else:
                     obuff.append(sel[0] and sel[1])
                 ncur += 2
             else:
                 obuff.append(c)
     
-            ofmt = u''
+            ofmt = ''
 
         ncur += 1
     
-    return u''.join(obuff)
+    return ''.join(obuff)
 

@@ -2,7 +2,7 @@
 from multi_translit.translit.my_engine.ProcessWord import process_word
 from multi_translit.translit.my_engine.SplitSentence import split_sentence
 
-from TranslitParse import TranslitParse
+from .TranslitParse import TranslitParse
 
 
 DCache = {}
@@ -114,5 +114,5 @@ if __name__ == '__main__':
             'Asian/Japanese/Latin/Japanese Hiragana-Latin.trn'
     )
 
-    print te.convert(u'にほんご')
-    print te.convert(u'にんんに')
+    print(te.convert('にほんご'))
+    print(te.convert('にんんに'))

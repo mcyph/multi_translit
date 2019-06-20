@@ -35,15 +35,15 @@ def process_word(s, dir_, L):
             s = i[1] % s
 
         elif cmd == 'normalize': 
-            s = normalize(i[1], unicode(s))
+            s = normalize(i[1], str(s))
 
         elif cmd == 'splithangul': 
             # HACK!
-            s = normalize('NFD', unicode(s))
+            s = normalize('NFD', str(s))
 
         elif cmd == 'joinhangul': 
             # HACK!
-            s = normalize('NFC', unicode(s))
+            s = normalize('NFC', str(s))
 
         elif cmd == 'koreanenc': 
             # Encoding, s
@@ -57,9 +57,9 @@ def process_word(s, dir_, L):
             # This uses a lot of processing power to compile, 
             # so the engine's cached for later :-)
             try:
+                global translit
                 translit
             except:
-                global translit
                 from multi_translit import translit
 
             s = translit(*i[1:]+[s])

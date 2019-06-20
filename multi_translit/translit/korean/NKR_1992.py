@@ -10,9 +10,9 @@ def init(nkr):
         "ae",
         "ya",
         "yae",
-        u"\u014F", # latin small letter with breve (ŏ)
+        "\u014F", # latin small letter with breve (ŏ)
         "e",
-        u"y\u014F",
+        "y\u014F",
         "ye",
         "o",
         "wa",
@@ -20,12 +20,12 @@ def init(nkr):
         "oe",
         "yo",
         "u",
-        u"w\u014F",
+        "w\u014F",
         "we",
         "wi",
         "yu",
-        u"\u016Du", # latin small letter u with breve (ŭ)
-        u"\u016Dy",
+        "\u016Du", # latin small letter u with breve (ŭ)
+        "\u016Dy",
         "i"
         ]);
     nkr.el('l');

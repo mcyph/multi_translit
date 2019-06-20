@@ -8,7 +8,7 @@ from multi_translit.translit.iter_translit_files import iter_translit_files
 from toolkit.io.file_tools import file_write
 from multi_translit.data_paths import data_path
 
-from iso_convert import iso_convert
+from .iso_convert import iso_convert
 
 DFonts = {} # {script: font, ...}
 
@@ -24,9 +24,9 @@ LIgnoredComments = [
 ]
 
 DDirs = {
-    '<=': u'<=',
-    '=>': u'=>',
-    '<=>': u'='
+    '<=': '<=',
+    '=>': '=>',
+    '<=>': '='
 }
 
 def get_str(o, before_o=None, after_o=None):
@@ -70,15 +70,15 @@ def escape_str(o):
         LOut = []
         for c in s:
             if (
-                not category(unicode(c)) in {
+                not category(str(c)) in {
                     'Mc', 'Cc', 'Cf', 'Zl', 'Zp', 'Zs', 'Mn'
                 } and
-                not mirrored(unicode(c)) and
+                not mirrored(str(c)) and
                 not c in '=,;'
             ):
                 LOut.append(c)
             else:
-                LOut.append('{{%s}}' % name(unicode(c)))
+                LOut.append('{{%s}}' % name(str(c)))
 
         return ''.join(LOut)
     
@@ -174,7 +174,7 @@ def old_2_new(path):
                       .setdefault(key.split(':')[0], [])
         )
         for i in DOld[key]:
-            print('CONVERSION:', i)
+            print(('CONVERSION:', i))
 
             # Comment or blank
             cmd, _, blah = i.rstrip(')').partition('(')
@@ -298,7 +298,7 @@ if __name__ == '__main__':
         new_path = path.replace('/data/', '/data-new/')
         try: txt = old_2_new(path)
         except:
-            print('ERROR ON:', path)
+            print(('ERROR ON:', path))
             from traceback import print_exc
             print_exc()
             #raise
@@ -308,17 +308,17 @@ if __name__ == '__main__':
         
         file_write(new_path, txt)
     
-    import codecs
+    import io
     from pprint import pprint
     pprint(DFonts)
     
-    with codecs.open(
+    with open(
         data_path(
             'translit_new',
             'translit-fonts.json'
         ),
-        'wb',
-        'utf-8'
+        'w',
+        encoding='utf-8'
     ) as f:
 
         f.write(json.dumps(DFonts, ensure_ascii=False, indent=4))

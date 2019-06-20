@@ -1,10 +1,9 @@
-﻿import codecs
-
+﻿
 # First line: the PinYin consonant map
-PinYinKeys = u'''b	ch	c	d	f	g	h	j	k	l	m	n	p	q	r	sh	s	t	x	zh	z'''
+PinYinKeys = '''b	ch	c	d	f	g	h	j	k	l	m	n	p	q	r	sh	s	t	x	zh	z'''
 
 # Following lines: vowel/consonants as final, self form (ignored if -*), and the PinYin using the above map
-PinYinCombs = u'''a	a	ba	tʂʰa	tsʰa	da	fa	ga	xa		kʰa	la	ma	na	pʰa			ʂa	sa	tʰa		tʂa	dzɑ
+PinYinCombs = '''a	a	ba	tʂʰa	tsʰa	da	fa	ga	xa		kʰa	la	ma	na	pʰa			ʂa	sa	tʰa		tʂa	dzɑ
 ai	ai	bai	tʂʰai	tsʰai	dai		gai	xai		kʰai	lai	mai	nai	pʰai			ʂai	sai	tʰai		tʂai	dzai
 an	ɑn	bɑn	tʂʰɑn	tsʰɑn	dɑn	fɑn	gɑn	xɑn		kʰɑn	lɑn	mɑn	nɑn	pʰɑn		ɹɑn	ʂɑn	sɑn	tʰɑn		tʂɑn	dzɑn
 ang	ɑŋ	bɑŋ	tʂʰɑŋ	tsʰɑŋ	dɑŋ	fɑŋ	gɑŋ	xɑŋ		kʰɑŋ	lɑŋ	mɑŋ	nɑŋ	pʰɑŋ		ɹɑŋ	ʂɑŋ	sɑŋ	tʰɑŋ		tʂɑŋ	dzɑŋ
@@ -42,7 +41,7 @@ o	o			tsʰo		fo					lo	mo		pʰo
 -ue	yɛ								tɕyɛ		lyɛ		nyɛ		tɕʰyɛ					ɕyɛ		
 -un	yn								tɕyn		lyn				tɕʰyn					ɕyn		'''
 
-PinYinSelf = u'''Yan	jɛn
+PinYinSelf = '''Yan	jɛn
 Yang	jaŋ
 Yao	jɑu
 Ye	jɛ
@@ -66,7 +65,7 @@ Yin	in | ɪn
 Ying	i ŋ | ɪŋ
 Yu	y'''
 
-Tones = u'''IPA 	˥˥ 	˧˥ 	˨˩˦ 	˥˩	
+Tones = '''IPA 	˥˥ 	˧˥ 	˨˩˦ 	˥˩	
 IPA Tongyong	˥˥ 	˧˥ 	˨˩˦ 	˥˩	
 Pinyin 	1 	2 	3 	4	
 Tongyong Pinyin 	ma 	maˊ 	maˇ 	maˋ	ma
@@ -85,7 +84,7 @@ def generate():
     
     # Load the tone conversions
     # TODO: Make this on the vowels?
-    Tones = (('1', u'˥˥'), ('2', u'˧˥ '), ('3', u'˨˩˦'), ('4', u'˥˩'), ('5', 'ignore()'))
+    Tones = (('1', '˥˥'), ('2', '˧˥ '), ('3', '˨˩˦'), ('4', '˥˩'), ('5', 'ignore()'))
     for PinYin, IPA in Tones:
         L.append((PinYin, IPA))
     
@@ -111,7 +110,7 @@ def generate():
             L.append((PinYin, IPA))
     
     # Write the combinations out to file
-    File = codecs.open("BySound/Asian/Chinese/Chinese PinYin-IPA2.trn", 'wb', 'utf-8')
+    File = open("BySound/Asian/Chinese/Chinese PinYin-IPA2.trn", 'w', encoding='utf-8')
     L.sort(reverse=True)
     for PinYin, IPA in L:
         File.write("%s = %s\n" % (PinYin, IPA))

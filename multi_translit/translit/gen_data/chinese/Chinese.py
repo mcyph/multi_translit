@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 
-Initials = u'''IPA 	ɑ 	ɔ 	ɤ 	aɪ 	eɪ 	ɑʊ 	ɤʊ 	an 	ən 	ɑŋ 	ɤŋ 	ɑɻ 	ʊŋ 	i 	iɛ 	iɤʊ 	iɛn 	iɪn 	jiŋ
+Initials = '''IPA 	ɑ 	ɔ 	ɤ 	aɪ 	eɪ 	ɑʊ 	ɤʊ 	an 	ən 	ɑŋ 	ɤŋ 	ɑɻ 	ʊŋ 	i 	iɛ 	iɤʊ 	iɛn 	iɪn 	jiŋ
 IPA Tongyong	ɑ 	ɔ 	ɤ 	aɪ 	eɪ 	ɑʊ 	ɤʊ 	an 	ən 	ɑŋ 	ɤŋ 	ɑɻ 	ʊŋ 	i 	iɛ 	iɤʊ 	iɛn 	iɪn 	jiŋ
 Pinyin 	a 	o 	e 	ai 	ei 	ao 	ou 	an 	en 	ang 	eng 	er 	ong 	yi 	ye 	you 	yan 	yin 	ying
 Tongyong Pinyin 	a 	o 	e 	ai 	ei 	ao 	ou 	an 	en 	ang 	eng 	er 	ong 	yi 	ye 	you 	yan 	yin 	ying
@@ -30,7 +30,7 @@ Zhuyin 	ㄓㄜ 	ㄓ 	ㄔㄜ 	ㄔ 	ㄕㄜ 	ㄕ 	ㄖㄜ 	ㄖ 	ㄗㄜ 	ㄗㄨㄛ 	�
 '''
 
 # TODO: Why does Tongyong Pinyin use modifier characters?
-Tones = u'''IPA 	˥˥ 	˧˥ 	˨˩˦ 	˥˩	
+Tones = '''IPA 	˥˥ 	˧˥ 	˨˩˦ 	˥˩	
 IPA Tongyong	˥˥ 	˧˥ 	˨˩˦ 	˥˩	
 Pinyin 	1 	2 	3 	4	
 Tongyong Pinyin 	ma 	maˊ 	maˇ 	maˋ	ma
@@ -69,13 +69,13 @@ def get_dipa():
                 for k in D:
                     nD[k] = D[k][i]
                 nL.append(nD)
-                print(unicode(nD).encode('utf-8'))
+                print((str(nD).encode('utf-8')))
                 i += 1
             except IndexError: 
                 break
     return nL
 
-PinYinData = u'''a 	a 	a 	a 	a 	ㄚ˙ 	.a 	a 	a
+PinYinData = '''a 	a 	a 	a 	a 	ㄚ˙ 	.a 	a 	a
 a1 	ā 	a1 	a1 	a1 	ㄚˉ 	a 	a1 	a1
 a2 	á 	a2 	a2 	a2 	ㄚˊ 	ar 	a2 	a2
 a3 	ǎ 	a3 	a3 	a3 	ㄚˇ 	aa 	a3 	a3

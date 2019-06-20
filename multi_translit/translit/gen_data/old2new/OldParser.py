@@ -49,7 +49,7 @@ LOrder = [
     'others'
 ]
 
-for k, v in DREs.items():
+for k, v in list(DREs.items()):
     DREs[k] = compile(v, UNICODE)
 
 
@@ -61,7 +61,7 @@ class OldParser:
     def __init__(self, path):
         D = self.D = {}
         self.txt = file_read(path, encoding='utf-8')
-        self.txt = self.txt.replace(u'﻿', '').replace('\r', '') # HACK! ====================================
+        self.txt = self.txt.replace('﻿', '').replace('\r', '') # HACK! ====================================
         
         D['comment'], D['initial_comments'] = self.pop_comment()
         
@@ -69,7 +69,7 @@ class OldParser:
             D['DSettings'] = self.pop_D_settings()
         except:
             from traceback import print_exc
-            print('settings not found for:', path)
+            print(('settings not found for:', path))
             print_exc()
         
         # Now go through and process the file one line at a time
@@ -432,7 +432,7 @@ class OldParser:
             return []
         num_items = len(D[list(D.keys())[0]])
         
-        for x in xrange(num_items):
+        for x in range(num_items):
             i_D = {}
             for key in D:
                 i_D[key] = D[key][x]
@@ -451,7 +451,7 @@ class OldParser:
             return LRtn
         
         DTo = {}
-        for key, regex in DREs.items():
+        for key, regex in list(DREs.items()):
             DMatch = get_D_re(regex, to)
             if DMatch:
                 DTo[key] = split(DMatch['char']\
@@ -472,7 +472,7 @@ class OldParser:
 
     def dict_keys_underscored(self, D):
         n_D = {}
-        for k, v in D.items():
+        for k, v in list(D.items()):
             if k.startswith('D') or k.startswith('L'):
                 n_D[k] = v
             else:

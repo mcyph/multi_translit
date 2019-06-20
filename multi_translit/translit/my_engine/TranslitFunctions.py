@@ -19,7 +19,7 @@ def names_to_codepoints(s):
 
 
 def codepoints_to_names(s):
-    return ''.join('{%s}' % name(unicode(i)) for i in s)
+    return ''.join('{%s}' % name(str(i)) for i in s)
 
 
 def remove(s):

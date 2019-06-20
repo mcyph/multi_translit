@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import os
-import codecs
 import keyword
 import wx, wx.aui
 import wx.stc as stc
@@ -66,7 +65,7 @@ class FrmMain(wx.Frame):
                     self.DFileSTC[Data] = STC
                     self.PanelSzr.Add(STC, 1, wx.EXPAND)
                 self.DFileSTC[Data].SetSize(self.Panel.GetSize())
-            except Exception, exc:
+            except Exception as exc:
                 try: self.DFileSTC[Data].Destroy()
                 except: pass
                 raise exc
@@ -168,7 +167,7 @@ class FrmMain(wx.Frame):
 class TreTree(wx.TreeCtrl):
     def __init__(self, *args, **kwargs):
         wx.TreeCtrl.__init__(self, *args, **kwargs)
-        self.Dir = os.getcwdu()+'/BySound'
+        self.Dir = os.getcwd()+'/BySound'
         self.Dir = self.Dir.replace('\\', '/')
         Sz = 16, 16
         self.il = wx.ImageList(*Sz)
@@ -247,7 +246,7 @@ class PythonSTC(stc.StyledTextCtrl):
         
         # Open the existing file
         self.Path = Path
-        self.File = codecs.open(Path, 'rb', 'utf-8', 'replace')
+        self.File = open(Path, 'r', encoding='utf-8', errors='replace')
         Text = self.File.read()#.encode('utf-8')
         #Text += '\n' # HACK!
         self.SetText(Text)
@@ -387,7 +386,7 @@ class PythonSTC(stc.StyledTextCtrl):
     def save(self):
         # save the file and remove the asterisk if present
         Text = self.GetText()#.decode('utf-8', 'ignore')
-        self.File = codecs.open(self.Path, 'wb', 'utf-8', 'replace')
+        self.File = open(self.Path, 'w', encoding='utf-8', errors='replace')
         self.File.write(Text)
         self.File.close()
         self.AbsParent.SetItemText(self.parent.parent.SelItem, os.path.split(self.Path)[-1])
@@ -406,7 +405,7 @@ class PythonSTC(stc.StyledTextCtrl):
             self.save()
         else:
             if not evt.ControlDown():
-                self.LastKey = unichr(evt.GetRawKeyCode()).lower()
+                self.LastKey = chr(evt.GetRawKeyCode()).lower()
                 #print 'LASTKEY:', self.LastKey.encode('utf-8')
             evt.Skip()
 

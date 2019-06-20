@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from itertools import tee, izip
+from itertools import tee
 from PyICU import Transliterator, UTransDirection, ICUError
 
 from multi_translit.data_paths import data_path
@@ -10,6 +10,7 @@ from iso_tools import ISOTools, NONE, LANG, TERRITORY, VARIANT
 from multi_translit.translit.korean import enmode, demode, SKoTypes
 from multi_translit.translit.get_D_translit_mappings import get_D_translit_mappings
 from multi_translit.translit.icu.combinations import get_D_comb
+from multi_translit.translit.my_engine.TranslitEngine import TranslitEngine
 
 DTranslitMappings = get_D_translit_mappings()
 DComb = get_D_comb()
@@ -33,7 +34,7 @@ def pairwise(iterable):
     """
     a, b = tee(iterable)
     next(b, None)
-    return izip(a, b)
+    return zip(a, b)
 
 
 class MultiTranslit:
@@ -91,13 +92,13 @@ class MultiTranslit:
 
             try:
                 from_key = self.mapping_to_iso(*DMappings[from_], other=DMappings[to])
-            except KeyError, e:
+            except KeyError as e:
                 LUnknownScripts.append('%s-%s' % (from_, to))
                 continue
 
             try:
                 to_key = self.mapping_to_iso(*DMappings[to], other=DMappings[from_])
-            except KeyError, e:
+            except KeyError as e:
                 LUnknownScripts.append('%s-%s' % (to, from_))
                 continue
 
@@ -130,7 +131,7 @@ class MultiTranslit:
             )
 
             if not (to_key, from_key) in D:
-                if 'Zyyy' in from_key and not 'Zyyy' in unicode(to_key):
+                if 'Zyyy' in from_key and not 'Zyyy' in str(to_key):
                     #print('IGNORED:', from_key, to_key)
                     # HACK: Disable "to common"
                     continue
@@ -150,12 +151,12 @@ class MultiTranslit:
         # Add internal python transliterators
         #print DTranslitMappings
 
-        with open(data_path('translit', 'ignored_isos.txt'), 'rb') as f:
+        with open(data_path('translit', 'ignored_isos.txt'), 'r') as f:
             # HACK: Ignore these (mostly fairly uncommonly used) transliteration systems
             # as they probably have errors/I don't have much time to maintain them
             SIgnoredISOs = f.read().split('\n')
 
-        for from_iso, L in DTranslitMappings.items():
+        for from_iso, L in list(DTranslitMappings.items()):
             for path, to_iso, direction in L:
 
                 if ISOTools.split(from_iso).lang in SIgnoredISOs:
@@ -192,12 +193,12 @@ class MultiTranslit:
         )
 
         # Add combination engines
-        for (from_iso, to_iso), L in DComb.items():
+        for (from_iso, to_iso), L in list(DComb.items()):
             for (x, y) in pairwise(L):
                 assert (x, y) in D, (x, y)
 
             if (from_iso, to_iso) in D:
-                print 'overwriting translit:', (from_iso, to_iso), L
+                print('overwriting translit:', (from_iso, to_iso), L)
 
             D[from_iso, to_iso] = (
                 ENGINE_COMBINATION, L
@@ -329,27 +330,21 @@ class MultiTranslit:
 
         elif typ == ENGINE_MECAB:
             try:
+                global to_katakana
                 to_katakana
             except:
-                global to_katakana
                 from mecab.word_boundaries import to_katakana
 
             r = to_katakana(s, wa_hack=params[2])
             if params[0]:
                 r = self.translit(params[0], params[1], r)
-            return unicode(r)
+            return str(r)
 
         elif typ == ENGINE_KO:
             system, fn = params
             return fn(system, s)
 
         elif typ == ENGINE_MINE:
-            try:
-                TranslitEngine
-            except:
-                global TranslitEngine
-                from multi_translit.translit.my_engine.TranslitEngine import TranslitEngine
-
             te = TranslitEngine(
                 data_path('translit_new', params[0]),
                 params[1]
@@ -382,18 +377,18 @@ if __name__ == '__main__':
 
     #print Translit.translit('Latn', 'ja_Kana', 'nihongo')
 
-    print MultiTranslit.translit('ja', 'ja_Latn|FONIPA', 'aa')
+    print(MultiTranslit.translit('ja', 'ja_Latn|FONIPA', 'aa'))
 
-    txt = u'私はボブ。日本語で書きますよ！どうしてそんなことを言うの？'
-    print MultiTranslit.translit('ja', 'ja_Kana', txt)
-    print MultiTranslit.translit('ja', 'ja_Hira', txt)
-    print MultiTranslit.translit('ja', 'Latn', txt)
+    txt = '私はボブ。日本語で書きますよ！どうしてそんなことを言うの？'
+    print(MultiTranslit.translit('ja', 'ja_Kana', txt))
+    print(MultiTranslit.translit('ja', 'ja_Hira', txt))
+    print(MultiTranslit.translit('ja', 'Latn', txt))
 
-    print [i for i in MultiTranslit.DEngines if 'ja' in i[0]]
+    print([i for i in MultiTranslit.DEngines if 'ja' in i[0]])
 
-    txt = u'''(sŏ-ul=yŏn-hap-nyu-sŭ) i-chun-sŏ ki-cha = 4ㆍ11 ch'ong-sŏn kong-ch'ŏn tang-si'''
-    txt_ko = u'(서울=연합뉴스) 이준서 기자 = 4ㆍ11 총선 공천 당시'
+    txt = '''(sŏ-ul=yŏn-hap-nyu-sŭ) i-chun-sŏ ki-cha = 4ㆍ11 ch'ong-sŏn kong-ch'ŏn tang-si'''
+    txt_ko = '(서울=연합뉴스) 이준서 기자 = 4ㆍ11 총선 공천 당시'
     for system in SKoTypes:
         latin = MultiTranslit.translit('ko', 'ko_Latn|%s' % system, txt_ko)
-        print latin
-        print MultiTranslit.translit('ko_Latn|%s' % system, 'ko_Hang', latin)
+        print(latin)
+        print(MultiTranslit.translit('ko_Latn|%s' % system, 'ko_Hang', latin))
