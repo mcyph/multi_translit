@@ -197,8 +197,8 @@ class MultiTranslit:
             for (x, y) in pairwise(L):
                 assert (x, y) in D, (x, y)
 
-            if (from_iso, to_iso) in D:
-                print('overwriting translit:', (from_iso, to_iso), L)
+            #if (from_iso, to_iso) in D:
+            #    print('overwriting translit:', (from_iso, to_iso), L)
 
             D[from_iso, to_iso] = (
                 ENGINE_COMBINATION, L
