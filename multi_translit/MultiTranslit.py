@@ -325,8 +325,7 @@ class MultiTranslit:
             if not params in self.DICU:
                 self.DICU[params] = Transliterator.createInstance(*params)
 
-            # Note the utf-8 decode/encode to prevent a SMP char->surrogate pair!
-            return self.DICU[params].transliterate(s).encode('utf-8').decode('utf-8')
+            return self.DICU[params].transliterate(s)
 
         elif typ == ENGINE_MECAB:
             try:

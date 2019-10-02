@@ -1,6 +1,6 @@
 import os
-from flazzle.db.misc.RemDupes import FastRemDupes
-from flazzle.db.misc.FastCopy import Copy
+#from langlynx.db.misc.RemDupes import FastRemDupes
+#from langlynx.db.misc.FastCopy import Copy
 DCurID = {None: 0}
 
 # DStrToISO: 

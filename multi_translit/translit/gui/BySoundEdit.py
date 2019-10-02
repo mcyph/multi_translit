@@ -17,7 +17,7 @@ class SplSplitter(wx.SplitterWindow):
 class FrmMain(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, None, -1, size=(1152, 864), title="Transliteration Editor")
-        self.SetIcon(wx.Icon('../flazzle.ico', wx.BITMAP_TYPE_ICO))
+        self.SetIcon(wx.Icon('../langlynx.ico', wx.BITMAP_TYPE_ICO))
         
         # Create the top-level sizer and splitter
         Szr = wx.BoxSizer(wx.HORIZONTAL)

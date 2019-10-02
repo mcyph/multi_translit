@@ -29,7 +29,7 @@ ZERO_OR_MORE = 0  # X*
 ONE_OR_MORE = 1   # X+
 ZERO_OR_ONE = 2   # X?
 
-# (forward, reverse): (flazzle forward function, flazzle reverse function)
+# (forward, reverse): (langlynx forward function, langlynx reverse function)
 # (Any-)X
 
 DInverse = {}
