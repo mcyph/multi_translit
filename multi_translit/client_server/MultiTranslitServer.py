@@ -10,7 +10,8 @@ class MultiTranslitServer(MMapServer):
             'get_best_conversion': self.get_best_conversion,
             'get_L_best_conversions': self.get_L_best_conversions,
             'get_L_all_conversions': self.get_L_all_conversions,
-            'translit': self.translit
+            'translit': self.translit,
+            'get_D_script_headings': self.get_D_script_headings
         }, port=40552)
 
     @json_method
@@ -40,3 +41,9 @@ class MultiTranslitServer(MMapServer):
     @json_method
     def translit(self, from_, to, s):
         return MultiTranslit.translit(from_, to, s)
+
+    @json_method
+    def get_D_script_headings(self):
+        from multi_translit.translit.get_D_script_headings import get_D_script_headings
+        return get_D_script_headings()
+
