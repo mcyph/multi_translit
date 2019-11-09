@@ -2,7 +2,7 @@
 # http://www.languagegeek.com/algon/ojibway/anb_syllabarium.html
 # for Northern Ojibway, otherwise known as the
 # ᐊᓂᔑᓇᐯᒧᐎᐣ / Anishinaabemowin  (Ojibwe, Saulteaux) Syllabarium
-# I may have introduced errors! If you see any, please e-mail me at david@flazzle.net
+# I may have introduced errors! If you see any, please e-mail me at david@langlynx.net
 
 ﻿provides("Ojibwe %s", "Latin", "Canadian Syllabics", true)
 addISO("alq") # Algonquin

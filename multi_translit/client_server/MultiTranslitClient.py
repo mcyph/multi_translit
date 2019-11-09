@@ -41,7 +41,28 @@ class MultiTranslitClient:
         )
 
     def translit(self, from_, to, s):
+        #print("TRANSLIT", from_, to, s, self.client.send_json(
+        #    'translit',
+        #    [from_, to, s]
+        #))
+        #raise Exception()
         return self.client.send_json(
             'translit',
             [from_, to, s]
         )
+
+    def get_D_script_headings(self):
+        return self.client.send_json(
+            'get_D_script_headings', []
+        )
+
+
+MultiTranslit = MultiTranslitClient()
+translit = MultiTranslit.translit
+get_D_scripts = MultiTranslit.get_D_scripts
+get_D_script_headings = MultiTranslit.get_D_script_headings
+get_L_possible_conversions = MultiTranslit.get_L_possible_conversions
+
+
+if __name__ == '__main__':
+    print(translit('Latn', 'Kana', 'blah'))
