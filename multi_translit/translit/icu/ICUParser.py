@@ -291,12 +291,10 @@ class ParseICUTransform(ProcessRangeBase):
         if c == '[':
             # Start of UnicodeSet mode
             x, range_ = self.process_range(x, s)
-            if True:
-                from char_data.unicodeset.UnicodeSetParse\
-                import get_unicode_set_ranges
+            #if True:
+            #    from char_data.unicodeset.unicodeset import get_unicode_set_ranges
                 
-                print('RANGE TOKENS:', get_unicode_set_ranges(range_, 
-                                                              self.DVars))
+            #    print('RANGE TOKENS:', get_unicode_set_ranges(range_, self.DVars, char_indexes=None))
             L.append((UNICODE_SET, range_))
         
         elif c == '&':
