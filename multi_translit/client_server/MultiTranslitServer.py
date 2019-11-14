@@ -1,10 +1,10 @@
-from network_tools.mmap_sockets.MMapServer import MMapServer, json_method
+from network_tools.posix_shm_sockets.SHMServer import SHMServer, json_method
 from multi_translit.MultiTranslit import MultiTranslit
 
 
-class MultiTranslitServer(MMapServer):
+class MultiTranslitServer(SHMServer):
     def __init__(self):
-        MMapServer.__init__(self, DCmds={
+        SHMServer.__init__(self, DCmds={
             'get_D_scripts': self.get_D_scripts,
             'get_L_possible_conversions': self.get_L_possible_conversions,
             'get_best_conversion': self.get_best_conversion,

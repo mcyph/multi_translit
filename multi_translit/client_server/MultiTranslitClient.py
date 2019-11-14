@@ -1,9 +1,9 @@
-from network_tools.mmap_sockets import MMapClient
+from network_tools.posix_shm_sockets.SHMClient import SHMClient
 
 
 class MultiTranslitClient:
     def __init__(self):
-        self.client = MMapClient(port=40552)
+        self.client = SHMClient(port=40552)
 
     def get_D_scripts(self):
         return self.client.send_json('get_D_scripts', [])
