@@ -1,214 +1,65 @@
 # -*- coding: utf-8 -*-
-from itertools import tee
-from PyICU import Transliterator, UTransDirection, ICUError
-
-from multi_translit.data_paths import data_path
-from toolkit.json_tools import load
-
 from iso_tools import ISOTools, NONE, LANG, TERRITORY, VARIANT
 
-from multi_translit.translit.korean import enmode, demode, SKoTypes
-from multi_translit.translit.get_D_translit_mappings import get_D_translit_mappings
-from multi_translit.translit.icu.combinations import get_D_comb
-from multi_translit.translit.my_engine.TranslitEngine import TranslitEngine
-
-DTranslitMappings = get_D_translit_mappings()
-DComb = get_D_comb()
-
-
-ENGINE_ICU = 0
-ENGINE_MECAB = 1
-ENGINE_KO = 2
-ENGINE_MINE = 3
-ENGINE_CJKLIB = 4
-ENGINE_COMBINATION = 5
+from multi_translit.implementations.CombinationTranslit import CombinationTranslit
+from multi_translit.implementations.ICUTranslit import ICUTranslit
+from multi_translit.implementations.KoTranslit import KoTranslit
+from multi_translit.implementations.MecabTranslit import MecabTranslit
+from multi_translit.implementations.MyTranslit import MyTranslit
+from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
 
 
 join = ISOTools.join
 split = ISOTools.split
 
 
-def pairwise(iterable):
-    """
-    s -> (s0,s1), (s1,s2), (s2, s3), ...
-    """
-    a, b = tee(iterable)
-    next(b, None)
-    return zip(a, b)
-
-
-class MultiTranslit:
+class MultiTranslit(MultiTranslitBase):
     def __init__(self):
-        self.DEngines = self.get_D_engines()
-        self.DICU = {} # FIXME! =================================================
-        self._remove_invalid()
+        L = self.LEngines = []
 
-    def _remove_invalid(self):
-        for from_key, to_key in list(self.DEngines.keys()):
-            if self.DEngines[from_key, to_key][0] != ENGINE_ICU:
-                continue
+        L.append(MyTranslit())
+        L.append(ICUTranslit())
+        L.append(KoTranslit())
+        L.append(MecabTranslit(self))
 
-            # Remove invalid engines (somewhat hackish, but oh well...)
-            try:
-                self.translit(from_key, to_key, 'a')
-            except ICUError:
-                del self.DEngines[from_key, to_key]
+        # Get the engines before the combination, as the combination
+        # engine needs to know which engines are available
+        self.DEngines = self.__get_D_engines()
+        L.append(CombinationTranslit(self))
 
-    def mapping_to_iso(self, part3, script=None, variant=None, other=None):
-        if other:
-            if not part3 and other[0] and other[0] != 'ben':
-                part3 = other[0]
+        # Update DEngines after the combinations have been added
+        self.DEngines = self.__get_D_engines()
 
-        r = join(part3, script, variant=variant)
-
-        DMap = {
-          'zh_Hani': 'zh',
-          'Hani': 'zh',
-          'ja_Zyyy': 'ja_Hrkt',
-          'zh_Bopo|Zhuyin': 'zh_Bopo',
-          'Bopo': 'zh_Bopo',
-          'zh_Latn': 'zh_Latn|x-Pinyin'
-        }
-
-        if r in DMap:
-            r = DMap[r]
-
-        return r
-
-    def get_D_engines(self):
+    def __get_D_engines(self):
         """
         Get a dict of {(from, to): params, ...}
-        for all available translteration engines
+        for all available transliteration engines
         """
-        D = {}
-
-        DMappings = load(data_path('translit', 'script_mappings.json'))
-        LUnknownScripts = []
-
-        for engine in Transliterator.getAvailableIDs():
-            #print engine
-            from_, _, to = engine.partition('-')
-            to = to.replace('/', '-')
-
-            try:
-                from_key = self.mapping_to_iso(*DMappings[from_], other=DMappings[to])
-            except KeyError as e:
-                LUnknownScripts.append('%s-%s' % (from_, to))
-                continue
-
-            try:
-                to_key = self.mapping_to_iso(*DMappings[to], other=DMappings[from_])
-            except KeyError as e:
-                LUnknownScripts.append('%s-%s' % (to, from_))
-                continue
-
-            SIgnore = {
-                'ko_Zyyy',
-                'th_Zyyy',
-                'el_Zyyy',
-                'cs_Zyyy',
-                'es_Zyyy',
-                'ko_Zyyy',
-                'zh_Zyyy',
-                'ar_Zyyy',
-                'he_Zyyy',
-                'syr_Zyyy',
-                'hy_Zyyy',
-                'ka_Zyyy',
-                'pl_Zyyy',
-                'ro_Zyyy',
-                'ru_Zyyy',
-                'am_Zyyy', # TODO: Add latin -> amharic
-                'sk_Zyyy'
-            }
-
-            if from_key in SIgnore or to_key in SIgnore:
-                continue
-
-            D[from_key, to_key] = (
-                ENGINE_ICU,
-                (engine, UTransDirection.FORWARD)
-            )
-
-            if not (to_key, from_key) in D:
-                if 'Zyyy' in from_key and not 'Zyyy' in str(to_key):
-                    #print('IGNORED:', from_key, to_key)
-                    # HACK: Disable "to common"
+        DEngines = {}
+        for engine in self.LEngines:
+            for from_iso, to_iso in engine.get_L_possible_conversions():
+                if (from_iso, to_iso) in DEngines:
+                    import warnings
+                    warnings.warn(f"Warning: iso combination {from_iso}/"
+                                  f"{to_iso} has already been assigned")
                     continue
 
-                D[to_key, from_key] = (
-                    ENGINE_ICU,
-                    (engine, UTransDirection.REVERSE)
-                )
-
-        if LUnknownScripts:
-            from warnings import warn
-            warn(
-                "Scripts in ICU not recognised by multi_translit engine: %s"
-                % ', '.join(LUnknownScripts)
-            )
-
-        # Add internal python transliterators
-        #print DTranslitMappings
-
-        with open(data_path('translit', 'ignored_isos.txt'), 'r') as f:
-            # HACK: Ignore these (mostly fairly uncommonly used) transliteration systems
-            # as they probably have errors/I don't have much time to maintain them
-            SIgnoredISOs = f.read().split('\n')
-
-        for from_iso, L in list(DTranslitMappings.items()):
-            for path, to_iso, direction in L:
-
-                if ISOTools.split(from_iso).lang in SIgnoredISOs:
-                    continue
-                elif ISOTools.split(to_iso).lang in SIgnoredISOs:
-                    continue
-
-                D[from_iso, to_iso] = (
-                    ENGINE_MINE,
-                    (path, direction)
-                )
-
-        # Add Korean internal conversions
-        for system in SKoTypes:
-            D['ko', 'ko_Latn|%s' % system] = (
-                ENGINE_KO, (system, enmode)
-            )
-
-            D['ko_Latn|%s' % system, 'ko'] = (
-                ENGINE_KO, (system, demode)
-            )
-
-        # Add Japanese internal conversions
-        D['ja', 'ja_Hira'] = (
-            ENGINE_MECAB, ('ja_Kana', 'ja_Hira', False)
-        )
-
-        D['ja', 'ja_Kana'] = (
-            ENGINE_MECAB, (None, None, False)
-        ) # Already Katakana!
-
-        D['ja', 'Latn'] = (
-            ENGINE_MECAB, ('ja_Kana', 'ja_Latn', True)
-        )
-
-        # Add combination engines
-        for (from_iso, to_iso), L in list(DComb.items()):
-            for (x, y) in pairwise(L):
-                assert (x, y) in D, (x, y)
-
-            #if (from_iso, to_iso) in D:
-            #    print('overwriting translit:', (from_iso, to_iso), L)
-
-            D[from_iso, to_iso] = (
-                ENGINE_COMBINATION, L
-            )
+                DEngines[from_iso, to_iso] = engine
 
         if True:
-            [(ISOTools.verify_iso(from_), ISOTools.verify_iso(to)) for from_, to in D]
-        return D
+            for from_, to in DEngines:
+                ISOTools.verify_iso(from_)
+                ISOTools.verify_iso(to)
+
+        return DEngines
 
     def get_D_scripts(self):
+        """
+        Get a dictionary map from the "from script" to potentially many "to scripts"
+        for example, there may be many conversions from Latin to Hiragana, Cyrillic etc.
+
+        :return: {from script: [to script 1, ...], ...}
+        """
         D = {}
         for from_, to in self.DEngines:
             D.setdefault(from_, []).append(to)
@@ -220,11 +71,8 @@ class MultiTranslit:
 
         For example, ja_Kana_JP will also look for ja_Kana and Kana
         """
-
         # OPEN ISSUE: Add exceptions for e.g. Latin which have many false positives?
-
         from_ = ISOTools.remove_unneeded_info(from_)
-
         L = []
         DScripts = self.get_D_scripts()
 
@@ -243,14 +91,19 @@ class MultiTranslit:
         ):
             if s in DScripts:
                 L.extend((s, v) for v in DScripts[s])
-
         return L
 
     def get_best_conversion(self, from_iso, to_iso, default=KeyError):
-        L = self.get_L_best_conversions(
-            from_iso, to_iso,
-        )
+        """
+        When converting between one script and another, it might be
+        possible to convert
 
+        :param from_iso:
+        :param to_iso:
+        :param default:
+        :return:
+        """
+        L = self.get_L_best_conversions(from_iso, to_iso)
         if L:
             return L[0]
         elif default == KeyError:
@@ -259,19 +112,9 @@ class MultiTranslit:
             return default
 
     def get_L_best_conversions(self, from_iso, to_iso):
-        """
-        Guesses the best conversions, e.g. so that if the script of the
-        to_iso isn't specified, it'll still find the closest conversions
-
-        This isn't 100% accurate, but should hopefully be good enough in most cases
-        """
         LRtn = []
-
-
         from_iso = ISOTools.remove_unneeded_info(from_iso)
         to_iso = ISOTools.remove_unneeded_info(to_iso)
-
-
         #print from_iso, to_iso
 
         for xx, (conv_from_iso, conv_to_iso) in enumerate(self.get_L_possible_conversions(
@@ -290,7 +133,6 @@ class MultiTranslit:
                 rem_dupes=True
             )):
                 #print 'try:', from_iso, to_iso, i_to_iso, conv_from_iso, conv_to_iso
-
                 if i_to_iso == conv_to_iso:
                     len_diff1 = -len([_ for _ in ISOTools.split(conv_from_iso) if _])
                     len_diff2 = -len([_ for _ in ISOTools.split(conv_to_iso) if _])
@@ -306,56 +148,14 @@ class MultiTranslit:
         return [i[-1] for i in LRtn]
 
     def get_L_all_conversions(self, from_, s):
-        """
-        Convert `s` into all possible combinations
-        """
         L = []
         for i_from, i_to in self.get_L_possible_conversions(from_):
             L.append(((i_from, i_to), self.translit(i_from, i_to, s)))
         return L
 
     def translit(self, from_, to, s):
-        """
-        Convert the alphabet of `s` from `from_` to `to`
-        """
-        typ, params = self.DEngines[from_, to]
-
-
-        if typ == ENGINE_ICU:
-            if not params in self.DICU:
-                self.DICU[params] = Transliterator.createInstance(*params)
-
-            return self.DICU[params].transliterate(s)
-
-        elif typ == ENGINE_MECAB:
-            try:
-                global to_katakana
-                to_katakana
-            except:
-                from mecab.word_boundaries import to_katakana
-
-            r = to_katakana(s, wa_hack=params[2])
-            if params[0]:
-                r = self.translit(params[0], params[1], r)
-            return str(r)
-
-        elif typ == ENGINE_KO:
-            system, fn = params
-            return fn(system, s)
-
-        elif typ == ENGINE_MINE:
-            te = TranslitEngine(
-                data_path('translit_new', params[0]),
-                params[1]
-            )
-            return te.convert(s)
-
-        elif typ == ENGINE_COMBINATION:
-            #print params
-            for x, y in pairwise(params):
-                #print x, y
-                s = self.translit(x, y, s)
-            return s
+        engine = self.DEngines[from_, to]
+        return engine.translit(from_, to, s)
 
 
 MultiTranslit = MultiTranslit()

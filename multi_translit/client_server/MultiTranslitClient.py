@@ -1,7 +1,8 @@
+from multi_translit.abstract_base_classes.TranslitEngineBase import MultiTranslitBase
 from network_tools.posix_shm_sockets.SHMClient import SHMClient
 
 
-class MultiTranslitClient:
+class MultiTranslitClient(MultiTranslitBase):
     def __init__(self):
         self.client = SHMClient(port=40552)
 
