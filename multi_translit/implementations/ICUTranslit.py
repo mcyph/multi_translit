@@ -1,7 +1,6 @@
 from toolkit.json_tools import load
 from multi_translit.data_paths import data_path
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
-from multi_translit.consts import ENGINE_ICU
 from iso_tools.ISOTools import ISOTools
 
 
@@ -38,9 +37,6 @@ class ICUTranslit(TranslitEngineBase):
         from PyICU import ICUError
 
         for from_key, to_key in list(self.DEngines.keys()):
-            if self.DEngines[from_key, to_key][0] != ENGINE_ICU:
-                continue
-
             # Remove invalid engines (somewhat hackish, but oh well...)
             try:
                 self.translit(from_key, to_key, 'a')
@@ -95,8 +91,7 @@ class ICUTranslit(TranslitEngineBase):
                 continue
 
             D[from_key, to_key] = (
-                ENGINE_ICU,
-                (engine, UTransDirection.FORWARD)
+                engine, UTransDirection.FORWARD
             )
 
             if not (to_key, from_key) in D:
@@ -106,8 +101,7 @@ class ICUTranslit(TranslitEngineBase):
                     continue
 
                 D[to_key, from_key] = (
-                    ENGINE_ICU,
-                    (engine, UTransDirection.REVERSE)
+                    engine, UTransDirection.REVERSE
                 )
 
         if LUnknownScripts:

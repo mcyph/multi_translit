@@ -1,4 +1,5 @@
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
+from mecab.word_boundaries.WordBoundaries import WordBoundaries
 
 
 class MecabTranslit(TranslitEngineBase):
@@ -21,14 +22,11 @@ class MecabTranslit(TranslitEngineBase):
         return D
 
     def translit(self, from_, to, s):
-        try:
-            global to_katakana
-            to_katakana
-        except:
-            from mecab.word_boundaries import to_katakana
+        if not hasattr(self, 'word_boundaries'):
+            self.word_boundaries = WordBoundaries(self.multi_translit)
 
         params = self.DEngines[from_, to]
-        r = to_katakana(s, wa_hack=params[2])
+        r = self.word_boundaries.to_katakana(s, wa_hack=params[2])
         if params[0]:
             r = self.multi_translit.translit(params[0], params[1], r)
         return str(r)

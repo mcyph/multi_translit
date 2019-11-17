@@ -1,5 +1,6 @@
-from multi_translit.abstract_base_classes.TranslitEngineBase import MultiTranslitBase
+from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
 from network_tools.posix_shm_sockets.SHMClient import SHMClient
+from network_tools.mmap_sockets.MMapClient import MMapClient
 
 
 class MultiTranslitClient(MultiTranslitBase):
@@ -35,9 +36,9 @@ class MultiTranslitClient(MultiTranslitBase):
             [from_iso, to_iso]
         )
 
-    def get_L_all_conversions(self, from_, s):
+    def get_all_transliterations(self, from_, s):
         return self.client.send_json(
-            'get_L_all_conversions',
+            'get_all_transliterations',
             [from_, s]
         )
 
@@ -58,12 +59,28 @@ class MultiTranslitClient(MultiTranslitBase):
         )
 
 
-MultiTranslit = MultiTranslitClient()
-translit = MultiTranslit.translit
-get_D_scripts = MultiTranslit.get_D_scripts
-get_D_script_headings = MultiTranslit.get_D_script_headings
-get_L_possible_conversions = MultiTranslit.get_L_possible_conversions
+#MultiTranslit = MultiTranslitClient()
+#translit = MultiTranslit.translit
+#get_D_scripts = MultiTranslit.get_D_scripts
+#get_D_script_headings = MultiTranslit.get_D_script_headings
+#get_L_possible_conversions = MultiTranslit.get_L_possible_conversions
 
 
 if __name__ == '__main__':
-    print(translit('Latn', 'Kana', 'blah'))
+    import time
+    from toolkit.benchmarking.benchmark import benchmark
+
+    if True:
+        c = MultiTranslitClient()
+    else:
+        from multi_translit.MultiTranslit import MultiTranslit
+        c = MultiTranslit()
+
+    #@benchmark(restrictions=(30,))
+    def run():
+        _c = c
+        t_from = time.time()
+        for x in range(10000):
+            _c.translit('ja', 'ja_Hira', '政府、結論ありきの大嘗祭　憲法論争避け前例踏襲〔深層探訪〕'*5)
+        print(time.time()-t_from)
+    run()

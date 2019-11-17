@@ -4,7 +4,7 @@
 from multi_translit.translit.my_engine.TranslitFunctions import DCodepoints2Hex
 
 # Basic define types
-from char_data.unicodeset import ProcessRangeBase
+from char_data.unicodeset.tokenizer.ProcessRangeBase import ProcessRangeBase
 from multi_translit.data_paths import data_path
 
 from .post_process import post_process

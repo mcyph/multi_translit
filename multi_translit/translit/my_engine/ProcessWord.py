@@ -57,11 +57,12 @@ def process_word(s, dir_, L):
             # This uses a lot of processing power to compile, 
             # so the engine's cached for later :-)
             try:
-                global translit
-                translit
+                global multi_translit
+                multi_translit
             except:
-                from multi_translit.MultiTranslit import translit
+                from multi_translit.MultiTranslit import MultiTranslit
+                multi_translit = MultiTranslit()
 
-            s = translit(*i[1:]+[s])
+            s = multi_translit.translit(*i[1:]+[s])
 
     return s

@@ -5,8 +5,12 @@ class MultiTranslitBase(ABC):
     @abstractmethod
     def get_D_scripts(self):
         """
+        Get a dictionary map from the "from script" to potentially
+        many "to scripts".
+        For example, there may be many conversions from Latin to
+        Hiragana, Cyrillic etc.
 
-        :return:
+        :return: {from script: [to script 1, ...], ...}
         """
         pass
 
@@ -15,6 +19,7 @@ class MultiTranslitBase(ABC):
                                    remove_variant=False):
         """
         Get all possible conversions from iso `from_`.
+        For example, ja_Kana-JP will also look for ja_Kana and Kana.
 
         :param from_: the from ISO code
         :param remove_variant: if True, then VARIANT, LANG, and
@@ -31,18 +36,6 @@ class MultiTranslitBase(ABC):
         pass
 
     @abstractmethod
-    def get_best_conversion(self, from_iso, to_iso,
-                            default=KeyError):
-        """
-
-        :param from_iso:
-        :param to_iso:
-        :param default:
-        :return:
-        """
-        pass
-
-    @abstractmethod
     def get_L_best_conversions(self, from_iso, to_iso):
         """
         Guesses the best conversions, e.g. so that if the script of the
@@ -51,20 +44,42 @@ class MultiTranslitBase(ABC):
         This isn't 100% accurate, but should hopefully be good enough
         in most cases.
 
-        :param from_iso:
-        :param to_iso:
-        :return:
+        For instance, while a generic Cyrillic to Latin conversion might
+        be possible, a more specific Ukrainian/Russian Cyrillic to Latin
+        conversion might be able to give better results. This method
+        attempts to find the best/most appropriate conversions possible.
+
+        :param from_iso: the ISO code to convert from
+        :param to_iso: the ISO code to convert to
+        :return: the default value to return if a conversion
+                 not found - raises a KeyError by default
         """
         pass
 
     @abstractmethod
-    def get_L_all_conversions(self, from_, s):
+    def get_best_conversion(self, from_iso, to_iso,
+                            default=KeyError):
         """
-        Convert `s` into all possible combinations.
+        Uses get_L_best_conversions to find the best conversion
+        for a given script combination.
 
-        :param from_:
-        :param s:
-        :return:
+        :param from_iso: the ISO code to convert from
+        :param to_iso: the ISO code to convert to
+        :param default: the default value to return if a conversion
+                        not found - raises a KeyError by default
+        :return: a tuple of (from_iso, to_iso) - the combination
+                 of ISOs to pass to the `translit` method.
+        """
+        pass
+
+    @abstractmethod
+    def get_all_transliterations(self, from_, s):
+        """
+        Transliterate `s` into all possible combinations.
+
+        :param from_: the ISO code to convert from
+        :param s: the text to convert
+        :return: a list of [((from_iso, to_iso), converted_text), ...), ...]
         """
         pass
 
@@ -82,12 +97,3 @@ class MultiTranslitBase(ABC):
         :return: the converted text
         """
         pass
-
-    # TODO: Should this be moved here?
-    #@abstractmethod
-    #def get_D_script_headings(self):
-    #    """
-
-    #    :return:
-    #    """
-    #    pass
