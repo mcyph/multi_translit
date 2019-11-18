@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from toolkit.patterns.Singleton import Singleton
 from toolkit.documentation.copydoc import copydoc
 from iso_tools import ISOTools, NONE, LANG, TERRITORY, VARIANT
 
@@ -10,10 +11,11 @@ from multi_translit.implementations.MyTranslit import MyTranslit
 from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
 
 
-class MultiTranslit(MultiTranslitBase):
+class MultiTranslit(MultiTranslitBase,
+                    Singleton,
+                    ):
     def __init__(self):
         L = self.LEngines = []
-
         L.append(MyTranslit())
         L.append(ICUTranslit())
         L.append(KoTranslit())

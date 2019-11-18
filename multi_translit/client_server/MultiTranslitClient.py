@@ -1,9 +1,12 @@
+from toolkit.patterns.Singleton import Singleton
 from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
 from network_tools.posix_shm_sockets.SHMClient import SHMClient
 from network_tools.mmap_sockets.MMapClient import MMapClient
 
 
-class MultiTranslitClient(MultiTranslitBase):
+class MultiTranslitClient(MultiTranslitBase,
+                          Singleton,
+                          ):
     def __init__(self):
         self.client = SHMClient(port=40552)
 
