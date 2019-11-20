@@ -22,7 +22,7 @@ class MultiTranslitServer(SHMServer):
 
     @json_method
     def get_L_possible_conversions(self, from_, remove_variant=False):
-        return self.multi_translit.get_D_scripts(from_, remove_variant)
+        return self.multi_translit.get_L_possible_conversions(from_, remove_variant)
 
     @json_method
     def get_best_conversion(self, from_iso, to_iso, default=KeyError):
