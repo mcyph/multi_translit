@@ -1,27 +1,34 @@
 from toolkit.patterns.Singleton import Singleton
+from network_tools.rpc.posix_shm_sockets.SHMClient import SHMClient
+from network_tools.rpc.base_classes.ClientMethodsBase import ClientMethodsBase
+
 from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
-from network_tools.posix_shm_sockets.SHMClient import SHMClient
-from network_tools.mmap_sockets.MMapClient import MMapClient
+from multi_translit.client_server.MultiTranslitServer import \
+    MultiTranslitServer as srv
 
 
 class MultiTranslitClient(MultiTranslitBase,
+                          ClientMethodsBase,
                           Singleton,
                           ):
-    def __init__(self):
-        self.client = SHMClient(port=40552)
+
+    def __init__(self, client_provider=None):
+        if client_provider is None:
+            client_provider = SHMClient(srv)
+        ClientMethodsBase.__init__(self, client_provider)
 
     def get_D_scripts(self):
-        return self.client.send_json('get_D_scripts', [])
+        return self.send(srv.get_D_scripts, [])
 
     def get_L_possible_conversions(self, from_, remove_variant=False):
-        return self.client.send_json(
-            'get_L_possible_conversions',
+        return self.send(
+            srv.get_L_possible_conversions,
             [from_, remove_variant]
         )
 
     def get_best_conversion(self, from_iso, to_iso, default=KeyError):
-        return self.client.send_json(
-            'get_best_conversion',
+        return self.send(
+            srv.get_best_conversion,
             [
                 from_iso,
                 to_iso,
@@ -34,14 +41,14 @@ class MultiTranslitClient(MultiTranslitBase,
         )
 
     def get_L_best_conversions(self, from_iso, to_iso):
-        return self.client.send_json(
-            'get_L_best_conversions',
+        return self.send(
+            srv.get_L_best_conversions,
             [from_iso, to_iso]
         )
 
     def get_all_transliterations(self, from_, s):
-        return self.client.send_json(
-            'get_all_transliterations',
+        return self.send(
+            srv.get_all_transliterations,
             [from_, s]
         )
 
@@ -51,27 +58,19 @@ class MultiTranslitClient(MultiTranslitBase,
         #    [from_, to, s]
         #))
         #raise Exception()
-        return self.client.send_json(
-            'translit',
+        return self.send(
+            srv.translit,
             [from_, to, s]
         )
 
     def get_D_script_headings(self):
-        return self.client.send_json(
-            'get_D_script_headings', []
+        return self.send(
+            srv.get_D_script_headings, []
         )
-
-
-#MultiTranslit = MultiTranslitClient()
-#translit = MultiTranslit.translit
-#get_D_scripts = MultiTranslit.get_D_scripts
-#get_D_script_headings = MultiTranslit.get_D_script_headings
-#get_L_possible_conversions = MultiTranslit.get_L_possible_conversions
 
 
 if __name__ == '__main__':
     import time
-    from toolkit.benchmarking.benchmark import benchmark
 
     if True:
         c = MultiTranslitClient()

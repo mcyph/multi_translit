@@ -1,20 +1,16 @@
-from network_tools.posix_shm_sockets.SHMServer import SHMServer, json_method
-#from network_tools.mmap_sockets.MMapServer import MMapServer, json_method
+from network_tools.rpc_decorators import json_method
+from network_tools.rpc.base_classes.ServerMethodsBase import ServerMethodsBase
+
 from multi_translit.MultiTranslit import MultiTranslit
 
 
-class MultiTranslitServer(SHMServer):
+class MultiTranslitServer(ServerMethodsBase):
+    port = 40552
+    name = 'mtranslit'
+
     def __init__(self):
         self.multi_translit = MultiTranslit()
-        SHMServer.__init__(self, DCmds={
-            'get_D_scripts': self.get_D_scripts,
-            'get_L_possible_conversions': self.get_L_possible_conversions,
-            'get_best_conversion': self.get_best_conversion,
-            'get_L_best_conversions': self.get_L_best_conversions,
-            'get_all_transliterations': self.get_all_transliterations,
-            'translit': self.translit,
-            'get_D_script_headings': self.get_D_script_headings
-        }, port=40552)
+        ServerMethodsBase.__init__(self)
 
     @json_method
     def get_D_scripts(self):
