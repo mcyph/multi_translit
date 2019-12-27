@@ -2,7 +2,7 @@
 from multi_translit.translit.my_engine.ProcessWord import process_word
 from multi_translit.translit.my_engine.SplitSentence import split_sentence
 
-from .TranslitParse import TranslitParse
+from multi_translit.translit.my_engine.TranslitParse import TranslitParse
 
 
 DCache = {}
