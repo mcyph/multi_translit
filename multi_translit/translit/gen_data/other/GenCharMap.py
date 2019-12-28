@@ -2,7 +2,7 @@ import os
 os.chdir('../../')
 import File # Surrogate pair HACK!
 from char_data.CharData import CharData, DISO2Lang, DISO2LFullText
-from toolkit.encodings.surrogates import w_unichr
+from multi_translit.toolkit.encodings.surrogates import w_unichr
 
 DFreq = {'cmn': ('Chinese Frequency', 
                  'Hong Kong Grade', 

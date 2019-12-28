@@ -3,7 +3,7 @@ import os
 import keyword
 import wx, wx.aui
 import wx.stc as stc
-from toolkit.encodings.DIPA import DIPA
+from multi_translit.toolkit.encodings.DIPA import DIPA
 
 class SplSplitter(wx.SplitterWindow):
     def __init__(self, parent):

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from re import sub, compile, UNICODE, DOTALL
-from toolkit.io.file_tools import file_read
+from multi_translit.toolkit.io.file_tools import file_read
 from multi_translit.translit.gen_data.old2new.GetDSettings import get_D_settings, DPossibleSet
 
 REIFAFTER = compile(r'^if after\((?P<after>.*?)\):(?P<expression>.*)$', UNICODE)

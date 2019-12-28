@@ -1,5 +1,5 @@
 import re
-from toolkit.json_tools import loads
+from multi_translit.toolkit.json_tools import loads
 
 # Possible settings keys: FormatString[REQ], LFonts[REQ], LProvides[REQ], 
 # LCreate[true, true], LTypes[REQ], BothWays[true], IgnoreCase[false], 

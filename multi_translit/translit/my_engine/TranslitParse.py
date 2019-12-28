@@ -1,5 +1,5 @@
 import json
-from toolkit.py_ini import read_D_html_ini
+from multi_translit.toolkit.py_ini import read_D_html_ini
 from iso_tools import ISOTools
 
 from multi_translit.translit.my_engine.get_rule import get_rule, process_val

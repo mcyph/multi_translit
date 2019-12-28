@@ -1,4 +1,4 @@
-from toolkit.json_tools import load
+from multi_translit.toolkit.json_tools import load
 from multi_translit.data_paths import data_path
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
 from iso_tools.ISOTools import ISOTools

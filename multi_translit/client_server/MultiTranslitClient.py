@@ -1,4 +1,4 @@
-from toolkit.patterns.Singleton import Singleton
+from multi_translit.toolkit.patterns.Singleton import Singleton
 from shmrpc.rpc.shared_memory.SHMClient import SHMClient
 from shmrpc.rpc.base_classes.ClientMethodsBase import ClientMethodsBase
 
