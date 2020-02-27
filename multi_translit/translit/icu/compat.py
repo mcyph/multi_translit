@@ -1,5 +1,5 @@
 from json import load, dump
-from iso_tools import ISOTools
+from iso_tools.ISOTools import ISOTools
 
 DOut = {}
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from multi_translit.toolkit.patterns.Singleton import Singleton
 from multi_translit.toolkit.documentation.copydoc import copydoc
-from iso_tools import ISOTools, NONE, LANG, TERRITORY, VARIANT
+from iso_tools.ISOTools import ISOTools, NONE, LANG, TERRITORY, VARIANT
 
 from multi_translit.implementations.CombinationTranslit import CombinationTranslit
 from multi_translit.implementations.ICUTranslit import ICUTranslit

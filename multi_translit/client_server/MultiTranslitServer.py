@@ -1,5 +1,5 @@
-from shmrpc.rpc_decorators import json_method
-from shmrpc.rpc.base_classes.ServerMethodsBase import ServerMethodsBase
+from speedysvc.rpc_decorators import json_method
+from speedysvc.client_server.base_classes.ServerMethodsBase import ServerMethodsBase
 
 from multi_translit.MultiTranslit import MultiTranslit
 
@@ -8,9 +8,9 @@ class MultiTranslitServer(ServerMethodsBase):
     port = 40552
     name = 'mtranslit'
 
-    def __init__(self):
+    def __init__(self, logger_client):
         self.multi_translit = MultiTranslit()
-        ServerMethodsBase.__init__(self)
+        ServerMethodsBase.__init__(self, logger_client)
 
     @json_method
     def get_D_scripts(self):

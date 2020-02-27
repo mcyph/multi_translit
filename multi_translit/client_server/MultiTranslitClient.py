@@ -1,6 +1,6 @@
 from multi_translit.toolkit.patterns.Singleton import Singleton
-from shmrpc.rpc.shared_memory.SHMClient import SHMClient
-from shmrpc.rpc.base_classes.ClientMethodsBase import ClientMethodsBase
+from speedysvc.client_server.shared_memory.SHMClient import SHMClient
+from speedysvc.client_server.base_classes.ClientMethodsBase import ClientMethodsBase
 
 from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
 from multi_translit.client_server.MultiTranslitServer import \

@@ -1,4 +1,4 @@
-from iso_tools import ISOTools
+from iso_tools.ISOTools import ISOTools
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
 from multi_translit.translit.my_engine.TranslitEngine import TranslitEngine
 from multi_translit.translit.get_D_translit_mappings import get_D_translit_mappings
