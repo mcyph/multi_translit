@@ -82,7 +82,7 @@ def get_rule(line, reverse=False, ci_conditions=False):
                 # only for the other direction, so ignore
                 continue
 
-            return Rule(token.strip(), get_D(side1, ci_conditions), get_D(side2, ci_conditions))
+            return Rule(token.strip(), get_dict(side1, ci_conditions), get_dict(side2, ci_conditions))
 
     raise Exception(line)
 
@@ -106,8 +106,8 @@ def process_val(s):
     return s
 
 
-def get_D(s, ci_conditions):
-    #print 'get_D', s.encode('utf-8')
+def get_dict(s, ci_conditions):
+    #print 'get_dict', s.encode('utf-8')
 
     def _process_dict(DRtn, i_D):
         #print i_D
@@ -173,5 +173,5 @@ def get_D(s, ci_conditions):
 
 
 if __name__ == '__main__':
-    print(get_D('''blah or initial k,l or medial blah"blah{{SPACE}} when after s,u and before y,z'''))
-    print(get_D('initial k final k'))
+    print(get_dict('''blah or initial k,l or medial blah"blah{{SPACE}} when after s,u and before y,z'''))
+    print(get_dict('initial k final k'))
