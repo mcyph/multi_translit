@@ -25,7 +25,7 @@ class CombinationTranslit(TranslitEngineBase):
     def get_D_engines(self):
         # Add combination engines
         SPossible = set()
-        for from_iso, L in self.multi_translit.get_D_scripts().items():
+        for from_iso, L in self.multi_translit.get_scripts_dict().items():
             for to_iso in L:
                 SPossible.add((from_iso, to_iso))
 

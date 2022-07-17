@@ -10,7 +10,7 @@ class TranslitEngineBase(ABC):
     def get_D_engines(self):
         pass
 
-    def get_L_possible_conversions(self):
+    def get_possible_conversions_list(self):
         return tuple(self.DEngines.keys())
 
     @abstractmethod

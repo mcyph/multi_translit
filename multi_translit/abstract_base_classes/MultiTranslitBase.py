@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class MultiTranslitBase(ABC):
     @abstractmethod
-    def get_D_scripts(self):
+    def get_scripts_dict(self):
         """
         Get a dictionary map from the "from script" to potentially
         many "to scripts".
@@ -15,7 +15,7 @@ class MultiTranslitBase(ABC):
         pass
 
     @abstractmethod
-    def get_L_possible_conversions(self, from_,
+    def get_possible_conversions_list(self, from_,
                                    remove_variant=False):
         """
         Get all possible conversions from iso `from_`.
@@ -36,7 +36,7 @@ class MultiTranslitBase(ABC):
         pass
 
     @abstractmethod
-    def get_L_best_conversions(self, from_iso, to_iso):
+    def get_best_conversions_list(self, from_iso, to_iso):
         """
         Guesses the best conversions, e.g. so that if the script of the
         to_iso isn't specified, it'll still find the closest conversions.
@@ -60,7 +60,7 @@ class MultiTranslitBase(ABC):
     def get_best_conversion(self, from_iso, to_iso,
                             default=KeyError):
         """
-        Uses get_L_best_conversions to find the best conversion
+        Uses get_best_conversions_list to find the best conversion
         for a given script combination.
 
         :param from_iso: the ISO code to convert from

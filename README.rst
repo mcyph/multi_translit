@@ -22,25 +22,25 @@ Usage
 
 .. code-block:: python
 
-    >>> from multi_translit import MultiTranslit, translit, get_D_scripts
+    >>> from multi_translit import MultiTranslit, translit, get_scripts_dict
 
     >>> MultiTranslit.mapping_to_iso
     ???
 
-    >>> MultiTranslit.get_L_possible_conversions('ja_Latn', 'ja_Hira')
+    >>> MultiTranslit.get_possible_conversions_list('ja_Latn', 'ja_Hira')
     [(u'ja_Latn', u'ja_Hrkt'), (u'ja_Latn', u'ja_Hira'), (u'ja_Latn', u'ja_Kana'), ('Latn', u'Latn|ASCII')]
 
     >>> MultiTranslit.get_best_conversion('ja', 'ja_Latn')
     (u'ja', 'Latn')
 
-    >>> MultiTranslit.get_L_best_conversions('ja', 'ja_Latn')
+    >>> MultiTranslit.get_best_conversions_list('ja', 'ja_Latn')
     [(u'ja', 'Latn')]
 
     MultiTranslit.get_L_all_conversions('ja', 'ja_Latn')
     MultiTranslit.translit('ja_Latn', 'ja_Hira', 'nihonngo')
 
     # Get all possible conversions, indexed by "from" (or source) script
-    >>> pprint(MultiTranslit.get_D_scripts())
+    >>> pprint(MultiTranslit.get_scripts_dict())
     {u'Latn': [u'Latn|ASCII'],
      u'Latn|ASCII': [u'Latn'],
      u'Latn|FONIPA': [u'Latn|FONXSAMP'],

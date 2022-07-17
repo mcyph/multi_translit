@@ -36,7 +36,7 @@ class MultiTranslit(MultiTranslitBase,
         """
         DEngines = {}
         for engine in self.LEngines:
-            for from_iso, to_iso in engine.get_L_possible_conversions():
+            for from_iso, to_iso in engine.get_possible_conversions_list():
                 if (from_iso, to_iso) in DEngines:
                     import warnings
                     warnings.warn(
@@ -54,20 +54,20 @@ class MultiTranslit(MultiTranslitBase,
 
         return DEngines
 
-    @copydoc(MultiTranslitBase.get_D_scripts)
-    def get_D_scripts(self):
+    @copydoc(MultiTranslitBase.get_scripts_dict)
+    def get_scripts_dict(self):
         D = {}
         for from_, to in self.DEngines:
             D.setdefault(from_, []).append(to)
         return D
 
-    @copydoc(MultiTranslitBase.get_L_possible_conversions)
-    def get_L_possible_conversions(self, from_, remove_variant=False):
+    @copydoc(MultiTranslitBase.get_possible_conversions_list)
+    def get_possible_conversions_list(self, from_, remove_variant=False):
         # OPEN ISSUE: Add exceptions for e.g. Latin which have
         #             many false positives?
         from_ = ISOTools.remove_unneeded_info(from_)
         L = []
-        DScripts = self.get_D_scripts()
+        DScripts = self.get_scripts_dict()
 
         LAdd = [
             VARIANT,
@@ -90,7 +90,7 @@ class MultiTranslit(MultiTranslitBase,
 
     @copydoc(MultiTranslitBase.get_best_conversion)
     def get_best_conversion(self, from_iso, to_iso, default=KeyError):
-        L = self.get_L_best_conversions(from_iso, to_iso)
+        L = self.get_best_conversions_list(from_iso, to_iso)
         if L:
             return L[0]
         elif default == KeyError:
@@ -98,14 +98,14 @@ class MultiTranslit(MultiTranslitBase,
         else:
             return default
 
-    @copydoc(MultiTranslitBase.get_L_best_conversions)
-    def get_L_best_conversions(self, from_iso, to_iso):
+    @copydoc(MultiTranslitBase.get_best_conversions_list)
+    def get_best_conversions_list(self, from_iso, to_iso):
         LRtn = []
         from_iso = ISOTools.remove_unneeded_info(from_iso)
         to_iso = ISOTools.remove_unneeded_info(to_iso)
 
         for xx, (conv_from_iso, conv_to_iso) in enumerate(
-            self.get_L_possible_conversions(
+            self.get_possible_conversions_list(
                 from_iso, remove_variant=True
             )
         ):
@@ -141,7 +141,7 @@ class MultiTranslit(MultiTranslitBase,
     @copydoc(MultiTranslitBase.get_all_transliterations)
     def get_all_transliterations(self, from_, s):
         L = []
-        for i_from, i_to in self.get_L_possible_conversions(from_):
+        for i_from, i_to in self.get_possible_conversions_list(from_):
             L.append(((i_from, i_to), self.translit(i_from, i_to, s)))
         return L
 
@@ -154,6 +154,6 @@ class MultiTranslit(MultiTranslitBase,
 #MultiTranslit = MultiTranslit()
 
 #translit = MultiTranslit.translit
-#get_D_scripts = MultiTranslit.get_D_scripts
-#get_L_possible_conversions = MultiTranslit.get_L_possible_conversions
+#get_scripts_dict = MultiTranslit.get_scripts_dict
+#get_possible_conversions_list = MultiTranslit.get_possible_conversions_list
 #get_L_all_conversions = MultiTranslit.get_all_transliterations

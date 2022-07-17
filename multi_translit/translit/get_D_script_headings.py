@@ -3,7 +3,7 @@ from multi_translit.data_paths import data_path
 
 
 
-def get_D_script_headings():
+def get_script_headings_dict():
     DScriptHeadings = load(data_path(
         'translit', 'script_headings.json'
     ))
