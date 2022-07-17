@@ -5,12 +5,12 @@ from multi_translit.translit.my_engine.SplitSentence import split_sentence
 from multi_translit.translit.my_engine.TranslitParse import TranslitParse
 
 
-DCache = {}
+cache_dict = {}
 def TranslitEngine(path, direction='=>', sep=''):
     key = (path, direction, sep)
-    if not key in DCache:
-        DCache[key] = _TranslitEngine(path, direction, sep)
-    return DCache[key]
+    if not key in cache_dict:
+        cache_dict[key] = _TranslitEngine(path, direction, sep)
+    return cache_dict[key]
 
 
 class _TranslitEngine(TranslitParse):
