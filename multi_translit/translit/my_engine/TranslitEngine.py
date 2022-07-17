@@ -31,7 +31,7 @@ class _TranslitEngine(TranslitParse):
         Convert the script with a basic string input/output, 
         processing each word separately by splitting by spaces
         """
-        LRtn = []
+        return_list = []
 
         for word in split_sentence(text):
             LOut = []
@@ -42,9 +42,9 @@ class _TranslitEngine(TranslitParse):
             
             self.convert_word(word, fn)
             word = process_word(self.sep.join(LOut), self.direction, self.LToModifiers)
-            LRtn.append(word)
+            return_list.append(word)
 
-        return self.sep.join(LRtn)
+        return self.sep.join(return_list)
 
 
     #======================================================#

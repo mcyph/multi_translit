@@ -111,7 +111,7 @@ class ParseICUTransform(ProcessRangeBase):
                     (either from or to depending on the current state)
         LConv -> LBefore, direction, LAfter
         """
-        LRtn = []
+        return_list = []
         LCurrent = []
         LConv = [None, None, None]
         
@@ -152,7 +152,7 @@ class ParseICUTransform(ProcessRangeBase):
                     DItem['mode'] = VARIABLE
                     DItem['data'] = (var_name, LVar)
                     DItem['LComments'] = LComments
-                    LRtn.append(DItem)
+                    return_list.append(DItem)
                     
                     assert not var_name in self.DVars # WARNING! =============
                     self.DVars[var_name] = LVar
@@ -171,7 +171,7 @@ class ParseICUTransform(ProcessRangeBase):
                 
                 if start_of_statement:
                     # A full line comment
-                    LRtn.append({'mode': COMMENT,
+                    return_list.append({'mode': COMMENT,
                                 'data': comment})
                 else:
                     # A comment for this rule only
@@ -186,7 +186,7 @@ class ParseICUTransform(ProcessRangeBase):
                 
                 # Transform rules
                 x, DRule = self.add_transform_rule(x+2, s)
-                LRtn.append({'mode': TRANSFORM_RULE,
+                return_list.append({'mode': TRANSFORM_RULE,
                              'data': DRule})
                 continue
                 
@@ -221,7 +221,7 @@ class ParseICUTransform(ProcessRangeBase):
                     assert not LCurrent, LCurrent
                 
                 if DItem:
-                    LRtn.append(DItem)
+                    return_list.append(DItem)
                 DItem = {}
                 start_of_statement = True
                 repetition_idx = 0
@@ -279,7 +279,7 @@ class ParseICUTransform(ProcessRangeBase):
         if group_mode:
             return x, LCurrent
         else:
-            return LRtn
+            return return_list
     
     def get_conversion_tokens(self, backslash_mode, x, s):
         """

@@ -426,7 +426,7 @@ class OldParser:
         TODO: Convert {'allforms': [['abc', ...], ...]}
         to [{'allforms': ['abc', ...], ...}, ...]
         """
-        LRtn = []
+        return_list = []
         D = self.get_D_to(to)
         if not D: 
             return []
@@ -436,19 +436,19 @@ class OldParser:
             i_D = {}
             for key in D:
                 i_D[key] = D[key][x]
-            LRtn.append(i_D)
-        return LRtn
+            return_list.append(i_D)
+        return return_list
 
 
     def get_D_to(self, to):
         def split(s):
-            LRtn = []
+            return_list = []
             for x in s.split(';'):
                 LItem = []
                 for y in x.split('||'):
                     LItem.append(y.strip())
-                LRtn.append(LItem)
-            return LRtn
+                return_list.append(LItem)
+            return return_list
         
         DTo = {}
         for key, regex in list(DREs.items()):

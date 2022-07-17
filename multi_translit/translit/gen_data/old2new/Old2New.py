@@ -96,17 +96,17 @@ def D_conv_2_str(DConv):
     if len(DConv)==1 and 'allforms' in DConv:
         return get_str(DConv['allforms'])
     
-    LRtn = []
+    return_list = []
     for key in LOrder:
         if key in DConv:
-            LRtn.append('%s %s' % (key, get_str(DConv[key])))
+            return_list.append('%s %s' % (key, get_str(DConv[key])))
     
-    return ' or '.join(LRtn)
+    return ' or '.join(return_list)
 
 
 def old_2_new(path):
-    LRtn = []
-    a = LRtn.append
+    return_list = []
+    a = return_list.append
     DOld = get_D_old(path)
     
     if DOld['initial_comments'].strip():
@@ -287,7 +287,7 @@ def old_2_new(path):
         a(out)
         a('')
     
-    return '\n'.join(i.strip('\r\n') for i in LRtn).replace('\r', '')
+    return '\n'.join(i.strip('\r\n') for i in return_list).replace('\r', '')
 
 
 if __name__ == '__main__':

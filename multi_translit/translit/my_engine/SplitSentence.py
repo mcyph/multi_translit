@@ -43,7 +43,7 @@ def split_sentence(S):
     ['Word', '!?&', '$', ' ', '[', 'END', ']']
     to allow proper processing of initials/finals etc
     """
-    LRtn = []
+    return_list = []
     LWord = []
     
     current_mode = None
@@ -61,10 +61,10 @@ def split_sentence(S):
         
         if new_mode and new_mode!=current_mode:
             current_mode = new_mode
-            LRtn.append(''.join(LWord))
+            return_list.append(''.join(LWord))
             LWord = [char]
         else:
             LWord.append(char)
     
-    LRtn.append(''.join(LWord))
-    return LRtn
+    return_list.append(''.join(LWord))
+    return return_list

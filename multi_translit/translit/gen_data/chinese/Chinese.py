@@ -41,7 +41,7 @@ Initials = '%s\n%s' % (Initials, Tones)
 def get_dipa():
     # Get the mapping from whatever (PinYin, 
     # Zhuyin etc) to IPA transcriptions
-    LRtn = [] # [{'IPA': ..., 'Pinyin': ..., etc}]
+    return_list = [] # [{'IPA': ..., 'Pinyin': ..., etc}]
     DItem = {} # [{'IPA': [...], 'Pinyin': [...], etc}]
     
     for Line in list(Initials.split('\n'))+['']:
@@ -49,8 +49,8 @@ def get_dipa():
         #print Line.encode('utf-8')
         
         if not Line.strip():
-            # If blank, then reset the items and asign to LRtn
-            LRtn.append(DItem)
+            # If blank, then reset the items and asign to return_list
+            return_list.append(DItem)
             DItem = {}
             continue
         
@@ -60,7 +60,7 @@ def get_dipa():
         #print Line[0].encode('utf-8'), DItem[Line[0]]
     
     nL = []
-    for D in LRtn:
+    for D in return_list:
         # Convert [{'Pinyin': [...]}] to [{'Pinyin': ...}]
         i = 0
         while 1:

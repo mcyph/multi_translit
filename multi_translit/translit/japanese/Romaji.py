@@ -349,8 +349,8 @@ def get_rom_hira():
 
 def get_okuri_ari(lHira):
     hira, romaji = get_rom_hira()
-    LRtn = [hira[i]['romaji'][0] for i in hira if i[0] == lHira]
-    return LRtn
+    return_list = [hira[i]['romaji'][0] for i in hira if i[0] == lHira]
+    return return_list
 
 class RomajiConv:
     def __init__(self): 
@@ -369,12 +369,12 @@ class RomajiConv:
     def romaji_to_hiragana(self, s):
         l_s = self.len(s)
         
-        LRtn = []
+        return_list = []
         while s:
             while l_s:
                 search_for_rom = s[0:l_s]
                 if search_for_rom in self.DRomaji:
-                    LRtn.append([search_for_rom, self.DRomaji[search_for_rom]['hira']])
+                    return_list.append([search_for_rom, self.DRomaji[search_for_rom]['hira']])
                     
                     do_subst = False
                     if 'subst' in self.DRomaji[search_for_rom]:
@@ -389,11 +389,11 @@ class RomajiConv:
                     l_s -= 1
             
             if self.len(s) > 0:
-                LRtn.append([s[0], s[0]])
+                return_list.append([s[0], s[0]])
                 s = s[1:]
                 l_s = self.len(s)
         
-        return LRtn
+        return return_list
 
 # Init Japanese Hiragana
 inst = RomajiConv()

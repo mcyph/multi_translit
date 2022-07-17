@@ -100,7 +100,7 @@ class MultiTranslit(MultiTranslitBase,
 
     @copydoc(MultiTranslitBase.get_best_conversions_list)
     def get_best_conversions_list(self, from_iso, to_iso):
-        LRtn = []
+        return_list = []
         from_iso = ISOTools.remove_unneeded_info(from_iso)
         to_iso = ISOTools.remove_unneeded_info(to_iso)
 
@@ -127,7 +127,7 @@ class MultiTranslit(MultiTranslitBase,
                         _ for _ in ISOTools.split(conv_to_iso) if _
                     ])
 
-                    LRtn.append((
+                    return_list.append((
                         # Note this proritizes items which remove the
                         # VARIANT last, as there's a chance
                         # e.g. there's a variant in the Latin system used
@@ -135,8 +135,8 @@ class MultiTranslit(MultiTranslitBase,
                         (conv_from_iso, conv_to_iso)
                     ))
 
-        LRtn.sort()
-        return [i[-1] for i in LRtn]
+        return_list.sort()
+        return [i[-1] for i in return_list]
 
     @copydoc(MultiTranslitBase.get_all_transliterations)
     def get_all_transliterations(self, from_, s):
