@@ -62,7 +62,10 @@ class MultiTranslit(MultiTranslitBase,
         return D
 
     @copydoc(MultiTranslitBase.get_possible_conversions_list)
-    def get_possible_conversions_list(self, from_, remove_variant=False):
+    def get_possible_conversions_list(self,
+                                      from_: ISOCode,
+                                      remove_variant: bool = False):
+
         # OPEN ISSUE: Add exceptions for e.g. Latin which have
         #             many false positives?
         from_ = ISOTools.remove_unneeded_info(from_)
@@ -89,7 +92,11 @@ class MultiTranslit(MultiTranslitBase,
         return L
 
     @copydoc(MultiTranslitBase.get_best_conversion)
-    def get_best_conversion(self, from_iso, to_iso, default=KeyError):
+    def get_best_conversion(self,
+                            from_iso: ISOCode,
+                            to_iso: ISOCode,
+                            default=KeyError):
+
         L = self.get_best_conversions_list(from_iso, to_iso)
         if L:
             return L[0]
@@ -99,9 +106,12 @@ class MultiTranslit(MultiTranslitBase,
             return default
 
     @copydoc(MultiTranslitBase.get_best_conversions_list)
-    def get_best_conversions_list(self, from_iso, to_iso):
+    def get_best_conversions_list(self,
+                                  from_iso: ISOCode,
+                                  to_iso: ISOCode):
+
         return_list = []
-        from_iso = ISOTools.remove_unneeded_info(from_iso)
+        from_iso = ISOTools.remove_unneeded_info(from_iso) # FIXME!!
         to_iso = ISOTools.remove_unneeded_info(to_iso)
 
         for xx, (conv_from_iso, conv_to_iso) in enumerate(
@@ -139,14 +149,19 @@ class MultiTranslit(MultiTranslitBase,
         return [i[-1] for i in return_list]
 
     @copydoc(MultiTranslitBase.get_all_transliterations)
-    def get_all_transliterations(self, from_, s):
+    def get_all_transliterations(self,
+                                 from_: ISOCode,
+                                 s: str):
         L = []
         for i_from, i_to in self.get_possible_conversions_list(from_):
             L.append(((i_from, i_to), self.translit(i_from, i_to, s)))
         return L
 
     @copydoc(MultiTranslitBase.translit)
-    def translit(self, from_, to, s):
+    def translit(self,
+                 from_: ISOCode,
+                 to: ISOCode,
+                 s: str):
         engine = self.DEngines[from_, to]
         return engine.translit(from_, to, s)
 
