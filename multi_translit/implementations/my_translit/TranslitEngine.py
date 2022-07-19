@@ -6,6 +6,7 @@ from multi_translit.translit.my_engine.TranslitParse import TranslitParse
 
 
 cache_dict = {}
+
 def TranslitEngine(path, direction='=>', sep=''):
     key = (path, direction, sep)
     if not key in cache_dict:
@@ -20,11 +21,9 @@ class _TranslitEngine(TranslitParse):
         #print 'PARSE OK!'
         self.sep = sep
 
-
     #======================================================#
     #                   Basic Conversion                   #
     #======================================================#
-
 
     def convert(self, text):
         """
@@ -46,11 +45,9 @@ class _TranslitEngine(TranslitParse):
 
         return self.sep.join(return_list)
 
-
     #======================================================#
     #                  Actual Conversion                   #
     #======================================================#
-
 
     def convert_word(self, text, fn):
         before = '' # Previous text
@@ -63,7 +60,6 @@ class _TranslitEngine(TranslitParse):
             
             #print 'NEXTCHAR:', next_char.encode('utf-8')
             LMatch = self.match(before, before, next) # FIXME: MAKE UNCONVERTED TEXT AVAILABLE(!) =======================
-
 
             if not LMatch:
                 # Shift the text one forward, 
@@ -81,21 +77,17 @@ class _TranslitEngine(TranslitParse):
                     fn(*[''.join(LNotFound)]*2)
                     LNotFound = []
 
-
                 # convert to the correct case
                 in_txt = next[:end_pos]
                 if self.match_case:
                     conv = self._match_case(in_txt, conv)
 
-
                 fn(in_txt, conv)
                 before += next[:end_pos]
                 next = next[end_pos:]
 
-
         if LNotFound: 
             fn(*[''.join(LNotFound)]*2)
-
 
     def _match_case(self, in_, out):
         if in_.islower():

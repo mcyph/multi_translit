@@ -26,22 +26,23 @@ class MyTranslit(TranslitEngineBase):
         with open(data_path('translit', 'ignored_isos.txt'), 'r') as f:
             # HACK: Ignore these (mostly fairly uncommonly used) transliteration systems
             # as they probably have errors/I don't have much time to maintain them
-            SIgnoredISOs = f.read().split('\n')
+            SIgnoredISOs = set(ISOCode(i) for i in f.read().split('\n'))
 
         for from_iso, L in list(self.DTranslitMappings.items()):
             for path, to_iso, direction in L:
-                if ISOTools.split(from_iso).lang in SIgnoredISOs:
+                if from_iso.language in SIgnoredISOs:
                     continue
-                elif ISOTools.split(to_iso).lang in SIgnoredISOs:
+                elif to_iso.language in SIgnoredISOs:
                     continue
 
                 D[from_iso, to_iso] = (path, direction)
         return D
 
-    def translit(self, from_, to, s):
+    def translit(self,
+                 from_: ISOCode,
+                 to: ISOCode,
+                 s: str):
+
         params = self.DEngines[from_, to]
-        te = TranslitEngine(
-            data_path('translit_new', params[0]),
-            params[1]
-        )
+        te = TranslitEngine(data_path('translit_new', params[0]), params[1])
         return te.convert(s)

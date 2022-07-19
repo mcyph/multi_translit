@@ -11,37 +11,20 @@ class TranslitParse:
     def __init__(self, path, direction='=>'):
         self.direction = direction
 
-        #print 'READ_D_INI'
         D = read_D_html_ini(path)
-        #print 'GET DCONFIG'
-        DConfig = self.DConfig = json.loads(
-            self.remove_comments(D['settings'])
-        )
-        #print 'GET DVARS'
-        self.DVariables = self.get_D_variables(
-            self.remove_comments(D.get('variables', ''))
-        )
+        DConfig = self.DConfig = json.loads(self.remove_comments(D['settings']))
+        self.DVariables = self.get_variables_dict(self.remove_comments(D.get('variables', '')))
 
         # HACK HACK HACK!
-        DConfig['from_iso'] = ISOTools.remove_unneeded_info(
-            DConfig['from_iso']
-        )
-        DConfig['to_iso'] = ISOTools.remove_unneeded_info(
-            DConfig['to_iso']
-        )
+        DConfig['from_iso'] = ISOTools.remove_unneeded_info(DConfig['from_iso'])
+        DConfig['to_iso'] = ISOTools.remove_unneeded_info(DConfig['to_iso'])
 
         # Get case-related properties
         self.ignore_case = DConfig.get('ignore_case', False)
         self.match_case = DConfig.get('match_case', False)
 
-        self.from_iso = (
-            DConfig['from_iso'] if direction == '=>'
-            else DConfig['to_iso']
-        )
-        self.to_iso = (
-            DConfig['to_iso'] if direction == '=>'
-            else DConfig['from_iso']
-        )
+        self.from_iso = (DConfig['from_iso'] if direction == '=>' else DConfig['to_iso'])
+        self.to_iso = (DConfig['to_iso'] if direction == '=>' else DConfig['from_iso'])
 
         self.LRules = [
             get_rule(
@@ -54,40 +37,26 @@ class TranslitParse:
 
         # Do various checks
         assert direction in ('=>', '<=')
-        assert not (
-            DConfig.get('direction') == '=>' and
-            direction == '<='
-        )
-        assert not (
-            DConfig.get('direction') == '<=' and
-            direction == '=>'
-        )
+        assert not (DConfig.get('direction') == '=>' and direction == '<=')
+        assert not (DConfig.get('direction') == '<=' and direction == '=>')
         assert not DConfig.get('ignore_me'), "I've been ignored!"
 
         # Get the modifiers to use
         DModifiers = (
             DConfig.get('modifiers', {})
-                   .get(
-                       'from_direction' if direction=='=>'
-                       else 'to_direction', {}
-                   )
+                   .get('from_direction' if direction == '=>' else 'to_direction', {})
         )
-        self.LFromModifiers = DModifiers.get(
-            'before_conversions', {}
-        )
-        self.LToModifiers = DModifiers.get(
-            'after_conversions', {}
-        )
+        self.LFromModifiers = DModifiers.get('before_conversions', {})
+        self.LToModifiers = DModifiers.get('after_conversions', {})
 
-        self.DRules = self.get_D_rules()
+        self.DRules = self.get_rules_dict()
 
         # Clean up
         del self.LRules
         del self.DVariables
 
-    def get_D_rules(self):
+    def get_rules_dict(self):
         D = {}
-
         for rule in self.LRules:
             from_side = rule.from_side
 
@@ -108,12 +77,7 @@ class TranslitParse:
                             c = c.lower()
                         next_D, cur_L = next_D.setdefault(c, ({}, []))
 
-                    cur_L.append((
-                        k,
-                        rule.from_side,
-                        rule.to_side
-                    ))
-
+                    cur_L.append((k, rule.from_side, rule.to_side))
         return D
 
     def match(self, converted, before, next):
@@ -186,7 +150,7 @@ class TranslitParse:
 
         return None
 
-    def get_D_variables(self, s):
+    def get_variables_dict(self, s):
         D = {}
         for line in s.split('\n'):
             #print line.encode('utf-8')
@@ -201,15 +165,11 @@ class TranslitParse:
         return D
 
     def replace_variables(self, s):
-        for i_k, i_v in sorted(
-            list(self.DVariables.items()),
-            key=lambda x: -len(x[0])
-        ):
+        for i_k, i_v in sorted(list(self.DVariables.items()),
+                               key=lambda x: -len(x[0])):
             s = s.replace('$%s' % i_k, i_v)
         return s
 
     def remove_comments(self, s):
-        return '\n'.join([
-            i for i in s.split('\n')
-            if not i.startswith('#') and i.strip()
-        ])
+        return '\n'.join([i for i in s.split('\n')
+                          if not i.startswith('#') and i.strip()])

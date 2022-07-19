@@ -2,6 +2,7 @@
 
 from types import ListType
 
+
 def get_rom_hira():
     LRomHira = [['1', '１'],
                 ['2', '２'],
@@ -347,10 +348,12 @@ def get_rom_hira():
             DRomaji[romaji] = {'hira': hira}
     return DHira, DRomaji
 
+
 def get_okuri_ari(lHira):
     hira, romaji = get_rom_hira()
     return_list = [hira[i]['romaji'][0] for i in hira if i[0] == lHira]
     return return_list
+
 
 class RomajiConv:
     def __init__(self): 
@@ -395,9 +398,11 @@ class RomajiConv:
         
         return return_list
 
+
 # Init Japanese Hiragana
 inst = RomajiConv()
 romaji_to_hira = inst.romaji_to_hiragana
+
 
 if __name__ == '__main__':
     print((hira_to_romaji('ひらがな').encode('utf-8')))

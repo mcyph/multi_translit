@@ -1,7 +1,9 @@
-from multi_translit.toolkit.json_tools import load
-from multi_translit.data_paths import data_path
-from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
+from warnings import warn
+
 from iso_tools.ISOTools import ISOTools
+from multi_translit.data_paths import data_path
+from multi_translit.toolkit.json_tools import load
+from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
 
 
 class ICUTranslit(TranslitEngineBase):
@@ -18,15 +20,17 @@ class ICUTranslit(TranslitEngineBase):
             if not part3 and other[0] and other[0] != 'ben':
                 part3 = other[0]
 
-        r = ISOTools.join(part3, script, variant=variant)
+        r = ISOCode(part3=part3,
+                    script=script,
+                    variant=variant)
 
         DMap = {
-          'zh_Hani': 'zh',
-          'Hani': 'zh',
-          'ja_Zyyy': 'ja_Hrkt',
-          'zh_Bopo|Zhuyin': 'zh_Bopo',
-          'Bopo': 'zh_Bopo',
-          'zh_Latn': 'zh_Latn|x-Pinyin'
+          ISOCode('zh-Hani'):        ISOCode('zh'),
+          ISOCode('Hani'):           ISOCode('zh'),
+          ISOCode('ja-Zyyy'):        ISOCode('ja-Hrkt'),
+          ISOCode('zh-Bopo-Zhuyin'): ISOCode('zh-Bopo'),
+          ISOCode('Bopo'):           ISOCode('zh-Bopo'),
+          ISOCode('zh-Latn'):        ISOCode('zh-Latn-x-Pinyin')
         }
 
         if r in DMap:
@@ -67,7 +71,7 @@ class ICUTranslit(TranslitEngineBase):
                 LUnknownScripts.append('%s-%s' % (to, from_))
                 continue
 
-            SIgnore = {
+            SIgnore = set(ISOCode(i) for i in [
                 'ko_Zyyy',
                 'th_Zyyy',
                 'el_Zyyy',
@@ -85,14 +89,12 @@ class ICUTranslit(TranslitEngineBase):
                 'ru_Zyyy',
                 'am_Zyyy',  # TODO: Add latin -> amharic
                 'sk_Zyyy'
-            }
+            ])
 
             if from_key in SIgnore or to_key in SIgnore:
                 continue
 
-            D[from_key, to_key] = (
-                engine, UTransDirection.FORWARD
-            )
+            D[from_key, to_key] = (engine, UTransDirection.FORWARD)
 
             if not (to_key, from_key) in D:
                 if 'Zyyy' in from_key and not 'Zyyy' in str(to_key):
@@ -100,16 +102,10 @@ class ICUTranslit(TranslitEngineBase):
                     # HACK: Disable "to common"
                     continue
 
-                D[to_key, from_key] = (
-                    engine, UTransDirection.REVERSE
-                )
+                D[to_key, from_key] = (engine, UTransDirection.REVERSE)
 
         if LUnknownScripts:
-            from warnings import warn
-            warn(
-                "Scripts in ICU not recognised by multi_translit engine: %s"
-                % ', '.join(LUnknownScripts)
-            )
+            warn("Scripts in ICU not recognised by multi_translit engine: %s" % ', '.join(LUnknownScripts))
         return D
 
     def translit(self, from_, to, s):

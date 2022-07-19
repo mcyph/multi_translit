@@ -49,10 +49,7 @@ def split_sentence(S):
     current_mode = None
     for char in S:
         try: 
-            new_mode = DCats.get(
-                unicodedata.category(str(char)),
-                'Z'
-            )
+            new_mode = DCats.get(unicodedata.category(str(char)), 'Z')
         except: 
             new_mode = 'Z' # HACK!
         

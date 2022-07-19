@@ -97,11 +97,13 @@ DATA = '''ゟ	ゟ	ゟ
 ゝ	ヽ	ヽ	
 ゞ	ヾ	ヾ	'''
 
+
 DHiraToKata = {}
 DKataToHira = {}
 DKataToHalfwidth = {}
 DKataToFullwidth = {}
 DCKataToKata = {}
+
 for Line in DATA.split('\n'):
     Hira, fKata, hKata, cKata = Line.split('\t')
     DHiraToKata[Hira] = fKata # Fullwidth->Kata
@@ -110,8 +112,11 @@ for Line in DATA.split('\n'):
     DKataToFullwidth[hKata] = fKata # Full->Half
     DCKataToKata[cKata] = fKata
 
+
 def hira_to_kata(S):
-    'Converts Hiragana to fullwidth Katakana'
+    """
+    Converts Hiragana to fullwidth Katakana
+    """
     L = []
     for c in S:
         if c in DHiraToKata: 
@@ -119,11 +124,12 @@ def hira_to_kata(S):
         L.append(c)
     return ''.join(L)
 
+
 def kata_to_hira(S):
-    '''
+    """
     Converts Katakana to Hiragana, converting Katakana to 
     fullwidth and converting circled characters to normal
-    '''
+    """
     L = []
     for c in S:
         if c in DKataToFullwidth: 
@@ -137,8 +143,11 @@ def kata_to_hira(S):
         L.append(c)
     return ''.join(L)
 
+
 def round_kata_to_hira(S):
-    'Converts Katakana characters enclosed in circles to normal characters'
+    """
+    Converts Katakana characters enclosed in circles to normal characters
+    """
     L = []
     for c in S:
         if c in DCKataToKata: 
@@ -146,8 +155,11 @@ def round_kata_to_hira(S):
         L.append(c)
     return ''.join(L)
 
+
 def full_kata_to_half(S):
-    'Converts Katakana to halfwidth from fullwidth'
+    """
+    Converts Katakana to halfwidth from fullwidth
+    """
     L = []
     for c in S:
         if c in DKataToHalfwidth: 

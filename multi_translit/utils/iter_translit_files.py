@@ -16,7 +16,6 @@ def iter_translit_files(old_ver=False):
                 yield '%s/%s' % (root, fnam)
 
 
-
 if __name__ == '__main__':
     import json
     from traceback import print_exc

@@ -1,19 +1,21 @@
 # -*- coding: utf-8 -*-
+import warnings
+
 from multi_translit.toolkit.patterns.Singleton import Singleton
 from multi_translit.toolkit.documentation.copydoc import copydoc
 from iso_tools.ISOTools import ISOTools, NONE, LANG, TERRITORY, VARIANT
 
-from multi_translit.implementations.CombinationTranslit import CombinationTranslit
-from multi_translit.implementations.ICUTranslit import ICUTranslit
 from multi_translit.implementations.KoTranslit import KoTranslit
-from multi_translit.implementations.MecabTranslit import MecabTranslit
 from multi_translit.implementations.MyTranslit import MyTranslit
+from multi_translit.implementations.ICUTranslit import ICUTranslit
+from multi_translit.implementations.MecabTranslit import MecabTranslit
+from multi_translit.implementations.CombinationTranslit import CombinationTranslit
 from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
 
 
 class MultiTranslit(MultiTranslitBase,
-                    Singleton,
-                    ):
+                    Singleton):
+
     def __init__(self):
         L = self.LEngines = []
         L.append(MyTranslit())
@@ -38,33 +40,48 @@ class MultiTranslit(MultiTranslitBase,
         for engine in self.LEngines:
             for from_iso, to_iso in engine.get_possible_conversions_list():
                 if (from_iso, to_iso) in DEngines:
-                    import warnings
-                    warnings.warn(
-                        f"Warning: iso combination {from_iso}/"
-                        f"{to_iso} has already been assigned"
-                    )
+                    warnings.warn(f"Warning: iso combination {from_iso}/"
+                                  f"{to_iso} has already been assigned")
                     continue
-
                 DEngines[from_iso, to_iso] = engine
-
-        if True:
-            for from_, to in DEngines:
-                ISOTools.verify_iso(from_)
-                ISOTools.verify_iso(to)
-
         return DEngines
 
-    @copydoc(MultiTranslitBase.get_scripts_dict)
+    @service_method()
     def get_scripts_dict(self):
+        """
+        Get a dictionary map from the "from script" to potentially
+        many "to scripts".
+        For example, there may be many conversions from Latin to
+        Hiragana, Cyrillic etc.
+
+        :return: {from script: [to script 1, ...], ...}
+        """
         D = {}
         for from_, to in self.DEngines:
             D.setdefault(from_, []).append(to)
         return D
 
-    @copydoc(MultiTranslitBase.get_possible_conversions_list)
+    @service_method(decode_params={'from_': lambda x: ISOCode(s)},
+                    encode_params={'from_': lambda x: str(s)})
     def get_possible_conversions_list(self,
                                       from_: ISOCode,
                                       remove_variant: bool = False):
+        """
+        Get all possible conversions from iso `from_`.
+        For example, ja_Kana-JP will also look for ja_Kana and Kana.
+
+        :param from_: the from ISO code
+        :param remove_variant: if True, then VARIANT, LANG, and
+                               TERRITORY are ignored in the supplied
+                               iso code. This can be useful for e.g.
+                               when Hiragana can be represented in
+                               multiple ways - ja_Hira-JP
+                               can normally be just shortened to Hira,
+                               for instance, as Hiragana isn't normally
+                               associated with other languages than
+                               Japanese (and Japan).
+        :return: a list of [(from_iso, to_iso), ...]
+        """
 
         # OPEN ISSUE: Add exceptions for e.g. Latin which have
         #             many false positives?
@@ -74,9 +91,9 @@ class MultiTranslit(MultiTranslitBase,
 
         LAdd = [
             VARIANT,
-            TERRITORY|VARIANT,
-            VARIANT|LANG,
-            VARIANT|LANG|TERRITORY
+            TERRITORY | VARIANT,
+            VARIANT | LANG,
+            VARIANT | LANG | TERRITORY
         ] if remove_variant else []
 
         for s in ISOTools.get_L_removed(
@@ -91,13 +108,28 @@ class MultiTranslit(MultiTranslitBase,
                 L.extend((s, v) for v in DScripts[s])
         return L
 
-    @copydoc(MultiTranslitBase.get_best_conversion)
+    @service_method(decode_params={'from_iso': lambda x: ISOCode(s),
+                                   'to_iso': lambda x: ISOCode(s)},
+                    encode_params={'from_iso': lambda x: str(s),
+                                   'to_iso': lambda x: str(s)})
     def get_best_conversion(self,
                             from_iso: ISOCode,
                             to_iso: ISOCode,
-                            default=KeyError):
+                            default='KeyError'):
+        """
+        Uses get_best_conversions_list to find the best conversion
+        for a given script combination.
 
+        :param from_iso: the ISO code to convert from
+        :param to_iso: the ISO code to convert to
+        :param default: the default value to return if a conversion
+                        not found - raises a KeyError by default
+        :return: a tuple of (from_iso, to_iso) - the combination
+                 of ISOs to pass to the `translit` method.
+        """
+        default = KeyError if default == 'KeyError' else default
         L = self.get_best_conversions_list(from_iso, to_iso)
+
         if L:
             return L[0]
         elif default == KeyError:
@@ -105,11 +137,30 @@ class MultiTranslit(MultiTranslitBase,
         else:
             return default
 
-    @copydoc(MultiTranslitBase.get_best_conversions_list)
+    @service_method(decode_params={'from_iso': lambda x: ISOCode(s),
+                                   'to_iso': lambda x: ISOCode(s)},
+                    encode_params={'from_iso': lambda x: str(s),
+                                   'to_iso': lambda x: str(s)})
     def get_best_conversions_list(self,
                                   from_iso: ISOCode,
                                   to_iso: ISOCode):
+        """
+        Guesses the best conversions, e.g. so that if the script of the
+        to_iso isn't specified, it'll still find the closest conversions.
 
+        This isn't 100% accurate, but should hopefully be good enough
+        in most cases.
+
+        For instance, while a generic Cyrillic to Latin conversion might
+        be possible, a more specific Ukrainian/Russian Cyrillic to Latin
+        conversion might be able to give better results. This method
+        attempts to find the best/most appropriate conversions possible.
+
+        :param from_iso: the ISO code to convert from
+        :param to_iso: the ISO code to convert to
+        :return: the default value to return if a conversion
+                 not found - raises a KeyError by default
+        """
         return_list = []
         from_iso = ISOTools.remove_unneeded_info(from_iso) # FIXME!!
         to_iso = ISOTools.remove_unneeded_info(to_iso)
@@ -148,22 +199,49 @@ class MultiTranslit(MultiTranslitBase,
         return_list.sort()
         return [i[-1] for i in return_list]
 
-    @copydoc(MultiTranslitBase.get_all_transliterations)
+    @service_method(decode_params={'from_': lambda x: ISOCode(s)},
+                    encode_params={'from_': lambda x: str(s)})
     def get_all_transliterations(self,
                                  from_: ISOCode,
                                  s: str):
+        """
+        Transliterate `s` into all possible combinations.
+
+        :param from_: the ISO code to convert from
+        :param s: the text to convert
+        :return: a list of [((from_iso, to_iso), converted_text), ...), ...]
+        """
         L = []
         for i_from, i_to in self.get_possible_conversions_list(from_):
             L.append(((i_from, i_to), self.translit(i_from, i_to, s)))
         return L
 
-    @copydoc(MultiTranslitBase.translit)
+    @service_method(decode_params={'from_': lambda x: ISOCode(s),
+                                   'to': lambda x: ISOCode(s)},
+                    encode_params={'from_': lambda x: str(s),
+                                   'to': lambda x: str(s)})
     def translit(self,
                  from_: ISOCode,
                  to: ISOCode,
                  s: str):
+        """
+        Convert from iso code `from_` to iso code `to`
+        (i.e. convert the alphabet of `s` from `from_` to `to`)
+        from_ might be e.g. 'Latn' for Latin script, and to
+        might be 'Hira' for Japanese Hiragana.
+
+        :param from_: the iso code to convert from
+        :param to: the iso code to convert to
+        :param s: the text to convert
+        :return: the converted text
+        """
         engine = self.DEngines[from_, to]
         return engine.translit(from_, to, s)
+
+    @service_method()
+    def get_script_headings_dict(self):
+        from multi_translit.translit.get_script_headings_dict import get_script_headings_dict
+        return get_script_headings_dict()
 
 
 #MultiTranslit = MultiTranslit()

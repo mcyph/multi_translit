@@ -2,9 +2,11 @@ from re import compile, sub
 from collections import namedtuple
 from unicodedata import lookup
 
+
 def strip_re(s):
     r = ''.join(i.strip() for i in s.split('\n'))
     return r % {'string_re': string_re}
+
 
 string_re = (
     r'''(([^ ]|\{\{.*?\}\})+)(,([^ ]|\{\{.*?\}\})+)*'''
@@ -43,18 +45,10 @@ conv_re = compile(conv)
 before_after_re = compile(before_after)
 
 
-Rule = namedtuple(
-    'Rule', ['direction', 'from_side', 'to_side']
-)
-Side = namedtuple(
-    'Side', ['conditions', 'conversions']
-)
-Conditions = namedtuple(
-    'Conditions', ['LBefore', 'LAfter']
-)
-Conversions = namedtuple(
-    'Conversions', ['LSelf', 'LInitial', 'LMedial', 'LFinal']
-)
+Rule = namedtuple('Rule', ['direction', 'from_side', 'to_side'])
+Side = namedtuple('Side', ['conditions', 'conversions'])
+Conditions = namedtuple('Conditions', ['LBefore', 'LAfter'])
+Conversions = namedtuple('Conversions', ['LSelf', 'LInitial', 'LMedial', 'LFinal'])
 
 
 def _reverse_sign(s):
@@ -134,9 +128,7 @@ def get_dict(s, ci_conditions):
 
         return DRtn
 
-
     conv, _, before_after = s.partition(' when ')
-
 
     DConv = {
         'LInitial': None, 'LMedial': None,
@@ -145,31 +137,21 @@ def get_dict(s, ci_conditions):
     #print 'FINDITER'
     for x, match in enumerate(conv_re.finditer(conv)):
         #print 'PROCESS DICT:', match
-        DConv.update(
-            _process_dict(DConv, match.groupdict())
-        )
+        DConv.update(_process_dict(DConv, match.groupdict()))
         #print 'OKK'
     assert 'x' in locals(), \
         'Error parsing conversions in line "%s"' % s
     #print 'OK!'
 
-
-    DBeforeAfter = {
-        'LBefore': [], 'LAfter': []
-    }
+    DBeforeAfter = {'LBefore': [],
+                    'LAfter': []}
     if before_after:
         for y, match in enumerate(before_after_re.finditer(before_after)):
-            DBeforeAfter.update(
-                _process_dict(DBeforeAfter, match.groupdict())
-            )
+            DBeforeAfter.update(_process_dict(DBeforeAfter, match.groupdict()))
         assert 'y' in locals(), \
             'Error parsing before/after conditions in line "%s"' % s
 
-
-    return Side(
-        Conditions(**DBeforeAfter),
-        Conversions(**DConv)
-    )
+    return Side(Conditions(**DBeforeAfter), Conversions(**DConv))
 
 
 if __name__ == '__main__':

@@ -14,11 +14,14 @@ class KoTranslit(TranslitEngineBase):
         # Add Korean internal conversions
         D = {}
         for system in SKoTypes:
-            D['ko', 'ko_Latn|%s' % system] = (system, enmode)
-            D['ko_Latn|%s' % system, 'ko'] = (system, demode)
+            D[ISOCode('ko'), ISOCode('ko_Latn|%s' % system)] = (system, enmode)
+            D[ISOCode('ko_Latn|%s' % system), ISOCode('ko')] = (system, demode)
         return D
 
-    def translit(self, from_, to, s):
+    def translit(self,
+                 from_: ISOCode,
+                 to: ISOCode,
+                 s: str):
         params = self.DEngines[from_, to]
         system, fn = params
         return fn(system, s)

@@ -30,7 +30,7 @@ def null(s):
     return s
 
 
-DCodepoints2Hex = {
+CODEPOINTS_TO_HEX_DICT = {
     'C': '\\u', # \u0061
     'Java': '\\u', # \u0061
     'Perl': '\\x{%s}', # \x{61}
@@ -46,7 +46,7 @@ def pad(s):
 
 def codepoints_to_hex(s, typ='Java'):
     # TODO: Add support for wide codepoints!
-    format_ = DCodepoints2Hex[typ]
+    format_ = CODEPOINTS_TO_HEX_DICT[typ]
     
     L = []
     if typ in ('Java', 'C', 'Unicode'):
@@ -62,7 +62,7 @@ def codepoints_to_hex(s, typ='Java'):
 
 def hex_to_codepoints(s, typ='Java'):
     L = []
-    format_ = DCodepoints2Hex[typ]
+    format_ = CODEPOINTS_TO_HEX_DICT[typ]
     
     if typ in ('Java', 'C', 'Unicode'):
         pass

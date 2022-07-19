@@ -15,6 +15,7 @@ SStr = {
     'lstrip'
 }
 
+
 def process_word(s, dir_, L):
     """
     s is the string to be processed

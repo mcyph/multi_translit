@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # See "Appendix N: Transform Rules" of 
 # http://unicode.org/reports/tr35/ for more information
-from multi_translit.translit.my_engine.TranslitFunctions import DCodepoints2Hex
+from multi_translit.translit.my_engine.TranslitFunctions import CODEPOINTS_TO_HEX_DICT
 
 # Basic define types
 from char_data.unicodeset.tokenizer.ProcessRangeBase import ProcessRangeBase
@@ -32,19 +32,19 @@ ZERO_OR_ONE = 2   # X?
 # (forward, reverse): (langlynx forward function, langlynx reverse function)
 # (Any-)X
 
-DInverse = {}
+inverse_dict = {}
 for _from, _to in [
     ('Any-Null', 'Any-Null'),
     ('Any-NFD', 'Any-NFC'),
     ('Any-NFKD', 'Any-NFKC'),
     ('Any-Lower', 'Any-Upper')
 ]:
-    DInverse[_from] = _to
-    DInverse[_to] = _from
+    inverse_dict[_from] = _to
+    inverse_dict[_to] = _from
 
 # NOTE: Any-Accents/Any-Publishing/Fullwidth-Halfwidth 
 # are supplied in other files.
-DFns = {
+fns_dict = {
     'Any-Null': 'null()',
     'Any-NFD': "normalize('nfd')",
     'Any-NFC': "normalize('nfc')",
@@ -61,29 +61,30 @@ DFns = {
     'Name-Any': 'names_to_codepoints()'
 }
 
-for key in DCodepoints2Hex:
-    DFns['Hex/%s-Any' % key] = "hex_to_codepoints('%s')" % key
-    DFns['Any-Hex/%s' % key] = "codepoints_to_hex('%s')" % key
+for key in CODEPOINTS_TO_HEX_DICT:
+    fns_dict['Hex/%s-Any' % key] = "hex_to_codepoints('%s')" % key
+    fns_dict['Any-Hex/%s' % key] = "codepoints_to_hex('%s')" % key
 
 
-def get_L_icu_transform(path):
+def get_icu_transform_list(path):
     inst = ParseICUTransform(path)
-    return post_process(inst.L)
+    return post_process(inst.out_list)
+
 
 class ParseICUTransform(ProcessRangeBase):
-    DDirectionChars = {
+    direction_chars_dict = {
         '→': '=>',
         '↔': '<=>',
         '←': '<='
     }
     
-    DTokens = {
+    tokens_dict = {
         '{': BEFORE_TOKEN,
         '}': AFTER_TOKEN,
         '|': CURSOR_TOKEN
     }
     
-    DRepetition = {
+    repetition_dict = {
         '*': ZERO_OR_MORE,
         '+': ONE_OR_MORE,
         '?': ZERO_OR_ONE
@@ -93,27 +94,27 @@ class ParseICUTransform(ProcessRangeBase):
         with open(path, 'r', encoding='utf-8') as f:
             s = f.read()
         
-        self.DVars = {}
-        self.L = self.process_normal(s)
+        self.vars_dict = {}
+        self.out_list = self.process_normal(s)
         
     def process_normal(self, s, x=0, group_mode=False):
         """
-        DItem -> {'mode': ASSIGN_VARIABLE/CONVERSION/TRANSFORM_RULE,
+        item_dict -> {'mode': ASSIGN_VARIABLE/CONVERSION/TRANSFORM_RULE,
                   'data': (...),
-                  'LComments': [comment, ...]}
+                  'comments_list': [comment, ...]}
         """
-        DItem = {}
+        item_dict = {}
         
         """
         Information about the current conversion:
         
-        LCurrent -> The tokens for the current conversion 
+        current_list -> The tokens for the current conversion 
                     (either from or to depending on the current state)
-        LConv -> LBefore, direction, LAfter
+        conversion_list -> LBefore, direction, LAfter
         """
         return_list = []
-        LCurrent = []
-        LConv = [None, None, None]
+        current_list = []
+        conversion_list = [None, None, None]
         
         # Misc
         start_of_statement = True
@@ -136,7 +137,7 @@ class ParseICUTransform(ProcessRangeBase):
                 x += 1
                 continue
             
-            print('MAIN:', x, c, ord(c), start_of_statement, backslash_mode, LCurrent, LConv)
+            print('MAIN:', x, c, ord(c), start_of_statement, backslash_mode, current_list, conversion_list)
             
             #========================================================#
             #                   Variable Handling                    #
@@ -144,22 +145,22 @@ class ParseICUTransform(ProcessRangeBase):
             
             # Variable handling
             if c=='$' and not backslash_mode:
-                x, var_name, LVar, LComments = self.get_variable(x+1, s)
+                x, var_name, var_list, comments_list = self.get_variable(x+1, s)
                 
-                if LVar != None:
+                if var_list != None:
                     # make sure there are no previous comments etc
-                    assert not DItem
-                    DItem['mode'] = VARIABLE
-                    DItem['data'] = (var_name, LVar)
-                    DItem['LComments'] = LComments
-                    return_list.append(DItem)
+                    assert not item_dict
+                    item_dict['mode'] = VARIABLE
+                    item_dict['data'] = (var_name, var_list)
+                    item_dict['comments_list'] = comments_list
+                    return_list.append(item_dict)
                     
-                    assert not var_name in self.DVars # WARNING! =============
-                    self.DVars[var_name] = LVar
+                    assert not var_name in self.vars_dict # WARNING! =============
+                    self.vars_dict[var_name] = var_list
                 else:
-                    assert not LComments # Just to make sure...
+                    assert not comments_list # Just to make sure...
                     x -= 1 # HACK! ===========================================================================
-                    LCurrent.append((VARIABLE, var_name))
+                    current_list.append((VARIABLE, var_name))
             
             #========================================================#
             #         Comments/Transform Rules/UnicodeSets           #
@@ -172,10 +173,10 @@ class ParseICUTransform(ProcessRangeBase):
                 if start_of_statement:
                     # A full line comment
                     return_list.append({'mode': COMMENT,
-                                'data': comment})
+                                        'data': comment})
                 else:
                     # A comment for this rule only
-                    DItem.setdefault('LComments', []).append(comment)
+                    item_dict.setdefault('comments_list', []).append(comment)
                 
                 # Continue to make sure `start_of_statement` isn't set to `False`!
                 #x += 1
@@ -185,44 +186,44 @@ class ParseICUTransform(ProcessRangeBase):
                 and s[x:x+2]=='::':
                 
                 # Transform rules
-                x, DRule = self.add_transform_rule(x+2, s)
+                x, rule_dict = self.add_transform_rule(x+2, s)
                 return_list.append({'mode': TRANSFORM_RULE,
-                             'data': DRule})
+                                    'data': rule_dict})
                 continue
                 
-            elif c in self.DDirectionChars and \
+            elif c in self.direction_chars_dict and \
                 not backslash_mode and not group_mode:
                 
                 # Conversion direction characters
-                assert not LConv[1]
-                LConv[1] = self.DDirectionChars[c]
+                assert not conversion_list[1]
+                conversion_list[1] = self.direction_chars_dict[c]
                 
                 # Change to the right hand side direction
-                LConv[0] = LCurrent
-                LCurrent = []
+                conversion_list[0] = current_list
+                current_list = []
                 
                 # Set the mode to CONVERSION
-                DItem['mode'] = CONVERSION
-                DItem['data'] = LConv
+                item_dict['mode'] = CONVERSION
+                item_dict['data'] = conversion_list
             
             elif c==';' and not backslash_mode and not group_mode:
                 # End of the line
                 # TODO: Add more sophisticated checking!
                 
-                if DItem.get('mode') == CONVERSION:
+                if item_dict.get('mode') == CONVERSION:
                     # Append the last item if in CONVERSION mode
-                    assert LConv == DItem['data']
-                    LConv[2] = LCurrent
-                    LCurrent = []
-                    LConv = [None, None, None]
+                    assert conversion_list == item_dict['data']
+                    conversion_list[2] = current_list
+                    current_list = []
+                    conversion_list = [None, None, None]
                 else:
-                    # Make sure that LCurrent is 
+                    # Make sure that current_list is 
                     # blank if not in conversion mode!
-                    assert not LCurrent, LCurrent
+                    assert not current_list, current_list
                 
-                if DItem:
-                    return_list.append(DItem)
-                DItem = {}
+                if item_dict:
+                    return_list.append(item_dict)
+                item_dict = {}
                 start_of_statement = True
                 repetition_idx = 0
                 
@@ -236,40 +237,39 @@ class ParseICUTransform(ProcessRangeBase):
             
             elif c=='(' and not backslash_mode:
                 # Process a group
-                x, LAppend = self.process_normal(s, x+1, 
-                                                 group_mode=True)
-                LCurrent.append((GROUP, [None, LAppend]))
-                repetition_idx = len(LCurrent) # CHECK ME! ==================
+                x, append_list = self.process_normal(s, x+1, group_mode=True)
+                current_list.append((GROUP, [None, append_list]))
+                repetition_idx = len(current_list) # CHECK ME! ==================
             
             elif c==')' and not backslash_mode and group_mode:
                 # End a group (if in group mode)
                 break
             
-            elif c in self.DRepetition and not backslash_mode:
-                flag = self.DRepetition[c]
+            elif c in self.repetition_dict and not backslash_mode:
+                flag = self.repetition_dict[c]
                 
-                if LCurrent and LCurrent[-1][0]==GROUP:
+                if current_list and current_list[-1][0]==GROUP:
                     # If the previous item is 
                     # a group, set the repetition flag
-                    assert LCurrent[-1][1][0] is None
-                    LCurrent[-1][1][0] = flag
+                    assert current_list[-1][1][0] is None
+                    current_list[-1][1][0] = flag
                 else:
                     # Otherwise, create an artificial group
                     # with a given repetition flag
-                    LGroup = LCurrent[repetition_idx:]
-                    del LCurrent[repetition_idx:]
-                    LCurrent.append((GROUP, [flag, LGroup]))
+                    group_list = current_list[repetition_idx:]
+                    del current_list[repetition_idx:]
+                    current_list.append((GROUP, [flag, group_list]))
                 
-                repetition_idx = len(LCurrent)
+                repetition_idx = len(current_list)
 
             #========================================================#
             #        Conversion Character/Range Processing           #
             #========================================================#
             
             else:
-                LExtend, backslash_mode, x = \
+                extend_list, backslash_mode, x = \
                     self.get_conversion_tokens(backslash_mode, x, s)
-                LCurrent.extend(LExtend)
+                current_list.extend(extend_list)
             
             if start_of_statement and c.strip():
                 # COMMENT IN THE MIDDLE OF A STATEMENT WARNING! ===========================
@@ -277,7 +277,7 @@ class ParseICUTransform(ProcessRangeBase):
             x += 1
         
         if group_mode:
-            return x, LCurrent
+            return x, current_list
         else:
             return return_list
     
@@ -286,7 +286,7 @@ class ParseICUTransform(ProcessRangeBase):
         Conversion Character/Range Processing
         """
         c = s[x]
-        L = []
+        out_list = []
         
         if c == '[':
             # Start of UnicodeSet mode
@@ -294,23 +294,23 @@ class ParseICUTransform(ProcessRangeBase):
             #if True:
             #    from char_data.unicodeset.unicodeset import get_unicode_set_ranges
                 
-            #    print('RANGE TOKENS:', get_unicode_set_ranges(range_, self.DVars, char_indexes=None))
-            L.append((UNICODE_SET, range_))
+            #    print('RANGE TOKENS:', get_unicode_set_ranges(range_, self.vars_dict, char_indexes=None))
+            out_list.append((UNICODE_SET, range_))
         
         elif c == '&':
             # Start of function call mode
-            x, fn_name, LFnArgs = self.process_function_call(x, s)
-            L.append((FUNCTION_CALL, (fn_name, LFnArgs)))
+            x, fn_name, fn_args_list = self.process_function_call(x, s)
+            out_list.append((FUNCTION_CALL, (fn_name, fn_args_list)))
         
         elif backslash_mode:
             # Backslash mode
             # CHECK ME! ==========================================================
             if c == 'u':
                 # Unicode backslash
-                L.append((CHARS, chr(int(s[x+1:x+5], 16))))
+                out_list.append((CHARS, chr(int(s[x+1:x+5], 16))))
                 x += 4
             else:
-                L.append((CHARS, c))
+                out_list.append((CHARS, c))
             
             backslash_mode = False
             
@@ -320,24 +320,24 @@ class ParseICUTransform(ProcessRangeBase):
         elif c == "'":
             # Quotes mode
             print("QUOTES!")
-            x, LExtend = self.process_quotes(x, s)
-            L.extend(LExtend)
+            x, extend_list = self.process_quotes(x, s)
+            out_list.extend(extend_list)
         
-        elif c in self.DTokens:
+        elif c in self.tokens_dict:
             # Before/after/cursor tokens
-            print('TOKEN:', self.DTokens[c])
-            L.append(self.DTokens[c])
+            print('TOKEN:', self.tokens_dict[c])
+            out_list.append(self.tokens_dict[c])
         
         elif c.strip():
-            L.append((CHARS, c))
+            out_list.append((CHARS, c))
         
-        return L, backslash_mode, x
+        return out_list, backslash_mode, x
     
     def get_comment(self, x, s):
         """
         "# comment"'s go until the end of the line
         """
-        L = []
+        out_list = []
         while 1:
             # Get the next character
             try: c = s[x]
@@ -346,9 +346,9 @@ class ParseICUTransform(ProcessRangeBase):
             if c == '\n':
                 break
             
-            L.append(c)
+            out_list.append(c)
             x += 1
-        return x, ''.join(L)
+        return x, ''.join(out_list)
     
     def get_variable(self, x, s):
         """
@@ -356,10 +356,10 @@ class ParseICUTransform(ProcessRangeBase):
         """
         x, name = self.get_variable_name(x, s)
         
-        L = []
+        out_list = []
         found_equals = False
         backslash_mode = False
-        LComments = []
+        comments_list = []
         
         while 1:
             # Get the next character
@@ -373,7 +373,7 @@ class ParseICUTransform(ProcessRangeBase):
             elif not found_equals:
                 if c.strip():
                     # Using a variable in a statement instead of assigning!
-                    L = None
+                    out_list = None
                     break
                 
                 #assert not c.strip(), \
@@ -382,7 +382,7 @@ class ParseICUTransform(ProcessRangeBase):
             elif c == '#':
                 # Process comments
                 x, comment = self.get_comment(x, s)
-                LComments.append(comment)
+                comments_list.append(comment)
                 
             elif c == ';':
                 # Reprocess semicolons again
@@ -392,12 +392,12 @@ class ParseICUTransform(ProcessRangeBase):
             else:
                 # TODO: How to process the logic?
                 # Seems a bit repetitive to copy-paste the above code...
-                LExtend, backslash_mode, x = \
+                extend_list, backslash_mode, x = \
                     self.get_conversion_tokens(backslash_mode, x, s)
-                L.extend(LExtend)
+                out_list.extend(extend_list)
             x += 1
         
-        return x, name, L, LComments
+        return x, name, out_list, comments_list
     
     def get_variable_name(self, x, s):
         """
@@ -405,10 +405,10 @@ class ParseICUTransform(ProcessRangeBase):
         
         FIXME: Make it work with numbers etc after the variable! ===========================
         """
-        L = []
+        out_list = []
         allowed = 'abcdefghijklmnopqrstuvwxyz_'
-        SAllowed1 = set(allowed+allowed.upper())
-        SAllowed2 = SAllowed1.union(set('1234567890_'))
+        allowed_set_1 = set(allowed+allowed.upper())
+        allowed_set_2 = allowed_set_1.union(set('1234567890_'))
         
         first_time = False
         while 1:
@@ -416,24 +416,24 @@ class ParseICUTransform(ProcessRangeBase):
             try: c = s[x]
             except IndexError: break
             
-            if first_time and c in SAllowed1 and False:
-                L.append(c)
-            elif c in SAllowed2:
-                L.append(c)
+            if first_time and c in allowed_set_1 and False:
+                out_list.append(c)
+            elif c in allowed_set_2:
+                out_list.append(c)
             else:
                 break
             
             x += 1
             first_time = False
         
-        assert L
-        return x, ''.join(L)
+        assert out_list
+        return x, ''.join(out_list)
     
     def process_quotes(self, x, s):
         """
         Extract 'the quoted text\'s contents' :D
         """
-        L = []
+        out_list = []
         backslash_mode = False
         first_char = True
         x += 1 # HACK!
@@ -449,31 +449,31 @@ class ParseICUTransform(ProcessRangeBase):
                 # CHECK ME! ==========================================================
                 if c == 'u':
                     # Unicode backslash
-                    L.append((CHARS, chr(int(s[x+1:x+5], 16))))
+                    out_list.append((CHARS, chr(int(s[x+1:x+5], 16))))
                     x += 4
                 elif c == "'":
                     # '\' -> an actual backslash!
-                    L.append((CHARS, '\\'))
+                    out_list.append((CHARS, '\\'))
                     break
                 else:
-                    L.append((CHARS, c))
+                    out_list.append((CHARS, c))
                 
                 backslash_mode = False
             elif c == '\\':
                 backslash_mode = True
             elif first_char and c=="'":
                 # `''` means a single escaped `'`
-                L.append((CHARS, "'"))
+                out_list.append((CHARS, "'"))
                 break
             elif c == "'":
                 break
             else:
-                L.append((CHARS, c))
+                out_list.append((CHARS, c))
             
             first_char = False
             x += 1
         
-        return x, L
+        return x, out_list
     
     def add_transform_rule(self, x, s):
         """
@@ -514,9 +514,9 @@ class ParseICUTransform(ProcessRangeBase):
         normal_range = None
         
         # Chars inside the brackets
-        LBrackets = []
+        brackets_list = []
         # Chars outside the brackets
-        L = []
+        out_list = []
         
         while 1:
             # Get the next character
@@ -532,7 +532,7 @@ class ParseICUTransform(ProcessRangeBase):
                     # Start of a range (inverse mode)
                     x, inverse_range = self.process_range(x, s)
                 else:
-                    LBrackets.append(c) # OPEN ISSUE: Are spaces ignored? =======
+                    brackets_list.append(c) # OPEN ISSUE: Are spaces ignored? =======
             
             elif c == '[':
                 # Start of a range (normal mode)
@@ -544,17 +544,17 @@ class ParseICUTransform(ProcessRangeBase):
             
             elif c == '(':
                 # Start of the brackets
-                assert not LBrackets
+                assert not brackets_list
                 brackets_mode = True
                 found_brackets = True
             
             else:
-                L.append(c)
+                out_list.append(c)
             
             x += 1
         
-        normal = ''.join(L).strip()
-        inverse = ''.join(LBrackets).strip()
+        normal = ''.join(out_list).strip()
+        inverse = ''.join(brackets_list).strip()
         
         if normal:
             normal = 'Any-%s'%normal \
@@ -567,28 +567,28 @@ class ParseICUTransform(ProcessRangeBase):
         if normal and not found_brackets:
             # If no brackets found, then use for the inverse too!
             # Note that it sometimes makes Lower->Upper etc!
-            inverse = DInverse[normal] \
-                if normal in DInverse else normal
+            inverse = inverse_dict[normal] \
+                if normal in inverse_dict else normal
         
         if not found_brackets:
             # CHECK ME! =======================================================
             inverse_range = normal_range
         
-        DRule = {
+        rule_dict = {
             'normal_range': normal_range,
             'inverse_range': inverse_range,
             'normal': normal or None,
             'inverse': inverse or None
         }
         
-        return x, DRule
+        return x, rule_dict
     
     def process_function_call(self, x, s):
         """
         Parse the `&function(args);` syntax
         """
-        LName = []
-        LArgs = []
+        name_list = []
+        args_list = []
         backslash_mode = False
         
         FN_NAME = 0
@@ -609,7 +609,7 @@ class ParseICUTransform(ProcessRangeBase):
                     # The start of the arguments found
                     mode = FN_ARGS
                 else:
-                    LName.append(c)
+                    name_list.append(c)
                 
             elif mode == FN_ARGS:
                 if not backslash_mode and c=='(':
@@ -623,11 +623,12 @@ class ParseICUTransform(ProcessRangeBase):
                 else:
                     # Otherwise process as normal
                     # (Note that
-                    LExtend, backslash_mode, x = \
+                    extend_list, backslash_mode, x = \
                         self.get_conversion_tokens(backslash_mode, x, s)
-                    LArgs.extend(LExtend)
+                    args_list.extend(extend_list)
             x += 1
-        return x, ''.join(LName).strip(), LArgs
+        return x, ''.join(name_list).strip(), args_list
+
 
 if __name__ == '__main__':
     from pprint import pprint
@@ -643,5 +644,5 @@ if __name__ == '__main__':
         
         print('PROCESSING:', path)
         # 'Arabic_Latin.txt'
-        L = get_L_icu_transform('%s/%s' % (root, path))
-        pprint(L)
+        out_list = get_icu_transform_list('%s/%s' % (root, path))
+        pprint(out_list)
