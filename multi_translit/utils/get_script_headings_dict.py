@@ -1,4 +1,4 @@
-from iso_tools.ISOCode import ISOCode
+from iso_tools.bcp47.BCP47Info import BCP47Info
 from multi_translit.toolkit.json_tools import load
 from multi_translit.data_paths import data_path
 
@@ -10,5 +10,5 @@ def get_script_headings_dict():
     for region, DHeadings in list(DScriptHeadings.items()):
         for heading, L in list(DHeadings.items()):
             for iso in L:
-                D[ISOCode(iso)] = (region, heading)
+                D[BCP47Info(iso)] = (region, heading)
     return DScriptHeadings, D

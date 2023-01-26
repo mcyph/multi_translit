@@ -1,5 +1,5 @@
 import json
-from iso_tools.ISOCode import ISOCode
+from iso_tools.bcp47.BCP47Info import BCP47Info
 from multi_translit.data_paths import data_path
 
 
@@ -17,8 +17,8 @@ def get_D_translit_mappings():
             items_out = []
             for relative_path, other_iso, direction in items:
                 items_out.append((relative_path,
-                                  ISOCode(other_iso),
+                                  BCP47Info(other_iso),
                                   direction))
-            out[ISOCode(k)] = items_out
+            out[BCP47Info(k)] = items_out
         return out
 

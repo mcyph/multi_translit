@@ -1,21 +1,19 @@
 # -*- coding: utf-8 -*-
 import warnings
 
-from multi_translit.toolkit.patterns.Singleton import Singleton
-from multi_translit.toolkit.documentation.copydoc import copydoc
-from iso_tools.ISOTools import ISOTools, NONE, LANG, TERRITORY, VARIANT
+from iso_tools.bcp47.BCP47Info import BCP47Info
 
+from multi_translit.toolkit.patterns.Singleton import Singleton
 from multi_translit.implementations.KoTranslit import KoTranslit
 from multi_translit.implementations.MyTranslit import MyTranslit
 from multi_translit.implementations.ICUTranslit import ICUTranslit
 from multi_translit.implementations.MecabTranslit import MecabTranslit
 from multi_translit.implementations.CombinationTranslit import CombinationTranslit
-from multi_translit.abstract_base_classes.MultiTranslitBase import MultiTranslitBase
+
+from speedysvc.service_method import service_method
 
 
-class MultiTranslit(MultiTranslitBase,
-                    Singleton):
-
+class MultiTranslit(Singleton):
     def __init__(self):
         L = self.LEngines = []
         L.append(MyTranslit())
@@ -61,10 +59,10 @@ class MultiTranslit(MultiTranslitBase,
             D.setdefault(from_, []).append(to)
         return D
 
-    @service_method(decode_params={'from_': lambda x: ISOCode(s)},
-                    encode_params={'from_': lambda x: str(s)})
+    @service_method(decode_params={'from_': lambda x: BCP47Info(x)},
+                    encode_params={'from_': lambda x: str(x)})
     def get_possible_conversions_list(self,
-                                      from_: ISOCode,
+                                      from_: BCP47Info,
                                       remove_variant: bool = False):
         """
         Get all possible conversions from iso `from_`.
@@ -108,13 +106,13 @@ class MultiTranslit(MultiTranslitBase,
                 L.extend((s, v) for v in DScripts[s])
         return L
 
-    @service_method(decode_params={'from_iso': lambda x: ISOCode(s),
-                                   'to_iso': lambda x: ISOCode(s)},
-                    encode_params={'from_iso': lambda x: str(s),
-                                   'to_iso': lambda x: str(s)})
+    @service_method(decode_params={'from_iso': lambda x: BCP47Info(x),
+                                   'to_iso': lambda x: BCP47Info(x)},
+                    encode_params={'from_iso': lambda x: str(x),
+                                   'to_iso': lambda x: str(x)})
     def get_best_conversion(self,
-                            from_iso: ISOCode,
-                            to_iso: ISOCode,
+                            from_iso: BCP47Info,
+                            to_iso: BCP47Info,
                             default='KeyError'):
         """
         Uses get_best_conversions_list to find the best conversion
@@ -137,13 +135,13 @@ class MultiTranslit(MultiTranslitBase,
         else:
             return default
 
-    @service_method(decode_params={'from_iso': lambda x: ISOCode(s),
-                                   'to_iso': lambda x: ISOCode(s)},
-                    encode_params={'from_iso': lambda x: str(s),
-                                   'to_iso': lambda x: str(s)})
+    @service_method(decode_params={'from_iso': lambda x: BCP47Info(x),
+                                   'to_iso': lambda x: BCP47Info(x)},
+                    encode_params={'from_iso': lambda x: str(x),
+                                   'to_iso': lambda x: str(x)})
     def get_best_conversions_list(self,
-                                  from_iso: ISOCode,
-                                  to_iso: ISOCode):
+                                  from_iso: BCP47Info,
+                                  to_iso: BCP47Info):
         """
         Guesses the best conversions, e.g. so that if the script of the
         to_iso isn't specified, it'll still find the closest conversions.
@@ -173,10 +171,14 @@ class MultiTranslit(MultiTranslitBase,
             for yy, i_to_iso in enumerate(ISOTools.get_L_removed(
                 to_iso,
                 [
-                    NONE, TERRITORY, LANG,
-                    TERRITORY|LANG,
-                    VARIANT, TERRITORY|VARIANT, VARIANT|LANG,
-                    VARIANT|LANG|TERRITORY
+                    NONE,
+                    TERRITORY,
+                    LANG,
+                    TERRITORY | LANG,
+                    VARIANT,
+                    TERRITORY | VARIANT,
+                    VARIANT | LANG,
+                    VARIANT | LANG | TERRITORY
                 ],
                 rem_dupes=True
             )):
@@ -199,10 +201,10 @@ class MultiTranslit(MultiTranslitBase,
         return_list.sort()
         return [i[-1] for i in return_list]
 
-    @service_method(decode_params={'from_': lambda x: ISOCode(s)},
-                    encode_params={'from_': lambda x: str(s)})
+    @service_method(decode_params={'from_': lambda x: BCP47Info(x)},
+                    encode_params={'from_': lambda x: str(x)})
     def get_all_transliterations(self,
-                                 from_: ISOCode,
+                                 from_: BCP47Info,
                                  s: str):
         """
         Transliterate `s` into all possible combinations.
@@ -216,13 +218,13 @@ class MultiTranslit(MultiTranslitBase,
             L.append(((i_from, i_to), self.translit(i_from, i_to, s)))
         return L
 
-    @service_method(decode_params={'from_': lambda x: ISOCode(s),
-                                   'to': lambda x: ISOCode(s)},
-                    encode_params={'from_': lambda x: str(s),
-                                   'to': lambda x: str(s)})
+    @service_method(decode_params={'from_': lambda x: BCP47Info(x),
+                                   'to': lambda x: BCP47Info(x)},
+                    encode_params={'from_': lambda x: str(x),
+                                   'to': lambda x: str(x)})
     def translit(self,
-                 from_: ISOCode,
-                 to: ISOCode,
+                 from_: BCP47Info,
+                 to: BCP47Info,
                  s: str):
         """
         Convert from iso code `from_` to iso code `to`
@@ -240,7 +242,7 @@ class MultiTranslit(MultiTranslitBase,
 
     @service_method()
     def get_script_headings_dict(self):
-        from multi_translit.translit.get_script_headings_dict import get_script_headings_dict
+        from multi_translit.utils.get_script_headings_dict import get_script_headings_dict
         return get_script_headings_dict()
 
 
