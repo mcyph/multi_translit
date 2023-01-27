@@ -4,7 +4,7 @@
 from multi_translit.translit.my_engine.TranslitFunctions import CODEPOINTS_TO_HEX_DICT
 
 # Basic define types
-from char_data.unicodeset.tokenizer.ProcessRangeBase import ProcessRangeBase
+from iso_tools.chardata.unicodeset.tokenizer.ProcessRangeBase import ProcessRangeBase
 from multi_translit.data_paths import data_path
 
 from .post_process import post_process
@@ -292,7 +292,7 @@ class ParseICUTransform(ProcessRangeBase):
             # Start of UnicodeSet mode
             x, range_ = self.process_range(x, s)
             #if True:
-            #    from char_data.unicodeset.unicodeset import get_unicode_set_ranges
+            #    from iso_tools.chardata.unicodeset.unicodeset import get_unicode_set_ranges
                 
             #    print('RANGE TOKENS:', get_unicode_set_ranges(range_, self.vars_dict, char_indexes=None))
             out_list.append((UNICODE_SET, range_))

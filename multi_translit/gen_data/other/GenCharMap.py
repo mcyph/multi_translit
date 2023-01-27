@@ -1,7 +1,7 @@
 import os
 os.chdir('../../')
 import File # Surrogate pair HACK!
-from char_data.CharData import CharData, DISO2Lang, DISO2LFullText
+from iso_tools.chardata.CharData import CharData, DISO2Lang, DISO2LFullText
 from multi_translit.toolkit.encodings.surrogates import w_unichr
 
 DFreq = {'cmn': ('Chinese Frequency', 
