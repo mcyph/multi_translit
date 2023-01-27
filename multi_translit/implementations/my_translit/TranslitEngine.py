@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
-from multi_translit.translit.my_engine.ProcessWord import process_word
-from multi_translit.translit.my_engine.SplitSentence import split_sentence
-
-from multi_translit.translit.my_engine.TranslitParse import TranslitParse
+from multi_translit.implementations.my_translit.ProcessWord import process_word
+from multi_translit.implementations.my_translit.TranslitParse import TranslitParse
+from multi_translit.implementations.my_translit.SplitSentence import split_sentence
 
 
 cache_dict = {}
 
 def TranslitEngine(path, direction='=>', sep=''):
     key = (path, direction, sep)
-    if not key in cache_dict:
+    if key not in cache_dict:
         cache_dict[key] = _TranslitEngine(path, direction, sep)
     return cache_dict[key]
 

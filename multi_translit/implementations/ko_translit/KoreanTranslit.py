@@ -3,8 +3,8 @@
 # $Id: Korean.pm,v 1.9 2007/11/29 14:29:53 you Exp $
 # = transliteration-based encodings =
 
-from multi_translit.translit.korean import SKR_1959, SKR_1984, SKATS, HSR, ISO_TS_11941, SKR_2000, MRR, NKR_1992, Yale
-from multi_translit.translit.korean.TransliteratorGenerator import Class
+from multi_translit.implementations.ko_translit.TransliteratorGenerator import Class
+from multi_translit.implementations.ko_translit import SKR_1959, SKR_1984, SKATS, HSR, ISO_TS_11941, SKR_2000, MRR, NKR_1992, Yale
 
 D = {
     'ISO TS 11941': ISO_TS_11941.init,

@@ -1,5 +1,8 @@
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
-from multi_translit.translit.korean import enmode, demode, SKoTypes
+from multi_translit.implementations.ko_translit.KoreanTranslit import enmode, demode, D as DKoreanTranslit
+
+
+SKoTypes = set(DKoreanTranslit)
 
 
 class KoTranslit(TranslitEngineBase):
@@ -14,14 +17,11 @@ class KoTranslit(TranslitEngineBase):
         # Add Korean internal conversions
         D = {}
         for system in SKoTypes:
-            D[ISOCode('ko'), ISOCode('ko_Latn|%s' % system)] = (system, enmode)
-            D[ISOCode('ko_Latn|%s' % system), ISOCode('ko')] = (system, demode)
+            D['ko', 'ko_Latn|%s' % system] = (system, enmode)
+            D['ko_Latn|%s' % system, 'ko'] = (system, demode)
         return D
 
-    def translit(self,
-                 from_: ISOCode,
-                 to: ISOCode,
-                 s: str):
+    def translit(self, from_: str, to: str, s: str):
         params = self.DEngines[from_, to]
         system, fn = params
         return fn(system, s)

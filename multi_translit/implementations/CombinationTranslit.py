@@ -2,7 +2,7 @@ import codecs
 from glob import glob
 from json import loads
 from itertools import tee
-from iso_tools.ISOTools import ISOTools
+from iso_tools.bcp47.validate import validate
 
 from multi_translit.data_paths import data_path
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
@@ -18,7 +18,8 @@ def get_D_comb():
 
                 L = loads(line)
                 for iso in L:
-                    ISOTools.verify_iso(iso)
+                    print(iso)
+                    validate(iso)
 
                 assert len(L) > 1
                 assert not (L[0], L[-1]) in D
@@ -61,7 +62,7 @@ class CombinationTranslit(TranslitEngineBase):
             D[from_iso, to_iso] = L
         return D
 
-    def translit(self, from_: ISOCode, to: ISOCode, s: str):
+    def translit(self, from_: str, to: str, s: str):
         params = self.DEngines[from_, to]
         for x, y in pairwise(params):
             s = self.multi_translit.translit(x, y, s)

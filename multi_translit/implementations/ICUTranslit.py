@@ -1,8 +1,9 @@
 from warnings import warn
 
-from iso_tools.ISOTools import ISOTools
 from multi_translit.data_paths import data_path
+from iso_tools.bcp47.from_dict import from_dict
 from multi_translit.toolkit.json_tools import load
+from iso_tools.bcp47.make_preferred_form import make_preferred_form
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
 
 
@@ -20,17 +21,23 @@ class ICUTranslit(TranslitEngineBase):
             if not part3 and other[0] and other[0] != 'ben':
                 part3 = other[0]
 
-        r = ISOCode(part3=part3,
-                    script=script,
-                    variant=variant)
+        r = make_preferred_form(from_dict({
+            'language': part3,
+            'script': script,
+            'variant': variant,
+            'grandfathered': None,
+            'region': None,
+            'extension': None,
+            'private_use': None,
+        }))
 
         DMap = {
-          ISOCode('zh-Hani'):        ISOCode('zh'),
-          ISOCode('Hani'):           ISOCode('zh'),
-          ISOCode('ja-Zyyy'):        ISOCode('ja-Hrkt'),
-          ISOCode('zh-Bopo-Zhuyin'): ISOCode('zh-Bopo'),
-          ISOCode('Bopo'):           ISOCode('zh-Bopo'),
-          ISOCode('zh-Latn'):        ISOCode('zh-Latn-x-Pinyin')
+          'zh-Hani': 'zh',
+          'Hani': 'zh',
+          'ja-Zyyy': 'ja-Hrkt',
+          'zh-Bopo-Zhuyin': 'zh-Bopo',
+          'Bopo': 'zh-Bopo',
+          'zh-Latn': 'zh-Latn-x-Pinyin',
         }
 
         if r in DMap:
@@ -38,7 +45,7 @@ class ICUTranslit(TranslitEngineBase):
         return r
 
     def _remove_invalid(self):
-        from PyICU import ICUError
+        from icu import ICUError
 
         for from_key, to_key in list(self.DEngines.keys()):
             # Remove invalid engines (somewhat hackish, but oh well...)
@@ -48,7 +55,7 @@ class ICUTranslit(TranslitEngineBase):
                 del self.DEngines[from_key, to_key]
 
     def get_D_engines(self):
-        from PyICU import Transliterator, UTransDirection, ICUError
+        from icu import Transliterator, UTransDirection, ICUError
         D = {}
 
         DMappings = load(data_path('translit', 'script_mappings.json'))
@@ -71,25 +78,9 @@ class ICUTranslit(TranslitEngineBase):
                 LUnknownScripts.append('%s-%s' % (to, from_))
                 continue
 
-            SIgnore = set(ISOCode(i) for i in [
-                'ko_Zyyy',
-                'th_Zyyy',
-                'el_Zyyy',
-                'cs_Zyyy',
-                'es_Zyyy',
-                'ko_Zyyy',
-                'zh_Zyyy',
-                'ar_Zyyy',
-                'he_Zyyy',
-                'syr_Zyyy',
-                'hy_Zyyy',
-                'ka_Zyyy',
-                'pl_Zyyy',
-                'ro_Zyyy',
-                'ru_Zyyy',
-                'am_Zyyy',  # TODO: Add latin -> amharic
-                'sk_Zyyy'
-            ])
+            SIgnore = {'ko_Zyyy', 'th_Zyyy', 'el_Zyyy', 'cs_Zyyy', 'es_Zyyy', 'ko_Zyyy', 'zh_Zyyy', 'ar_Zyyy',
+                       'he_Zyyy', 'syr_Zyyy', 'hy_Zyyy', 'ka_Zyyy', 'pl_Zyyy', 'ro_Zyyy', 'ru_Zyyy', 'am_Zyyy',
+                       'sk_Zyyy'}
 
             if from_key in SIgnore or to_key in SIgnore:
                 continue
@@ -111,7 +102,7 @@ class ICUTranslit(TranslitEngineBase):
     def translit(self, from_, to, s):
         params = self.DEngines[from_, to]
         if not params in self.DICU:
-            from PyICU import Transliterator
+            from icu import Transliterator
             self.DICU[params] = Transliterator.createInstance(*params)
 
         return self.DICU[params].transliterate(s)

@@ -1,8 +1,9 @@
 import json
-from multi_translit.toolkit.py_ini import read_D_html_ini
-from iso_tools.ISOTools import ISOTools
 
-from multi_translit.translit.my_engine.get_rule import get_rule, process_val
+from iso_tools.bcp47.make_preferred_form import make_preferred_form
+from multi_translit.toolkit.py_ini import read_D_html_ini
+from multi_translit.implementations.my_translit.get_rule import get_rule, process_val
+
 
 next_fn = next
 
@@ -16,8 +17,8 @@ class TranslitParse:
         self.DVariables = self.get_variables_dict(self.remove_comments(D.get('variables', '')))
 
         # HACK HACK HACK!
-        DConfig['from_iso'] = ISOTools.remove_unneeded_info(DConfig['from_iso'])
-        DConfig['to_iso'] = ISOTools.remove_unneeded_info(DConfig['to_iso'])
+        DConfig['from_iso'] = make_preferred_form(DConfig['from_iso'])
+        DConfig['to_iso'] = make_preferred_form(DConfig['to_iso'])
 
         # Get case-related properties
         self.ignore_case = DConfig.get('ignore_case', False)

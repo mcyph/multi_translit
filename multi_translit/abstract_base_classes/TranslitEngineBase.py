@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from iso_tools.ISOTools import ISOTools
 
 
 class TranslitEngineBase(ABC):

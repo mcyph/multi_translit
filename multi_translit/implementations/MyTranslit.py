@@ -1,8 +1,7 @@
-from iso_tools.ISOTools import ISOTools
-from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
-from multi_translit.translit.my_engine.TranslitEngine import TranslitEngine
-from multi_translit.translit.get_D_translit_mappings import get_D_translit_mappings
 from multi_translit.data_paths import data_path
+from multi_translit.utils.get_translit_mappings_dict import get_D_translit_mappings
+from multi_translit.implementations.my_translit.TranslitEngine import TranslitEngine
+from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
 
 
 class MyTranslit(TranslitEngineBase):
@@ -26,7 +25,7 @@ class MyTranslit(TranslitEngineBase):
         with open(data_path('translit', 'ignored_isos.txt'), 'r') as f:
             # HACK: Ignore these (mostly fairly uncommonly used) transliteration systems
             # as they probably have errors/I don't have much time to maintain them
-            SIgnoredISOs = set(ISOCode(i) for i in f.read().split('\n'))
+            SIgnoredISOs = set(i for i in f.read().split('\n'))
 
         for from_iso, L in list(self.DTranslitMappings.items()):
             for path, to_iso, direction in L:
@@ -38,11 +37,7 @@ class MyTranslit(TranslitEngineBase):
                 D[from_iso, to_iso] = (path, direction)
         return D
 
-    def translit(self,
-                 from_: ISOCode,
-                 to: ISOCode,
-                 s: str):
-
+    def translit(self, from_: str, to: str, s: str):
         params = self.DEngines[from_, to]
         te = TranslitEngine(data_path('translit_new', params[0]), params[1])
         return te.convert(s)

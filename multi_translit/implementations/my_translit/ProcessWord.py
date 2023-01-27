@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from unicodedata import normalize
-from multi_translit.translit.korean import enmode, demode
+from multi_translit.implementations.ko_translit.KoreanTranslit import enmode, demode
 
 
 SStr = {
