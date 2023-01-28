@@ -1,4 +1,4 @@
-from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
+from multi_translit.implementations.TranslitEngineBase import TranslitEngineBase
 from mecab.word_boundaries.WordBoundaries import WordBoundaries
 
 

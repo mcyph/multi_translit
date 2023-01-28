@@ -1,8 +1,0 @@
-# Various Hanzi->Romanized forms (apart from Pinyin/Pinyin Accents)
-['cmn:Chinese (Unified)', 'cmn:PinYin', 'cmn:French']
-['cmn:Chinese (Unified)', 'cmn:PinYin', 'cmn:GuoinII']
-['cmn:Chinese (Unified)', 'cmn:PinYin', 'cmn:x-GwoyeuRomatzyh']
-['cmn:Chinese (Unified)', 'cmn:Chinese PinYin', 'cmn:Tongyong']
-['cmn:Chinese (Unified)', 'cmn:PinYin', 'cmn:Wade-Giles']
-['cmn:Chinese (Unified)', 'cmn:PinYin' 'cmn:Yale']
-['cmn:Chinese (Unified)', 'cmn:PinYin', 'cmn:Zhuyin']

@@ -1,7 +1,7 @@
 from multi_translit.data_paths import data_path
 from multi_translit.utils.get_translit_mappings_dict import get_D_translit_mappings
 from multi_translit.implementations.my_translit.TranslitEngine import TranslitEngine
-from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
+from multi_translit.implementations.TranslitEngineBase import TranslitEngineBase
 
 from iso_tools.bcp47.get_tag_details import get_tag_details
 

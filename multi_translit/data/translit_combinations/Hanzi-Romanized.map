@@ -1,8 +1,0 @@
-# Various Hanzi->Romanized forms (apart from Pinyin/Pinyin Accents)
-#["zh-Hani", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
-#["zh-Hani", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
-#["zh-Hani", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
-#["zh-Hani", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
-#["zh-Hani", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
-#["zh-Hani", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]
-#["zh-Hani", "zh-Latn-x-NumericPinyin", "cmn-Bopo"]

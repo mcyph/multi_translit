@@ -1,4 +1,4 @@
-from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
+from multi_translit.implementations.TranslitEngineBase import TranslitEngineBase
 from multi_translit.implementations.ko_translit.KoreanTranslit import enmode, demode, D as DKoreanTranslit
 
 

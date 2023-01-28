@@ -634,7 +634,7 @@ if __name__ == '__main__':
     from pprint import pprint
     from os import listdir
     
-    root = data_path('icu_translit')
+    root = data_path('icu_translit', 'conversions')
     for path in listdir(root):
         if not path.endswith('.txt'):
             continue

@@ -1,0 +1,71 @@
+# zh-Latn-x-French
+["zh-Latn-x-French", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
+["zh-Latn-x-French", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
+["zh-Latn-x-French", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Pinyin"]
+["zh-Latn-x-French", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
+["zh-Latn-x-French", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
+["zh-Latn-x-French", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]
+["zh-Latn-x-French", "zh-Latn-x-NumericPinyin", "zh-Bopo"]
+
+# zh-Latn-x-GuoinII
+["zh-Latn-x-GuoinII", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
+["zh-Latn-x-GuoinII", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
+["zh-Latn-x-GuoinII", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Pinyin"]
+["zh-Latn-x-GuoinII", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
+["zh-Latn-x-GuoinII", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
+["zh-Latn-x-GuoinII", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]
+["zh-Latn-x-GuoinII", "zh-Latn-x-NumericPinyin", "zh-Bopo"]
+
+# zh-Latn-x-GwoyeuRomatzyh
+["zh-Latn-x-GwoyeuRomatzyh", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
+["zh-Latn-x-GwoyeuRomatzyh", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
+["zh-Latn-x-GwoyeuRomatzyh", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Pinyin"]
+["zh-Latn-x-GwoyeuRomatzyh", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
+["zh-Latn-x-GwoyeuRomatzyh", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
+["zh-Latn-x-GwoyeuRomatzyh", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]
+["zh-Latn-x-GwoyeuRomatzyh", "zh-Latn-x-NumericPinyin", "zh-Bopo"]
+
+# zh-Latn-x-Pinyin
+["zh-Latn-x-Pinyin", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
+["zh-Latn-x-Pinyin", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
+["zh-Latn-x-Pinyin", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
+["zh-Latn-x-Pinyin", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
+["zh-Latn-x-Pinyin", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
+["zh-Latn-x-Pinyin", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]
+#["zh-Latn-x-Pinyin", "zh-Latn-x-NumericPinyin", "zh-Bopo"]
+
+# zh-Latn-x-Tongyong
+["zh-Latn-x-Tongyong", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
+["zh-Latn-x-Tongyong", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
+["zh-Latn-x-Tongyong", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
+["zh-Latn-x-Tongyong", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Pinyin"]
+["zh-Latn-x-Tongyong", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
+["zh-Latn-x-Tongyong", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]
+["zh-Latn-x-Tongyong", "zh-Latn-x-NumericPinyin", "zh-Bopo"]
+
+# zh-Latn-x-WadeGiles
+["zh-Latn-x-WadeGiles", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
+["zh-Latn-x-WadeGiles", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
+["zh-Latn-x-WadeGiles", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
+["zh-Latn-x-WadeGiles", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Pinyin"]
+["zh-Latn-x-WadeGiles", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
+["zh-Latn-x-WadeGiles", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]
+["zh-Latn-x-WadeGiles", "zh-Latn-x-NumericPinyin", "zh-Bopo"]
+
+# zh-Latn-x-Yale
+["zh-Latn-x-Yale", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
+["zh-Latn-x-Yale", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
+["zh-Latn-x-Yale", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
+["zh-Latn-x-Yale", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Pinyin"]
+["zh-Latn-x-Yale", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
+["zh-Latn-x-Yale", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
+["zh-Latn-x-Yale", "zh-Latn-x-NumericPinyin", "zh-Bopo"]
+
+# zh-Bopo
+["zh-Bopo", "zh-Latn-x-NumericPinyin", "zh-Latn-x-French"]
+["zh-Bopo", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GuoinII"]
+["zh-Bopo", "zh-Latn-x-NumericPinyin", "zh-Latn-x-GwoyeuRomatzyh"]
+#["zh-Bopo", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Pinyin"]
+["zh-Bopo", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Tongyong"]
+["zh-Bopo", "zh-Latn-x-NumericPinyin", "zh-Latn-x-WadeGiles"]
+["zh-Bopo", "zh-Latn-x-NumericPinyin", "zh-Latn-x-Yale"]

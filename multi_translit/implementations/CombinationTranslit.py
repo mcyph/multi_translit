@@ -5,7 +5,7 @@ from itertools import tee
 from iso_tools.bcp47.validate import validate
 
 from multi_translit.data_paths import data_path
-from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
+from multi_translit.implementations.TranslitEngineBase import TranslitEngineBase
 
 
 def get_D_comb():

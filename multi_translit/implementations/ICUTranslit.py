@@ -4,7 +4,7 @@ from multi_translit.data_paths import data_path
 from iso_tools.bcp47.from_dict import from_dict
 from multi_translit.toolkit.json_tools import load
 from iso_tools.bcp47.make_preferred_form import make_preferred_form
-from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
+from multi_translit.implementations.TranslitEngineBase import TranslitEngineBase
 
 
 class ICUTranslit(TranslitEngineBase):
@@ -56,7 +56,7 @@ class ICUTranslit(TranslitEngineBase):
                 del self.DEngines[from_key, to_key]
 
     def get_D_engines(self):
-        from icu import Transliterator, UTransDirection, ICUError
+        from icu import Transliterator, UTransDirection
         D = {}
 
         DMappings = load(data_path('translit', 'script_mappings.json'))
