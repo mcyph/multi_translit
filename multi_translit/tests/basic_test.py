@@ -11,13 +11,13 @@ if __name__ == '__main__':
     #print 'BEST CONVERSION:', Translit.get_best_conversion('ja_Jpan-AU|VARIANT', 'ja_Latn')
     #print 'BEST CONVERSION:', Translit.get_best_conversion('ja_Jpan-AU', 'ja_Latn')
 
-    #print Translit.translit('Latn', 'ja_Kana', 'nihongo')
+    #print Translit.translit('Latn', 'ja-Kana', 'nihongo')
 
     print(multi_translit.translit('ja', 'ja_Latn|FONIPA', 'aa'))
 
     txt = '私はボブ。日本語で書きますよ！どうしてそんなことを言うの？'
-    print(multi_translit.translit('ja', 'ja_Kana', txt))
-    print(multi_translit.translit('ja', 'ja_Hira', txt))
+    print(multi_translit.translit('ja', 'ja-Kana', txt))
+    print(multi_translit.translit('ja', 'ja-Hira', txt))
     print(multi_translit.translit('ja', 'Latn', txt))
 
     print([i for i in multi_translit.DEngines if 'ja' in i[0]])

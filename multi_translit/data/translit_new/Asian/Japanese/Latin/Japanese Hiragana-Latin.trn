@@ -3,7 +3,7 @@ The true indicates this can only work from Hiragana-Latin
 
 [settings]
 {
-    "from_iso": "ja_Hira", 
+    "from_iso": "ja-Hira",
     "direction": "=>", 
     "ignore_case": true, 
     "to_iso": "ja_Latn"

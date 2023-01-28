@@ -4,7 +4,7 @@ This follows the BGN/PCGN system for romanization
 
 [settings]
 {
-    "from_iso": "he_Latn|UNGEGN",
+    "from_iso": "he_Latn-x-UNGEGN",
     "direction": "=>", 
     "ignore_case": true, 
     "to_iso": "he_Hebr"

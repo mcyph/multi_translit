@@ -7,7 +7,7 @@ Romanization at http://www.eki.ee/wgrs/
     "match_case": true, 
     "from_iso": "be_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "be_Latn|UNGEGN"
+    "to_iso": "be_Latn-x-UNGEGN"
 }
 
 [variables]

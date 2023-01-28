@@ -11,7 +11,7 @@ Romanized Names. KNAB: Kohanimeandmebaas. Eesti Keeli Instituut, 1998.
     "match_case": true, 
     "from_iso": "ky_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "ky_Latn|KNAB"
+    "to_iso": "ky_Latn-x-KNAB"
 }
 
 [conversions]

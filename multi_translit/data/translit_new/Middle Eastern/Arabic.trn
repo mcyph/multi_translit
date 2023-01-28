@@ -4,13 +4,13 @@ using the arabic UNGEGN system
 
 [settings]
 {
-    "from_iso": "ar_Latn|UNGEGN", 
+    "from_iso": "ar_Latn-x-UNGEGN",
     "modifiers": {
         "to_direction": {
             "before_conversions": [
                 [
                     "include", 
-                    "ar|Compatibility",
+                    "ar-x-Compatibility",
                     "ar"
                 ]
             ]

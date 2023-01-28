@@ -9,7 +9,7 @@ Biełaruski pravapis, Minsk 1943.
     "match_case": true, 
     "from_iso": "be_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "be_Latn|\u0141acinka"
+    "to_iso": "be_Latn-x-Lacinka"
 }
 
 [conversions]

@@ -7,7 +7,7 @@ Geographical Names for British Official Use.
     "match_case": true, 
     "from_iso": "bg_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "bg_Latn|BGN/PCGN"
+    "to_iso": "bg_Latn-x-BGNPCGN"
 }
 
 [conversions]

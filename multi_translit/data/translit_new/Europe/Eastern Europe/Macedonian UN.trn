@@ -9,7 +9,7 @@ Group on Romanization Systems. Version 2.2. January 2003.
     "match_case": true, 
     "from_iso": "mk_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "mk_Latn|UN"
+    "to_iso": "mk_Latn-x-UN"
 }
 
 [conversions]

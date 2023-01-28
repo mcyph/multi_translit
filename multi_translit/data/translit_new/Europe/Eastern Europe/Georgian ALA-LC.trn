@@ -10,7 +10,7 @@ Congress, 1997. (http://lcweb.loc.gov/catdir/cpso/roman.html).
     "match_case": true, 
     "from_iso": "ka",
     "direction": "<=>", 
-    "to_iso": "ka_Latn|ALA-LC"
+    "to_iso": "ka_Latn-x-ALALC"
 }
 
 [conversions]

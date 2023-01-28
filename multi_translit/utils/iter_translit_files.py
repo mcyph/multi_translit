@@ -19,8 +19,8 @@ def iter_translit_files(old_ver=False):
 if __name__ == '__main__':
     import json
     from traceback import print_exc
-    from TranslitEngine import TranslitEngine
-
+    from multi_translit.implementations.my_translit.TranslitEngine import TranslitEngine
+    from iso_tools.bcp47.make_preferred_form import make_preferred_form
 
     DTranslit = {}
 
@@ -29,19 +29,18 @@ if __name__ == '__main__':
             try:
                 t = TranslitEngine(path, direction)
                 print('OK:', t.from_iso, t.to_iso, t.direction)
-                DTranslit.setdefault(t.from_iso, []).append((
+                DTranslit.setdefault(make_preferred_form(t.from_iso), []).append((
                     path.replace(
                         data_path('translit_new').strip('/\\'),
                         ''
                     ).strip('/\\'),
 
-                    t.to_iso,
+                    make_preferred_form(t.to_iso),
                     t.direction
                 ))
             except:
                 print('ERROR:', direction, path)
                 print_exc()
-
 
     with open(
         data_path('translit_new', 'translit-mappings.json'),

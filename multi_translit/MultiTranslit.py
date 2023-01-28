@@ -66,14 +66,14 @@ class MultiTranslit(Singleton):
                                       remove_variant: bool = False):
         """
         Get all possible conversions from iso `from_`.
-        For example, ja_Kana-JP will also look for ja_Kana and Kana.
+        For example, ja-Kana-JP will also look for ja-Kana and Kana.
 
         :param from_: the from ISO code
         :param remove_variant: if True, then VARIANT, LANG, and
                                TERRITORY are ignored in the supplied
                                iso code. This can be useful for e.g.
                                when Hiragana can be represented in
-                               multiple ways - ja_Hira-JP
+                               multiple ways - ja-Hira-JP
                                can normally be just shortened to Hira,
                                for instance, as Hiragana isn't normally
                                associated with other languages than

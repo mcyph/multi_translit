@@ -3,7 +3,7 @@ TODO: Add support for long vowels!
 
 [settings]
 {
-    "from_iso": "ja_Hira", 
+    "from_iso": "ja-Hira",
     "direction": "<=>", 
     "ignore_case": true, 
     "to_iso": "ja_Cyrl"

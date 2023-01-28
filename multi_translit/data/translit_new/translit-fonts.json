@@ -56,7 +56,7 @@
     "Wade-Giles": "Latin", 
     "Latin Emirova": "Latin", 
     "Latin E-C Modern": "Latin", 
-    "Gwoyeu Romatzyh": "Latin", 
+    "x-GwoyeuRomatzyh": "Latin",
     "Cypriot": "Cypriot", 
     "Komi IPA (ALPHA)": "IPA", 
     "Dungan IPA (ALPHA)": "IPA", 

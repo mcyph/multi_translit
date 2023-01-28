@@ -1,18 +1,18 @@
 [settings]
 {
-    "from_iso": "ja_Hrkt", 
+    "from_iso": "ja-Hrkt",
     "modifiers": {
         "from_direction": {
             "before_conversions": [
                 [
                     "include", 
-                    "ja_Kana", 
-                    "ja_Hira"
+                    "ja-Kana",
+                    "ja-Hira"
                 ]
             ]
         }
     }, 
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "ja_Hira"
+    "to_iso": "ja-Hira"
 }

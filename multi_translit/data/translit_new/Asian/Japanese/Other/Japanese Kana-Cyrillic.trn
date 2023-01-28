@@ -1,6 +1,6 @@
 [settings]
 {
-    "from_iso": "ja_Hrkt", 
+    "from_iso": "ja-Hrkt",
     "modifiers": {
         "from_direction": {
             "before_conversions": [
@@ -9,12 +9,12 @@
                 ], 
                 [
                     "include", 
-                    "ja_Hira", 
+                    "ja-Hira",
                     "ja_Cyrl"
                 ], 
                 [
                     "include", 
-                    "ja_Kana", 
+                    "ja-Kana",
                     "ja_Cyrl"
                 ]
             ]

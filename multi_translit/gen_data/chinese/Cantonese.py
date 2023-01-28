@@ -27,7 +27,7 @@ def assign(L):
     return D
 
 def write(Path, D):
-    # write a Hanzi-Yale/Jyutping translit file
+    # write a Hanzi-x-Yale/Jyutping translit file
     # MAY HAVE ISSUES FOR CHARS WITH MULTIPLE READINGS!
     f = open(Path, 'w', encoding='utf-8')
     LKeys = list(D.keys())
@@ -113,9 +113,9 @@ IgnoreCase: 1
 DJP = assign(read('yale-10.inputplugin'))
 DYale = assign(read('jp112.inputplugin'))
 
-write('BySound/Asian/Chinese/Cantonese/Hanzi-Yale.trn', DYale)
+write('BySound/Asian/Chinese/Cantonese/Hanzi-x-Yale.trn', DYale)
 write('BySound/Asian/Chinese/Cantonese/Hanzi-Jyutping.trn', DJP)
 Write2('BySound/Asian/Chinese/Cantonese/Yale-Jyutping.trn', DJP, DYale, 
        Format % ('Yale', 'Jyutping'))
-Write2('BySound/Asian/Chinese/Cantonese/Jyutping-Yale.trn', DYale, DJP,
+Write2('BySound/Asian/Chinese/Cantonese/Jyutping-x-Yale.trn', DYale, DJP,
        Format % ('Jyutping', 'Yale'))

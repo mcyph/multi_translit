@@ -11,7 +11,7 @@ t/Encode-Korean-SKR_1984.t
 t/Encode-Korean-SKR_1959.t
 t/Encode-Korean-NKR_1992.t
 t/Encode-Korean-MRR.t
-t/Encode-Korean-Yale.t
+t/Encode-Korean-x-Yale.t
 t/Encode-Korean-HSR.t
 t/Encode-Korean-SKATS.t
 lib/Encode/Korean.pm

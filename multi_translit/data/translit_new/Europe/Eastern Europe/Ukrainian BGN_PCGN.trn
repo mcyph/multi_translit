@@ -12,7 +12,7 @@ Group on Romanization Systems. Version 2.2. January 2003.
     "match_case": true, 
     "from_iso": "uk_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "uk_Latn|BGN/PCGN"
+    "to_iso": "uk_Latn-x-BGNPCGN"
 }
 
 [conversions]

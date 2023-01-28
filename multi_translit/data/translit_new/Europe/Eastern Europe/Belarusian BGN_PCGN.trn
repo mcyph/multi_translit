@@ -7,7 +7,7 @@ Committee on Geographical Names for British Official Use.
     "match_case": true, 
     "from_iso": "be_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "be_Latn|BGN/PCGN"
+    "to_iso": "be_Latn-x-BGNPCGN"
 }
 
 [conversions]

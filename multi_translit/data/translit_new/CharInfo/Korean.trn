@@ -1,10 +1,10 @@
 [settings]
 {
-    "from_iso": "ko_Hani|Hanja", 
+    "from_iso": "ko_Hani-x-Hanja",
     "to_sep": " ", 
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "ko_Latn|Yale"
+    "to_iso": "ko_Latn-x-Yale"
 }
 
 [conversions]

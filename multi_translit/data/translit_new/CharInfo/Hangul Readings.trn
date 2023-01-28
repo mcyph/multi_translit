@@ -1,6 +1,6 @@
 [settings]
 {
-    "from_iso": "ko_Hani|Hanja", 
+    "from_iso": "ko_Hani-x-Hanja",
     "direction": "=>", 
     "ignore_case": true, 
     "to_iso": "ko_Hang"

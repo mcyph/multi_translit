@@ -1,13 +1,13 @@
 [settings]
 {
-    "from_iso": "zh_Latn|Numeric Pinyin",
+    "from_iso": "zh_Latn-x-NumericPinyin",
     "modifiers": {
         "from_direction": {
             "before_conversions": [
                 [
                     "include", 
-                    "zh_Latn|Pinyin U Unaccented",
-                    "zh_Latn|Pinyin U Accented"
+                    "zh_Latn-x-PinyinUUnaccented",
+                    "zh_Latn-x-PinyinUAccented"
                 ]
             ]
         }

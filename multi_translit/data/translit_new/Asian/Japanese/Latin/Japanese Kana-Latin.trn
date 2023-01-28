@@ -3,18 +3,18 @@ Convert from Kana (Hiragana/Katakana) to the Hepburn system
 
 [settings]
 {
-    "from_iso": "ja_Hrkt", 
+    "from_iso": "ja-Hrkt",
     "modifiers": {
         "from_direction": {
             "before_conversions": [
                 [
                     "include", 
-                    "ja_Hira", 
+                    "ja-Hira",
                     "ja_Latn"
                 ], 
                 [
                     "include", 
-                    "ja_Kana", 
+                    "ja-Kana",
                     "ja_Latn"
                 ]
             ]
@@ -22,5 +22,5 @@ Convert from Kana (Hiragana/Katakana) to the Hepburn system
     }, 
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "ja_Latn|Romaji (Hepburn)"
+    "to_iso": "ja_Latn-x-HepburnRomaji"
 }

@@ -2108,12 +2108,12 @@ zhuo4 	zhuò 	cho4 	jwo4 	juo4 	ㄓㄨㄛˋ 	juoh 	tcho4 	jhuo4'''
 
 def get_D_pinyin():
     DRtn = {'Pinyin Numeric': {}, 'Pinyin Accents': {}, 'Wade-Giles': {}, 'Yale': {}, 
-            'GuoinII': {}, 'Zhuyin': {}, 'Gwoyeu Romatzyh': {}, 'French': {}, 'Tongyong': {}}
+            'GuoinII': {}, 'Zhuyin': {}, 'x-GwoyeuRomatzyh': {}, 'French': {}, 'Tongyong': {}}
     for Line in PinYinData.split('\n'):
         Line = Line.strip()
         D = {}
         D['Pinyin Numeric'], D['Pinyin Accents'], D['Wade-Giles'], D['Yale'], D['GuoinII'], \
-        D['Zhuyin'], D['Gwoyeu Romatzyh'], D['French'], D['Tongyong'] = Line.split('\t')
+        D['Zhuyin'], D['x-GwoyeuRomatzyh'], D['French'], D['Tongyong'] = Line.split('\t')
         for k in D: 
             D[k] = D[k].strip()
             DRtn[k][D[k]] = D
@@ -2128,7 +2128,7 @@ if __name__ == '__main__':
         
         # Provide mappings from PinYin-Other Systems
         LSystems = ['Pinyin Accents', 'Wade-Giles', 'Yale', 'GuoinII', 'Zhuyin', 
-                    'Gwoyeu Romatzyh', 'French', 'Tongyong']
+                    'x-GwoyeuRomatzyh', 'French', 'Tongyong']
         for System in LSystems:
             L = []
             for PinYin in DPinYin:
@@ -2170,7 +2170,7 @@ if __name__ == '__main__':
             File.write("%s = %s\n" % (PinYin, IPA))
         File.close()
         
-        # Write PinYin-Tongyong IPA
+        # Write PinYin-x-Tongyong IPA
         L = []; i = 0
         File = EncFile("BySound/Asian/Chinese/Chinese PinYin-IPA Tongyong.trn")
         for D in LIPA:

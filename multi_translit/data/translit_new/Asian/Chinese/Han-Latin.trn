@@ -8,7 +8,7 @@ Convert CJK characters
     "to_sep": " ", 
     "direction": "<=>", 
     "ignore_case": true, 
-    "to_iso": "zh_Latn|x-Pinyin"
+    "to_iso": "zh_Latn-x-Pinyin"
 }
 
 [conversions]

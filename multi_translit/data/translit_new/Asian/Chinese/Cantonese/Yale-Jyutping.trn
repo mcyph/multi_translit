@@ -1,9 +1,9 @@
 [settings]
 {
-    "from_iso": "yue_Latn|Yale", 
+    "from_iso": "yue_Latn-x-Yale",
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "yue_Latn|Jyutping"
+    "to_iso": "yue_Latn-x-Jyutping"
 }
 
 [conversions]

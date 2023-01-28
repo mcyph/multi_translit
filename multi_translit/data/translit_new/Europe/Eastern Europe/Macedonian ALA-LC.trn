@@ -9,7 +9,7 @@ Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
     "match_case": true, 
     "from_iso": "mk_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "mk_Latn|ALA-LC"
+    "to_iso": "mk_Latn-x-ALA-LC"
 }
 
 [conversions]

@@ -7,7 +7,7 @@ Can only be used using the To-From direction!
     "from_iso": "ar",
     "direction": "<=",
     "ignore_case": true, 
-    "to_iso": "ar|Compatibility"
+    "to_iso": "ar-x-Compatibility"
 }
 
 [conversions]

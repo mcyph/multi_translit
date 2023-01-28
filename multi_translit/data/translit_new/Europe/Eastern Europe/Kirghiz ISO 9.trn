@@ -10,7 +10,7 @@ International Organization for Standardization, 1995.
     "match_case": true, 
     "from_iso": "ky_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "ky_Latn|ISO 9"
+    "to_iso": "ky_Latn-x-ISO9"
 }
 
 [conversions]

@@ -8,7 +8,7 @@ Cyrillic alphabet.
     "match_case": true, 
     "from_iso": "az_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "az_Latn|ISO 9"
+    "to_iso": "az_Latn-x-ISO9"
 }
 
 [conversions]

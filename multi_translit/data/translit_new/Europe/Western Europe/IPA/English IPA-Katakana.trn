@@ -1,8 +1,8 @@
 [settings]
 {
-    "from_iso": "en|FONIPA",
+    "from_iso": "en-x-FONIPA",
     "direction": "=>", 
-    "to_iso": "ja_Kana"
+    "to_iso": "ja-Kana"
 }
 
 [conversions]

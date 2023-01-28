@@ -7,7 +7,7 @@ Aa Bb Çç Dd Ee Ää Ff Gg Hh Ii Jj Žž Kk Ll Mm Nn Ňň Oo Öö Pp Rr Ss Şş
     "match_case": true, 
     "from_iso": "tk_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "tk_Latn|Official TDS 565"
+    "to_iso": "tk_Latn-x-OfficialTDS565"
 }
 
 [conversions]

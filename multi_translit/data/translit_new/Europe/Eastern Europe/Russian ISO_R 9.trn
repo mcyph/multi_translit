@@ -10,7 +10,7 @@ standard is still used and found in various publications.
     "match_case": true, 
     "from_iso": "ru_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "ru_Latn|ISO 9 R"
+    "to_iso": "ru_Latn-x-ISO9R"
 }
 
 [conversions]

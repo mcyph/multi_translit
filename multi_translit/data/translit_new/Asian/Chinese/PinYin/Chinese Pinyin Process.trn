@@ -1,9 +1,9 @@
 [settings]
 {
-    "from_iso": "zh_Latn|Pinyin U Unaccented",
+    "from_iso": "zh_Latn-x-PinyinUUnaccented",
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "zh_Latn|Pinyin U Accented"
+    "to_iso": "zh_Latn-x-PinyinUAccented"
 }
 
 [conversions]

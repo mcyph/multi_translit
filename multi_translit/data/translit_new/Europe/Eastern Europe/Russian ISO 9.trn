@@ -10,7 +10,7 @@ International Organization for Standardization, 1995.
     "match_case": true, 
     "from_iso": "ru_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "ru_Latn|ISO 9"
+    "to_iso": "ru_Latn-x-ISO9"
 }
 
 [conversions]

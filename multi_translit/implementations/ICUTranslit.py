@@ -21,14 +21,15 @@ class ICUTranslit(TranslitEngineBase):
             if not part3 and other[0] and other[0] != 'ben':
                 part3 = other[0]
 
+        print(part3, script, variant)
         r = make_preferred_form(from_dict({
             'language': part3,
             'script': script,
-            'variant': variant,
+            'private_use': variant,  # CHECK THIS!
             'grandfathered': None,
             'region': None,
             'extension': None,
-            'private_use': None,
+            'variant': None,
         }))
 
         DMap = {

@@ -7,7 +7,7 @@ Instituut (Institute of the Estonian Language) (http://www.eki.ee).
     "match_case": true, 
     "from_iso": "ka",
     "direction": "<=>", 
-    "to_iso": "ka_Latn|KNAB"
+    "to_iso": "ka_Latn-x-KNAB"
 }
 
 [conversions]

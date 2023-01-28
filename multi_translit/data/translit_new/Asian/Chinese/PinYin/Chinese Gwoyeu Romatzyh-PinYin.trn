@@ -1,20 +1,20 @@
 [settings]
 {
-    "from_iso": "zh_Latn|Gwoyeu Romatzyh",
+    "from_iso": "zh_Latn-x-GwoyeuRomatzyh",
     "modifiers": {
         "to_direction": {
             "before_conversions": [
                 [
                     "include", 
-                    "zh_Latn|Pinyin U Unaccented",
-                    "zh_Latn|Pinyin U Accented"
+                    "zh_Latn-x-PinyinUUnaccented",
+                    "zh_Latn-x-PinyinUAccented"
                 ]
             ]
         }
     }, 
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "zh_Latn|Numeric Pinyin"
+    "to_iso": "zh_Latn-x-NumericPinyin"
 }
 
 [conversions]

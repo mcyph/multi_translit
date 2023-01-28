@@ -7,7 +7,7 @@ Publications and Writing Systems. New York, 1971.
     "match_case": true, 
     "from_iso": "sah_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "sah_Latn|Allworth"
+    "to_iso": "sah_Latn-x-Allworth"
 }
 
 [conversions]

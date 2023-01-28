@@ -7,17 +7,17 @@
                 [
                     "include", 
                     "yue_Hani", 
-                    "yue_Latn|Jyutping"
+                    "yue_Latn-x-Jyutping"
                 ], 
                 [
                     "include", 
-                    "yue_Latn|Jyutping", 
-                    "yue_Latn|Yale"
+                    "yue_Latn-x-Jyutping",
+                    "yue_Latn-x-Yale"
                 ]
             ]
         }
     }, 
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "yue_Latn|Yale"
+    "to_iso": "yue_Latn-x-Yale"
 }

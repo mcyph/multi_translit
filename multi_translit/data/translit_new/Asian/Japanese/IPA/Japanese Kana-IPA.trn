@@ -9,10 +9,10 @@ individual speaker it's intended as a rough guide only.
 
 [settings]
 {
-    "from_iso": "ja_Hira",
+    "from_iso": "ja-Hira",
     "direction": "=>", 
     "ignore_case": true, 
-    "to_iso": "ja_Latn|FONIPA"
+    "to_iso": "ja_Latn-x-FONIPA"
 }
 
 [conversions]

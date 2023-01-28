@@ -1,8 +1,8 @@
 [settings]
 {
-    "from_iso": "en|CMU Pron",
+    "from_iso": "en-x-CMUPron",
     "direction": "<=>", 
-    "to_iso": "en|FONIPA"
+    "to_iso": "en-x-FONIPA"
 }
 
 [conversions]

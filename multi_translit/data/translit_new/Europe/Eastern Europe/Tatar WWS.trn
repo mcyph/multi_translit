@@ -7,7 +7,7 @@ William Bright (eds.). New York, 1996.
     "match_case": true, 
     "from_iso": "tt_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "tt_Latn|WWS"
+    "to_iso": "tt_Latn-x-WWS"
 }
 
 [conversions]

@@ -7,7 +7,7 @@ Publications and Writing Systems. New York, 1971.
     "match_case": true, 
     "from_iso": "tt_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "tt_Latn|ALA-LC"
+    "to_iso": "tt_Latn-x-ALALC"
 }
 
 [conversions]

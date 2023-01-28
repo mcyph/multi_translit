@@ -40,8 +40,8 @@ DScriptsVariants = {
     "Old Italic": "Ital",
     "Lontara": "Bugi",
 
-    "PinYin": "Latn|Numeric Pinyin",
-    "Pinyin Accents": "Latn|x-Pinyin",
+    "PinYin": "Latn-x-NumericPinyin",
+    "Pinyin Accents": "Latn-x-Pinyin",
     "Kana": "Hrkt",
 }
 
@@ -86,7 +86,7 @@ DFonts = {
     "Hanja": "Chinese (Unified)",
     "Azerbaijani IPA (ALPHA)": "IPA",
     "Hangul": "Hangul",
-    "Gwoyeu Romatzyh": "Latin",
+    "x-GwoyeuRomatzyh": "Latin",
     "Latin E-C Modern": "Latin",
     "Jyutping": "Latin",
     "Yale": "Latin",

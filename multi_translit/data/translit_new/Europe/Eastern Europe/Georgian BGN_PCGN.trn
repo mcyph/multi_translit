@@ -12,7 +12,7 @@ Group on Romanization Systems. Version 2.2. January 2003.
     "match_case": true, 
     "from_iso": "ka",
     "direction": "<=>", 
-    "to_iso": "ka_Latn|ISO 9984"
+    "to_iso": "ka_Latn-x-ISO9984"
 }
 
 [conversions]

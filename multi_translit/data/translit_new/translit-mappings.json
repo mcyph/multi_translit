@@ -1,1404 +1,1406 @@
 {
-    "ii_Latn": [
-        [
-            "Asian/South Asian/Yi.trn", 
-            "ii", 
-            "<="
-        ]
-    ], 
-    "ka_Latn|ISO 9984": [
-        [
-            "Europe/Eastern Europe/Georgian BGN_PCGN.trn", 
-            "ka", 
-            "<="
-        ]
-    ], 
-    "uk_Latn|Official": [
-        [
-            "Europe/Eastern Europe/Ukrainian National.trn", 
-            "uk", 
-            "<="
-        ]
-    ], 
-    "ro_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Moldovan ALA-LC.trn", 
-            "ro_Cyrl", 
-            "<="
-        ]
-    ], 
-    "zh_Latn|French": [
-        [
-            "Asian/Chinese/PinYin/Chinese French-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
-            "=>"
-        ]
-    ], 
-    "tk_Latn|Official TDS 565": [
-        [
-            "Europe/Eastern Europe/Turkmen TDS 565.trn", 
-            "tk_Cyrl", 
-            "<="
-        ]
-    ], 
-    "ja_Hira": [
-        [
-            "Asian/Japanese/Latin/Japanese Hiragana-Latin.trn", 
-            "ja_Latn", 
-            "=>"
-        ], 
-        [
-            "Asian/Japanese/Other/Japanese Hiragana-Katakana.trn", 
-            "ja_Kana", 
-            "=>"
-        ], 
-        [
-            "Asian/Japanese/Other/Japanese Hiragana-Cyrillic.trn", 
-            "ja_Cyrl", 
-            "=>"
-        ], 
-        [
-            "Asian/Japanese/IPA/Japanese Kana-IPA.trn", 
-            "ja_Latn|FONIPA", 
-            "=>"
-        ]
-    ], 
-    "be_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Belarusian BGN_PCGN.trn", 
-            "be", 
-            "<="
-        ]
-    ], 
-    "ka_Latn|IKE": [
-        [
-            "Europe/Eastern Europe/Georgian IKE.trn", 
-            "ka", 
-            "<="
-        ]
-    ], 
-    "ja_Cyrl": [
-        [
-            "Asian/Japanese/Other/Japanese Katakana-Cyrillic.trn", 
-            "ja_Kana", 
-            "<="
-        ], 
-        [
-            "Asian/Japanese/Other/Japanese Hiragana-Cyrillic.trn", 
-            "ja_Hira", 
-            "<="
-        ]
-    ], 
-    "kk_Latn|KNAB": [
-        [
-            "Europe/Eastern Europe/Kazakh KNAB.trn", 
-            "kk", 
-            "<="
-        ]
-    ], 
-    "ro_Latn|Official": [
-        [
-            "Europe/Eastern Europe/Moldovan Latin.trn", 
-            "ro_Cyrl", 
-            "<="
-        ]
-    ], 
-    "tt": [
-        [
-            "Europe/Eastern Europe/Tatar ALA-LC.trn", 
-            "tt_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tatar KNAB.trn", 
-            "tt_Latn|KNAB", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tatar ISO 9.trn", 
-            "tt_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tatar WWS.trn", 
-            "tt_Latn|WWS", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tatar Roman.trn", 
-            "tt_Latn|Roman Official", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tatar Allworth.trn", 
-            "tt_Latn|ALA-LC", 
-            "=>"
-        ]
-    ], 
-    "tk_Latn|Official WWS": [
-        [
-            "Europe/Eastern Europe/Turkmen WWS.trn", 
-            "tk_Cyrl", 
-            "<="
-        ]
-    ], 
-    "ro_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Moldovan ISO 9.trn", 
-            "ro_Cyrl", 
-            "<="
-        ]
-    ], 
-    "tk_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Turkmen BGN_PCGN.trn", 
-            "tk_Cyrl", 
-            "<="
-        ]
-    ], 
-    "ru_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Russian ISO 9.trn", 
-            "ru", 
-            "<="
-        ]
-    ], 
-    "zh_Bopo": [
-        [
-            "Asian/Chinese/PinYin/Chinese Zhuyin-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
-            "=>"
-        ]
-    ], 
-    "tg": [
-        [
-            "Europe/Eastern Europe/Tajik Allworth.trn", 
-            "tg_Latn|Allworth", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tajik ALA-LC.trn", 
-            "tg_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tajik KNAB.trn", 
-            "tg_Latn|KNAB", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tajik BGN_PCGN.trn", 
-            "tg_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tajik WWS.trn", 
-            "tg_Latn|WWS", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Tajik ISO 9.trn", 
-            "tg_Latn|ISO 9", 
-            "=>"
-        ]
-    ], 
-    "uz_Latn|WWS": [
-        [
-            "Europe/Eastern Europe/Uzbek WWS.trn", 
-            "uz", 
-            "<="
-        ]
-    ], 
-    "ky_Latn|Allworth": [
-        [
-            "Europe/Eastern Europe/Kirghiz Allworth.trn", 
-            "ky", 
-            "<="
-        ]
-    ], 
-    "uz_Latn|Former Official": [
-        [
-            "Europe/Eastern Europe/Uzbek Latin.trn", 
-            "uz", 
-            "<="
-        ]
-    ], 
-    "bg_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Bulgarian BGN_PCGN.trn", 
-            "bg", 
-            "<="
-        ]
-    ], 
-    "uk_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Ukrainian BGN_PCGN.trn", 
-            "uk", 
-            "<="
-        ]
-    ], 
-    "sr_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Serbian ALA-LC.trn", 
-            "sr", 
-            "<="
-        ]
-    ], 
-    "ar|Compatibility": [
-        [
-            "Middle Eastern/Arabic Compat.trn", 
-            "ar", 
-            "<="
-        ]
-    ], 
-    "tg_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Tajik BGN_PCGN.trn", 
-            "tg", 
-            "<="
-        ]
-    ], 
-    "uz_Latn|Official": [
-        [
-            "Europe/Eastern Europe/Uzbek Official.trn", 
-            "uz", 
-            "<="
-        ]
-    ], 
-    "sah_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Yakut ALA-LC.trn", 
-            "sah", 
-            "<="
-        ]
-    ], 
-    "ru_Latn|ISO 9 R": [
-        [
-            "Europe/Eastern Europe/Russian ISO_R 9.trn", 
-            "ru", 
-            "<="
-        ]
-    ], 
-    "ka_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Georgian ISO 9984.trn", 
-            "ka", 
-            "<="
-        ]
-    ], 
-    "ka_Latn|National": [
-        [
-            "Europe/Eastern Europe/Georgian National.trn", 
-            "ka", 
-            "<="
-        ]
-    ], 
-    "mk_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Macedonian ISO 9.trn", 
-            "mk", 
-            "<="
-        ]
-    ], 
-    "tg_Latn|Allworth": [
-        [
-            "Europe/Eastern Europe/Tajik Allworth.trn", 
-            "tg", 
-            "<="
-        ]
-    ], 
-    "kk_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Kazakh ISO 9.trn", 
-            "kk", 
-            "<="
-        ]
-    ], 
-    "ka_Latn|TITUS": [
-        [
-            "Europe/Eastern Europe/Georgian TITUS.trn", 
-            "ka", 
-            "<="
-        ]
-    ], 
-    "tg_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Tajik ALA-LC.trn", 
-            "tg", 
-            "<="
-        ]
-    ], 
-    "zh_Latn|Gwoyeu Romatzyh": [
-        [
-            "Asian/Chinese/PinYin/Chinese Gwoyeu Romatzyh-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
-            "=>"
-        ]
-    ], 
-    "chr_Latn": [
-        [
-            "Other/Cherokee.trn", 
-            "chr", 
-            "<="
-        ]
-    ], 
-    "ru": [
-        [
-            "Europe/Eastern Europe/Russian BGN_PCGN.trn", 
-            "ru_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Russian GOST.trn", 
-            "ru_Latn|Official", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Russian ISO_R 9.trn", 
-            "ru_Latn|ISO 9 R", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Russian ALA-LC.trn", 
-            "ru_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Russian ISO 9.trn", 
-            "ru_Latn|ISO 9", 
-            "=>"
-        ]
-    ], 
-    "az_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Azerbaijani ALA-LC.trn", 
-            "az_Cyrl", 
-            "<="
-        ]
-    ], 
-    "az-IR": [
-        [
-            "Europe/Eastern Europe/Azerbaijani Arabic.trn", 
-            "az", 
-            "=>"
-        ]
-    ], 
-    "tg_Latn|WWS": [
-        [
-            "Europe/Eastern Europe/Tajik WWS.trn", 
-            "tg", 
-            "<="
-        ]
-    ], 
-    "uk_Latn|WWS": [
-        [
-            "Europe/Eastern Europe/Ukrainian WWS.trn", 
-            "uk", 
-            "<="
-        ]
-    ], 
-    "tg_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Tajik ISO 9.trn", 
-            "tg", 
-            "<="
-        ]
-    ], 
-    "ru_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Russian BGN_PCGN.trn", 
-            "ru", 
-            "<="
-        ]
-    ], 
-    "be": [
-        [
-            "Europe/Eastern Europe/Belarusian ISO 9.trn", 
-            "be_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Belarusian BGN_PCGN.trn", 
-            "be_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Belarusian UNGEGN.trn", 
-            "be_Latn|UNGEGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Belarusian NSR.trn", 
-            "be_Latn|Official", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Belarusian ALA-LC.trn", 
-            "be_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Belarusian Lacinka.trn", 
-            "be_Latn|Łacinka", 
-            "=>"
-        ]
-    ], 
-    "bg": [
-        [
-            "Europe/Eastern Europe/Bulgarian ALA-LC.trn", 
-            "bg_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Bulgarian ISO 9.trn", 
-            "bg_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Bulgarian UN.trn", 
-            "bg_Latn|UNGEGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Bulgarian BGN_PCGN.trn", 
-            "bg_Latn|BGN/PCGN", 
-            "=>"
-        ]
-    ], 
-    "ro_Latn|WWS": [
-        [
-            "Europe/Eastern Europe/Moldovan WWS.trn", 
-            "ro_Cyrl", 
-            "<="
-        ]
-    ], 
-    "hak": [
-        [
-            "CharInfo/Hakka.trn", 
-            "hak_Latn|Guangdong", 
-            "=>"
-        ]
-    ], 
-    "hy_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Armenian BGN_PCGN.trn", 
-            "hy|Western", 
-            "<="
-        ]
-    ], 
-    "zh_Latn|x-Pinyin": [
-        [
-            "Asian/Chinese/Han-Latin.trn", 
-            "zh", 
-            "<="
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese Pinyin Accents-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
-            "=>"
-        ]
-    ], 
-    "tt_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Tatar ISO 9.trn", 
-            "tt", 
-            "<="
-        ]
-    ], 
-    "mk_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Macedonian ALA-LC.trn", 
-            "mk", 
-            "<="
-        ]
-    ], 
-    "yue": [
-        [
-            "CharInfo/Cantonese.trn", 
-            "yue_Latn|Jyutping", 
-            "=>"
-        ]
-    ], 
-    "yue_Latn|Jyutping": [
-        [
-            "Asian/Chinese/Cantonese/Jyutping-Yale.trn", 
-            "yue_Latn|Yale", 
-            "=>"
-        ]
-    ], 
-    "bg_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Bulgarian ALA-LC.trn", 
-            "bg", 
-            "<="
-        ]
-    ], 
-    "ky_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Kirghiz ISO 9.trn", 
-            "ky", 
-            "<="
-        ]
-    ], 
-    "tk_Latn|Allworth": [
-        [
-            "Europe/Eastern Europe/Turkmen Allworth.trn", 
-            "tk_Cyrl", 
-            "<="
-        ]
-    ], 
-    "yue_Latn|Yale": [
-        [
-            "Asian/Chinese/Cantonese/Yale-Jyutping.trn", 
-            "yue_Latn|Jyutping", 
-            "=>"
-        ]
-    ], 
-    "ko_Hani|Hanja": [
-        [
-            "CharInfo/Korean.trn", 
-            "ko_Latn|Yale", 
-            "=>"
-        ], 
-        [
-            "CharInfo/Hangul Readings.trn", 
-            "ko_Hang", 
-            "=>"
-        ]
-    ], 
-    "sr_Latn": [
-        [
-            "Europe/Eastern Europe/Standards/Serbian.trn", 
-            "sr", 
-            "<="
-        ]
-    ], 
-    "ky_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Kirghiz ALA-LC.trn", 
-            "ky", 
-            "<="
-        ]
-    ], 
-    "ky_Latn|KNAB": [
-        [
-            "Europe/Eastern Europe/Kirghiz KNAB.trn", 
-            "ky", 
-            "<="
-        ]
-    ], 
-    "bg_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Bulgarian ISO 9.trn", 
-            "bg", 
-            "<="
-        ]
-    ], 
-    "ka_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Georgian ALA-LC.trn", 
-            "ka", 
-            "<="
-        ]
-    ], 
-    "uz_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Uzbek ISO 9.trn", 
-            "uz", 
-            "<="
-        ]
-    ], 
-    "vi_Hani": [
-        [
-            "CharInfo/Vietnamese.trn", 
-            "vi", 
-            "=>"
-        ]
-    ], 
-    "az_Cyrl": [
-        [
-            "Europe/Eastern Europe/Azerbaijani Allworth.trn", 
-            "az_Latn|AllWorth", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Azerbaijani Roman.trn", 
-            "az_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Azerbaijani ISO 9.trn", 
-            "az_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Azerbaijani ALA-LC.trn", 
-            "az_Latn|ALA-LC", 
-            "=>"
-        ]
-    ], 
     "zh": [
         [
-            "Asian/Chinese/Han-Latin.trn", 
-            "zh_Latn|x-Pinyin", 
+            "Asian/Chinese/Han-Latin.trn",
+            "zh-Latn-x-Pinyin",
             "=>"
-        ], 
+        ],
         [
-            "CharInfo/Mandarin.trn", 
-            "cmn_Latn|Numeric Pinyin", 
+            "CharInfo/Mandarin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "kk_Latn|ALA-LC": [
+    ],
+    "zh-Latn-x-Pinyin": [
         [
-            "Europe/Eastern Europe/Kazakh ALA-LC.trn", 
-            "kk", 
+            "Asian/Chinese/Han-Latin.trn",
+            "zh",
             "<="
-        ]
-    ], 
-    "ar_Latn|UNGEGN": [
+        ],
         [
-            "Middle Eastern/Arabic.trn", 
-            "ar", 
+            "Asian/Chinese/PinYin/Chinese Pinyin Accents-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "mn_Latn|ISO 9": [
+    ],
+    "zh-Latn-x-NumericPinyin": [
         [
-            "Europe/Eastern Europe/Mongolian ISO 9.trn", 
-            "mn", 
-            "<="
-        ]
-    ], 
-    "zh_Latn|Tongyong": [
+            "Asian/Chinese/PinYin/Chinese PinYin-Pinyin Accents.trn",
+            "zh-Latn-x-Pinyin",
+            "=>"
+        ],
         [
-            "Asian/Chinese/PinYin/Chinese Tongyong-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
+            "Asian/Chinese/PinYin/Chinese PinYin-Yale.trn",
+            "zh-Latn-x-Yale",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese PinYin-Wade-Giles.trn",
+            "zh-Latn-x-WadeGiles",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese PinYin-IPA.trn",
+            "zh-Latn-x-FONIPA",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese PinYin-GuoinII.trn",
+            "zh-Latn-x-GuoinII",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese PinYin-Gwoyeu Romatzyh.trn",
+            "zh-Latn-x-GwoyeuRomatzyh",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese PinYin-French.trn",
+            "zh-Latn-x-French",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese PinYin-Tongyong.trn",
+            "zh-Latn-x-Tongyong",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese Pinyin Segments.trn",
+            "zh-Latn-x-NumericSegmentedPinyin",
+            "=>"
+        ],
+        [
+            "Asian/Chinese/PinYin/Chinese PinYin-Zhuyin.trn",
+            "zh-Bopo",
             "=>"
         ]
-    ], 
-    "chr": [
+    ],
+    "zh-Latn-x-Yale": [
         [
-            "Other/Cherokee.trn", 
-            "chr_Latn", 
+            "Asian/Chinese/PinYin/Chinese Yale-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "tt_Latn|Roman Official": [
+    ],
+    "zh-Latn-x-Tongyong": [
         [
-            "Europe/Eastern Europe/Tatar Roman.trn", 
-            "tt", 
-            "<="
-        ]
-    ], 
-    "zh_Latn|Yale": [
-        [
-            "Asian/Chinese/PinYin/Chinese Yale-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
+            "Asian/Chinese/PinYin/Chinese Tongyong-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "be_Latn|Łacinka": [
+    ],
+    "zh-Latn-x-French": [
         [
-            "Europe/Eastern Europe/Belarusian Lacinka.trn", 
-            "be", 
-            "<="
-        ]
-    ], 
-    "tk_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Turkmen ALA-LC.trn", 
-            "tk_Cyrl", 
-            "<="
-        ]
-    ], 
-    "hy|Western": [
-        [
-            "Europe/Eastern Europe/Armenian BGN_PCGN.trn", 
-            "hy_Latn|BGN/PCGN", 
+            "Asian/Chinese/PinYin/Chinese French-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "mk_Latn|UNGEGN": [
+    ],
+    "zh-Latn-x-GuoinII": [
         [
-            "Europe/Eastern Europe/Macedonian Cyrillic UNGEGN.trn", 
-            "mk", 
-            "<="
-        ]
-    ], 
-    "uz_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Uzbek BGN_PCGN.trn", 
-            "uz", 
-            "<="
-        ]
-    ], 
-    "ky_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Kirghiz BGN_PCGN.trn", 
-            "ky", 
-            "<="
-        ]
-    ], 
-    "ja_Kana": [
-        [
-            "Asian/Japanese/Latin/Japanese Katakana-Latin.trn", 
-            "ja_Latn", 
-            "=>"
-        ], 
-        [
-            "Asian/Japanese/Other/Japanese Katakana-Cyrillic.trn", 
-            "ja_Cyrl", 
-            "=>"
-        ], 
-        [
-            "Asian/Japanese/Other/Japanese Hiragana-Katakana.trn", 
-            "ja_Hira", 
-            "<="
-        ]
-    ], 
-    "tt_Latn|KNAB": [
-        [
-            "Europe/Eastern Europe/Tatar KNAB.trn", 
-            "tt", 
-            "<="
-        ]
-    ], 
-    "tg_Latn|KNAB": [
-        [
-            "Europe/Eastern Europe/Tajik KNAB.trn", 
-            "tg", 
-            "<="
-        ]
-    ], 
-    "zh_Latn|Numeric Pinyin": [
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-GuoinII.trn", 
-            "zh_Latn|GuoinII", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-Wade-Giles.trn", 
-            "zh_Latn|Wade-Giles", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-Gwoyeu Romatzyh.trn", 
-            "zh_Latn|Gwoyeu Romatzyh", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-IPA.trn", 
-            "zh_Latn|FONIPA", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-Yale.trn", 
-            "zh_Latn|Yale", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-Tongyong.trn", 
-            "zh_Latn|Tongyong", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-Zhuyin.trn", 
-            "zh_Bopo", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-French.trn", 
-            "zh_Latn|French", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese PinYin-Pinyin Accents.trn", 
-            "zh_Latn|x-Pinyin", 
-            "=>"
-        ], 
-        [
-            "Asian/Chinese/PinYin/Chinese Pinyin Segments.trn", 
-            "zh_Latn|Numeric Segmented Pinyin", 
+            "Asian/Chinese/PinYin/Chinese GuoinII-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "uk_Latn|ISO 9": [
+    ],
+    "zh-Bopo": [
         [
-            "Europe/Eastern Europe/Ukrainian ISO 9.trn", 
-            "uk", 
-            "<="
-        ]
-    ], 
-    "ka_Latn|KNAB": [
-        [
-            "Europe/Eastern Europe/Georgian KNAB.trn", 
-            "ka", 
-            "<="
-        ]
-    ], 
-    "zh_Latn|GuoinII": [
-        [
-            "Asian/Chinese/PinYin/Chinese GuoinII-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
+            "Asian/Chinese/PinYin/Chinese Zhuyin-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "mn_Latn|KNAB": [
+    ],
+    "zh-Latn-x-WadeGiles": [
         [
-            "Europe/Eastern Europe/Mongolian KNAB.trn", 
-            "mn", 
-            "<="
-        ]
-    ], 
-    "uz": [
-        [
-            "Europe/Eastern Europe/Uzbek WWS.trn", 
-            "uz_Latn|WWS", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Uzbek BGN_PCGN.trn", 
-            "uz_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Uzbek ISO 9.trn", 
-            "uz_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Uzbek Latin.trn", 
-            "uz_Latn|Former Official", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Uzbek ALA-LC.trn", 
-            "uz_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Uzbek Allworth.trn", 
-            "uz_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Uzbek Official.trn", 
-            "uz_Latn|Official", 
+            "Asian/Chinese/PinYin/Chinese Wade-Giles-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "be_Latn|Official": [
+    ],
+    "zh-Latn-x-GwoyeuRomatzyh": [
         [
-            "Europe/Eastern Europe/Belarusian NSR.trn", 
-            "be", 
-            "<="
-        ]
-    ], 
-    "mn": [
-        [
-            "Europe/Eastern Europe/Mongolian ISO 9.trn", 
-            "mn_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Mongolian BGN_PCGN.trn", 
-            "mn_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Mongolian ALA-LC.trn", 
-            "mn_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Mongolian KNAB.trn", 
-            "mn_Latn|KNAB", 
+            "Asian/Chinese/PinYin/Chinese Gwoyeu Romatzyh-PinYin.trn",
+            "zh-Latn-x-NumericPinyin",
             "=>"
         ]
-    ], 
-    "mk": [
+    ],
+    "zh-Latn-x-PinyinUUnaccented": [
         [
-            "Europe/Eastern Europe/Macedonian ALA-LC.trn", 
-            "mk_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Macedonian UN.trn", 
-            "mk_Latn|UN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Macedonian Cyrillic UNGEGN.trn", 
-            "mk_Latn|UNGEGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Macedonian ISO 9.trn", 
-            "mk_Latn|ISO 9", 
+            "Asian/Chinese/PinYin/Chinese Pinyin Process.trn",
+            "zh-Latn-x-PinyinUAccented",
             "=>"
         ]
-    ], 
-    "kk_Latn|Allworth": [
+    ],
+    "yue-Latn-x-Jyutping": [
         [
-            "Europe/Eastern Europe/Kazakh Allworth.trn", 
-            "kk", 
-            "<="
-        ]
-    ], 
-    "tt_Latn|WWS": [
-        [
-            "Europe/Eastern Europe/Tatar WWS.trn", 
-            "tt", 
-            "<="
-        ]
-    ], 
-    "tk_Cyrl": [
-        [
-            "Europe/Eastern Europe/Turkmen Latin.trn", 
-            "tk_Latn|Old Official", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Turkmen TDS 565.trn", 
-            "tk_Latn|Official TDS 565", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Turkmen WWS.trn", 
-            "tk_Latn|Official WWS", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Turkmen ISO 9.trn", 
-            "tk_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Turkmen Allworth.trn", 
-            "tk_Latn|Allworth", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Turkmen BGN_PCGN.trn", 
-            "tk_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Turkmen ALA-LC.trn", 
-            "tk_Latn|ALA-LC", 
+            "Asian/Chinese/Cantonese/Jyutping-Yale.trn",
+            "yue-Latn-x-Yale",
             "=>"
         ]
-    ], 
-    "bg_Latn|UNGEGN": [
+    ],
+    "yue-Latn-x-Yale": [
         [
-            "Europe/Eastern Europe/Bulgarian UN.trn", 
-            "bg", 
-            "<="
-        ]
-    ], 
-    "uk": [
-        [
-            "Europe/Eastern Europe/Ukrainian ISO 9.trn", 
-            "uk_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Ukrainian BGN_PCGN.trn", 
-            "uk_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Ukrainian WWS.trn", 
-            "uk_Latn|WWS", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Ukrainian National.trn", 
-            "uk_Latn|Official", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Ukrainian ALA_LC.trn", 
-            "uk_Latn|ALA-LC", 
+            "Asian/Chinese/Cantonese/Yale-Jyutping.trn",
+            "yue-Latn-x-Jyutping",
             "=>"
         ]
-    ], 
-    "kk_Latn|BGN/PCGN": [
-        [
-            "Europe/Eastern Europe/Kazakh BGN_PCGN.trn", 
-            "kk", 
-            "<="
-        ]
-    ], 
-    "sah": [
-        [
-            "Europe/Eastern Europe/Yakut ALA-LC.trn", 
-            "sah_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Yakut KNAB.trn", 
-            "sah_Latn|KNAB", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Yakut ISO 9.trn", 
-            "sah_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Yakut Allworth.trn", 
-            "sah_Latn|Allworth", 
-            "=>"
-        ]
-    ], 
-    "en|FONIPA": [
-        [
-            "Europe/Western Europe/IPA/English IPA-Katakana.trn", 
-            "ja_Kana", 
-            "=>"
-        ], 
-        [
-            "Europe/Western Europe/IPA/CMU Pron-IPA.trn", 
-            "en|CMU Pron", 
-            "<="
-        ]
-    ], 
-    "ru_Latn|Official": [
-        [
-            "Europe/Eastern Europe/Russian GOST.trn", 
-            "ru", 
-            "<="
-        ]
-    ], 
-    "tk_Latn|Old Official": [
-        [
-            "Europe/Eastern Europe/Turkmen Latin.trn", 
-            "tk_Cyrl", 
-            "<="
-        ]
-    ], 
-    "en|CMU Pron": [
-        [
-            "Europe/Western Europe/IPA/CMU Pron-IPA.trn", 
-            "en|FONIPA", 
-            "=>"
-        ]
-    ], 
+    ],
     "ii": [
         [
-            "Asian/South Asian/Yi.trn", 
-            "ii_Latn", 
+            "Asian/South Asian/Yi.trn",
+            "ii-Latn",
             "=>"
         ]
-    ], 
-    "mn_Latn|BGN/PCGN": [
+    ],
+    "ii-Latn": [
         [
-            "Europe/Eastern Europe/Mongolian BGN_PCGN.trn", 
-            "mn", 
+            "Asian/South Asian/Yi.trn",
+            "ii",
             "<="
         ]
-    ], 
-    "ar": [
+    ],
+    "ja-Hira": [
         [
-            "Middle Eastern/Arabic.trn", 
-            "ar_Latn|UNGEGN", 
+            "Asian/Japanese/Latin/Japanese Hiragana-Latin.trn",
+            "ja-Latn",
+            "=>"
+        ],
+        [
+            "Asian/Japanese/Other/Japanese Hiragana-Katakana.trn",
+            "ja-Kana",
+            "=>"
+        ],
+        [
+            "Asian/Japanese/Other/Japanese Hiragana-Cyrillic.trn",
+            "ja-Cyrl",
+            "=>"
+        ],
+        [
+            "Asian/Japanese/IPA/Japanese Kana-IPA.trn",
+            "ja-Latn-x-FONIPA",
+            "=>"
+        ]
+    ],
+    "ja-Kana": [
+        [
+            "Asian/Japanese/Latin/Japanese Katakana-Latin.trn",
+            "ja-Latn",
+            "=>"
+        ],
+        [
+            "Asian/Japanese/Other/Japanese Katakana-Cyrillic.trn",
+            "ja-Cyrl",
+            "=>"
+        ],
+        [
+            "Asian/Japanese/Other/Japanese Hiragana-Katakana.trn",
+            "ja-Hira",
             "<="
         ]
-    ], 
-    "ru_Latn|ALA-LC": [
+    ],
+    "ja-Cyrl": [
         [
-            "Europe/Eastern Europe/Russian ALA-LC.trn", 
-            "ru", 
+            "Asian/Japanese/Other/Japanese Katakana-Cyrillic.trn",
+            "ja-Kana",
+            "<="
+        ],
+        [
+            "Asian/Japanese/Other/Japanese Hiragana-Cyrillic.trn",
+            "ja-Hira",
             "<="
         ]
-    ], 
+    ],
+    "ko-Hani-x-Hanja": [
+        [
+            "CharInfo/Korean.trn",
+            "ko-Latn-x-Yale",
+            "=>"
+        ],
+        [
+            "CharInfo/Hangul Readings.trn",
+            "ko-Hang",
+            "=>"
+        ]
+    ],
+    "hak": [
+        [
+            "CharInfo/Hakka.trn",
+            "hak-Latn-x-Guangdong",
+            "=>"
+        ]
+    ],
+    "vi-Hani": [
+        [
+            "CharInfo/Vietnamese.trn",
+            "vi",
+            "=>"
+        ]
+    ],
     "ltc": [
         [
-            "CharInfo/Tang.trn", 
-            "ltc_Latn", 
+            "CharInfo/Tang.trn",
+            "ltc-Latn",
             "=>"
         ]
-    ], 
-    "ky_Latn|WWS": [
+    ],
+    "yue": [
         [
-            "Europe/Eastern Europe/Kirghiz WWS.trn", 
-            "ky", 
-            "<="
-        ]
-    ], 
-    "sah_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Yakut ISO 9.trn", 
-            "sah", 
-            "<="
-        ]
-    ], 
-    "uk_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Ukrainian ALA_LC.trn", 
-            "uk", 
-            "<="
-        ]
-    ], 
-    "az_Latn|AllWorth": [
-        [
-            "Europe/Eastern Europe/Azerbaijani Allworth.trn", 
-            "az_Cyrl", 
-            "<="
-        ]
-    ], 
-    "ro_Cyrl": [
-        [
-            "Europe/Eastern Europe/Moldovan ISO 9.trn", 
-            "ro_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Moldovan ALA-LC.trn", 
-            "ro_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Moldovan WWS.trn", 
-            "ro_Latn|WWS", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Moldovan Latin.trn", 
-            "ro_Latn|Official", 
+            "CharInfo/Cantonese.trn",
+            "yue-Latn-x-Jyutping",
             "=>"
         ]
-    ], 
-    "zh_Latn|Wade-Giles": [
+    ],
+    "chr": [
         [
-            "Asian/Chinese/PinYin/Chinese Wade-Giles-PinYin.trn", 
-            "zh_Latn|Numeric Pinyin", 
+            "Other/Cherokee.trn",
+            "chr-Latn",
             "=>"
         ]
-    ], 
-    "uz_Latn|ALA-LC": [
+    ],
+    "chr-Latn": [
         [
-            "Europe/Eastern Europe/Uzbek ALA-LC.trn", 
-            "uz", 
-            "<="
-        ], 
-        [
-            "Europe/Eastern Europe/Uzbek Allworth.trn", 
-            "uz", 
+            "Other/Cherokee.trn",
+            "chr",
             "<="
         ]
-    ], 
-    "zh_Latn|Pinyin U Unaccented": [
+    ],
+    "en-x-CMUPron": [
         [
-            "Asian/Chinese/PinYin/Chinese Pinyin Process.trn", 
-            "zh_Latn|Pinyin U Accented", 
+            "Europe/Western Europe/IPA/CMU Pron-IPA.trn",
+            "en-x-FONIPA",
             "=>"
         ]
-    ], 
-    "he_Latn|UNGEGN": [
+    ],
+    "en-x-FONIPA": [
         [
-            "Middle Eastern/Hebrew UNGEGN.trn", 
-            "he", 
+            "Europe/Western Europe/IPA/CMU Pron-IPA.trn",
+            "en-x-CMUPron",
+            "<="
+        ],
+        [
+            "Europe/Western Europe/IPA/English IPA-Katakana.trn",
+            "ja-Kana",
             "=>"
         ]
-    ], 
-    "az_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Azerbaijani Roman.trn", 
-            "az_Cyrl", 
-            "<="
-        ], 
-        [
-            "Europe/Eastern Europe/Azerbaijani ISO 9.trn", 
-            "az_Cyrl", 
-            "<="
-        ]
-    ], 
-    "tt_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Tatar ALA-LC.trn", 
-            "tt", 
-            "<="
-        ], 
-        [
-            "Europe/Eastern Europe/Tatar Allworth.trn", 
-            "tt", 
-            "<="
-        ]
-    ], 
-    "mn_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Mongolian ALA-LC.trn", 
-            "mn", 
-            "<="
-        ]
-    ], 
-    "tk_Latn|ISO 9": [
-        [
-            "Europe/Eastern Europe/Turkmen ISO 9.trn", 
-            "tk_Cyrl", 
-            "<="
-        ]
-    ], 
-    "be_Latn|UNGEGN": [
-        [
-            "Europe/Eastern Europe/Belarusian UNGEGN.trn", 
-            "be", 
-            "<="
-        ]
-    ], 
+    ],
     "ka": [
         [
-            "Europe/Eastern Europe/Georgian National.trn", 
-            "ka_Latn|National", 
+            "Europe/Eastern Europe/Georgian TITUS.trn",
+            "ka-Latn-x-TITUS",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Georgian ISO 9984.trn", 
-            "ka_Latn|BGN/PCGN", 
+            "Europe/Eastern Europe/Georgian ALA-LC.trn",
+            "ka-Latn-x-ALALC",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Georgian TITUS.trn", 
-            "ka_Latn|TITUS", 
+            "Europe/Eastern Europe/Georgian KNAB.trn",
+            "ka-Latn-x-KNAB",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Georgian BGN_PCGN.trn", 
-            "ka_Latn|ISO 9984", 
+            "Europe/Eastern Europe/Georgian ISO 9984.trn",
+            "ka-Latn-x-BGNPCGN",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Georgian KNAB.trn", 
-            "ka_Latn|KNAB", 
+            "Europe/Eastern Europe/Georgian National.trn",
+            "ka-Latn-x-National",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Georgian ALA-LC.trn", 
-            "ka_Latn|ALA-LC", 
+            "Europe/Eastern Europe/Georgian BGN_PCGN.trn",
+            "ka-Latn-x-ISO9984",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Georgian IKE.trn", 
-            "ka_Latn|IKE", 
+            "Europe/Eastern Europe/Georgian IKE.trn",
+            "ka-Latn-x-IKE",
             "=>"
         ]
-    ], 
+    ],
+    "ka-Latn-x-TITUS": [
+        [
+            "Europe/Eastern Europe/Georgian TITUS.trn",
+            "ka",
+            "<="
+        ]
+    ],
+    "mk": [
+        [
+            "Europe/Eastern Europe/Macedonian Cyrillic UNGEGN.trn",
+            "mk-Latn-x-UNGEGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Macedonian UN.trn",
+            "mk-Latn-x-UN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Macedonian ISO 9.trn",
+            "mk-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Macedonian ALA-LC.trn",
+            "mk-Latn-x-ALA-LC",
+            "=>"
+        ]
+    ],
+    "mk-Latn-x-UNGEGN": [
+        [
+            "Europe/Eastern Europe/Macedonian Cyrillic UNGEGN.trn",
+            "mk",
+            "<="
+        ]
+    ],
+    "tg-Cyrl": [
+        [
+            "Europe/Eastern Europe/Tajik Allworth.trn",
+            "tg-Latn-x-Allworth",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tajik WWS.trn",
+            "tg-Latn-x-WWS",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tajik ALA-LC.trn",
+            "tg-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tajik KNAB.trn",
+            "tg-Latn-x-KNAB",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tajik BGN_PCGN.trn",
+            "tg-Latn-x-BGNPCGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tajik ISO 9.trn",
+            "tg-Latn-x-ISO9",
+            "=>"
+        ]
+    ],
+    "tg-Latn-x-Allworth": [
+        [
+            "Europe/Eastern Europe/Tajik Allworth.trn",
+            "tg-Cyrl",
+            "<="
+        ]
+    ],
+    "ru": [
+        [
+            "Europe/Eastern Europe/Russian ISO 9.trn",
+            "ru-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Russian ALA-LC.trn",
+            "ru-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Russian ISO_R 9.trn",
+            "ru-Latn-x-ISO9R",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Russian GOST.trn",
+            "ru-Latn-x-Official",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Russian BGN_PCGN.trn",
+            "ru-Latn-x-BGNPCGN",
+            "=>"
+        ]
+    ],
+    "ru-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Russian ISO 9.trn",
+            "ru",
+            "<="
+        ]
+    ],
+    "be": [
+        [
+            "Europe/Eastern Europe/Belarusian ALA-LC.trn",
+            "be-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Belarusian ISO 9.trn",
+            "be-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Belarusian UNGEGN.trn",
+            "be-Latn-x-UNGEGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Belarusian BGN_PCGN.trn",
+            "be-Latn-x-BGNPCGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Belarusian Lacinka.trn",
+            "be-Latn-x-Lacinka",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Belarusian NSR.trn",
+            "be-Latn-x-Official",
+            "=>"
+        ]
+    ],
+    "be-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Belarusian ALA-LC.trn",
+            "be",
+            "<="
+        ],
+        [
+            "Europe/Eastern Europe/Belarusian ISO 9.trn",
+            "be",
+            "<="
+        ]
+    ],
+    "tt": [
+        [
+            "Europe/Eastern Europe/Tatar KNAB.trn",
+            "tt-Latn-x-KNAB",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tatar WWS.trn",
+            "tt-Latn-x-WWS",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tatar Allworth.trn",
+            "tt-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tatar ISO 9.trn",
+            "tt-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tatar ALA-LC.trn",
+            "tt-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Tatar Roman.trn",
+            "tt-Latn-x-RomanOfficial",
+            "=>"
+        ]
+    ],
+    "tt-Latn-x-KNAB": [
+        [
+            "Europe/Eastern Europe/Tatar KNAB.trn",
+            "tt",
+            "<="
+        ]
+    ],
+    "bg": [
+        [
+            "Europe/Eastern Europe/Bulgarian ALA-LC.trn",
+            "bg-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Bulgarian UN.trn",
+            "bg-Latn-x-UNGEGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Bulgarian ISO 9.trn",
+            "bg-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Bulgarian BGN_PCGN.trn",
+            "bg-Latn-x-BGNPCGN",
+            "=>"
+        ]
+    ],
+    "bg-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Bulgarian ALA-LC.trn",
+            "bg",
+            "<="
+        ]
+    ],
+    "ro-Cyrl": [
+        [
+            "Europe/Eastern Europe/Moldovan ALA-LC.trn",
+            "ro-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Moldovan Latin.trn",
+            "ro-x-Official",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Moldovan WWS.trn",
+            "ro-x-WWS",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Moldovan ISO 9.trn",
+            "ro-x-ISO9",
+            "=>"
+        ]
+    ],
+    "ro-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Moldovan ALA-LC.trn",
+            "ro-Cyrl",
+            "<="
+        ]
+    ],
+    "uk": [
+        [
+            "Europe/Eastern Europe/Ukrainian ALA_LC.trn",
+            "uk-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Ukrainian BGN_PCGN.trn",
+            "uk-Latn-x-BGNPCGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Ukrainian ISO 9.trn",
+            "uk-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Ukrainian National.trn",
+            "uk-Latn-x-Official",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Ukrainian WWS.trn",
+            "uk-Latn-x-WWS",
+            "=>"
+        ]
+    ],
+    "uk-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Ukrainian ALA_LC.trn",
+            "uk",
+            "<="
+        ]
+    ],
+    "ky-Cyrl": [
+        [
+            "Europe/Eastern Europe/Kirghiz Allworth.trn",
+            "ky-Latn-x-Allworth",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Kirghiz ISO 9.trn",
+            "ky-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Kirghiz WWS.trn",
+            "ky-Latn-x-WWS",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Kirghiz ALA-LC.trn",
+            "ky-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Kirghiz KNAB.trn",
+            "ky-Latn-x-KNAB",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Kirghiz BGN_PCGN.trn",
+            "ky-Latn-x-BGNPCGN",
+            "=>"
+        ]
+    ],
+    "ky-Latn-x-Allworth": [
+        [
+            "Europe/Eastern Europe/Kirghiz Allworth.trn",
+            "ky-Cyrl",
+            "<="
+        ]
+    ],
+    "sah": [
+        [
+            "Europe/Eastern Europe/Yakut ALA-LC.trn",
+            "sah-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Yakut Allworth.trn",
+            "sah-Latn-x-Allworth",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Yakut ISO 9.trn",
+            "sah-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Yakut KNAB.trn",
+            "sah-Latn-x-KNAB",
+            "=>"
+        ]
+    ],
+    "sah-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Yakut ALA-LC.trn",
+            "sah",
+            "<="
+        ]
+    ],
+    "uk-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Ukrainian BGN_PCGN.trn",
+            "uk",
+            "<="
+        ]
+    ],
+    "sah-Latn-x-Allworth": [
+        [
+            "Europe/Eastern Europe/Yakut Allworth.trn",
+            "sah",
+            "<="
+        ]
+    ],
+    "be-Latn-x-UNGEGN": [
+        [
+            "Europe/Eastern Europe/Belarusian UNGEGN.trn",
+            "be",
+            "<="
+        ]
+    ],
+    "tg-Latn-x-WWS": [
+        [
+            "Europe/Eastern Europe/Tajik WWS.trn",
+            "tg-Cyrl",
+            "<="
+        ]
+    ],
+    "be-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Belarusian BGN_PCGN.trn",
+            "be",
+            "<="
+        ]
+    ],
+    "mn-Cyrl": [
+        [
+            "Europe/Eastern Europe/Mongolian KNAB.trn",
+            "mn-Latn-x-KNAB",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Mongolian ISO 9.trn",
+            "mn-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Mongolian BGN_PCGN.trn",
+            "mn-Latn-x-BGNPCGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Mongolian ALA-LC.trn",
+            "mn-Latn-x-ALALC",
+            "=>"
+        ]
+    ],
+    "mn-Latn-x-KNAB": [
+        [
+            "Europe/Eastern Europe/Mongolian KNAB.trn",
+            "mn-Cyrl",
+            "<="
+        ]
+    ],
     "kk": [
         [
-            "Europe/Eastern Europe/Kazakh ISO 9.trn", 
-            "kk_Latn|ISO 9", 
+            "Europe/Eastern Europe/Kazakh KNAB.trn",
+            "kk-Latn-x-KNAB",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Kazakh Allworth.trn", 
-            "kk_Latn|Allworth", 
+            "Europe/Eastern Europe/Kazakh BGN_PCGN.trn",
+            "kk-Latn-x-BGNPCGN",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Kazakh KNAB.trn", 
-            "kk_Latn|KNAB", 
+            "Europe/Eastern Europe/Kazakh ISO 9.trn",
+            "kk-Latn-x-ISO9",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Kazakh BGN_PCGN.trn", 
-            "kk_Latn|BGN/PCGN", 
+            "Europe/Eastern Europe/Kazakh ALA-LC.trn",
+            "kk-Latn-x-ALALC",
             "=>"
-        ], 
+        ],
         [
-            "Europe/Eastern Europe/Kazakh ALA-LC.trn", 
-            "kk_Latn|ALA-LC", 
+            "Europe/Eastern Europe/Kazakh Allworth.trn",
+            "kk-Latn-x-Allworth",
             "=>"
         ]
-    ], 
+    ],
+    "kk-Latn-x-KNAB": [
+        [
+            "Europe/Eastern Europe/Kazakh KNAB.trn",
+            "kk",
+            "<="
+        ]
+    ],
+    "ka-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Georgian ALA-LC.trn",
+            "ka",
+            "<="
+        ]
+    ],
+    "ky-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Kirghiz ISO 9.trn",
+            "ky-Cyrl",
+            "<="
+        ]
+    ],
+    "sah-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Yakut ISO 9.trn",
+            "sah",
+            "<="
+        ]
+    ],
+    "tg-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Tajik ALA-LC.trn",
+            "tg-Cyrl",
+            "<="
+        ]
+    ],
+    "ky-Latn-x-WWS": [
+        [
+            "Europe/Eastern Europe/Kirghiz WWS.trn",
+            "ky-Cyrl",
+            "<="
+        ]
+    ],
+    "mk-Latn-x-UN": [
+        [
+            "Europe/Eastern Europe/Macedonian UN.trn",
+            "mk",
+            "<="
+        ]
+    ],
+    "kk-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Kazakh BGN_PCGN.trn",
+            "kk",
+            "<="
+        ]
+    ],
+    "az-Cyrl": [
+        [
+            "Europe/Eastern Europe/Azerbaijani ISO 9.trn",
+            "az-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Azerbaijani Roman.trn",
+            "az-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Azerbaijani ALA-LC.trn",
+            "az-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Azerbaijani Allworth.trn",
+            "az-Latn-x-AllWorth",
+            "=>"
+        ]
+    ],
+    "az-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Azerbaijani ISO 9.trn",
+            "az-Cyrl",
+            "<="
+        ],
+        [
+            "Europe/Eastern Europe/Azerbaijani Roman.trn",
+            "az-Cyrl",
+            "<="
+        ]
+    ],
+    "tk-Cyrl": [
+        [
+            "Europe/Eastern Europe/Turkmen ALA-LC.trn",
+            "tk-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Turkmen WWS.trn",
+            "tk-Latn-x-OfficialWWS",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Turkmen TDS 565.trn",
+            "tk-Latn-x-OfficialTDS565",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Turkmen Latin.trn",
+            "tk-Latn-x-OldOfficial",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Turkmen ISO 9.trn",
+            "tk-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Turkmen BGN_PCGN.trn",
+            "tk-Latn-x-BGNPCGN",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Turkmen Allworth.trn",
+            "tk-Latn-x-Allworth",
+            "=>"
+        ]
+    ],
+    "tk-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Turkmen ALA-LC.trn",
+            "tk-Cyrl",
+            "<="
+        ]
+    ],
+    "tk-Latn-x-OfficialWWS": [
+        [
+            "Europe/Eastern Europe/Turkmen WWS.trn",
+            "tk-Cyrl",
+            "<="
+        ]
+    ],
+    "uz": [
+        [
+            "Europe/Eastern Europe/Uzbek Official.trn",
+            "uz-Latn-x-Official",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Uzbek Latin.trn",
+            "uz-Latn-x-FormerOfficial",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Uzbek WWS.trn",
+            "uz-Latn-x-WWS",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Uzbek ALA-LC.trn",
+            "uz-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Uzbek ISO 9.trn",
+            "uz-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Uzbek Allworth.trn",
+            "uz-Latn-x-ALALC",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Uzbek BGN_PCGN.trn",
+            "uz-Latn-x-BGNPCGN",
+            "=>"
+        ]
+    ],
+    "uz-Latn-x-Official": [
+        [
+            "Europe/Eastern Europe/Uzbek Official.trn",
+            "uz",
+            "<="
+        ]
+    ],
+    "ro-x-Official": [
+        [
+            "Europe/Eastern Europe/Moldovan Latin.trn",
+            "ro-Cyrl",
+            "<="
+        ]
+    ],
+    "ky-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Kirghiz ALA-LC.trn",
+            "ky-Cyrl",
+            "<="
+        ]
+    ],
+    "tk-Latn-x-OfficialTDS565": [
+        [
+            "Europe/Eastern Europe/Turkmen TDS 565.trn",
+            "tk-Cyrl",
+            "<="
+        ]
+    ],
+    "uk-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Ukrainian ISO 9.trn",
+            "uk",
+            "<="
+        ]
+    ],
+    "mk-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Macedonian ISO 9.trn",
+            "mk",
+            "<="
+        ]
+    ],
+    "mn-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Mongolian ISO 9.trn",
+            "mn-Cyrl",
+            "<="
+        ]
+    ],
+    "uk-Latn-x-Official": [
+        [
+            "Europe/Eastern Europe/Ukrainian National.trn",
+            "uk",
+            "<="
+        ]
+    ],
+    "az-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Azerbaijani ALA-LC.trn",
+            "az-Cyrl",
+            "<="
+        ]
+    ],
+    "ru-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Russian ALA-LC.trn",
+            "ru",
+            "<="
+        ]
+    ],
+    "tk-Latn-x-OldOfficial": [
+        [
+            "Europe/Eastern Europe/Turkmen Latin.trn",
+            "tk-Cyrl",
+            "<="
+        ]
+    ],
+    "sah-Latn-x-KNAB": [
+        [
+            "Europe/Eastern Europe/Yakut KNAB.trn",
+            "sah",
+            "<="
+        ]
+    ],
+    "tt-Latn-x-WWS": [
+        [
+            "Europe/Eastern Europe/Tatar WWS.trn",
+            "tt",
+            "<="
+        ]
+    ],
+    "uz-Latn-x-FormerOfficial": [
+        [
+            "Europe/Eastern Europe/Uzbek Latin.trn",
+            "uz",
+            "<="
+        ]
+    ],
+    "ru-Latn-x-ISO9R": [
+        [
+            "Europe/Eastern Europe/Russian ISO_R 9.trn",
+            "ru",
+            "<="
+        ]
+    ],
+    "kk-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Kazakh ISO 9.trn",
+            "kk",
+            "<="
+        ]
+    ],
+    "tk-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Turkmen ISO 9.trn",
+            "tk-Cyrl",
+            "<="
+        ]
+    ],
+    "ky-Latn-x-KNAB": [
+        [
+            "Europe/Eastern Europe/Kirghiz KNAB.trn",
+            "ky-Cyrl",
+            "<="
+        ]
+    ],
+    "ro-x-WWS": [
+        [
+            "Europe/Eastern Europe/Moldovan WWS.trn",
+            "ro-Cyrl",
+            "<="
+        ]
+    ],
+    "bg-Latn-x-UNGEGN": [
+        [
+            "Europe/Eastern Europe/Bulgarian UN.trn",
+            "bg",
+            "<="
+        ]
+    ],
+    "bg-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Bulgarian ISO 9.trn",
+            "bg",
+            "<="
+        ]
+    ],
+    "tt-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Tatar Allworth.trn",
+            "tt",
+            "<="
+        ],
+        [
+            "Europe/Eastern Europe/Tatar ALA-LC.trn",
+            "tt",
+            "<="
+        ]
+    ],
+    "tk-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Turkmen BGN_PCGN.trn",
+            "tk-Cyrl",
+            "<="
+        ]
+    ],
+    "be-Latn-x-Lacinka": [
+        [
+            "Europe/Eastern Europe/Belarusian Lacinka.trn",
+            "be",
+            "<="
+        ]
+    ],
+    "mn-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Mongolian BGN_PCGN.trn",
+            "mn-Cyrl",
+            "<="
+        ]
+    ],
+    "bg-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Bulgarian BGN_PCGN.trn",
+            "bg",
+            "<="
+        ]
+    ],
+    "uz-Latn-x-WWS": [
+        [
+            "Europe/Eastern Europe/Uzbek WWS.trn",
+            "uz",
+            "<="
+        ]
+    ],
+    "sr-Cyrl": [
+        [
+            "Europe/Eastern Europe/Serbian ISO.trn",
+            "sr-Latn-x-ISO9",
+            "=>"
+        ],
+        [
+            "Europe/Eastern Europe/Serbian ALA-LC.trn",
+            "sr-Latn-x-ALALC",
+            "=>"
+        ]
+    ],
+    "sr-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Serbian ISO.trn",
+            "sr-Cyrl",
+            "<="
+        ]
+    ],
+    "ky-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Kirghiz BGN_PCGN.trn",
+            "ky-Cyrl",
+            "<="
+        ]
+    ],
+    "uz-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Uzbek ALA-LC.trn",
+            "uz",
+            "<="
+        ],
+        [
+            "Europe/Eastern Europe/Uzbek Allworth.trn",
+            "uz",
+            "<="
+        ]
+    ],
+    "ro-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Moldovan ISO 9.trn",
+            "ro-Cyrl",
+            "<="
+        ]
+    ],
+    "tt-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Tatar ISO 9.trn",
+            "tt",
+            "<="
+        ]
+    ],
+    "az-Arab": [
+        [
+            "Europe/Eastern Europe/Azerbaijani Arabic.trn",
+            "az-Latn",
+            "=>"
+        ]
+    ],
+    "hy": [
+        [
+            "Europe/Eastern Europe/Armenian BGN_PCGN.trn",
+            "hy-Latn-x-BGNPCGN",
+            "=>"
+        ]
+    ],
+    "hy-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Armenian BGN_PCGN.trn",
+            "hy",
+            "<="
+        ]
+    ],
+    "uk-Latn-x-WWS": [
+        [
+            "Europe/Eastern Europe/Ukrainian WWS.trn",
+            "uk",
+            "<="
+        ]
+    ],
+    "ka-Latn-x-KNAB": [
+        [
+            "Europe/Eastern Europe/Georgian KNAB.trn",
+            "ka",
+            "<="
+        ]
+    ],
+    "ru-Latn-x-Official": [
+        [
+            "Europe/Eastern Europe/Russian GOST.trn",
+            "ru",
+            "<="
+        ]
+    ],
+    "kk-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Kazakh ALA-LC.trn",
+            "kk",
+            "<="
+        ]
+    ],
+    "mn-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Mongolian ALA-LC.trn",
+            "mn-Cyrl",
+            "<="
+        ]
+    ],
+    "tk-Latn-x-Allworth": [
+        [
+            "Europe/Eastern Europe/Turkmen Allworth.trn",
+            "tk-Cyrl",
+            "<="
+        ]
+    ],
+    "uz-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Uzbek ISO 9.trn",
+            "uz",
+            "<="
+        ]
+    ],
+    "ka-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Georgian ISO 9984.trn",
+            "ka",
+            "<="
+        ]
+    ],
+    "kk-Latn-x-Allworth": [
+        [
+            "Europe/Eastern Europe/Kazakh Allworth.trn",
+            "kk",
+            "<="
+        ]
+    ],
+    "mk-Latn-x-ALA-LC": [
+        [
+            "Europe/Eastern Europe/Macedonian ALA-LC.trn",
+            "mk",
+            "<="
+        ]
+    ],
+    "ka-Latn-x-National": [
+        [
+            "Europe/Eastern Europe/Georgian National.trn",
+            "ka",
+            "<="
+        ]
+    ],
+    "tg-Latn-x-KNAB": [
+        [
+            "Europe/Eastern Europe/Tajik KNAB.trn",
+            "tg-Cyrl",
+            "<="
+        ]
+    ],
+    "be-Latn-x-Official": [
+        [
+            "Europe/Eastern Europe/Belarusian NSR.trn",
+            "be",
+            "<="
+        ]
+    ],
+    "ka-Latn-x-ISO9984": [
+        [
+            "Europe/Eastern Europe/Georgian BGN_PCGN.trn",
+            "ka",
+            "<="
+        ]
+    ],
+    "ru-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Russian BGN_PCGN.trn",
+            "ru",
+            "<="
+        ]
+    ],
+    "az-Latn-x-AllWorth": [
+        [
+            "Europe/Eastern Europe/Azerbaijani Allworth.trn",
+            "az-Cyrl",
+            "<="
+        ]
+    ],
+    "sr-Latn-x-ALALC": [
+        [
+            "Europe/Eastern Europe/Serbian ALA-LC.trn",
+            "sr-Cyrl",
+            "<="
+        ]
+    ],
+    "tg-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Tajik BGN_PCGN.trn",
+            "tg-Cyrl",
+            "<="
+        ]
+    ],
+    "tt-Latn-x-RomanOfficial": [
+        [
+            "Europe/Eastern Europe/Tatar Roman.trn",
+            "tt",
+            "<="
+        ]
+    ],
+    "ka-Latn-x-IKE": [
+        [
+            "Europe/Eastern Europe/Georgian IKE.trn",
+            "ka",
+            "<="
+        ]
+    ],
+    "tg-Latn-x-ISO9": [
+        [
+            "Europe/Eastern Europe/Tajik ISO 9.trn",
+            "tg-Cyrl",
+            "<="
+        ]
+    ],
+    "uz-Latn-x-BGNPCGN": [
+        [
+            "Europe/Eastern Europe/Uzbek BGN_PCGN.trn",
+            "uz",
+            "<="
+        ]
+    ],
     "sr": [
         [
-            "Europe/Eastern Europe/Serbian ISO.trn", 
-            "sr_Latn|ISO 9", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Serbian ALA-LC.trn", 
-            "sr_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Standards/Serbian.trn", 
-            "sr_Latn", 
+            "Europe/Eastern Europe/Standards/Serbian.trn",
+            "sr-Latn",
             "=>"
         ]
-    ], 
-    "sah_Latn|Allworth": [
+    ],
+    "sr-Latn": [
         [
-            "Europe/Eastern Europe/Yakut Allworth.trn", 
-            "sah", 
+            "Europe/Eastern Europe/Standards/Serbian.trn",
+            "sr",
             "<="
         ]
-    ], 
-    "sr_Latn|ISO 9": [
+    ],
+    "ar-Latn-x-UNGEGN": [
         [
-            "Europe/Eastern Europe/Serbian ISO.trn", 
-            "sr", 
-            "<="
-        ]
-    ], 
-    "mk_Latn|UN": [
-        [
-            "Europe/Eastern Europe/Macedonian UN.trn", 
-            "mk", 
-            "<="
-        ]
-    ], 
-    "be_Latn|ALA-LC": [
-        [
-            "Europe/Eastern Europe/Belarusian ISO 9.trn", 
-            "be", 
-            "<="
-        ], 
-        [
-            "Europe/Eastern Europe/Belarusian ALA-LC.trn", 
-            "be", 
-            "<="
-        ]
-    ], 
-    "ky": [
-        [
-            "Europe/Eastern Europe/Kirghiz ALA-LC.trn", 
-            "ky_Latn|ALA-LC", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Kirghiz WWS.trn", 
-            "ky_Latn|WWS", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Kirghiz Allworth.trn", 
-            "ky_Latn|Allworth", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Kirghiz KNAB.trn", 
-            "ky_Latn|KNAB", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Kirghiz BGN_PCGN.trn", 
-            "ky_Latn|BGN/PCGN", 
-            "=>"
-        ], 
-        [
-            "Europe/Eastern Europe/Kirghiz ISO 9.trn", 
-            "ky_Latn|ISO 9", 
+            "Middle Eastern/Arabic.trn",
+            "ar",
             "=>"
         ]
-    ], 
-    "sah_Latn|KNAB": [
+    ],
+    "ar": [
         [
-            "Europe/Eastern Europe/Yakut KNAB.trn", 
-            "sah", 
+            "Middle Eastern/Arabic.trn",
+            "ar-Latn-x-UNGEGN",
+            "<="
+        ]
+    ],
+    "he-Latn-x-UNGEGN": [
+        [
+            "Middle Eastern/Hebrew UNGEGN.trn",
+            "he",
+            "=>"
+        ]
+    ],
+    "ar-x-Compatibility": [
+        [
+            "Middle Eastern/Arabic Compat.trn",
+            "ar",
             "<="
         ]
     ]

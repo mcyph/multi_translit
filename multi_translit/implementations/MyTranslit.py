@@ -3,6 +3,8 @@ from multi_translit.utils.get_translit_mappings_dict import get_D_translit_mappi
 from multi_translit.implementations.my_translit.TranslitEngine import TranslitEngine
 from multi_translit.abstract_base_classes.TranslitEngineBase import TranslitEngineBase
 
+from iso_tools.bcp47.get_tag_details import get_tag_details
+
 
 class MyTranslit(TranslitEngineBase):
     def __init__(self):
@@ -29,9 +31,10 @@ class MyTranslit(TranslitEngineBase):
 
         for from_iso, L in list(self.DTranslitMappings.items()):
             for path, to_iso, direction in L:
-                if from_iso.language in SIgnoredISOs:
+                print(path, to_iso, direction)
+                if get_tag_details(from_iso).language in SIgnoredISOs:
                     continue
-                elif to_iso.language in SIgnoredISOs:
+                elif get_tag_details(to_iso).language in SIgnoredISOs:
                     continue
 
                 D[from_iso, to_iso] = (path, direction)

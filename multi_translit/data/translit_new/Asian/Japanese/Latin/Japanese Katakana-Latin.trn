@@ -3,7 +3,7 @@ The true indicates this can only work from Katakana-Latin
 
 [settings]
 {
-    "from_iso": "ja_Kana", 
+    "from_iso": "ja-Kana",
     "direction": "=>", 
     "ignore_case": true, 
     "to_iso": "ja_Latn"

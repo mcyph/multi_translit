@@ -1,10 +1,10 @@
 [settings]
 {
-    "from_iso": "zh_Latn|Numeric Pinyin",
+    "from_iso": "zh_Latn-x-NumericPinyin",
     "direction": "=>", 
     "ignore_me": true, 
     "ignore_case": true, 
-    "to_iso": "zh_Latn|FONIPA"
+    "to_iso": "zh_Latn-x-FONIPA"
 }
 
 [conversions]

@@ -7,7 +7,7 @@ alphabet has been postponed to the year 2005.
     "match_case": true, 
     "from_iso": "uz_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "uz_Latn|Official"
+    "to_iso": "uz_Latn-x-Official"
 }
 
 [conversions]

@@ -14,45 +14,45 @@ f = ReadingFactory()
 
 DConv = {
     # Mandarin conversions
-    ('cmn_Latn|Gwoyeu Romatzyh', 'cmn_Latn|x-Pinyin'): lambda s: f.convert(s, 'GR', 'Pinyin'),
-    ('cmn_Latn|Gwoyeu Romatzyh', 'cmn_Latn|Wade-Giles'): lambda s: f.convert(s, 'GR', 'WadeGiles'),
-    ('cmn_Latn|Gwoyeu Romatzyh', 'cmn_Latn|Braille'): lambda s: f.convert(s, 'GR', 'MandarinBraille'),
-    ('cmn_Latn|Gwoyeu Romatzyh', 'cmn_Latn|Alternative IPA'): lambda s: f.convert(s, 'GR', 'MandarinIPA'),
+    ('zh-Latn|x-GwoyeuRomatzyh', 'zh-Latn-x-Pinyin'): lambda s: f.convert(s, 'GR', 'Pinyin'),
+    ('zh-Latn|x-GwoyeuRomatzyh', 'zh-Latn|Wade-Giles'): lambda s: f.convert(s, 'GR', 'WadeGiles'),
+    ('zh-Latn|x-GwoyeuRomatzyh', 'zh-Latn|Braille'): lambda s: f.convert(s, 'GR', 'MandarinBraille'),
+    ('zh-Latn|x-GwoyeuRomatzyh', 'zh-Latn|Alternative IPA'): lambda s: f.convert(s, 'GR', 'MandarinIPA'),
 
 
-    ('cmn_Latn|Numeric Pinyin', 'cmn_Latn|x-Pinyin'): lambda s: f.convert(s, 'Pinyin', 'Pinyin', sourceOptions={
+    ('zh-Latn-x-NumericPinyin', 'zh-Latn-x-Pinyin'): lambda s: f.convert(s, 'Pinyin', 'Pinyin', sourceOptions={
         'toneMarkType': 'numbers'
     }),
-    ('cmn_Latn|Numeric Pinyin', 'cmn_Latn|Gwoyeu Romatzyh'): lambda s: f.convert(s, 'Pinyin', 'GR', sourceOptions={
+    ('zh-Latn-x-NumericPinyin', 'zh-Latn|x-GwoyeuRomatzyh'): lambda s: f.convert(s, 'Pinyin', 'GR', sourceOptions={
         'toneMarkType': 'numbers'
     }),
-    ('cmn_Latn|Numeric Pinyin', 'cmn_Latn|Wade-Giles'): lambda s: f.convert(s, 'Pinyin', 'WadeGiles', sourceOptions={
+    ('zh-Latn-x-NumericPinyin', 'zh-Latn|Wade-Giles'): lambda s: f.convert(s, 'Pinyin', 'WadeGiles', sourceOptions={
         'toneMarkType': 'numbers'
     }),
-    ('cmn_Latn|Numeric Pinyin', 'cmn_Latn|Braille'): lambda s: f.convert(s, 'Pinyin', 'MandarinBraille', sourceOptions={
+    ('zh-Latn-x-NumericPinyin', 'zh-Latn|Braille'): lambda s: f.convert(s, 'Pinyin', 'MandarinBraille', sourceOptions={
         'toneMarkType': 'numbers'
     }),
-    ('cmn_Latn|Numeric Pinyin', 'cmn_Latn|Alternative IPA'): lambda s: f.convert(s, 'Pinyin', 'MandarinIPA', sourceOptions={
+    ('zh-Latn-x-NumericPinyin', 'zh-Latn|Alternative IPA'): lambda s: f.convert(s, 'Pinyin', 'MandarinIPA', sourceOptions={
         'toneMarkType': 'numbers'
     }),
 
 
-    ('cmn_Latn|x-Pinyin', 'cmn_Latn|Gwoyeu Romatzyh'): lambda s: f.convert(s, 'Pinyin', 'GR'),
-    ('cmn_Latn|x-Pinyin', 'cmn_Latn|Wade-Giles'): lambda s: f.convert(s, 'Pinyin', 'WadeGiles'),
-    ('cmn_Latn|x-Pinyin', 'cmn_Latn|Braille'): lambda s: f.convert(s, 'Pinyin', 'MandarinBraille'),
-    ('cmn_Latn|x-Pinyin', 'cmn_Latn|Alternative IPA'): lambda s: f.convert(s, 'Pinyin', 'MandarinIPA'),
+    ('zh-Latn-x-Pinyin', 'zh-Latn|x-GwoyeuRomatzyh'): lambda s: f.convert(s, 'Pinyin', 'GR'),
+    ('zh-Latn-x-Pinyin', 'zh-Latn|Wade-Giles'): lambda s: f.convert(s, 'Pinyin', 'WadeGiles'),
+    ('zh-Latn-x-Pinyin', 'zh-Latn|Braille'): lambda s: f.convert(s, 'Pinyin', 'MandarinBraille'),
+    ('zh-Latn-x-Pinyin', 'zh-Latn|Alternative IPA'): lambda s: f.convert(s, 'Pinyin', 'MandarinIPA'),
 
 
-    ('cmn_Latn|Wade-Giles', 'cmn_Latn|Gwoyeu Romatzyh'): lambda s: f.convert(s, 'WadeGiles', 'GR'),
-    ('cmn_Latn|Wade-Giles', 'cmn_Latn|x-Pinyin'): lambda s: f.convert(s, 'WadeGiles', 'Pinyin'),
-    ('cmn_Latn|Wade-Giles', 'cmn_Latn|Braille'): lambda s: f.convert(s, 'WadeGiles', 'MandarinBraille'),
-    ('cmn_Latn|Wade-Giles', 'cmn_Latn|Alternative IPA'): lambda s: f.convert(s, 'WadeGiles', 'MandarinIPA'),
+    ('zh-Latn|Wade-Giles', 'zh-Latn|x-GwoyeuRomatzyh'): lambda s: f.convert(s, 'WadeGiles', 'GR'),
+    ('zh-Latn|Wade-Giles', 'zh-Latn-x-Pinyin'): lambda s: f.convert(s, 'WadeGiles', 'Pinyin'),
+    ('zh-Latn|Wade-Giles', 'zh-Latn|Braille'): lambda s: f.convert(s, 'WadeGiles', 'MandarinBraille'),
+    ('zh-Latn|Wade-Giles', 'zh-Latn|Alternative IPA'): lambda s: f.convert(s, 'WadeGiles', 'MandarinIPA'),
 
 
-    #('cmn_Latn|Braille', 'cmn_Latn|Gwoyeu Romatzyh'): lambda s: f.convert(s, 'MandarinBraille', 'GR'),
-    #('cmn_Latn|Braille', 'cmn_Latn|x-Pinyin'): lambda s: f.convert(s, 'MandarinBraille', 'Pinyin'),
-    #('cmn_Latn|Braille', 'cmn_Latn|Wade-Giles'): lambda s: f.convert(s, 'MandarinBraille', 'WadeGiles'),
-    #('cmn_Latn|Braille', 'cmn_Latn|Alternative IPA'): lambda s: f.convert(s, 'MandarinBraille', 'MandarinIPA'),
+    #('zh-Latn|Braille', 'zh-Latn|x-GwoyeuRomatzyh'): lambda s: f.convert(s, 'MandarinBraille', 'GR'),
+    #('zh-Latn|Braille', 'zh-Latn-x-Pinyin'): lambda s: f.convert(s, 'MandarinBraille', 'Pinyin'),
+    #('zh-Latn|Braille', 'zh-Latn|Wade-Giles'): lambda s: f.convert(s, 'MandarinBraille', 'WadeGiles'),
+    #('zh-Latn|Braille', 'zh-Latn|Alternative IPA'): lambda s: f.convert(s, 'MandarinBraille', 'MandarinIPA'),
 
 
     # Cantonese conversions
@@ -73,8 +73,8 @@ if __name__ == '__main__':
     for (from_iso, to_iso) in sorted(DConv):
 
         if from_iso.startswith('cmn'):
-            if from_iso != 'cmn_Latn|Numeric Pinyin':
-                s = DConv['cmn_Latn|Numeric Pinyin', from_iso]('tou1')
+            if from_iso != 'zh-Latn-x-NumericPinyin':
+                s = DConv['zh-Latn-x-NumericPinyin', from_iso]('tou1')
             else:
                 s = 'tou1'
         else:

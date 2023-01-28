@@ -16,9 +16,9 @@ class MecabTranslit(TranslitEngineBase):
     def get_D_engines(self):
         # Add Japanese internal conversions
         D = {}
-        D[ISOCode('ja'), ISOCode('ja_Hira')] = (ISOCode('ja_Kana'), ISOCode('ja_Hira'), False)
-        D[ISOCode('ja'), ISOCode('ja_Kana')] = (None, None, False)  # Already Katakana!
-        D[ISOCode('ja'), ISOCode('Latn')] = (ISOCode('ja_Kana'), ISOCode('ja_Latn'), True)
+        D['ja', 'ja-Hira'] = ('ja-Kana', 'ja-Hira', False)
+        D['ja', 'ja-Kana'] = (None, None, False)  # Already Katakana!
+        D['ja', 'Latn'] = ('ja-Kana', 'ja_Latn', True)
         return D
 
     def translit(self, from_, to, s):

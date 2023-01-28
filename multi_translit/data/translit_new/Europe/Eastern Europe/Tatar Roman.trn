@@ -8,7 +8,7 @@ Mm, Nn, , Oo, Ɵɵ, Pp, Rr, Ss, Şş, Tt, Uu, Üü, Vv, Ww, Xx, Yy, Zz
     "match_case": true, 
     "from_iso": "tt_Cyrl", 
     "direction": "<=>", 
-    "to_iso": "tt_Latn|Roman Official"
+    "to_iso": "tt_Latn-x-RomanOfficial"
 }
 
 [conversions]

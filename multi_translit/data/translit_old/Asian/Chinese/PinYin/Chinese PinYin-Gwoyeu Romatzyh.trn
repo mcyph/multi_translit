@@ -3,7 +3,7 @@ FormatString: "Chinese %s"
 LFonts: ["Latin", "Latin"]
 LProvides: [
 	["cmn", "PinYin"],
-	["cmn", "Gwoyeu Romatzyh"]]
+	["cmn", "x-GwoyeuRomatzyh"]]
 LCreate: [true, false]
 LTypes = [["input", "high"], ["disp", "high"]]
 BothWays: false
